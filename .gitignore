@@ -1,0 +1,26 @@
+# ── dependencies ──
+node_modules/
+
+# ── env / secrets ──
+# 실제 API 키: app/.env, scripts/.env. 예시(.env.example)만 트래킹.
+.env
+.env.*
+!.env.example
+
+# ── Expo / build ──
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+*.tsbuildinfo
+
+# ── BASI 원본 자산 (저작권 + 대용량, git 제외) ──
+# 원본 교재 PDF + 비전 추출 페이지 스캔. 정제 JSON(catalog/raw/*_structured)만 트래킹.
+data/basi/*.pdf
+data/basi/extracted_pages/
+
+# ── Claude Code 로컬 설정 ──
+.claude/settings.local.json
+
+# ── macOS ──
+.DS_Store
