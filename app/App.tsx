@@ -73,6 +73,10 @@ export default function App() {
   const [modalEx, setModalEx] = useState<Ex | null>(null)
   return (
     <View style={styles.container}>
+      <View style={styles.appBar}>
+        <Text style={styles.wordmark}>Pilai</Text>
+        <Text style={styles.wordmarkSub}>필라테스 시퀀스</Text>
+      </View>
       <View style={styles.flex}>
         {tab === 'generate' ? (
           <GenerateScreen onPick={setModalEx} />
@@ -83,7 +87,7 @@ export default function App() {
         )}
       </View>
       <View style={styles.tabBar}>
-        <TabButton label="시퀀스 생성" active={tab === 'generate'} onPress={() => setTab('generate')} />
+        <TabButton label="생성" active={tab === 'generate'} onPress={() => setTab('generate')} />
         <TabButton label="카탈로그" active={tab === 'catalog'} onPress={() => setTab('catalog')} />
         <TabButton label="기록" active={tab === 'history'} onPress={() => setTab('history')} />
       </View>
@@ -296,6 +300,9 @@ function GenerateScreen({ onPick }: { onPick: (e: Ex) => void }) {
         </Pressable>
       </View>
 
+      {loading ? (
+        <Text style={styles.loadingText}>시퀀스를 만들고 있어요 · 진단 → 처방 → 안전 검증, 20~40초 걸립니다</Text>
+      ) : null}
       {error ? <Text style={styles.error}>{error}</Text> : null}
       {gen && final ? (
         <EditableSequence
@@ -805,6 +812,9 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: C.bg, paddingTop: 54 },
   flex: { flex: 1 },
   flex2: { flex: 1.4 },
+  appBar: { flexDirection: 'row', alignItems: 'baseline', paddingHorizontal: 16, paddingBottom: 12, gap: 8 },
+  wordmark: { fontSize: 22, fontWeight: '800', color: C.accent, letterSpacing: 0.3 },
+  wordmarkSub: { fontSize: 12, color: C.sub, fontWeight: '600' },
   center: { alignItems: 'center', justifyContent: 'center' },
   scroll: { padding: 16, paddingBottom: 48 },
   screenTitle: { fontSize: 26, fontWeight: '800', color: C.text, marginBottom: 16, letterSpacing: -0.5 },
@@ -857,6 +867,7 @@ const styles = StyleSheet.create({
   genBtnText: { color: '#fff', fontSize: 16, fontWeight: '700' },
   dim: { opacity: 0.6 },
   error: { color: C.caution, marginTop: 16, fontSize: 14 },
+  loadingText: { marginTop: 16, color: C.sub, fontSize: 13, lineHeight: 19 },
   result: { marginTop: 24 },
   relaxTag: {
     alignSelf: 'flex-start',
