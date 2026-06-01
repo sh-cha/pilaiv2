@@ -772,13 +772,32 @@ function ExerciseModal({ ex, onClose }: { ex: Ex | null; onClose: () => void }) 
 }
 
 function CatalogScreen({ onPick }: { onPick: (e: Ex) => void }) {
-  const list = useMemo(() => allEx.slice().sort((a, b) => a.name.localeCompare(b.name)), [])
+  const [q, setQ] = useState('')
+  const list = useMemo(() => {
+    const ql = q.trim().toLowerCase()
+    return allEx
+      .filter((e) => {
+        if (!ql) return true
+        const hay = `${e.name} ${e.muscle_focus_ko?.join(' ') ?? ''} ${e.block_ko ?? ''} ${e.apparatus.join(' ')}`.toLowerCase()
+        return hay.includes(ql)
+      })
+      .sort((a, b) => a.name.localeCompare(b.name))
+  }, [q])
   return (
     <View style={styles.flex}>
       <Text style={[styles.screenTitle, { paddingHorizontal: 16, paddingTop: 4 }]}>동작 카탈로그 · {list.length}</Text>
+      <TextInput
+        style={[styles.search, { marginHorizontal: 16, marginTop: 0, marginBottom: 10 }]}
+        value={q}
+        onChangeText={setQ}
+        placeholder="이름·근육·블록·기구 검색"
+        placeholderTextColor={C.sub}
+        autoCorrect={false}
+      />
       <FlatList
         data={list}
         keyExtractor={(e) => e.id}
+        keyboardShouldPersistTaps="handled"
         contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 16 }}
         renderItem={({ item }) => (
           <Pressable style={styles.catRow} onPress={() => onPick(item)}>
