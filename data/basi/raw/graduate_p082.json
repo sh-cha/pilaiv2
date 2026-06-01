@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p082.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Lift",
+    "series": "Push Through Group",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Lying on side in neutral spine position, arms straight, head resting on bottom arm, top hand holding PTBar, pelvis perpendicular to Mat, legs straight and aligned with trunk, top leg in front, feet plantarflexed",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Bend and straighten top arm, bringing PTBar forward and up",
+      "exhale": "Lift trunk into lateral flexion, lifting bottom arm toward PTBar"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor strength",
+      "Spinal lateral flexor stretch",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep arm on PTBar straight while lifting body",
+      "Imagine moving between two panes of glass"
+    ]
+  }
+}

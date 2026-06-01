@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p066.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Corkscrew Advanced",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Starting in Roll Over position (page 42), legs overhead",
+    "movement": {
+      "inhale": "Rotate spine, move legs to one side",
+      "exhale": "Roll down side of trunk, circle legs around, rotate spine, roll up opposite side of trunk, move legs to center, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal rotators",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal rotator control",
+      "Spinal flexor control",
+      "Hip flexor control"
+    ],
+    "cues": [
+      "Move pelvis and legs as one unit",
+      "Initiate movement with spinal rotators",
+      "Keep shoulders stable",
+      "Maintain pelvic lumbar stabilization",
+      "Imagine drawing a large circle with feet around body"
+    ]
+  }
+}

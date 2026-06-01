@@ -1,0 +1,38 @@
+{
+  "source_page": "foundation:p082.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "3-2",
+    "name": "Rhomboids 2",
+    "series": "Arms Sitting Series",
+    "block": "Arm Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Starting in Rhomboids 1 position (page 69).",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Move arms out to sides, glide scapulae together",
+      "inhale": "Glide scapulae apart, move arms forward, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder horizontal abductors",
+      "Scapular adductors",
+      "Elbow flexors",
+      "Shoulder flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder horizontal abductor strength",
+      "Scapular adductor strength",
+      "Shoulder flexor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Move upper arms parallel to floor",
+      "Bias shoulders towards external rotation",
+      "Maintain consistent position of arms with palms facing body",
+      "Continue moving arms back as scapular adduct"
+    ]
+  }
+}

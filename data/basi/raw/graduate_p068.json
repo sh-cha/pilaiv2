@@ -1,0 +1,36 @@
+{
+  "source_page": "graduate:p068.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hug-a-Tree",
+    "series": "Arms Standing Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Standing leaning forward, facing away from Cadillac, arms in T position, hands holding handles (fist or open hand), micro-bend in elbows, palms facing forward",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Move arms forward",
+      "inhale": "Move arms back, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder horizontal adductors",
+      "Shoulder flexors",
+      "Scapular stabilizers",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder horizontal adductor strength and stretch",
+      "Shoulder flexor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep leaning into springs, maintaining consistent diagonal line",
+      "Move arms forward until parallel with each other",
+      "Move arms back within range of scapular stabilization"
+    ]
+  }
+}

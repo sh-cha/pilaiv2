@@ -1,0 +1,35 @@
+{
+  "source_page": "graduate:p036.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Arms Overhead",
+    "series": "Arms Kneeling Side Series",
+    "block": "Arm Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Starting in Triceps position (page 35), arms in T position, palms facing up",
+    "resistance": "extra light",
+    "movement": {
+      "exhale": "Lift arms overhead",
+      "inhale": "Lower arms, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder abductors",
+      "Spinal flexors",
+      "Spinal lateral flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder abductor strength",
+      "Trunk stabilization",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Move arms symmetrically",
+      "Maintain scapular stabilization",
+      "Maintain trunk stabilization, avoiding lateral flexion",
+      "Touch fingers overhead (if possible)"
+    ]
+  }
+}

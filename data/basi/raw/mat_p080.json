@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p080.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Forward with Drops",
+    "series": "Gluteals Side Lying Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Side Leg Lifts position (page 76), bringing leg forward to 90 degrees hip flexion",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lower leg, lift leg, 5 pulses",
+      "inhale": "Lower leg, lift leg, 5 pulses"
+    },
+    "muscle_focus": [
+      "Hip abductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip abductor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep pelvis stable as leg moves down and up",
+      "Keep knee slightly bent",
+      "Make movement small",
+      "Keep leg and foot relaxed, toes directed toward Mat",
+      "Keep movement hip height and lower"
+    ]
+  }
+}

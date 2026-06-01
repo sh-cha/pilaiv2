@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p082.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hip Abduction Bent Knee",
+    "series": "Gluteals Kneeling Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Hip Extension Bent Knee position (page 80)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift leg to side",
+      "inhale": "Lower leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip abductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip abductor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Focus on hip disassociation",
+      "Maintain pelvic stabilization with emphasis on avoiding lateral tilt and rotation of pelvis",
+      "Minimize shifting of weight",
+      "Keep shoulders aligned over wrists",
+      "Maintain consistent 90 degree angle in knee of moving leg"
+    ]
+  }
+}

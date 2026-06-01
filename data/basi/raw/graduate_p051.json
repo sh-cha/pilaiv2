@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p051.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Over on Box",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Intermeidate",
+    "apparatus": "reformer",
+    "setup": "Sitting sideways on Short Box, one leg straight, foot dorsiflexed and under foot strap, other leg bent on top of box, hands behind head, body on straight diagonal line",
+    "resistance": "all springs attached to hold carriage in place",
+    "movement": {
+      "inhale": "Arc trunk sideways, lowering trunk",
+      "exhale": "Straighten and lift trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain hip of straight leg in parallel position",
+      "Maintain co-contraction of abdominals and back extensors",
+      "Touch fingers loosely behind head",
+      "Imagine moving between two panes of glass"
+    ]
+  }
+}

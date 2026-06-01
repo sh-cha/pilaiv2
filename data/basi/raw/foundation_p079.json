@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p079.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Chest Expansion",
+    "series": "Arms Sitting Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Sitting upright at front edge of carriage, facing risers, legs straight between shoulder rests, arms straight and forward of trunk, hands in straps, palms facing back",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Move arms back",
+      "inhale": "Move arms forward, return to start positon"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Elbow extensors",
+      "Scapular stabilizers",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder extensor strength",
+      "Elbow extensor strength",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep trunk upright and stable",
+      "Keep arms straight",
+      "Move arms 20 degrees forward and 20 degrees back of trunk"
+    ]
+  }
+}

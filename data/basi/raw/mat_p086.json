@@ -1,0 +1,30 @@
+{
+  "source_page": "mat:p086.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Arms Bent",
+    "series": "Arms Series",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Standing or sitting, hands holding Magic Circle in front of chest, shoulder height, arms bent",
+    "movement": {
+      "exhale": "Press arms together",
+      "inhale": "Open arms"
+    },
+    "muscle_focus": [
+      "Shoulder horizontal adductors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Shoulder horizontal adductor strength",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maintain upright trunk",
+      "Maintain scapular stabilization",
+      "Maintain tension in circle, increase tension when pressing arms together"
+    ]
+  }
+}

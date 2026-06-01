@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p047.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "4)",
+    "name": "Hip Flexors",
+    "series": "Ladder Barrel Stretch Series",
+    "block": "Stretches",
+    "level": "Fundamental",
+    "apparatus": "Ladder Barrel",
+    "setup": "Standing facing back to Ladder Barrel, one leg straight, other leg bent, foot on barrel, knee facing down, hands placed on top of ladder\nNote: Bend leg further for additional stretch",
+    "movement": {
+      "inhale": "Bend standing leg, moving pelvis foward and down, push pelvis back toward barrel",
+      "exhale": "Hold position for 3 -5 breathes, lift trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Knee extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip flexor stretch",
+      "Knee extensor stretch",
+      "Pelvic stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic stabilization",
+      "Bias toward posterior tilt of pelvis",
+      "Keep abdominals engaged to avoid lumbar hyperlordosis"
+    ]
+  }
+}

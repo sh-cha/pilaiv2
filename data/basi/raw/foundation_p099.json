@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p099.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Parallel Toes",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine, toes placed on PTBar, feet hip width apart, legs bent",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Knee extensor control",
+      "Foot alignment and stabilization",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Establish maximum plantarflexion when legs are straight",
+      "Keep heels stable, moving around ankle joint",
+      "Maintain hip extensor engagement",
+      "Maintain pelvic lumbar stabilization",
+      "Avoid excessive knee flexion (maximum 90 degrees)",
+      "Straighten legs completely, avoiding hyperextension"
+    ]
+  }
+}

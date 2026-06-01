@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p044.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Open Leg Rocker",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Sitting in balanced position, back flat, one hand holding each leg (close to ankles), legs shoulder width apart, arms straight, feet plantarflexed",
+    "movement": {
+      "inhale": "Round back, roll back",
+      "exhale": "Roll up, straighten back, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Trunk stabilization",
+      "Spinal extensor control",
+      "Spinal articulation"
+    ],
+    "cues": [
+      "Keep arms straight",
+      "Initiate roll back with flexion of lumbar spine",
+      "Utilize spinal flexors to initiate movement",
+      "Utilize spinal extensors to complete movement",
+      "Maintain scapular stabilization"
+    ]
+  }
+}

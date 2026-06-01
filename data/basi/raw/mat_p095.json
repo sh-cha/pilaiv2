@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p095.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Knees",
+    "series": "Supine Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying supine, legs in table top position, placing Magic Circle above knees, parallel to Mat",
+    "movement": {
+      "exhale": "Press legs together",
+      "inhale": "Open legs"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep shins parallel to each other and to Mat",
+      "Keep thighs perpendicular to Mat (as close as possible)",
+      "Maintain pelvic lumbar stabilization",
+      "Maintain tension in circle, increase tension when pressing legs together"
+    ]
+  }
+}

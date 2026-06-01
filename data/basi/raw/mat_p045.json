@@ -1,0 +1,35 @@
+{
+  "source_page": "mat:p045.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shoulder Bridge Prep",
+    "block": "Bridging",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Starting in up phase of Pelvic Curl (page 15)",
+    "movement": {
+      "exhale": "Lift one leg toward chest, plantarflex foot",
+      "inhale": "Lower leg, touching Mat with toes"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Hip extensor strength",
+      "Hip flexor control",
+      "Hip disassociation"
+    ],
+    "cues": [
+      "Keep hip adductors engaged",
+      "Maintain 90 degree angle in knee of moving leg",
+      "Maintain hip extension with supporting leg",
+      "Keep pelvis lifted, level, and stable",
+      "Keep arms pressing into Mat"
+    ]
+  }
+}

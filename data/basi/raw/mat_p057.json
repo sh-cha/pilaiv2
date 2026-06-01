@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p057.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Jackknife",
+    "apparatus": "mat",
+    "block": "Spinal Articulation",
+    "level": "Advanced",
+    "setup": "Starting in Roll Over position (page 42)",
+    "movement": {
+      "inhale": "Lift legs, perpendicular to Mat",
+      "exhale": "Roll over"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip extensors",
+      "Spinal extensors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor control",
+      "Spinal extensor control",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Touch feet to Mat (as close as possible) prior to lifting",
+      "Create vertical line (as close as possible) with body when legs lift to ceiling",
+      "Utilize hip, back and shoulder extensors to achieve vertical line",
+      "Roll down with feet opposite face"
+    ]
+  }
+}

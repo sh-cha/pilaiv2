@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p064.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Spine Twist Supine",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Fundamental",
+    "apparatus": "chair",
+    "setup": "Lying supine with lower back and pelvis on barrel, legs in tabletop position, thighs perpendicular to floor, hands holding handles",
+    "movement": {
+      "inhale": "Lower legs to one side",
+      "exhale": "Lift legs to center, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal rotators",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal rotator control and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Initiate rotation to side and back to center with abdominals",
+      "Move legs and pelvis as one unit",
+      "Keep holding handles firmly and pulling barrel toward back"
+    ]
+  }
+}

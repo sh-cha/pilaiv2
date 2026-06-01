@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p067.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Corkscrew Advanced",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Advanced",
+    "apparatus": "chair",
+    "setup": "Starting in Roll Over position (page 59), legs overhead",
+    "movement": {
+      "inhale": "Rotate spine, moving legs to one side",
+      "exhale": "Roll down side of trunk, circle legs around, rotate spine, roll up opposite side of trunk, rotate spine, moving legs to center, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal rotators",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal rotator control",
+      "Spinal flexor control",
+      "Hip flexor control"
+    ],
+    "cues": [
+      "Keep legs together",
+      "Move legs and pelvis as one unit",
+      "Avoid lowering legs beyond diagonal line",
+      "Initiate rotation to side and back to center with abdominals",
+      "Maintain connection with barrel"
+    ]
+  }
+}

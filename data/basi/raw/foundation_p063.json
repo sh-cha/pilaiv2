@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p063.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Flat Back\nKnee Stretch Group",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Kneeling on carriage, feet against shoulder rests, arms straight, shoulder width apart, hands placed on footbar, trunk in neutral spine position",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Move legs back",
+      "exhale": "Move legs forward, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Scapular stabilization",
+      "Knee extensor control",
+      "Hip extensor control"
+    ],
+    "cues": [
+      "Emphasize \"in\" phase of movement",
+      "Focus on hip disassociation",
+      "Maintain pelvic lumbar stabilization",
+      "Maintain neutral spine position",
+      "Maintain scapular stabilization"
+    ]
+  }
+}

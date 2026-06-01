@@ -1,0 +1,32 @@
+{
+  "source_page": "foundation:p052.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Bottom Lift with Extensions",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "setup": "Starting in Bottom Lift position (page 42)",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Roll spine up",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor control",
+      "Knee extensor control"
+    ],
+    "cues": [
+      "Foot position is same as Parallel Toes in Footwork (page 18)",
+      "Keep heels still, adductors engaged and legs parallel",
+      "Do not straighten knees completely",
+      "Keep pelvis lifted during extensions"
+    ]
+  }
+}

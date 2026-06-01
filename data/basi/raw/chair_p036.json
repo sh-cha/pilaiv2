@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p036.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Frog Front",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Standing on pedal facing Wunda Chair, legs bent, hips externally rotated, feet plantarflexed, heels together to form V position, arms straight, hands on outside of front edge of chair, shoulders over wrists, fingers facing outward, trunk flat on diagonal, pedal lifted",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten legs, lowering pedal (without touching bottom)",
+      "inhale": "Bend legs, lifting pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Hip external rotators",
+      "Knee extensors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Hip external rotator control",
+      "Knee extensor control",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Keep heels pressing together",
+      "Utilize pumping-action as legs straighten and bend",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

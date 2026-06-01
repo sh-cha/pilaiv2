@@ -1,0 +1,31 @@
+{
+  "source_page": "chair:p048.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Over Prep",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Fundamental",
+    "apparatus": "ladder barrel",
+    "setup": "Standing sideways to Ladder Barrel, pelvis against barrel, feet braced against bottom of ladder, inside leg in front, body on diagonal line, hands placed behind head, fingers loosely interlaced",
+    "movement": {
+      "inhale": "Arc trunk sideways over barrel",
+      "exhale": "Straighten and lift trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor strength",
+      "Spinal lateral flexor stretch"
+    ],
+    "cues": [
+      "Start and end with trunk and leg on diagonal line",
+      "Maintain pelvic stabilization",
+      "Maintain co-contraction of abdominals and back extensors",
+      "Imagine moving between two panes of glass"
+    ]
+  }
+}

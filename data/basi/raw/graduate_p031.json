@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p031.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Rowing Front 2",
+    "series": "Rowing Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Rowing Front 1 position (page 30)",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Round trunk forward, elbows by sides, forearms parallel to carriage, hands under shoulders",
+      "inhale": "Straighten trunk on diagonal line, reach arms overhead, internally rotating shoulders"
+    },
+    "muscle_focus": [
+      "Shoulder flexors",
+      "Elbow extensors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Shoulder flexor control",
+      "Elbow extensor control",
+      "Spinal extensor control",
+      "Trunk stabilization",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "See next page"
+    ]
+  }
+}

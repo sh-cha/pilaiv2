@@ -1,0 +1,36 @@
+{
+  "source_page": "graduate:p017.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "2)",
+    "name": "Double Leg with Rotation",
+    "series": "Abdominals Legs in Straps",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Double Leg position (page 17)",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Straighten legs",
+      "exhale": "Bend legs, rotate trunk to one side"
+    },
+    "muscle_focus": [
+      "Spinal rotators",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal rotator strength",
+      "Spinal flexor strength",
+      "Hip flexor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep elbows wide",
+      "Maximize rotation while avoiding lateral flexion",
+      "Maintain consistent height of trunk",
+      "Maintain slight tension in straps when straightening legs"
+    ]
+  }
+}

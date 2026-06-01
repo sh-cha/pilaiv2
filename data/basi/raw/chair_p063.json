@@ -1,0 +1,31 @@
+{
+  "source_page": "chair:p063.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shoulder Stretch Lying Side",
+    "block": "Stretches",
+    "level": "Fundamental",
+    "apparatus": "barrel",
+    "setup": "Lying sideways on barrel, bottom leg bent, top leg straight, feet plantarflexed, arms straight overhead, head resting on bottom arm",
+    "movement": {
+      "inhale": "Circle top arm around to side, simutaneously roll body into supine position, externally rotating hips",
+      "exhale": "Continue circling arm to side of body, simultaneously return to side lying position, circle arm forward and overhead, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder adductors",
+      "Shoulder abductors",
+      "Shoulder flexors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Shoulder adductor control and stretch",
+      "Shoulder flexor control",
+      "Thoracic stretch"
+    ],
+    "cues": [
+      "Coordinate movement of arm with movement of body",
+      "Keep neck relaxed and allow head to rest on arm and barrel"
+    ]
+  }
+}

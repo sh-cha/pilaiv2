@@ -1,0 +1,35 @@
+{
+  "source_page": "mat:p097.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Ankles Bent Knees",
+    "series": "Prone Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying prone, knees bent at 90 degrees, thighs lifted off Mat, feet plantarflexed, Magic Circle above ankles, head resting on back of hands",
+    "movement": {
+      "exhale": "Press legs together",
+      "inhale": "Open legs"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Hip extensors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Hip extensor strength",
+      "Spinal extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Reach feet toward ceiling",
+      "Keep hips extended",
+      "Maintain abdominal support to avoid pressure on lower back",
+      "Maintain tension in circle, increase tension when pressing legs together"
+    ]
+  }
+}

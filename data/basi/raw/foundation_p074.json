@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p074.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Adduction",
+    "series": "Arms Supine Series",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Starting in Extension Position (page 62) with arms out to sides in T position, hands in straps, palms facing body",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Move arms to sides of body",
+      "inhale": "Move arms away from body, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder adductors",
+      "Scapular stabilizers",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Shoulder adductor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Maintain micro-bend in elbows",
+      "Keep trunk and legs stable",
+      "Move arms along horizontal line, parallel to floor"
+    ]
+  }
+}

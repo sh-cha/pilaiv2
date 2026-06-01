@@ -1,0 +1,34 @@
+{
+  "source_page": "chair:p025.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Tricep Press Sit",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Starting in Shrugs position (page 22)",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Bend arms, lifting pedal",
+      "exhale": "Straighten arms, lowering pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Scapular stabilizers",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain trunk stabilization",
+      "Maintain upright position",
+      "Maintain scapular stabilization",
+      "Keep elbows facing back, parallel to each other"
+    ]
+  }
+}

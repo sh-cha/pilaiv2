@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p085.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Chest Expansion",
+    "series": "Arms Kneeling Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Kneeling in upright position on carriage, knees against shoulder rests, arms straight and forward of trunk, hands holding ropes, palms facing body",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Move arms back",
+      "inhale": "Move arms forward, return to start positon"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Elbow extensors",
+      "Scapular stabilizers",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder extensor strength",
+      "Elbow extensor strength",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep trunk upright and stable",
+      "Bias towards posterior tilt of pelvis",
+      "Keep arms straight",
+      "Move arms 20 degrees forward and 20 degrees back of trunk"
+    ]
+  }
+}

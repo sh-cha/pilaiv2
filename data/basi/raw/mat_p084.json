@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p084.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hip Extension Straight Leg",
+    "series": "Gluteals Kneeling Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Hip Extension Bent Knee position (page 80), one leg straight back, foot plantarflexed",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift leg",
+      "inhale": "Lower leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Pelvic lumbar stabilzation"
+    ],
+    "cues": [
+      "Focus on hip disassociation",
+      "Maintain pelvic stabilization with emphasis on avoiding anterior tilt and rotation of pelvis",
+      "Keep leg elongated"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p066.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Corkscrew",
+    "block": "Lateral Flexion/Rotation",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Starting on Scissors position (page 56)",
+    "movement": {
+      "inhale": "Lower legs to one side",
+      "exhale": "Circle legs down and around to opposite side, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal rotators",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal rotator control",
+      "Hip flexor control"
+    ],
+    "cues": [
+      "Keep legs together",
+      "Move legs and pelvis as one unit",
+      "Avoid lowering legs beyond diagonal line",
+      "Initiate rotation to side and back to center with abdominals",
+      "Keep holding handles firmly and pulling barrel toward back"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p042.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hamstring Pull 1",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Starting in Chest Lift position (page 17), legs together, perpendicular to Mat, hands behind calves",
+    "movement": {
+      "exhale": "Lower one leg to Mat, lift other leg toward chest holding calf (2 pulses)",
+      "inhale": "Switch legs (2 pulses)"
+    },
+    "muscle_focus": [
+      "Spinal Flexors",
+      "Hip flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Pelvic lumbar stabilization",
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch"
+    ],
+    "cues": [
+      "Pull gently on leg during pulses",
+      "Maintain stability of trunk and pelvis as legs change",
+      "Anchor bottom leg on Mat and keep stable (no pulses)",
+      "Maintain consistent height of trunk"
+    ]
+  }
+}

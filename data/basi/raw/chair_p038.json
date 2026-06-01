@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p038.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Pike Side",
+    "block": "Lateral Flexion / Rotation",
+    "level": "advanced",
+    "apparatus": "chair",
+    "setup": "Standing side to Wunda Chair, trunk rounded, legs straight, feet placed on pedal, inside leg in front, arms straight, shoulders above wrists, hands placed on side edge of chair, fingers wrapped around front and back of chair",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Raise body, lifting pedal",
+      "inhale": "Lower body, pressing pedal down (without touching bottom), return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal rotators",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal rotator strength",
+      "Shoulder flexor strength",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Lift pelvis upward",
+      "Keep shoulders over wrists",
+      "Keep head aligned with spine, eyes directed toward body"
+    ]
+  }
+}

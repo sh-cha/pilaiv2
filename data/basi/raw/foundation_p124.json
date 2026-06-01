@@ -1,0 +1,32 @@
+{
+  "source_page": "foundation:p124.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Sitting Forward",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Sitting upright, facing PT Bar, feet pressing against poles, arms straight, shoulder width apart, hands holding PTBar",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Round trunk into C curve position leaning back, press bar down, transfer trunk forward",
+      "inhale": "Straighten trunk"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Shoulder extensors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Shoulder extensor control",
+      "Spinal extensor control",
+      "Hip extensor stretch"
+    ],
+    "cues": [
+      "Keep arms straight",
+      "Differentiate between movement of trunk and arms"
+    ]
+  }
+}

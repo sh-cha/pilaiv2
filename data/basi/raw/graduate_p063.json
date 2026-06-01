@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p063.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Tower",
+    "apparatus": "cadillac",
+    "block": "Spinal Articulation",
+    "level": "Advanced",
+    "setup": "Lying supine, arms straight and overhead, hands holding poles (close to Mat), legs straight and hip width apart, toes placed on PTBar and plantarflexed",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Roll up onto shoulder girdle / Roll down, return to start position",
+      "inhale": "Bend and straighten legs / Dorsiflex feet, plantarflex feet"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor control and stretch",
+      "Ankle-foot plantarflexor control and stretch"
+    ],
+    "cues": [
+      "Keep arms straight and maintain scapular stabilization",
+      "Initiate movement with abdominals",
+      "Anchor sacrum on Mat (as close as possible) in start position"
+    ]
+  }
+}

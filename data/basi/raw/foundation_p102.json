@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p102.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Open V - Position Toes",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "setup": "Lying supine, legs externally rotated, toes placed on outer edge of PTBar, wide V position, legs bent",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Knee extensor control",
+      "Foot alignment and stabilization",
+      "Hip adductor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Establish maximum plantarflexion when legs are straight",
+      "Keep heels stable, moving around ankle joint",
+      "Maintain hip extensor engagement",
+      "Maintain pelvic lumbar stabilization",
+      "Avoid excessive knee flexion (maximum 90 degrees)",
+      "Straighten legs completely, avoiding hyperextension"
+    ]
+  }
+}

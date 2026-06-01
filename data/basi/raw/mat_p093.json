@@ -1,0 +1,30 @@
+{
+  "source_page": "mat:p093.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Above Knees",
+    "series": "Sitting Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Ankles position (page 90), Magic Circle above knees, perpendicular to floor",
+    "movement": {
+      "exhale": "Press legs together",
+      "inhale": "Open legs"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain trunk stabilization",
+      "Maintain tension in circle, increase tension when pressing legs together"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p118.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": false,
+  "printed": {
+    "name": "Circles Down",
+    "series": "Single Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Intermediaate",
+    "apparatus": "cadillac",
+    "setup": "Starting in Frog (page 104), leg perpendicular to Mat",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lower leg",
+      "inhale": "Open leg and circle around, lift leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Hip adductor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maximize hip disassociation",
+      "Maintain pelvic lumbar stabilization",
+      "Draw straight line down center",
+      "Draw semi-circle as leg circles around and up",
+      "Keep supporting leg elongated and stable"
+    ]
+  }
+}

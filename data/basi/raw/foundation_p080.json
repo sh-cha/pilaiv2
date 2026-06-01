@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p080.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Biceps",
+    "series": "Arms Sitting Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Chest Expansion position (page 67), arms straight and foward, shoulder height, palms facing up",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Bend arms",
+      "inhale": "Straighten arms, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow flexors",
+      "Shoulder flexors",
+      "Scapular stabilizers",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Elbow flexor strength",
+      "Shoulder flexor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep trunk upright and stable",
+      "Keep upper arms at shoulder height, parallel to floor",
+      "Straighten elbows completely following each repetition",
+      "Maintain neutral position of wrists"
+    ]
+  }
+}

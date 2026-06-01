@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p039.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Front Support",
+    "block": "Bridging",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Starting in plank position, arms straight and parallel, wrists under shoulders, legs straight and parallel, feet hip width apart (Front Support position)",
+    "movement": {
+      "exhale": "Bend one leg toward chest",
+      "inhale": "Straighten leg back, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Trunk stabilization",
+      "Hip flexor control",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Keep body in straight diagonal line",
+      "Keep abdominals engaged to avoid sinking in lower back",
+      "Focus on hip disassociation"
+    ]
+  }
+}

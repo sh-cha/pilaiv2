@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p074.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shoulder Adduction Double Arm",
+    "series": "Push Through Group",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Sitting upright, facing PTBar, straddling Cadillac, arms straight, hands holding outside of PTBar, palms facing inward",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Bend arms",
+      "inhale": "Straighten arms, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder extensor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Initiate movement with latissimus dorsi",
+      "Minimize use of biceps",
+      "Maintain slight internal rotation of shoulders",
+      "Maintain trunk stabilization"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p084.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Salute",
+    "series": "Arms Sitting Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "setup": "Starting in Hug-a-Tree position (page 71), arms bent, hands in straps in line with eyes, fingers facing forward",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten arms forward and up on diagonal line",
+      "inhale": "Bend arms, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Shoulder flexors",
+      "Scapular stabilizers",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Shoulder flexor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Keep elbows lifted and reaching outward",
+      "Keep fingers pointing in direction of movement"
+    ]
+  }
+}

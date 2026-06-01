@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p059.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Changes",
+    "series": "Lying Side Single Leg Series",
+    "block": "Hip Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Lying on side in neutral spine position, bottom arm straight, head resting on arm, pelvis perpendicular to Mat, top arm holding pole, legs straight, aligned with trunk, hips externally rotated, feet plantarflexed, top foot in strap",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Lift top leg",
+      "exhale": "Lower top leg in front of bottom leg"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip adductor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Keep tension in springs, avoid lifting leg above 45 degrees",
+      "Keep movement of leg brisk"
+    ]
+  }
+}

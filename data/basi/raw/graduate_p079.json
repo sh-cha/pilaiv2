@@ -1,0 +1,35 @@
+{
+  "source_page": "graduate:p079.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Sitting Side",
+    "series": "Push Through Group",
+    "block": "Lateral Flexion/Rotation",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Starting in Scapular Glide position (page 74)",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Adduct scapula",
+      "exhale": "Adduct shoulder, abduct scapula, laterally flex trunk, reach arm overhead and lower trunk, supporting arm parallel to Mat"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Shoulder adductors",
+      "Scapular adductors",
+      "Scapular abductors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor control",
+      "Shoulder adductor control",
+      "Scapular adductor control",
+      "Scapular abductor control"
+    ],
+    "cues": [
+      "Initiate movement with scapular glide followed by lateral flexion",
+      "Maximize lateral flexion before lowering trunk to mat",
+      "Allow opposite side of pelvis to lift off Mat"
+    ]
+  }
+}

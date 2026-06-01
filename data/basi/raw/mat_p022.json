@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p022.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "apparatus": "mat",
+    "code": "8 ~ 10",
+    "name": "Roll Up",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "setup": "Lying supine in neutral spine position, arms overhead, palms facing each other, legs straight and together, feet plantarflexed",
+    "movement": {
+      "inhale": "Lift arms up and forward, followed by head and chest",
+      "exhale": "Roll up"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal mobility and stability",
+      "Hip flexors control"
+    ],
+    "cues": [
+      "Pause briefly in Chest Lift position (page 17)",
+      "Maintain C curve position when rolling up and rolling down",
+      "Pause when shoulders are aligned above hip joints",
+      "Keep head aligned with spine"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "source_page": "foundation:p086.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "2)",
+    "name": "Circles Up",
+    "series": "Arms Kneeling Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Kneeling in upright position on carriage, facing footbar, feet against shoulder rests, arms straight by sides of body, hands in straps, palms facing forward",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Lift arms forward and up, rotate arms, palms face forward",
+      "inhale": "Circle arms out to T position, lower arms to sides of body, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder flexors",
+      "Shoulder abductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder flexor strength",
+      "Shoulder abductor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep movement fluid",
+      "Maintain upright position of trunk",
+      "Bias towards posterior tilt of pelvis",
+      "Keep arms in peripheral vision when circling around",
+      "Reach overhead position prior to rotating arms"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p101.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Swan 2",
+    "block": "Back Extension",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Swan 1, Magic Circle between hands, perpendicular to Mat",
+    "movement": {
+      "inhale": "Lift trunk",
+      "exhale": "Lower trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Shoulder flexors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Shoulder flexor strength"
+    ],
+    "cues": [
+      "Keep legs together (as close as possible)",
+      "Move arms and trunk as one unit",
+      "Keep legs on Mat",
+      "Maintain tension in circle"
+    ]
+  }
+}

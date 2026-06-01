@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p065.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Thigh Stretch with RUBar",
+    "block": "Full Body Integration",
+    "level": "advanced",
+    "apparatus": "reformer",
+    "setup": "Kneeling in upright position, legs hip width apart, arms straight and shoulder width apart, hands holding RUBar, palms facing down, crossbar at eye level",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Tilt pelvis posteriorly, lower body back",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Knee extensors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Knee extensor strength",
+      "Knee extensor stretch"
+    ],
+    "cues": [
+      "Start and end movement in neutral spine position",
+      "Move body as one unit",
+      "Maintain posterior tilt of pelvis when hinging back and up",
+      "Create long line from knees through thighs and trunk"
+    ]
+  }
+}

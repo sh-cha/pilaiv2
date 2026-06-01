@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p091.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Breaststroke Prep 1",
+    "series": "Long Box Group120",
+    "block": "Back Extension",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying prone on Long Box, neutral spine position, legs straight and together, parallel to floor, feet plantarflexed, arms bent, elbows facing outward, hands on footbar",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Straighten arms",
+      "exhale": "Bend arms, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Elbow extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor control",
+      "Hip extensor control",
+      "Elbow extensor control"
+    ],
+    "cues": [
+      "Maintain abdominal engagement",
+      "Maintain back and hip extensor engagement",
+      "Keep wrists firm and fingers wrapped around footbar",
+      "Face elbows outward as if arms are on flat surface"
+    ]
+  }
+}

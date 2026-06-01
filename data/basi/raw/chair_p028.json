@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p028.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Arm Kneeling",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Kneeling side in front of Wunda Chair, legs parallel, hip width apart, trunk in lateral flexion, head rotated, eyes focused down, inside arm straight, hand placed on pedal, palm facing down, fingers forward, outside arm overhead, internally rotated, elbow slightly bent, palm facing up",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Bend arm, lifting pedal",
+      "exhale": "Straigten arm, lowering pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Spinal lateral flexor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep long line of outside arm and wrist consistent",
+      "Direct elbow back when bending and straightening arm"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p049.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Frog Extended Reverse",
+    "series": "Supine Leg Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Frog Extended position (page 40)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten legs out to sides",
+      "inhale": "Pause / Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Hip adductor stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep heels squeezing together as legs straighten",
+      "Keep carriage still as legs bend in from open position",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

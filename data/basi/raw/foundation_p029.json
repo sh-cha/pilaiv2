@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p029.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Prehensile",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs parallel, toes and balls of feet wrapped around footbar (Prehensile position), feet hip width apart, heels pressing down",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor control",
+      "Knee extensor strength",
+      "Ankle-foot dorsiflexor control",
+      "Foot stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Initiate movement with hip extensors",
+      "Straighten legs completely",
+      "Keep heels pressing down throughout movement",
+      "Maintain wrapped position of toes and balls of feet",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

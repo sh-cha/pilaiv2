@@ -1,0 +1,31 @@
+{
+  "source_page": "foundation:p055.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Long Spine",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "resistance": "light to medium",
+    "setup": "Lying supine in neutral spine position, hips externally rotated, legs straight on diagonal line (45 to 60 degrees), feet in straps, plantarflexed, headrest down",
+    "movement": {
+      "inhale": "Lift legs perpendicular to floor",
+      "exhale": "Roll up onto shoulder girdle"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip extensors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor control"
+    ],
+    "cues": [
+      "Use hamstrings concentrically rolling up, eccentrically roll down",
+      "Anchor pelvis prior to roll up and following roll down",
+      "Keep carriage still during roll up and roll down p"
+    ]
+  }
+}

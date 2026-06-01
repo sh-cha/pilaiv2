@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p098.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Parallel Heels Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine, heels placed on PTBar, hip width apart, legs bent",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Knee extensor control",
+      "Foot alignment and stabilization",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain hip extensor engagement",
+      "Keep feet dorsiflexed and stable as if standing on floor",
+      "Reach heels toward ceiling when straightening legs",
+      "Maintain pelvic lumbar stabilization",
+      "Avoid excessive knee flexion (maximum 90 degrees)",
+      "Straighten legs completely, avoiding hyperextension"
+    ]
+  }
+}

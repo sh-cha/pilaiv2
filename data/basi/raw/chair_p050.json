@@ -1,0 +1,31 @@
+{
+  "source_page": "chair:p050.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Swan Prep",
+    "block": "Back Extension",
+    "level": "Fundamental",
+    "apparatus": "ladder barrel",
+    "setup": "Lying prone on Ladder Barrel, pelvis resting on barrel, legs straight and together, hips externally rotated, feet dorsiflexed, heels together in V position under second under second rung from bottom, toes placed on bottom rung, hands behind head",
+    "movement": {
+      "inhale": "Lift trunk to diagonal line",
+      "exhale": "Straighten arms overhead"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep head aligned with spine",
+      "Touch fingers loosely behind head",
+      "Maximize spinal articulation in both directions",
+      "Create large V position with arms when reaching overhead"
+    ]
+  }
+}

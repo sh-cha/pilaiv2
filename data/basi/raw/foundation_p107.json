@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p107.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Roll-Up with RUBar",
+    "series": "Warm-Up Series",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Sitting upright, crossbar at eye level, legs straight and together, feet plantarflexed, holding RUBar, arms straight and shoulder width apart, round trunk into C Curve",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Roll down to neutral spine position",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain C curve position when rolling down and rolling up",
+      "Pause when shoulders are aligned above hip joints",
+      "Keep head aligned with spine",
+      "Maintain scapular stabilization"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p038.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Tilt",
+    "series": "Short Box Series",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Starting in Flat Back position (page 31)",
+    "resistance": "all springs attached to hold carriage in place",
+    "movement": {
+      "inhale": "Arc trunk to one side",
+      "exhale": "Lift back to center, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor control and stretch",
+      "Spinal flexor control",
+      "Spinal extensor control"
+    ],
+    "cues": [
+      "Maintain co-contraction of abdominals and back extensors",
+      "Keep both sit bones in contact with box as trunk arcs over",
+      "Keep elbows wide and head aligned with spine",
+      "Touch fingers loosely behind head",
+      "Keep pelvis stable"
+    ]
+  }
+}

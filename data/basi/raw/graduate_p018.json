@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p018.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Backstroke",
+    "series": "Long Box Group",
+    "block": "Abdominal Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Lying supine on Long Box, shoulders over back edge, chest lifted, legs in tabletop position, arms bent, elbows wide, hands in straps, fingers touching (palms facing up), hands opposite forehead and above sternum, eyes focused forward",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Straighten arms and legs to ceiling, externally rotate hips",
+      "exhale": "Circle arms out and around to sides, simultaneously circle legs out, around and together"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Shoulder adductors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Move arms and legs simultaneously",
+      "Keep eye line directly forward",
+      "Maintain maximum trunk flexion"
+    ]
+  }
+}

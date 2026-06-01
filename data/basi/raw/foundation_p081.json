@@ -1,0 +1,37 @@
+{
+  "source_page": "foundation:p081.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "Rhomboids 1",
+    "name": "Rhomboids 1",
+    "series": "Arms Sitting Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Biceps position (page 68), arms bent at 90 degrees and parallel to each other, shoulder height, forearms in straps, palms facing body",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Move arms out to sides",
+      "inhale": "Move arms forward, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder horizontal abductors",
+      "Elbow flexors",
+      "Shoulder flexors",
+      "Scapular stabilizers",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder horizontal abductor strength",
+      "Shoulder flexor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Move upper arms parallel to floor",
+      "Bias shoulders toward external rotation",
+      "Maintain consistent position of arms with palms facing body"
+    ]
+  }
+}

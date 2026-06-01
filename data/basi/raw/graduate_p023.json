@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p023.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Semi- Circle Reverse",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Semi-Circle position (page 22)",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Straighten legs (not completely)",
+      "exhale": "Roll down\nInhale: Bend legs\nExhale: Roll up, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip extensors",
+      "Elbow extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep hip adductors engaged",
+      "Keep heels stable and squeezing together",
+      "Minimize movement of carriage when rolling down and up",
+      "Articulate through each vertebra when rolling down and up"
+    ]
+  }
+}

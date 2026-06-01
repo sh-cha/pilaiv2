@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p033.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Step Down Back",
+    "series": "Step Down Group",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Standing upright facing Wunda Chair, one foot on Wunda Chair, leg bent, knee aligned over ankle, thigh parallel to Mat, other foot placed on pedal, plantarflexed, leg straight, arms crossed in front body, trunk flat on diagonal line, pedal hovering",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Bend back leg, lifting pedal",
+      "inhale": "Straighten back leg, lowering pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Knee extensor strength",
+      "Pelvic lumbar stablization"
+    ],
+    "cues": [
+      "Maintain pelvic stabilization",
+      "Maintain plantarflexion of back foot",
+      "Keep knee aligned over ankle (as close as possible)"
+    ]
+  }
+}

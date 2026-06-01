@@ -1,0 +1,30 @@
+{
+  "source_page": "foundation:p053.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Short Spine",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Frog Extended position (page 40), headrest down",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straigthen legs, plantarflex feet",
+      "inhale": "Bring legs overhead keeping pelvis stable (as much as possible)"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Spinal extensor control",
+      "Hip extensor stretch"
+    ],
+    "cues": [
+      "See next page"
+    ]
+  }
+}

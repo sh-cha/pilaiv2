@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p087.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Circles Down",
+    "series": "Arms Kneeling Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Start in Circles Up position (page 74)",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Lift arms out to sides and up, rotate arms, palms face up",
+      "inhale": "Lower arms down in front of body, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder abductors",
+      "Shoulder flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder abductor strength",
+      "Shoulder flexor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep movement fluid",
+      "Maintain upright position of trunk",
+      "Bias towards posterior tilt of pelvis",
+      "Keep arms in peripheral vision when circling around",
+      "Reach overhead position prior to rotating arms"
+    ]
+  }
+}

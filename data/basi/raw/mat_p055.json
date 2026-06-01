@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p055.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shoulder Bridge",
+    "block": "Bridging",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Starting in up phase of Pelvic Curl (page 15), one leg straight, foot plantarflexed, reaching toward ceiling",
+    "movement": {
+      "exhale": "Lower leg",
+      "inhale": "Lift leg, dorsiflex foot"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch"
+    ],
+    "cues": [
+      "Stretch front of straight leg during lowering phase",
+      "Stretch back of straight leg during lifting phase",
+      "Maintain consistent height of pelvis",
+      "Bias toward posterior tilt of pelvis",
+      "Keep pelvis level"
+    ]
+  }
+}

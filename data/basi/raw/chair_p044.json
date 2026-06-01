@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p044.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Gluteals",
+    "series": "Ladder Barrel Stretch Series",
+    "block": "Stretches",
+    "level": "Fundamental",
+    "apparatus": "Ladder Barrel",
+    "setup": "Standing facing Ladder Barrel, one leg straight and against ladder, other leg on barrel, hip externally rotated, foot aligned with opposite hip, hands placed on top of ladder, palms facing down, fingers facing back, elbows facing back and parallel (as close as possible)\nNote: Standing closer to barrel will intensify stretch",
+    "movement": {
+      "inhale": "Lower trunk forward over bent leg",
+      "exhale": "Hold position for 3 -5 breathes, lift trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Hip abductors",
+      "Hip external rotators",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor and abductor stretch",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep elbows facing back",
+      "Hinge from hips when leaning forward",
+      "Maintain back extensor engagement",
+      "Note: Standing closer to barrel will intensify stretch"
+    ]
+  }
+}

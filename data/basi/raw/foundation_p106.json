@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p106.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Single Leg Toes",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "setup": "Lying supine, toes of one foot placed on PTBar, leg bent, other leg placed on Mat, leg straight, foot plantarflexed",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Straighten leg",
+      "inhale": "Bend leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength and stretch",
+      "Hip flexor stretch (supporting leg)",
+      "Knee extensor control",
+      "Foot alignment and stabilization",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Establish maximum plantarflexion when leg is straight",
+      "Keep heel stable, moving around ankle joint",
+      "Maintain pelvic lumbar stabilization",
+      "Maintain hip extensor engagement",
+      "Straighten leg completely, avoiding hyperextension"
+    ]
+  }
+}

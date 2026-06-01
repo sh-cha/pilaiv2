@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p083.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hip Extension Bent Knee",
+    "series": "Gluteals Kneeling Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Kneeling in quadruped position, neutral spine, wrists under shoulders, knees under hips",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift leg",
+      "inhale": "Lower leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Focus on hip disassociation",
+      "Maintain pelvic stabilization with emphasis on avoiding anterior tilt and rotation of pelvis",
+      "Reach toes to ceiling",
+      "Maintain consistent 90 degree angle in knee of moving leg"
+    ]
+  }
+}

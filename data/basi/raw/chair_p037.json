@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p037.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Stretch Kneeling",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Kneeling side in front of Wunda Chair, legs parallel, hip width apart, inside arm straight, hand placed on pedal, palm facing down, fingers forward, outside arm overhead, internally rotated, elbow slightly bent, palm facing up",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Arc trunk sideways, lowering pedal",
+      "inhale": "Straighten and lift trunk, raising pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor strength",
+      "Spinal lateral flexor stretch",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep pelvis and lower body stable",
+      "Maintain scapular stabilization",
+      "Maintain co-contraction of abdominals and back extensors",
+      "Imagine moving between two panes of glass"
+    ]
+  }
+}

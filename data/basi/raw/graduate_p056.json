@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p056.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Bottom Lift with RUBar",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Lying supine in neutral spine position, arms straight and shoulder width apart, hands holding RUBar, hips externally rotated, legs straight and together, feet dorsiflexed and placed on trapeze strap",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Roll pelvis and spine up, simultaneously move RUBar toward thighs / Roll spine and pelvis down, simultaneously move RUBar up, return to start position",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Shoulder flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Shoulder flexor control",
+      "Hip extensor control"
+    ],
+    "cues": [
+      "Maximize spinal articulation",
+      "Establish straight diagonal line in top position",
+      "Maintain tension in RUBar springs"
+    ]
+  }
+}

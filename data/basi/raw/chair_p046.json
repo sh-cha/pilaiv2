@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p046.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "8)",
+    "name": "Adductors",
+    "series": "Ladder Barrel Stretch Series",
+    "block": "Stretches",
+    "level": "Fundamental",
+    "apparatus": "Ladder Barrel",
+    "setup": "Standing sideways to Ladder Barrel, one leg straight and against ladder, other leg straight and on barrel, hip externally rotated, inside arm reaching across trunk, hand holding ladder, palm facing up, other arm overhead, palm facing down\nNote: Dorsi flexing foot will intensify stretch",
+    "movement": {
+      "inhale": "Arc trunk sideways over leg",
+      "exhale": "Hold position for 3 -5 breathes, straighten and lift trunk, return to start start position"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Hip extensors",
+      "Spinal lateral flexors"
+    ],
+    "objectives": [
+      "Hip adductor stretch",
+      "Hip extensor stretch",
+      "Spinal lateral flexor stretch"
+    ],
+    "cues": [
+      "Maintain pelvic stabilization",
+      "Create large arc when reaching over, hinging at hip joint"
+    ]
+  }
+}

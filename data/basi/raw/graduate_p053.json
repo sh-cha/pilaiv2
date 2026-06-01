@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p053.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hip Opener",
+    "block": "Foot Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Lying on side in neutral spine position (as close as possible), bottom arm straight, head resting on arm, pelvis perpendicular to Mat, top arm holding pole, hips externally rotated, feet plantarflexed, bottom leg straight, aligned with trunk, top leg bent, toes placed on PTBar",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten leg",
+      "inhale": "Bend leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip external rotators",
+      "Hip adductors",
+      "Hip extensors",
+      "Spinal lateral flexors"
+    ],
+    "objectives": [
+      "Hip external rotator control",
+      "Adductor control and stretch",
+      "Hip extensor control and stretch"
+    ],
+    "cues": [
+      "Keep bottom leg straight and active",
+      "Direct top knee toward or behind upper shoulder as it bends",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

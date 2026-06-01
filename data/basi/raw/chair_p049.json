@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p049.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Over",
+    "apparatus": "ladder barrel",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Intermediate",
+    "setup": "Lying sideways to Ladder Barrel, pelvis resting on barrel, trunk on diagonal line, bottom leg straight, foot placed on lower rung of ladder, top hip externally rotated, top leg bent, foot dorsiflexed, heel placed on second rung from top, foot under top rung, hands behind head",
+    "movement": {
+      "inhale": "Arc trunk sideways, lowering trunk",
+      "exhale": "Straighten and lift trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor strength",
+      "Spinal lateral flexor stretch"
+    ],
+    "cues": [
+      "Start and end with trunk and leg on diagonal line",
+      "Maintain pressure on heel and avoid pulling with top foot → ? under ladder",
+      "Touch fingers loosely behind head",
+      "Maintain co-contraction of abdominals and back extensors",
+      "Imagine moving between two panes of glass"
+    ]
+  }
+}

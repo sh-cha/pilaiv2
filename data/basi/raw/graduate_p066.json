@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p066.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Cat Stretch Kneeling",
+    "series": "Push Through Group",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Kneeling in upright position, legs hip width apart, arms bent, hands placed on PTBar, shoulder width apart, elbows out to sides, PTBar at shoulder height",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Straighten arms, lowering PTBar down",
+      "exhale": "Roll down, extend spine into neutral position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Shoulder extensors",
+      "Elbow extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Trunk stabilization",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Engage shoulder extensors to help maintain position",
+      "Keep arms straight and trunk parallel to Mat"
+    ]
+  }
+}

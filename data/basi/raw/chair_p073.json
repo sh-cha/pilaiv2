@@ -1,0 +1,29 @@
+{
+  "source_page": "chair:p073.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hundred Prep",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "setup": "Lying supine over barrel, arms straight, reaching overhead, hands holding handles, legs bent and together, shins perpendicular to floor",
+    "movement": {
+      "exhale": "Lift arms, head and chest up and forward",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Shoulder flexors and extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal flexor stretch",
+      "Shoulder flexor and extensor control"
+    ],
+    "cues": [
+      "Keep legs together",
+      "Maintain contact of lumbar spine with barrel",
+      "Continue reaching arms overhead to maximum range of shoulders"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p065.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Bicycle",
+    "block": "Bridging/Full Body Integration",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Starting in Scissors position (page 63)",
+    "movement": {
+      "exhale": "Move bent knee toward chest, straighten leg over face, simultaneously move opposite leg back to create Scissors position on opposite side",
+      "inhale": "Switch legs"
+    },
+    "reps": "Repeat 5 cycles on each leg, reverse direction",
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Create even V when legs are in Scissors position",
+      "Avoid externally rotating hip when bending back knee",
+      "Touch floor with foot of bent leg in both directions (as close as possible)"
+    ]
+  }
+}

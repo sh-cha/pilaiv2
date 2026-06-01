@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p099.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hamstrings",
+    "series": "Prone Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Ankles Bent Knees Position (page 95), one leg straight, other leg bent and thigh off Mat, Magic Circle below gluteals and under heel",
+    "movement": {
+      "exhale": "Bend leg",
+      "inhale": "Straighten leg"
+    },
+    "muscle_focus": [
+      "Knee flexors",
+      "Hip extensors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Knee flexor strength",
+      "Hip extensor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep legs together",
+      "Keep bent knee lifted throughtout",
+      "Maintain abdominal support to avoid pressure on lower back",
+      "Maintain tension in circle, increase tension when pressing legs together"
+    ]
+  }
+}

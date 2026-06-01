@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p079.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Forward and Lift",
+    "series": "Gluteals Side Lying Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Side Leg Lifts position (page 76)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Move leg forward to 90 degree hip flexion, lift leg, lower leg",
+      "inhale": "Move leg back, return to start position"
+    },
+    "muscle_focus": [
+      "Hip abductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip abductor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep pelvis stable as leg moves foward and back, up and down",
+      "Keep knee slightly bent",
+      "Keep leg and foot relaxed, toes directed toward Mat",
+      "Keep movement hip height and higher"
+    ]
+  }
+}

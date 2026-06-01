@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p078.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Helicopter",
+    "series": "Supine Leg Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Starting in Frog position (page 71), hips externally rotated, legs straight and together, perpendicular to floor, feet plantarflexed",
+    "movement": {
+      "inhale": "Open legs to Scissors position (page 73)",
+      "exhale": "Circle legs around to Scissors position on opposite side, return to start position"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip extensors",
+      "Hip adductors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip joint control and mobility",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Touch each point of the circle as legs circle around",
+      "Pass through the perpendicular position following each circle",
+      "Keep feet at consistent distance from mat throughout circle"
+    ]
+  }
+}

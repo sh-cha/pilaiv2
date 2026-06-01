@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p050.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Balance Control Back",
+    "block": "Full Body Integration II",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Starting in Balance Control Back Prep (page 48)",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Lift pelvis to Back Support position (page 39 Mat MAWB), moving carriage out",
+      "inhale": "Lower pelvis, moving carriage in toward stopper, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Hip extensors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder extensor strength",
+      "Hip extensor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Hinge at shoulder and hip joints",
+      "Maintain co-contraction of back extensors and abdominals",
+      "Initiate movement with shoulder extensors followed immediately by hip and back extensors"
+    ]
+  }
+}

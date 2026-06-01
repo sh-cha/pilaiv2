@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p029.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hundred",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Starting in Hundred Prep position (page 21)",
+    "movement": {
+      "exhale": "Lift arms, head and chest, bringing arms to sides of body, parallel to Mat, simultaneously straighten legs forward",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Shoulder flexors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep pumps of arms small",
+      "Keep legs stable at safe height",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

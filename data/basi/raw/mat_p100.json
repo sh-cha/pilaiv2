@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p100.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Swan 1",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Lying prone, arms straight overhead, Magic Circle between hands, parallel to Mat",
+    "movement": {
+      "inhale": "Lift trunk",
+      "exhale": "Lower trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Shoulder flexors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Shoulder flexor strength",
+      "Spinal flexor control"
+    ],
+    "cues": [
+      "Keep legs together (as close as possible)",
+      "Move arms and trunk as one unit",
+      "Keep head between arms",
+      "Keep legs on Mat",
+      "Maintain tension in circle"
+    ]
+  }
+}

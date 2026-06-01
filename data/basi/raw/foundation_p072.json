@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p072.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Long Stretch",
+    "series": "Up Stretch Group",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Front Support (Mat page 38) position, heels against shoulder rests",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Move body forward",
+      "exhale": "Move body back, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Shoulder flexors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Trunk stabilization",
+      "Shoulder flexor strength",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maintain trunk stabilization",
+      "Maintain scapular stabilization",
+      "Keep head aligned with spine",
+      "Bias toward slight posterior tilt of pelvis",
+      "Move carriage forward until shoulders are over footbar"
+    ]
+  }
+}

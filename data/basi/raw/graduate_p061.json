@@ -1,0 +1,35 @@
+{
+  "source_page": "graduate:p061.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Circles Forward",
+    "series": "Lying Side Single Leg Series",
+    "block": "Hip Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Lying on side in neutral spine position, bottom arm straight, head resting on arm, pelvis perpendicular to Mat, top arm holding pole, legs straight, aligned with trunk, hips externally rotated, feet plantarflexed, top foot in strap",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Move top leg forward",
+      "exhale": "Circle leg up, around and back, return to start position"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip adductors",
+      "Hip extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip control",
+      "Hip mobility",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Maintain spring tension",
+      "Maximize hip external rotation and hip disassociation"
+    ]
+  }
+}

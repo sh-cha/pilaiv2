@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p088.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Triceps",
+    "series": "Arms Kneeling Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Start in Circles Up position (page 74), arms bent, elbows facing outward, hands in straps, behind head, forming triangle with thumbs and index fingers",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Straigthen arms",
+      "inhale": "Bend arms, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Shoulder abductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Shoulder abductor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep fingertips pointing toward ceiling",
+      "Keep elbows reaching out to sides",
+      "Maintain scapular stabilization",
+      "Maintain trunk stabilization"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p037.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Cat Stretch",
+    "block": "Bridging/Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Kneeling in quadruped position, neutral spine, wrists under shoulders, knees under hips",
+    "movement": {
+      "exhale": "Round spine, return to start position",
+      "inhale": "Extend spine, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Lumbar spine stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Focus flexion in lumbar spine",
+      "Focus extension in thoracic spine",
+      "Keep pelvic lumbar region stable during thoracic extension",
+      "Maintain scapular stabilization throughout"
+    ]
+  }
+}

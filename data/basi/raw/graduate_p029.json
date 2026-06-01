@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p029.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Rowing Front 1",
+    "series": "Rowing Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Sitting upright facing footbar, legs straight and together, pelvis against shoulder rests, thumbs in straps, fingers facing foward, elbows by sides, rope between sides of trunk and arms",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Straighten arms forward slightly above shoulder height",
+      "inhale": "Lower arms, fingers touch carriage"
+    },
+    "muscle_focus": [
+      "Shoulder flexors",
+      "Elbow extensors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Shoulder flexor control",
+      "Elbow extensor control",
+      "Trunk stabilization",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "See next page"
+    ]
+  }
+}

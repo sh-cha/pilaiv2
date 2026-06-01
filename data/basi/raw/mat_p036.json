@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p036.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Single Leg Kick",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Lying prone, trunk lifted, arms bent, elbows under shoulders, fingers interlaced, legs straight and together, lifted off Mat",
+    "movement": {
+      "exhale": "Bend leg (2 pulses), switch legs (2 pulses)",
+      "inhale": "Bend leg (2 pulses), switch legs (2 pulses)"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Knee flexors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor control",
+      "Hip extensor control",
+      "Knee flexor control"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Keep abdominals engaged",
+      "Keep both legs lifted off Mat",
+      "Press elbows into Mat to assist thoracic extension"
+    ]
+  }
+}

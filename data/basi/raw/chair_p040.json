@@ -1,0 +1,34 @@
+{
+  "source_page": "chair:p040.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Swan Single Arm",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Lying prone on Wunda Chair, arms straight, one hand placed on pedal, shoulder over wrist (as close as possible), other arm out to side, palm facing down, legs straight and together, body parallel to floor",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Raise trunk, lifting pedal",
+      "exhale": "Lower trunk, pressing pedal down, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors",
+      "Hip extensors",
+      "Shoulder horizontal abductors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Spinal flexor control",
+      "Hip extensor control",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maximize spinal articulation in both directions",
+      "Keep legs and outstretched arm stable",
+      "Press hands into pedal when lifting using shoulder extensors"
+    ]
+  }
+}

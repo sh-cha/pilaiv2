@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p050.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Leg Pull Front",
+    "block": "Bridging",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Starting in Front Support Position (page 38), one leg lifted slightly off Mat, foot plantarflexed",
+    "movement": {
+      "exhale": "Lift leg",
+      "inhale": "Lower leg"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip extensors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Hip extensor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep body in straight diagonal line",
+      "Keep pelvis in neutral position or slight posterior tilt",
+      "Maintain scapular stabilization",
+      "Focus on hip disassociation when lifting and lowering leg"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "source_page": "graduate:p075.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Sitting side prop Push Through Group",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "setup": "Sitting upright, facing sideways, arms straight, one hand holding PTBar, palm facing down, other hand reaching out to side, fingertips touching Mat",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Adduct scapula → In",
+      "exhale": "Abduct shoulder, abduct scapula → Down, Put / Inhale: Adduct scapula → In / Exhale: Abduct shoulder, abduct scapula return to start position"
+    },
+    "muscle_focus": [
+      "Scapular adductors",
+      "Scapular abductors",
+      "Shoulder adductors"
+    ],
+    "objectives": [
+      "Scapular adductor control",
+      "Scapular abductor control",
+      "Shoulder adductor control"
+    ],
+    "cues": [
+      "Maximize scapular glide",
+      "Maintain trunk stabilization"
+    ]
+  }
+}

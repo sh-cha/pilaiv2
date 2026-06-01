@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p103.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Calf Raises",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "setup": "Lying supine, toes placed on PTBar, feet hip width apart and feet plantarflexed, legs straight and parallel",
+    "resistance": "medium to heavy",
+    "movement": {
+      "inhale": "Dorsiflex feet",
+      "exhale": "Plantarflex feet, return to start position"
+    },
+    "muscle_focus": [
+      "Ankle-foot plantarflexors",
+      "Ankle-foot dorsiflexors"
+    ],
+    "objectives": [
+      "Ankle-foot plantarflexor strength",
+      "Ankle-foot dorsiflexor control",
+      "Foot alignment and stabilization",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Emphasize eccentric contraction during dorsiflexion",
+      "Keep legs straight",
+      "Use full range of motion of ankle joint",
+      "Maintain correct foot alignment"
+    ]
+  }
+}

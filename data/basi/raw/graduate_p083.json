@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p083.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Prone 1\nPush Through Group",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Lying prone, arms straight and shoulder width apart, hands holding PTBar, legs straight and together, feet plantarflexed",
+    "resistance": "medium to heavy",
+    "movement": {
+      "inhale": "Lift trunk",
+      "exhale": "Lower trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Spinal flexor control",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Keep abdominals engaged",
+      "Initiate back extension from crown of head and articulate through spine",
+      "Lift trunk only to lower ribs",
+      "Maintain scapular stabilization",
+      "Maintain constant pressure on PTBar with shoulder extensors"
+    ]
+  }
+}

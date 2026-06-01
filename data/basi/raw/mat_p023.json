@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p023.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Leg Circles",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying supine, arms down by sides, one leg straight up to ceiling, foot dorsiflexed, other leg on Mat, foot plantarflexed",
+    "movement": {
+      "inhale": "Bring leg across center line, circle down and around",
+      "exhale": "Repeat circle, same direction\nReverse direction after 5 repetitions"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors",
+      "Hip adductors"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Hip disassociation"
+    ],
+    "cues": [
+      "Keep shoulders stable",
+      "Maintain fluid movement",
+      "Keep circles within range of pelvic lumbar control"
+    ]
+  }
+}

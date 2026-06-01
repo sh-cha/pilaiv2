@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p031.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Single Leg Stretch",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Starting in Double Leg Stretch position (page 30)",
+    "movement": {
+      "exhale": "Straighten one leg, hands on bent knee",
+      "inhale": "Switch legs"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip extensors",
+      "Hip flexors",
+      "Elbow flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain trunk flexion at consistent height",
+      "Keep feet at same height",
+      "Keep shin of bent leg parallel to Mat",
+      "Use arms to support position"
+    ]
+  }
+}

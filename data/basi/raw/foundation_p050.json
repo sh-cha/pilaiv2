@@ -1,0 +1,31 @@
+{
+  "source_page": "foundation:p050.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Bottom Lift",
+    "block": "Spinal Articulation",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position/ legs parallel/ hip width apart/ toes placed on footbar/ knees bent./ arms by sides/ headrest down/",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Roll spine up",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor control"
+    ],
+    "cues": [
+      "Foot position is same as Parallel Toes in Footwork (page 18)/",
+      "Keep heels still/ adductors engaged and legs parallel/",
+      "Minimize movement of carriage when rolling spine up and down",
+      "Articulate through each vertebra as spine rolls up and down"
+    ]
+  }
+}

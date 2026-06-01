@@ -1,0 +1,30 @@
+{
+  "source_page": "mat:p056.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Control Balance",
+    "block": "Spinal Articulation",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Starting in Roll Over position (page 42), feet dorsiflexed and anchored on Mat, arms straight and overhead, hands holding feet (or calves)",
+    "movement": {
+      "exhale": "Lift one leg toward ceiling (2 pulses)",
+      "inhale": "Switch legs"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep weight on shoulder girdle",
+      "Minimize weight on cervical spine",
+      "Switch legs simultaneously",
+      "Maintain pelvic stabilization as legs change"
+    ]
+  }
+}

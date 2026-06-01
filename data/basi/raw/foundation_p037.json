@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p037.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Flat Back",
+    "series": "Short Box Series",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Round Back position (page 30), hands interlaced behind head",
+    "resistance": "all springs attached to hold carriage in place",
+    "movement": {
+      "inhale": "Hinge trunk back",
+      "exhale": "Hinge trunk forward, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal extensor control",
+      "Hip flexor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Avoid thrusting ribs forward",
+      "Keep head aligned with spine",
+      "Touch fingers loosely behind head",
+      "Maintain co-contraction of abdominals and back extensors",
+      "Move around hip joints"
+    ]
+  }
+}

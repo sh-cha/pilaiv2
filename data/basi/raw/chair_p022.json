@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p022.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Pelvic Curl",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "apparatus": "Foudation Reformer",
+    "setup": "Lying supine in neutral spine position, legs bent, hip width apart, feet placed on pedal in Prehensile position (page 27 Foudation Reformer MAWB), pedal pressed down, arms by sides, palms down",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Roll pelvis and spine up",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal Flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Hip extensor control",
+      "Spinal articulation"
+    ],
+    "cues": [
+      "Maintain prehensile position",
+      "Maximize lumbar flexion as pelvis and spine roll up and down",
+      "Articulate through each vertebra as spine rolls up and down",
+      "Return to neutral spine position after each repetition"
+    ]
+  }
+}

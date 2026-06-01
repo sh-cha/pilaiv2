@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p039.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Swan on floor",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Lying prone on Mat facing Wunda Chair, arms straight, shoulder width apart, hands placed on pedal, legs straight and together, feet plantarflexed",
+    "resistance": "extra light to light",
+    "movement": {
+      "inhale": "Lift trunk, simultaneously lower pedal",
+      "exhale": "Lower trunk, simultaneously lift pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Shoulder extensor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain trunk stabilization",
+      "Maintain scapular stabilization",
+      "Keep trunk stable as pedal lightly touches base",
+      "Maximize spinal articulation in both directions"
+    ]
+  }
+}

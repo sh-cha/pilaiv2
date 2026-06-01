@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p045.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "2",
+    "name": "Hamstrings",
+    "series": "Ladder Barrel Stretch Series",
+    "block": "Stretches",
+    "level": "Fundamental",
+    "apparatus": "ladder barrel",
+    "setup": "Starting in Gluteal Stretch position (page 41) leg straight on barrel in line with hips foot dorsiflexed\nNote: Dorsiflexing foot, engaging back extensors and tilting pelvis anteriorly will intensify stretch",
+    "movement": {
+      "inhale": "Lower trunk forward over bent leg",
+      "exhale": "Hold position for 3 -5 breathes, lift trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor and knee flexor stretch",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep elbows facing back",
+      "Hinge from hips when leaning forward",
+      "Maintain back extensor engagement"
+    ]
+  }
+}

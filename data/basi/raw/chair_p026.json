@@ -1,0 +1,34 @@
+{
+  "source_page": "chair:p026.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Triceps Prone",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Lying prone on Wunda Chair, arms straight, shoulders over wrists, hands placed on pedal, palms facing back, legs straight and together, feet plantarflexed, body parallel to Mat",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Bend arms, lifting pedal",
+      "exhale": "Straighten arms, lowering pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Shoulder flexors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Shoulder flexor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Keep legs and trunk stable and parallel to Mat",
+      "Keep elbows close to sides of trunk when bent"
+    ]
+  }
+}

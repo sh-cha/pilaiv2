@@ -1,0 +1,32 @@
+{
+  "source_page": "foundation:p028.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Prances",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs straight and parallel, toes placed on footbar at hip width apart and plantarflexed",
+    "resistance": "medium to heavy",
+    "movement": {
+      "inhale": "Lower one heel and lift other simultaneously, switch",
+      "exhale": "Lower one heel and lift other simutaneously, switch"
+    },
+    "muscle_focus": [
+      "Ankle-foot plantarflexors",
+      "Ankle-foot dorsiflexors"
+    ],
+    "objectives": [
+      "Ankle plantarflexor strength",
+      "Ankle-foot dorsiflexor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Work both feet equally in full range of motion",
+      "Straighten legs and plantarflex feet completely between each repetition",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

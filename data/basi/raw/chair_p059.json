@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p059.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Scissors",
+    "series": "Supine Leg Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Starting in Openings position (page 54), legs parallel",
+    "movement": {
+      "exhale": "Open legs to Scissors position (2 pulses)",
+      "inhale": "Switch legs"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Create even V in Scissors position",
+      "Pass through perpendicular position following each circle",
+      "Keep holding handles firmly and pulling barrel toward back"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p024.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shoulder Push",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Kneeling at front edge of carriage, sitting on heels, arms straight, hands placed on footbar in line with shoulders, trunk on diagonal line, neutral spine position, lower trunk to thighs, pushing carriage out",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Bend arms",
+      "exhale": "Straighten arms"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Shoulder abductors",
+      "Spinal extensors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Trunk stabilization",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Reach elbows out to sides as arms bend",
+      "Maintain engagement of back extensors",
+      "Keep trunk parallel to carriage",
+      "Maintain scapular stabilization"
+    ]
+  }
+}

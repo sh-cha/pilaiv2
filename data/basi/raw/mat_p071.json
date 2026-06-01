@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p071.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hip Circles",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Balancing in V position, legs straight and together on diagonal line, back flat, arms straight and reaching forward, shoulder width apart",
+    "movement": {
+      "inhale": "Rotate upper trunk, arms, and head in one direction, pelvis and legs in opposite direction",
+      "exhale": "Circle legs down and around to opposite side and arms up and around to opposite side simultaneously, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal rotators",
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal rotator strength",
+      "Hip flexor strength"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Move legs and pelvis as one unit",
+      "Move arms, trunk and head as one unit"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source_page": "foundation:p114.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Walking",
+    "series": "Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Fundamental",
+    "setup": "Starting in Circles Down position (page 99), legs parallel",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lower legs with flutter kick motion",
+      "inhale": "Lift legs with flutter kick motion, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Hip disassociation",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Keep movement small, consistent, and brisk",
+      "Maintain spring tension"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source_page": "mat:p028.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Rest Position",
+    "apparatus": "mat",
+    "block": "Foundation",
+    "level": "Fundamental",
+    "setup": "Kneeling with legs together, pelvis resting on heels, chest resting on thighs, arms reaching forward, neck relaxed",
+    "movement": {
+      "inhale": "",
+      "exhale": ""
+    },
+    "muscle_focus": [
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Relaxation",
+      "Stretch lumbar spine"
+    ],
+    "cues": [
+      "Allow pelvis to sink towards heels",
+      "Visualize lumbar vertebrae opening",
+      "Breathe fully and relax deeper with each exhalation"
+    ]
+  }
+}

@@ -1,0 +1,4216 @@
+{
+  "exercises": {
+    "Parallel Heels": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p018.png",
+        "foundation:p098.png"
+      ]
+    },
+    "Parallel Toes": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p021.png",
+        "foundation:p099.png"
+      ]
+    },
+    "V-Position Toes": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p023.png"
+      ]
+    },
+    "Open V-Position Heels": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p025.png"
+      ]
+    },
+    "Open V - Position Toes": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p026.png",
+        "foundation:p102.png"
+      ]
+    },
+    "Calf Raises": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p027.png",
+        "foundation:p103.png"
+      ]
+    },
+    "Prances": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p028.png",
+        "foundation:p104.png"
+      ]
+    },
+    "Prehensile": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p029.png"
+      ]
+    },
+    "Single Leg Heel Supine Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p030.png",
+        "foundation:p105.png"
+      ]
+    },
+    "Single Leg Toes": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p031.png",
+        "foundation:p106.png"
+      ]
+    },
+    "반대쪽 12 table 내리기": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [],
+      "series": [],
+      "pages": [
+        "foundation:p032.png"
+      ]
+    },
+    "Hundred Prep": {
+      "apparatus": [
+        "mat",
+        "other",
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p033.png",
+        "mat:p021.png",
+        "chair:p073.png"
+      ]
+    },
+    "Hundred": {
+      "apparatus": [
+        "mat",
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p034.png",
+        "mat:p029.png"
+      ]
+    },
+    "Coordination": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Abdominal Work"
+      ],
+      "pages": [
+        "foundation:p035.png"
+      ]
+    },
+    "Round Back": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Short Box Series"
+      ],
+      "pages": [
+        "foundation:p036.png"
+      ]
+    },
+    "Flat Back": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal",
+        "full_body_integration"
+      ],
+      "series": [
+        "Knee Stretch Group",
+        "Short Box Series"
+      ],
+      "pages": [
+        "foundation:p037.png",
+        "foundation:p063.png"
+      ]
+    },
+    "Tilt": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Short Box Series"
+      ],
+      "pages": [
+        "foundation:p038.png"
+      ]
+    },
+    "Twist": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal",
+        "lateral_flexion"
+      ],
+      "series": [
+        "Lateral Flexion / Rotation",
+        "Short Box Series"
+      ],
+      "pages": [
+        "foundation:p039.png",
+        "mat:p072.png"
+      ]
+    },
+    "Roundabout": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Short Box Series"
+      ],
+      "pages": [
+        "foundation:p040.png"
+      ]
+    },
+    "Climb-a-Tree": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Short Box Series"
+      ],
+      "pages": [
+        "foundation:p042.png",
+        "foundation:p043.png"
+      ]
+    },
+    "Frog": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Hip Supine Series",
+        "Single Hip Supine Series",
+        "Supine Leg Series"
+      ],
+      "pages": [
+        "foundation:p044.png",
+        "foundation:p111.png",
+        "foundation:p117.png",
+        "chair:p075.png"
+      ]
+    },
+    "Circles Down": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work",
+        "hip_work"
+      ],
+      "series": [
+        "Arms Kneeling Series",
+        "Arms Standing Series",
+        "Arms Supine Series",
+        "Hip Supine Series",
+        "Single Hip Supine Series"
+      ],
+      "pages": [
+        "foundation:p045.png",
+        "foundation:p076.png",
+        "foundation:p087.png",
+        "foundation:p112.png",
+        "foundation:p118.png",
+        "graduate:p070.png"
+      ]
+    },
+    "Circles Up": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work",
+        "hip_work"
+      ],
+      "series": [
+        "Arms Kneeling Series",
+        "Arms Standing Series",
+        "Arms Supine Series",
+        "Hip Supine Series",
+        "Single Hip Supine Series"
+      ],
+      "pages": [
+        "foundation:p046.png",
+        "foundation:p075.png",
+        "foundation:p086.png",
+        "foundation:p113.png",
+        "foundation:p119.png",
+        "graduate:p069.png"
+      ]
+    },
+    "Openings": {
+      "apparatus": [
+        "cadillac",
+        "other",
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Hip Supine Series",
+        "Supine Leg Series"
+      ],
+      "pages": [
+        "foundation:p047.png",
+        "chair:p057.png",
+        "chair:p076.png"
+      ]
+    },
+    "Frog Extended": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Hip Supine Series"
+      ],
+      "pages": [
+        "foundation:p048.png"
+      ]
+    },
+    "Frog Extended Reverse": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Supine Leg Series"
+      ],
+      "pages": [
+        "foundation:p049.png"
+      ]
+    },
+    "Bottom Lift": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [
+        "Spinal Articulation"
+      ],
+      "pages": [
+        "foundation:p050.png"
+      ]
+    },
+    "Bottom Lift with Extensions": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [
+        "Spinal Articulation"
+      ],
+      "pages": [
+        "foundation:p052.png"
+      ]
+    },
+    "Short Spine": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p053.png"
+      ]
+    },
+    "Short Spine Con't": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p054.png"
+      ]
+    },
+    "Long Spine": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p055.png"
+      ]
+    },
+    "Lunge Standing": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [
+        "Hamstring Stretch Group"
+      ],
+      "pages": [
+        "foundation:p056.png",
+        "foundation:p057.png"
+      ]
+    },
+    "Lunge Kneeling": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [
+        "Hamstring Stretch Group"
+      ],
+      "pages": [
+        "foundation:p058.png"
+      ]
+    },
+    "Lunge Forward": {
+      "apparatus": [
+        "reformer",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "leg_work",
+        "stretches"
+      ],
+      "series": [
+        "Hamstring Stretch Group",
+        "Lunge Group"
+      ],
+      "pages": [
+        "foundation:p059.png",
+        "chair:p032.png"
+      ]
+    },
+    "Scooter": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Knee Stretch Group"
+      ],
+      "pages": [
+        "foundation:p060.png"
+      ]
+    },
+    "Round Back Knee Stretch": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Knee Stretch Group"
+      ],
+      "pages": [
+        "foundation:p062.png"
+      ]
+    },
+    "Up Stretch 1": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Up Stretch Group"
+      ],
+      "pages": [
+        "foundation:p064.png"
+      ]
+    },
+    "Elephant": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Up Stretch Group"
+      ],
+      "pages": [
+        "foundation:p065.png"
+      ]
+    },
+    "Knee Stretch Reverse": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Knee Stretch Group"
+      ],
+      "pages": [
+        "foundation:p066.png"
+      ]
+    },
+    "Down Stretch": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Down Stretch Group"
+      ],
+      "pages": [
+        "foundation:p067.png"
+      ]
+    },
+    "Stomach Massage Round Back": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Stomach Massage Group"
+      ],
+      "pages": [
+        "foundation:p068.png"
+      ]
+    },
+    "Stomach Massage Flat Back": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Stomach Massage Group"
+      ],
+      "pages": [
+        "foundation:p069.png"
+      ]
+    },
+    "Stomach Massage Reaching": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Stomach Massage Group"
+      ],
+      "pages": [
+        "foundation:p070.png"
+      ]
+    },
+    "Up Stretch 2": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Up Stretch Group"
+      ],
+      "pages": [
+        "foundation:p071.png"
+      ]
+    },
+    "Long Stretch": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Up Stretch Group"
+      ],
+      "pages": [
+        "foundation:p072.png"
+      ]
+    },
+    "Extension - Arms Supine Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Supine Series"
+      ],
+      "pages": [
+        "foundation:p073.png"
+      ]
+    },
+    "Adduction": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Supine Series"
+      ],
+      "pages": [
+        "foundation:p074.png"
+      ]
+    },
+    "Triceps": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Kneeling Series",
+        "Arms Kneeling Side Series",
+        "Arms Supine Series"
+      ],
+      "pages": [
+        "foundation:p077.png",
+        "foundation:p088.png",
+        "graduate:p035.png"
+      ]
+    },
+    "Chest Expansion": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Kneeling Series",
+        "Arms Sitting Series",
+        "Arms Standing Series"
+      ],
+      "pages": [
+        "foundation:p079.png",
+        "foundation:p085.png",
+        "graduate:p067.png"
+      ]
+    },
+    "Biceps": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Kneeling Series",
+        "Arms Sitting Series",
+        "Arms Standing Series"
+      ],
+      "pages": [
+        "foundation:p080.png",
+        "foundation:p089.png",
+        "graduate:p072.png"
+      ]
+    },
+    "Rhomboids 1": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Sitting Series"
+      ],
+      "pages": [
+        "foundation:p081.png"
+      ]
+    },
+    "Rhomboids 2": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Sitting Series"
+      ],
+      "pages": [
+        "foundation:p082.png"
+      ]
+    },
+    "Hug-a-Tree": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Sitting Series",
+        "Arms Standing Series"
+      ],
+      "pages": [
+        "foundation:p083.png",
+        "graduate:p068.png"
+      ]
+    },
+    "Salute": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Sitting Series"
+      ],
+      "pages": [
+        "foundation:p084.png"
+      ]
+    },
+    "Mermaid": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p090.png"
+      ]
+    },
+    "Breaststroke Prep 1": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [
+        "Long Box Group 120"
+      ],
+      "pages": [
+        "foundation:p091.png"
+      ]
+    },
+    "Breaststroke Prep 2": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [
+        "Long Box Group"
+      ],
+      "pages": [
+        "foundation:p092.png"
+      ]
+    },
+    "Breaststroke": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [
+        "Long Box Group"
+      ],
+      "pages": [
+        "foundation:p093.png"
+      ]
+    },
+    "Pulling Straps 1": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [
+        "Long Box Group"
+      ],
+      "pages": [
+        "foundation:p094.png"
+      ]
+    },
+    "Pulling Straps 2": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [
+        "Long Box Group"
+      ],
+      "pages": [
+        "foundation:p095.png"
+      ]
+    },
+    "V - Position Toes": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p100.png"
+      ]
+    },
+    "Open V - Position Heels": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "foundation:p101.png"
+      ]
+    },
+    "Roll-Up with RUBar": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Warm-Up Series"
+      ],
+      "pages": [
+        "foundation:p107.png"
+      ]
+    },
+    "Mini Roll-Up": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Warm-Up Series"
+      ],
+      "pages": [
+        "foundation:p108.png"
+      ]
+    },
+    "Mini Roll-Up Oblique": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Warm Up Series"
+      ],
+      "pages": [
+        "foundation:p109.png"
+      ]
+    },
+    "Roll-Up with PTBar": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Warm Up Series"
+      ],
+      "pages": [
+        "foundation:p110.png"
+      ]
+    },
+    "Walking": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Hip Supine Series"
+      ],
+      "pages": [
+        "foundation:p114.png"
+      ]
+    },
+    "Bicycle": {
+      "apparatus": [
+        "cadillac",
+        "mat",
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration",
+        "hip_work"
+      ],
+      "series": [
+        "Bridging/Full Body Integration",
+        "Hip Supine Series",
+        "Single Hip Supine Series",
+        "Supine Leg Series"
+      ],
+      "pages": [
+        "foundation:p115.png",
+        "foundation:p121.png",
+        "mat:p065.png",
+        "chair:p060.png"
+      ]
+    },
+    "Bicycle Reverse": {
+      "apparatus": [
+        "foundation",
+        "mat"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Supine Leg Series"
+      ],
+      "pages": [
+        "foundation:p116.png",
+        "chair:p061.png"
+      ]
+    },
+    "Hip Extension": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Single Hip Supine Series"
+      ],
+      "pages": [
+        "foundation:p120.png"
+      ]
+    },
+    "Monkey": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p122.png"
+      ]
+    },
+    "Tower Prep": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p123.png"
+      ]
+    },
+    "Sitting Forward": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p124.png"
+      ]
+    },
+    "Side Reach": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "foundation:p125.png"
+      ]
+    },
+    "Double Leg": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Abdominals Legs in Straps Series"
+      ],
+      "pages": [
+        "graduate:p016.png"
+      ]
+    },
+    "Double Leg with Rotation": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Abdominals Legs in Straps"
+      ],
+      "pages": [
+        "graduate:p017.png"
+      ]
+    },
+    "Backstroke": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Long Box Group"
+      ],
+      "pages": [
+        "graduate:p018.png"
+      ]
+    },
+    "Teaser Prep": {
+      "apparatus": [
+        "mat",
+        "other",
+        "reformer",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "abdominal",
+        "full_body_integration"
+      ],
+      "series": [
+        "Full Body Integration I"
+      ],
+      "pages": [
+        "graduate:p020.png",
+        "mat:p052.png",
+        "chair:p056.png",
+        "chair:p074.png"
+      ]
+    },
+    "Teaser": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p021.png"
+      ]
+    },
+    "Semi-Circle": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p022.png"
+      ]
+    },
+    "Semi-Circle Reverse": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [
+        "Spinal Articulation"
+      ],
+      "pages": [
+        "graduate:p023.png"
+      ]
+    },
+    "Shoulder Push": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arm Work"
+      ],
+      "pages": [
+        "graduate:p024.png"
+      ]
+    },
+    "Shoulder Push Single Arm": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p025.png"
+      ]
+    },
+    "Rowing Back 1": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Rowing Series"
+      ],
+      "pages": [
+        "graduate:p026.png",
+        "graduate:p027.png"
+      ]
+    },
+    "Rowing Back 2": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Rowing Series"
+      ],
+      "pages": [
+        "graduate:p028.png"
+      ]
+    },
+    "Rowing Front 1": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Rowing Series"
+      ],
+      "pages": [
+        "graduate:p029.png"
+      ]
+    },
+    "Rowing Front 1 Continued": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Rowing Series"
+      ],
+      "pages": [
+        "graduate:p030.png"
+      ]
+    },
+    "Rowing Front 2": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Rowing Series"
+      ],
+      "pages": [
+        "graduate:p031.png",
+        "graduate:p032.png"
+      ]
+    },
+    "Deltoid Reach": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Kneeling Side Series"
+      ],
+      "pages": [
+        "graduate:p033.png"
+      ]
+    },
+    "Cross Arm Pull": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Kneeling Side Series"
+      ],
+      "pages": [
+        "graduate:p034.png"
+      ]
+    },
+    "Arms Overhead": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Kneeling Side Series",
+        "Arms Series"
+      ],
+      "pages": [
+        "graduate:p036.png",
+        "mat:p088.png"
+      ]
+    },
+    "Hamstring Curl": {
+      "apparatus": [
+        "reformer",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Long Box Group"
+      ],
+      "pages": [
+        "graduate:p037.png",
+        "chair:p034.png"
+      ]
+    },
+    "Skating Single Leg": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p038.png"
+      ]
+    },
+    "Split Side": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Split Side Group"
+      ],
+      "pages": [
+        "graduate:p039.png"
+      ]
+    },
+    "Parallel Position Jumping Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Jumping Series"
+      ],
+      "pages": [
+        "graduate:p040.png"
+      ]
+    },
+    "V-Position": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Jumping Series"
+      ],
+      "pages": [
+        "graduate:p041.png"
+      ]
+    },
+    "Single Leg Parallel": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Jumping Series"
+      ],
+      "pages": [
+        "graduate:p042.png"
+      ]
+    },
+    "Leg Changes": {
+      "apparatus": [
+        "mat",
+        "reformer"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Jumping Series"
+      ],
+      "pages": [
+        "graduate:p043.png",
+        "mat:p020.png"
+      ]
+    },
+    "Up Stretch 3": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Up Stretch Group"
+      ],
+      "pages": [
+        "graduate:p044.png"
+      ]
+    },
+    "Up Stretch 3 Reverse": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Up Stretch Group"
+      ],
+      "pages": [
+        "graduate:p045.png"
+      ]
+    },
+    "Long Back Stretch": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Full Body Integration II"
+      ],
+      "pages": [
+        "graduate:p046.png"
+      ]
+    },
+    "Tendon Stretch": {
+      "apparatus": [
+        "reformer",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p047.png",
+        "chair:p031.png"
+      ]
+    },
+    "Balance Control Front": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p048.png"
+      ]
+    },
+    "Balance Control Back Prep": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p049.png"
+      ]
+    },
+    "Balance Control Back": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Full Body Integration II"
+      ],
+      "pages": [
+        "graduate:p050.png"
+      ]
+    },
+    "Side Over on Box": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p051.png"
+      ]
+    },
+    "Hip Opener": {
+      "apparatus": [
+        "cadillac",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "foot_work",
+        "leg_work"
+      ],
+      "series": [
+        "Foot Work Series"
+      ],
+      "pages": [
+        "graduate:p053.png",
+        "chair:p035.png"
+      ]
+    },
+    "Roll-Up Bottom Loaded": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p054.png"
+      ]
+    },
+    "Teaser 1": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p055.png",
+        "mat:p062.png"
+      ]
+    },
+    "Bottom Lift with RUBar": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p056.png"
+      ]
+    },
+    "Breathing with PT Bar": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p057.png"
+      ]
+    },
+    "Breathing with PT Bar Continued": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p058.png"
+      ]
+    },
+    "Changes": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Lying Side Single Leg Series"
+      ],
+      "pages": [
+        "graduate:p059.png"
+      ]
+    },
+    "Scissors": {
+      "apparatus": [
+        "cadillac",
+        "mat",
+        "other",
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration",
+        "hip_work"
+      ],
+      "series": [
+        "Bridging/Full Body Integration",
+        "Lying Side Single Leg Series",
+        "Supine Leg Series"
+      ],
+      "pages": [
+        "graduate:p060.png",
+        "mat:p064.png",
+        "chair:p059.png",
+        "chair:p077.png"
+      ]
+    },
+    "Circles Forward": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Lying Side Single Leg Series"
+      ],
+      "pages": [
+        "graduate:p061.png"
+      ]
+    },
+    "Circles Back": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Lying Side Single Leg Series"
+      ],
+      "pages": [
+        "graduate:p062.png"
+      ]
+    },
+    "Tower": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p063.png"
+      ]
+    },
+    "Shoulder Stretch Prone": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p064.png"
+      ]
+    },
+    "Thigh Stretch with RUBar": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p065.png"
+      ]
+    },
+    "Cat Stretch Kneeling": {
+      "apparatus": [
+        "cadillac",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Push Through Group"
+      ],
+      "pages": [
+        "graduate:p066.png",
+        "chair:p029.png",
+        "chair:p030.png"
+      ]
+    },
+    "Punches": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Standing Series"
+      ],
+      "pages": [
+        "graduate:p071.png"
+      ]
+    },
+    "Shoulder Adduction Single Arm Push Through Group": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arm Work"
+      ],
+      "pages": [
+        "graduate:p073.png"
+      ]
+    },
+    "Shoulder Adduction Double Arm Push Through Group": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Push Through Group"
+      ],
+      "pages": [
+        "graduate:p074.png"
+      ]
+    },
+    "Sitting Side Prep Push Through Group": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Push Through Group"
+      ],
+      "pages": [
+        "graduate:p075.png"
+      ]
+    },
+    "Squats": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p076.png"
+      ]
+    },
+    "Saw": {
+      "apparatus": [
+        "cadillac",
+        "mat"
+      ],
+      "blocks": [
+        "full_body_integration",
+        "lateral_flexion"
+      ],
+      "series": [
+        "Push Through Group"
+      ],
+      "pages": [
+        "graduate:p077.png",
+        "mat:p033.png"
+      ]
+    },
+    "Sitting Back": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [
+        "Push Through Group"
+      ],
+      "pages": [
+        "graduate:p078.png"
+      ]
+    },
+    "Sitting Side Push Through": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [
+        "Push Through Group"
+      ],
+      "pages": [
+        "graduate:p079.png"
+      ]
+    },
+    "Butterfly": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "graduate:p080.png",
+        "graduate:p081.png"
+      ]
+    },
+    "Side Lift": {
+      "apparatus": [
+        "cadillac",
+        "other"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [
+        "Push Through Group"
+      ],
+      "pages": [
+        "graduate:p082.png",
+        "chair:p065.png"
+      ]
+    },
+    "Prone 1": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [
+        "Push Through Group"
+      ],
+      "pages": [
+        "graduate:p083.png"
+      ]
+    },
+    "Prone 2": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [
+        "Push Through Group"
+      ],
+      "pages": [
+        "graduate:p084.png"
+      ]
+    },
+    "Hanging Back": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [
+        "Hanging Group"
+      ],
+      "pages": [
+        "graduate:p085.png"
+      ]
+    },
+    "Pelvic Curl": {
+      "apparatus": [
+        "mat",
+        "reformer"
+      ],
+      "blocks": [
+        "spinal_articulation",
+        "warm_up"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p014.png",
+        "chair:p022.png"
+      ]
+    },
+    "Spine Twist Supine": {
+      "apparatus": [
+        "mat",
+        "other"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p016.png",
+        "chair:p064.png"
+      ]
+    },
+    "Chest Lift": {
+      "apparatus": [
+        "mat",
+        "other"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p017.png",
+        "chair:p053.png"
+      ]
+    },
+    "Chest Lift with Rotation": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p018.png"
+      ]
+    },
+    "Single Leg Lift": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [],
+      "series": [],
+      "pages": [
+        "mat:p019.png"
+      ]
+    },
+    "Roll Up": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p022.png"
+      ]
+    },
+    "Leg Circles": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p023.png"
+      ]
+    },
+    "Roll-Like-a-Ball": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p024.png"
+      ]
+    },
+    "Spine Stretch": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p025.png"
+      ]
+    },
+    "Side Lifts": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [],
+      "series": [],
+      "pages": [
+        "mat:p026.png"
+      ]
+    },
+    "Back Extension": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [
+        "Back Extension"
+      ],
+      "pages": [
+        "mat:p027.png"
+      ]
+    },
+    "Rest Position": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "warm_up"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p028.png"
+      ]
+    },
+    "Double Leg Stretch": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p030.png"
+      ]
+    },
+    "Single Leg Stretch": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p031.png"
+      ]
+    },
+    "Criss Cross": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p032.png"
+      ]
+    },
+    "Spine Twist": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p034.png"
+      ]
+    },
+    "Corkscrew": {
+      "apparatus": [
+        "mat",
+        "other"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p035.png",
+        "chair:p066.png"
+      ]
+    },
+    "Single Leg Kick": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p036.png"
+      ]
+    },
+    "Cat Stretch": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p037.png"
+      ]
+    },
+    "Front Support": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p039.png"
+      ]
+    },
+    "Back Support": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p040.png"
+      ]
+    },
+    "Seal Puppy": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p041.png"
+      ]
+    },
+    "Hamstring Pull 1": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p042.png"
+      ]
+    },
+    "Roll Over": {
+      "apparatus": [
+        "mat",
+        "other"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [
+        "Spinal Articulation"
+      ],
+      "pages": [
+        "mat:p043.png",
+        "chair:p062.png",
+        "chair:p079.png"
+      ]
+    },
+    "Open Leg Rocker": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [
+        "Spinal Articulation"
+      ],
+      "pages": [
+        "mat:p044.png"
+      ]
+    },
+    "Shoulder Bridge Prep": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p045.png"
+      ]
+    },
+    "Side Kick": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p046.png"
+      ]
+    },
+    "Double Leg Kick": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p047.png"
+      ]
+    },
+    "Swimming": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p048.png"
+      ]
+    },
+    "Rocking Prep": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p049.png"
+      ]
+    },
+    "Leg Pull Front": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Bridging"
+      ],
+      "pages": [
+        "mat:p050.png"
+      ]
+    },
+    "Leg Pull Back": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p051.png"
+      ]
+    },
+    "Hamstring Pull 2": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p053.png"
+      ]
+    },
+    "Hamstring Pull 3": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p054.png"
+      ]
+    },
+    "Shoulder Bridge": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p055.png"
+      ]
+    },
+    "Control Balance": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p056.png"
+      ]
+    },
+    "Jackknife": {
+      "apparatus": [
+        "mat",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p057.png",
+        "chair:p023.png"
+      ]
+    },
+    "Hip Circles Prep": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p058.png"
+      ]
+    },
+    "Side Kick Kneeling": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p059.png"
+      ]
+    },
+    "Side Bend": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p060.png"
+      ]
+    },
+    "Swan Dive Prep": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p061.png"
+      ]
+    },
+    "Neck Pull": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p063.png"
+      ]
+    },
+    "Corkscrew Advanced": {
+      "apparatus": [
+        "mat",
+        "other"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p066.png",
+        "chair:p067.png"
+      ]
+    },
+    "Rocking": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p067.png",
+        "mat:p068.png"
+      ]
+    },
+    "Teaser 2": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p069.png"
+      ]
+    },
+    "Teaser 3": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p070.png"
+      ]
+    },
+    "Hip Circles": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p071.png"
+      ]
+    },
+    "Push Up": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p073.png"
+      ]
+    },
+    "Swan Dive Prep with Catch": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p074.png"
+      ]
+    },
+    "Swan Dive": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p075.png"
+      ]
+    },
+    "Boomerang": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p076.png"
+      ]
+    },
+    "Crab": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p077.png"
+      ]
+    },
+    "Side Leg Lifts": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Gluteals Side Lying Series"
+      ],
+      "pages": [
+        "mat:p078.png"
+      ]
+    },
+    "Forward and Lift": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Gluteals Side Lying Series"
+      ],
+      "pages": [
+        "mat:p079.png"
+      ]
+    },
+    "Forward with Drops": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Gluteals Side Lying Series"
+      ],
+      "pages": [
+        "mat:p080.png"
+      ]
+    },
+    "Adductor Lift": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Gluteals Side Lying Series"
+      ],
+      "pages": [
+        "mat:p081.png"
+      ]
+    },
+    "Hip Abduction Bent Knee": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Gluteals Kneeling Series"
+      ],
+      "pages": [
+        "mat:p082.png"
+      ]
+    },
+    "Hip Extension Bent Knee": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Gluteals Kneeling Series"
+      ],
+      "pages": [
+        "mat:p083.png"
+      ]
+    },
+    "Hip Extension Straight Leg": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Gluteals Kneeling Series"
+      ],
+      "pages": [
+        "mat:p084.png"
+      ]
+    },
+    "Chest Lift with Magic Circle": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p085.png"
+      ]
+    },
+    "Arms Bent": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Series"
+      ],
+      "pages": [
+        "mat:p086.png"
+      ]
+    },
+    "Arms Straight": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Series"
+      ],
+      "pages": [
+        "mat:p087.png"
+      ]
+    },
+    "Single Arm Side Press": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Series"
+      ],
+      "pages": [
+        "mat:p089.png"
+      ]
+    },
+    "Single Arm Bicep": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arms Series"
+      ],
+      "pages": [
+        "mat:p090.png"
+      ]
+    },
+    "Ankles": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Sitting Series",
+        "Supine Series"
+      ],
+      "pages": [
+        "mat:p091.png",
+        "mat:p096.png"
+      ]
+    },
+    "Below Knees": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Sitting Series"
+      ],
+      "pages": [
+        "mat:p092.png"
+      ]
+    },
+    "Above Knees": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Sitting Series"
+      ],
+      "pages": [
+        "mat:p093.png"
+      ]
+    },
+    "Adductor Squeeze": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "mat:p094.png"
+      ]
+    },
+    "Knees": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Supine Series"
+      ],
+      "pages": [
+        "mat:p095.png"
+      ]
+    },
+    "Ankles Bent Knees": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Prone Series"
+      ],
+      "pages": [
+        "mat:p097.png"
+      ]
+    },
+    "Ankles Straight Knees Prone Series": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Prone Series"
+      ],
+      "pages": [
+        "mat:p098.png"
+      ]
+    },
+    "Hamstrings Prone Series": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Prone Series"
+      ],
+      "pages": [
+        "mat:p099.png"
+      ]
+    },
+    "Swan 1": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p100.png"
+      ]
+    },
+    "Swan 2": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "mat:p101.png"
+      ]
+    },
+    "Pike Sitting": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p018.png"
+      ]
+    },
+    "Pike Front": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p019.png",
+        "chair:p020.png"
+      ]
+    },
+    "Torso Press Sit": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [
+        "Abdominal Work"
+      ],
+      "pages": [
+        "chair:p021.png"
+      ]
+    },
+    "Shrugs": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arm Work"
+      ],
+      "pages": [
+        "chair:p024.png"
+      ]
+    },
+    "Tricep Press Sit": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arm Work"
+      ],
+      "pages": [
+        "chair:p025.png"
+      ]
+    },
+    "Triceps Prone": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p026.png"
+      ]
+    },
+    "Frog Back": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [
+        "Arm Work"
+      ],
+      "pages": [
+        "chair:p027.png"
+      ]
+    },
+    "Side Arm Kneeling": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p028.png"
+      ]
+    },
+    "Step Down Back": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Step Down Group"
+      ],
+      "pages": [
+        "chair:p033.png"
+      ]
+    },
+    "Frog Front": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "series": [
+        "Leg Work"
+      ],
+      "pages": [
+        "chair:p036.png"
+      ]
+    },
+    "Side Stretch Kneeling": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p037.png"
+      ]
+    },
+    "Pike Side": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p038.png"
+      ]
+    },
+    "Swan on floor": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p039.png"
+      ]
+    },
+    "Swan Single Arm": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p040.png"
+      ]
+    },
+    "Shoulder Stretch Flexion": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p042.png"
+      ]
+    },
+    "Shoulder Stretch Extension": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [
+        "Stretches"
+      ],
+      "pages": [
+        "chair:p043.png"
+      ]
+    },
+    "Gluteals": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [
+        "Ladder Barrel Stretch Series"
+      ],
+      "pages": [
+        "chair:p044.png"
+      ]
+    },
+    "Hamstrings": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [
+        "Ladder Barrel Stretch Series"
+      ],
+      "pages": [
+        "chair:p045.png"
+      ]
+    },
+    "Adductors": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [
+        "Ladder Barrel Stretch Series"
+      ],
+      "pages": [
+        "chair:p046.png"
+      ]
+    },
+    "Hip Flexors": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [
+        "Ladder Barrel Stretch Series"
+      ],
+      "pages": [
+        "chair:p047.png"
+      ]
+    },
+    "Side Over Prep": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p048.png"
+      ]
+    },
+    "Side Over": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p049.png"
+      ]
+    },
+    "Swan Prep": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p050.png",
+        "chair:p068.png"
+      ]
+    },
+    "Swan": {
+      "apparatus": [
+        "mat",
+        "other"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p051.png",
+        "chair:p069.png",
+        "chair:p081.png"
+      ]
+    },
+    "Reach": {
+      "apparatus": [
+        "other",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p054.png",
+        "chair:p071.png"
+      ]
+    },
+    "Overhead Stretch": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p055.png"
+      ]
+    },
+    "Helicopter": {
+      "apparatus": [
+        "cadillac",
+        "other"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "series": [
+        "Supine Leg Series"
+      ],
+      "pages": [
+        "chair:p058.png",
+        "chair:p078.png"
+      ]
+    },
+    "Shoulder Stretch Lying Side": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p063.png"
+      ]
+    },
+    "Side Over with Extended Arms": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "series": [],
+      "pages": [
+        "chair:p080.png"
+      ]
+    }
+  },
+  "series": {
+    "Supine Series": {
+      "apparatus": [
+        "cadillac",
+        "mat",
+        "other",
+        "reformer"
+      ],
+      "blocks": [
+        "foot_work",
+        "leg_work"
+      ],
+      "exercises": [
+        "Adductor Squeeze",
+        "Ankles",
+        "Calf Raises",
+        "Knees",
+        "Open V - Position Heels",
+        "Open V - Position Toes",
+        "Open V-Position Heels",
+        "Parallel Heels",
+        "Parallel Toes",
+        "Prances",
+        "Prehensile",
+        "Single Leg Heel Supine Series",
+        "Single Leg Toes",
+        "V - Position Toes",
+        "V-Position Toes"
+      ],
+      "pages": [
+        "foundation:p017.png",
+        "foundation:p018.png",
+        "foundation:p021.png",
+        "foundation:p023.png",
+        "foundation:p025.png",
+        "foundation:p026.png",
+        "foundation:p027.png",
+        "foundation:p028.png",
+        "foundation:p029.png",
+        "foundation:p030.png",
+        "foundation:p031.png",
+        "foundation:p098.png",
+        "foundation:p099.png",
+        "foundation:p100.png",
+        "foundation:p101.png",
+        "foundation:p102.png",
+        "foundation:p103.png",
+        "foundation:p104.png",
+        "foundation:p105.png",
+        "foundation:p106.png",
+        "mat:p094.png",
+        "mat:p095.png",
+        "mat:p096.png"
+      ]
+    },
+    "Abdominal Work": {
+      "apparatus": [
+        "reformer",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "exercises": [
+        "Coordination",
+        "Torso Press Sit"
+      ],
+      "pages": [
+        "foundation:p035.png",
+        "chair:p021.png"
+      ]
+    },
+    "Short Box Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "exercises": [
+        "Climb-a-Tree",
+        "Flat Back",
+        "Round Back",
+        "Roundabout",
+        "Tilt",
+        "Twist"
+      ],
+      "pages": [
+        "foundation:p036.png",
+        "foundation:p037.png",
+        "foundation:p038.png",
+        "foundation:p039.png",
+        "foundation:p040.png",
+        "foundation:p042.png",
+        "foundation:p043.png"
+      ]
+    },
+    "Hip Supine Series": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "exercises": [
+        "Bicycle",
+        "Circles Down",
+        "Circles Up",
+        "Frog",
+        "Frog Extended",
+        "Openings",
+        "Walking"
+      ],
+      "pages": [
+        "foundation:p044.png",
+        "foundation:p045.png",
+        "foundation:p046.png",
+        "foundation:p047.png",
+        "foundation:p048.png",
+        "foundation:p111.png",
+        "foundation:p112.png",
+        "foundation:p113.png",
+        "foundation:p114.png",
+        "foundation:p115.png"
+      ]
+    },
+    "Supine Leg Series": {
+      "apparatus": [
+        "cadillac",
+        "mat",
+        "other",
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "exercises": [
+        "Bicycle",
+        "Bicycle Reverse",
+        "Frog",
+        "Frog Extended Reverse",
+        "Helicopter",
+        "Openings",
+        "Scissors"
+      ],
+      "pages": [
+        "foundation:p049.png",
+        "chair:p057.png",
+        "chair:p058.png",
+        "chair:p059.png",
+        "chair:p060.png",
+        "chair:p061.png",
+        "chair:p075.png",
+        "chair:p076.png",
+        "chair:p077.png",
+        "chair:p078.png"
+      ]
+    },
+    "Spinal Articulation": {
+      "apparatus": [
+        "mat",
+        "other",
+        "reformer"
+      ],
+      "blocks": [
+        "spinal_articulation"
+      ],
+      "exercises": [
+        "Bottom Lift",
+        "Bottom Lift with Extensions",
+        "Open Leg Rocker",
+        "Roll Over",
+        "Semi-Circle Reverse"
+      ],
+      "pages": [
+        "foundation:p050.png",
+        "foundation:p052.png",
+        "graduate:p023.png",
+        "mat:p044.png",
+        "chair:p062.png"
+      ]
+    },
+    "Hamstring Stretch Group": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "exercises": [
+        "Lunge Forward",
+        "Lunge Kneeling",
+        "Lunge Standing"
+      ],
+      "pages": [
+        "foundation:p056.png",
+        "foundation:p057.png",
+        "foundation:p058.png",
+        "foundation:p059.png"
+      ]
+    },
+    "Knee Stretch Group": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "exercises": [
+        "Flat Back",
+        "Knee Stretch Reverse",
+        "Round Back Knee Stretch",
+        "Scooter"
+      ],
+      "pages": [
+        "foundation:p060.png",
+        "foundation:p062.png",
+        "foundation:p063.png",
+        "foundation:p066.png"
+      ]
+    },
+    "Up Stretch Group": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "exercises": [
+        "Elephant",
+        "Long Stretch",
+        "Up Stretch 1",
+        "Up Stretch 2",
+        "Up Stretch 3",
+        "Up Stretch 3 Reverse"
+      ],
+      "pages": [
+        "foundation:p064.png",
+        "foundation:p065.png",
+        "foundation:p071.png",
+        "foundation:p072.png",
+        "graduate:p044.png",
+        "graduate:p045.png"
+      ]
+    },
+    "Down Stretch Group": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "exercises": [
+        "Down Stretch"
+      ],
+      "pages": [
+        "foundation:p067.png"
+      ]
+    },
+    "Stomach Massage Group": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "exercises": [
+        "Stomach Massage Flat Back",
+        "Stomach Massage Reaching",
+        "Stomach Massage Round Back"
+      ],
+      "pages": [
+        "foundation:p068.png",
+        "foundation:p069.png",
+        "foundation:p070.png"
+      ]
+    },
+    "Arms Supine Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "exercises": [
+        "Adduction",
+        "Circles Down",
+        "Circles Up",
+        "Extension - Arms Supine Series",
+        "Triceps"
+      ],
+      "pages": [
+        "foundation:p073.png",
+        "foundation:p074.png",
+        "foundation:p075.png",
+        "foundation:p076.png",
+        "foundation:p077.png"
+      ]
+    },
+    "Arm Series": {
+      "apparatus": [
+        "foundation"
+      ],
+      "blocks": [],
+      "exercises": [],
+      "pages": [
+        "foundation:p078.png"
+      ]
+    },
+    "Arms Sitting Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "exercises": [
+        "Biceps",
+        "Chest Expansion",
+        "Hug-a-Tree",
+        "Rhomboids 1",
+        "Rhomboids 2",
+        "Salute"
+      ],
+      "pages": [
+        "foundation:p079.png",
+        "foundation:p080.png",
+        "foundation:p081.png",
+        "foundation:p082.png",
+        "foundation:p083.png",
+        "foundation:p084.png"
+      ]
+    },
+    "Arms Kneeling Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "exercises": [
+        "Biceps",
+        "Chest Expansion",
+        "Circles Down",
+        "Circles Up",
+        "Triceps"
+      ],
+      "pages": [
+        "foundation:p085.png",
+        "foundation:p086.png",
+        "foundation:p087.png",
+        "foundation:p088.png",
+        "foundation:p089.png"
+      ]
+    },
+    "Long Box Group 120": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "exercises": [
+        "Breaststroke Prep 1"
+      ],
+      "pages": [
+        "foundation:p091.png"
+      ]
+    },
+    "Long Box Group": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal",
+        "back_extension",
+        "leg_work"
+      ],
+      "exercises": [
+        "Backstroke",
+        "Breaststroke",
+        "Breaststroke Prep 2",
+        "Hamstring Curl",
+        "Pulling Straps 1",
+        "Pulling Straps 2"
+      ],
+      "pages": [
+        "foundation:p092.png",
+        "foundation:p093.png",
+        "foundation:p094.png",
+        "foundation:p095.png",
+        "graduate:p018.png",
+        "graduate:p037.png"
+      ]
+    },
+    "Warm-Up Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "exercises": [
+        "Mini Roll-Up",
+        "Roll-Up with RUBar"
+      ],
+      "pages": [
+        "foundation:p107.png",
+        "foundation:p108.png"
+      ]
+    },
+    "Warm Up Series": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "exercises": [
+        "Mini Roll-Up Oblique",
+        "Roll-Up with PTBar"
+      ],
+      "pages": [
+        "foundation:p109.png",
+        "foundation:p110.png"
+      ]
+    },
+    "Single Hip Supine Series": {
+      "apparatus": [
+        "cadillac",
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "exercises": [
+        "Bicycle",
+        "Circles Down",
+        "Circles Up",
+        "Frog",
+        "Hip Extension"
+      ],
+      "pages": [
+        "foundation:p117.png",
+        "foundation:p118.png",
+        "foundation:p119.png",
+        "foundation:p120.png",
+        "foundation:p121.png"
+      ]
+    },
+    "Abdominals Legs in Straps Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "exercises": [
+        "Double Leg"
+      ],
+      "pages": [
+        "graduate:p016.png"
+      ]
+    },
+    "Abdominals Legs in Straps": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "abdominal"
+      ],
+      "exercises": [
+        "Double Leg with Rotation"
+      ],
+      "pages": [
+        "graduate:p017.png"
+      ]
+    },
+    "Full Body Integration I": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "exercises": [
+        "Teaser Prep"
+      ],
+      "pages": [
+        "graduate:p020.png"
+      ]
+    },
+    "Arm Work": {
+      "apparatus": [
+        "cadillac",
+        "reformer",
+        "wunda_chair"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "exercises": [
+        "Frog Back",
+        "Shoulder Adduction Single Arm Push Through Group",
+        "Shoulder Push",
+        "Shrugs",
+        "Tricep Press Sit"
+      ],
+      "pages": [
+        "graduate:p024.png",
+        "graduate:p073.png",
+        "chair:p024.png",
+        "chair:p025.png",
+        "chair:p027.png"
+      ]
+    },
+    "Rowing Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "exercises": [
+        "Rowing Back 1",
+        "Rowing Back 2",
+        "Rowing Front 1",
+        "Rowing Front 1 Continued",
+        "Rowing Front 2"
+      ],
+      "pages": [
+        "graduate:p026.png",
+        "graduate:p027.png",
+        "graduate:p028.png",
+        "graduate:p029.png",
+        "graduate:p030.png",
+        "graduate:p031.png",
+        "graduate:p032.png"
+      ]
+    },
+    "Arms Kneeling Side Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "exercises": [
+        "Arms Overhead",
+        "Cross Arm Pull",
+        "Deltoid Reach",
+        "Triceps"
+      ],
+      "pages": [
+        "graduate:p033.png",
+        "graduate:p034.png",
+        "graduate:p035.png",
+        "graduate:p036.png"
+      ]
+    },
+    "Split Side Group": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "exercises": [
+        "Split Side"
+      ],
+      "pages": [
+        "graduate:p039.png"
+      ]
+    },
+    "Jumping Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "exercises": [
+        "Leg Changes",
+        "Parallel Position Jumping Series",
+        "Single Leg Parallel",
+        "V-Position"
+      ],
+      "pages": [
+        "graduate:p040.png",
+        "graduate:p041.png",
+        "graduate:p042.png",
+        "graduate:p043.png"
+      ]
+    },
+    "Full Body Integration II": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "exercises": [
+        "Balance Control Back",
+        "Long Back Stretch"
+      ],
+      "pages": [
+        "graduate:p046.png",
+        "graduate:p050.png"
+      ]
+    },
+    "Foot Work Series": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "foot_work"
+      ],
+      "exercises": [
+        "Hip Opener"
+      ],
+      "pages": [
+        "graduate:p053.png"
+      ]
+    },
+    "Lying Side Single Leg Series": {
+      "apparatus": [
+        "reformer"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "exercises": [
+        "Changes",
+        "Circles Back",
+        "Circles Forward",
+        "Scissors"
+      ],
+      "pages": [
+        "graduate:p059.png",
+        "graduate:p060.png",
+        "graduate:p061.png",
+        "graduate:p062.png"
+      ]
+    },
+    "Push Through Group": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "arm_work",
+        "back_extension",
+        "full_body_integration",
+        "lateral_flexion"
+      ],
+      "exercises": [
+        "Cat Stretch Kneeling",
+        "Prone 1",
+        "Prone 2",
+        "Saw",
+        "Shoulder Adduction Double Arm Push Through Group",
+        "Side Lift",
+        "Sitting Back",
+        "Sitting Side Prep Push Through Group",
+        "Sitting Side Push Through"
+      ],
+      "pages": [
+        "graduate:p066.png",
+        "graduate:p074.png",
+        "graduate:p075.png",
+        "graduate:p077.png",
+        "graduate:p078.png",
+        "graduate:p079.png",
+        "graduate:p082.png",
+        "graduate:p083.png",
+        "graduate:p084.png"
+      ]
+    },
+    "Arms Standing Series": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "exercises": [
+        "Biceps",
+        "Chest Expansion",
+        "Circles Down",
+        "Circles Up",
+        "Hug-a-Tree",
+        "Punches"
+      ],
+      "pages": [
+        "graduate:p067.png",
+        "graduate:p068.png",
+        "graduate:p069.png",
+        "graduate:p070.png",
+        "graduate:p071.png",
+        "graduate:p072.png"
+      ]
+    },
+    "Hanging Group": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "exercises": [
+        "Hanging Back"
+      ],
+      "pages": [
+        "graduate:p085.png"
+      ]
+    },
+    "Back Extension": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "back_extension"
+      ],
+      "exercises": [
+        "Back Extension"
+      ],
+      "pages": [
+        "mat:p027.png"
+      ]
+    },
+    "Bridging": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "hip_work"
+      ],
+      "exercises": [
+        "Leg Pull Front"
+      ],
+      "pages": [
+        "mat:p050.png"
+      ]
+    },
+    "Bridging/Full Body Integration": {
+      "apparatus": [
+        "cadillac",
+        "mat"
+      ],
+      "blocks": [
+        "full_body_integration"
+      ],
+      "exercises": [
+        "Bicycle",
+        "Scissors"
+      ],
+      "pages": [
+        "mat:p064.png",
+        "mat:p065.png"
+      ]
+    },
+    "Lateral Flexion / Rotation": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "lateral_flexion"
+      ],
+      "exercises": [
+        "Twist"
+      ],
+      "pages": [
+        "mat:p072.png"
+      ]
+    },
+    "Gluteals Side Lying Series": {
+      "apparatus": [
+        "cadillac",
+        "mat"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "exercises": [
+        "Adductor Lift",
+        "Forward and Lift",
+        "Forward with Drops",
+        "Side Leg Lifts"
+      ],
+      "pages": [
+        "mat:p078.png",
+        "mat:p079.png",
+        "mat:p080.png",
+        "mat:p081.png"
+      ]
+    },
+    "Gluteals Kneeling Series": {
+      "apparatus": [
+        "cadillac"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "exercises": [
+        "Hip Abduction Bent Knee",
+        "Hip Extension Bent Knee",
+        "Hip Extension Straight Leg"
+      ],
+      "pages": [
+        "mat:p082.png",
+        "mat:p083.png",
+        "mat:p084.png"
+      ]
+    },
+    "Arms Series": {
+      "apparatus": [
+        "cadillac",
+        "other"
+      ],
+      "blocks": [
+        "arm_work"
+      ],
+      "exercises": [
+        "Arms Bent",
+        "Arms Overhead",
+        "Arms Straight",
+        "Single Arm Bicep",
+        "Single Arm Side Press"
+      ],
+      "pages": [
+        "mat:p086.png",
+        "mat:p087.png",
+        "mat:p088.png",
+        "mat:p089.png",
+        "mat:p090.png"
+      ]
+    },
+    "Sitting Series": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "exercises": [
+        "Above Knees",
+        "Ankles",
+        "Below Knees"
+      ],
+      "pages": [
+        "mat:p091.png",
+        "mat:p092.png",
+        "mat:p093.png"
+      ]
+    },
+    "Prone Series": {
+      "apparatus": [
+        "mat"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "exercises": [
+        "Ankles Bent Knees",
+        "Ankles Straight Knees Prone Series",
+        "Hamstrings Prone Series"
+      ],
+      "pages": [
+        "mat:p097.png",
+        "mat:p098.png",
+        "mat:p099.png"
+      ]
+    },
+    "Lunge Group": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "exercises": [
+        "Lunge Forward"
+      ],
+      "pages": [
+        "chair:p032.png"
+      ]
+    },
+    "Step Down Group": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "exercises": [
+        "Step Down Back"
+      ],
+      "pages": [
+        "chair:p033.png"
+      ]
+    },
+    "Leg Work": {
+      "apparatus": [
+        "wunda_chair"
+      ],
+      "blocks": [
+        "leg_work"
+      ],
+      "exercises": [
+        "Frog Front"
+      ],
+      "pages": [
+        "chair:p036.png"
+      ]
+    },
+    "Stretches": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "exercises": [
+        "Shoulder Stretch Extension"
+      ],
+      "pages": [
+        "chair:p043.png"
+      ]
+    },
+    "Ladder Barrel Stretch Series": {
+      "apparatus": [
+        "other"
+      ],
+      "blocks": [
+        "stretches"
+      ],
+      "exercises": [
+        "Adductors",
+        "Gluteals",
+        "Hamstrings",
+        "Hip Flexors"
+      ],
+      "pages": [
+        "chair:p044.png",
+        "chair:p045.png",
+        "chair:p046.png",
+        "chair:p047.png"
+      ]
+    }
+  }
+}

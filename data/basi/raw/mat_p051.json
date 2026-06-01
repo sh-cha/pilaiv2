@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p051.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Leg Pull Back",
+    "block": "Bridging/Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Starting in Back Support position (page 39)",
+    "movement": {
+      "exhale": "Lift leg",
+      "inhale": "Lower leg"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Hip flexors",
+      "Shoulder extensors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Hip flexor control",
+      "Shoulder extensor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep spinal extensors engaged",
+      "Keep head aligned with spine",
+      "Focus on hip disassociation when lifting and lowering leg",
+      "Keep body in straight diagonal line"
+    ]
+  }
+}

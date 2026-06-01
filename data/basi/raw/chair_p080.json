@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p080.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Over with Extended Arms",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Lying sideways on barrel, bottom leg bent, foot plantarflexed, top leg straight, foot plantarflexed in strap, arms straight and overhead",
+    "movement": {
+      "exhale": "Lift trunk",
+      "inhale": "Lower trunk"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor strength and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep head aligned with spine and between arms",
+      "Maintain co-contraction of abdominals and back extensors",
+      "Imagine moving between two panes of glass",
+      "Keep arms straight",
+      "Keep leg straight, maintaining tension in spring"
+    ]
+  }
+}

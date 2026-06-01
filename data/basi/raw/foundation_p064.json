@@ -1,0 +1,37 @@
+{
+  "source_page": "foundation:p064.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "",
+    "name": "Up Stretch 1",
+    "series": "Up Stretch Group",
+    "block": "Full Body Integration",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Standing on carriage, legs straight, heels against shoulder rests, arms straight, shoulder width apart, hands placed on footbar, head between arms, pelvis lifted toward ceiling, back flat",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Move legs back",
+      "exhale": "Move legs forward, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Hip flexors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Hip extensor control",
+      "Hip flexor control",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Keep tailbone reaching upwards",
+      "Emphasize \"in\" phase of movement",
+      "Focus on hip disassociation",
+      "Keep trunk and shoulders stable"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p023.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "3",
+    "name": "V-Position Toes",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "setup": "Lying supine in neutral spine position, hips externally rotated, toes placed on footbar, heels together, small V position",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor control",
+      "Knee extensor strength",
+      "Ankle and foot control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Initiate movement with hip extensors",
+      "Engage hip adductors",
+      "Establish plantarflexion when legs are straight",
+      "Keep heels squeezing together and stable",
+      "Straighten legs completely, avoiding hyperextension",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p040.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Back Support",
+    "block": "Bridging",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Sitting, arms straight and parallel, hands placed on Mat behind pelvis, fingers facing feet, legs straight and parallel, feet plantarflexed, hip width apart",
+    "movement": {
+      "exhale": "Lift pelvis (Back Support position)",
+      "inhale": "Lower pelvis, without touching Mat"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Hip extensors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder extensor strength",
+      "Hip extensor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Create straight diagonal line when pelvis is lifted",
+      "Hinge at hip joint when lifting and lowering pelvis",
+      "Move trunk as one unit",
+      "If there is discomfort in wrists, face fingers out to sides or make fists"
+    ]
+  }
+}

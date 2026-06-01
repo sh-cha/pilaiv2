@@ -1,0 +1,30 @@
+{
+  "source_page": "chair:p054.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Reach",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "apparatus": "chair",
+    "setup": "Sitting in C curve position, arms straight, shoulder width apart, shoulder height, hands holding pole, legs bent and together, shins perpendicular position to floor",
+    "movement": {
+      "exhale": "Roll down, lift arms up and overhead, simultaneously straighten legs creating straight line",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Shoulder flexor control",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Establish C curve position, shoulders directly above hips",
+      "Establish straight line with body when in supine position",
+      "Move trunk, arms and legs simultaneously when rolling down to supine position and rolling up to sitting position"
+    ]
+  }
+}

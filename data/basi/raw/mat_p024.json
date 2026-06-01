@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p024.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Roll-Like-a-Ball",
+    "block": "Spinal Articulation",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Sitting in balanced position, body in ball shape, legs bent, hands on shins (close to ankles), feet off Mat",
+    "movement": {
+      "inhale": "Roll back",
+      "exhale": "Roll forward, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Elbow flexors"
+    ],
+    "objectives": [
+      "Trunk stabilization",
+      "Shoulder stabilization",
+      "Elbow flexor control"
+    ],
+    "cues": [
+      "Maintain fluid movement",
+      "Keep ball shape consistent",
+      "Keep head aligned with spine",
+      "Keep pulling legs toward chest and heels toward sit bones"
+    ]
+  }
+}

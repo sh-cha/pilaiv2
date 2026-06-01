@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p092.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Breaststroke Prep 2",
+    "series": "Long Box Group",
+    "block": "Back Extension",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Start in Breaststroke Prep 1 position (page 79)",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Straighten arms, simultaneously lifting trunk",
+      "exhale": "Bend arms, lowering trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Elbow extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor control",
+      "Hip extensor control",
+      "Elbow extensor control"
+    ],
+    "cues": [
+      "Maintain abdominal engagement",
+      "Keep wrists firm and fingers wrapped around footbar",
+      "Articulate spine into extension starting from crown of head",
+      "Face elbows outward as if arms are on flat surface"
+    ]
+  }
+}

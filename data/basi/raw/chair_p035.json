@@ -1,0 +1,34 @@
+{
+  "source_page": "chair:p035.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hip Opener",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Lying supine in neutral spine position, legs bent, hips externally rotated, sides of feet placed on pedal, soles of feet pressed together, pedal halfway down, arms by sides, palms down",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Lower legs, pressing pedal down",
+      "inhale": "Raise legs, lifting pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Hip external rotators",
+      "Hip extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip external rotator control",
+      "Hip extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain neutral pelvis",
+      "Maximize work of hip external rotators",
+      "Reach knees out and down toward Mat",
+      "Focus on hip extension, minimizing movement in knee joints"
+    ]
+  }
+}

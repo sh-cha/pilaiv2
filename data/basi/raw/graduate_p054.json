@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p054.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Roll-Up Bottom Loaded",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Lying supine in neutral spine position, arms straight and shoulder width apart, hands holding PTBar, legs straight and together, feet plantarflexed",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Lift head and chest / Bend arms, straighten arms",
+      "exhale": "Roll up to upright position, arms overhead / Roll down, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Shoulder flexors and abductors",
+      "Elbow extensors"
+    ],
+    "objectives": [
+      "Spinal flexor and extensor control",
+      "Shoulder flexor and abductor strength",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Bend arms until PTBar is in line with top of head",
+      "Maintain slight shoulder external rotation when bending arms",
+      "Co-contract abdominals and back extensors to stabilize trunk"
+    ]
+  }
+}

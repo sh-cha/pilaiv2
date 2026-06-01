@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p049.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Balance Control Back Prep",
+    "block": "Full Body Integration II",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Sitting on carriage facing footbar, arms bent, hands placed on shoulder rests, fingers facing forward, trunk upright, legs straight, feet placed on footbar, hip width apart, straighten arms, lifting body",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Extend shoulders, moving carriage out",
+      "inhale": "Flex shoulders, moving carriage in towards stopper, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Scapular stabilizers",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Shoulder extensor strength",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Maintain neutral spine position",
+      "Hinge at shoulder and hip joints"
+    ]
+  }
+}

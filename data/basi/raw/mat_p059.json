@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p059.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Kick Kneeling",
+    "block": "Lateral Flexion/Rotation",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Kneeling on one knee, shoulder over wrist, fingers facing away from body, top leg lifted to hip height (or higher), fingers touching behind head",
+    "movement": {
+      "exhale": "Swing top leg forward, dorsiflex foot (2 pulses)",
+      "inhale": "Swing top leg back, plantarflex foot (2 pulses)"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Trunk stabilization",
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch"
+    ],
+    "cues": [
+      "Maintain neutral pelvis (as close as possible)",
+      "Maintain stable trunk",
+      "Avoid sinking into supporting shoulder and rib cage",
+      "Keep head aligned with spine"
+    ]
+  }
+}

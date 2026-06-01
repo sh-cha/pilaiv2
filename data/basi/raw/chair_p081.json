@@ -1,0 +1,31 @@
+{
+  "source_page": "chair:p081.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Swan",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Lying prone over barrel, feet on floor, legs bent and together, hands on levers, elbows out to sides",
+    "movement": {
+      "inhale": "Lift trunk, straightening arms and legs, plantarflex feet",
+      "exhale": "Lower trunk, bending arms and legs, place feet on floor, return to position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Hip extensor control"
+    ],
+    "cues": [
+      "Maintain abdominal support",
+      "Avoid scapular elevation as arms straighten",
+      "Keep legs straight and hips extended as back lifts",
+      "Maintain contact between pelvis and barrel"
+    ]
+  }
+}

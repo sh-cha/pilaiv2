@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p069.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Teaser 2",
+    "apparatus": "mat",
+    "block": "Bridging/Full Body Integration",
+    "level": "Advanced",
+    "setup": "Starting in Teaser 1 position (page 61)",
+    "movement": {
+      "inhale": "Lower legs",
+      "exhale": "Lift legs"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal extensor strength",
+      "Hip flexor strength"
+    ],
+    "cues": [
+      "Maintain stable trunk throughout",
+      "Keep shoulders relaxed",
+      "Keep movement of legs controlled"
+    ]
+  }
+}

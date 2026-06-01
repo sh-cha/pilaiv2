@@ -1,0 +1,31 @@
+{
+  "source_page": "chair:p057.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Openings",
+    "series": "Supine Leg Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Lying supine, lower back and pelvis on barrel, legs straight, perpendicular to floor, hips externally rotated, feet plantarflexed, hands holding handles",
+    "movement": {
+      "inhale": "Open legs out to sides",
+      "exhale": "Close legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip adductor control and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Open legs directly out to sides",
+      "Pause in perpendicular position between each repetition",
+      "Keep holding handles firmly and pulling barrel toward back"
+    ]
+  }
+}

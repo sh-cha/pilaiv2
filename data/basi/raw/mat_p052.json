@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p052.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Teaser Prep",
+    "series": "5",
+    "block": "Bridging/Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Sitting in balanced position, back flat, arms straight and reaching forward, in line with shoulders, parallel to Mat, legs lifted, knees bent, shins parallel to Mat",
+    "movement": {
+      "exhale": "Roll down",
+      "inhale": "Roll up, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal extensor control",
+      "Hip flexor control",
+      "Preparation for Teaser 1, 2, 3"
+    ],
+    "cues": [
+      "Engage spinal extensors to complete movement",
+      "Articulate through spine when rolling down and up",
+      "Initiate roll down and roll up with lumbar flexion",
+      "Keep arms parallel to Mat"
+    ]
+  }
+}

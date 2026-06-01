@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p064.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shoulder Stretch Prone",
+    "block": "Stretches",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Lying prone, legs straight and together, forehead resting on one hand, other hand holding PTBar, palm facing back (away from head), shoulder externally rotated",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Internally rotate shoulder, lowering PTBar",
+      "inhale": "Externally rotate shoulder, lifting PTBar"
+    },
+    "muscle_focus": [
+      "Shoulder internal rotators",
+      "Shoulder external rotators"
+    ],
+    "objectives": [
+      "Shoulder internal rotator control and stretch",
+      "Shoulder external rotator control and stretch",
+      "Shoulder mobility"
+    ],
+    "cues": [
+      "Maximize rotational movement of glenohumeral joint",
+      "Move slowly through full range of motion",
+      "Breathe continuously throughout movement",
+      "Minimize rotation of trunk"
+    ]
+  }
+}

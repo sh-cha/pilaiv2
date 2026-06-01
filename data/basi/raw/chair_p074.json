@@ -1,0 +1,29 @@
+{
+  "source_page": "chair:p074.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Teaser Prep",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "apparatus": "chair",
+    "setup": "Lying supine over barrel, arms straight, reaching overhead, hands holding handles, legs straight and together, feet plantarflexed, legs aligned with trunk",
+    "spring_setting": "Socket: C, Lever Orientation: 0, Lever Length: 1, Lever Direction: 7, Connector: C, Spring: Y/S",
+    "movement": {
+      "exhale": "Lift arms, head and chest up and forward, arms parallel to floor, simultaneously lift legs perpendicular to floor (as close as possible)",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength and stretch",
+      "Hip flexor strength"
+    ],
+    "cues": [
+      "Keep legs together",
+      "Continue reaching arms overhead to maximum range of shoulders"
+    ]
+  }
+}

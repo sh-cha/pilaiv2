@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p063.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Neck Pull",
+    "apparatus": "mat",
+    "block": "Abdominal Work",
+    "level": "Advanced",
+    "setup": "Lying supine, hands interlaced behind head, legs straight and together, feet plantarflexed",
+    "movement": {
+      "inhale": "Lift head and chest / Articulate spine to upright position, hinge back",
+      "exhale": "Roll up, bring trunk over thighs / Roll down, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal extensor control",
+      "Hip flexor control",
+      "Hip extensor stretch"
+    ],
+    "cues": [
+      "Keep elbows wide",
+      "Avoid pulling on neck when rolling up",
+      "Hinge trunk back to diagonal line prior to rolling down"
+    ]
+  }
+}

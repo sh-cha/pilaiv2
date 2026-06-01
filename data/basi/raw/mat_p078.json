@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p078.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Leg Lifts",
+    "series": "Gluteals Side Lying Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying on side in neutral spine position, bottom arm straight and palm facing up, head resting on arm, pelvis perpendicular to Mat, top hand placed on Mat, elbow bent, bottom hip and knee at 90 degrees flexion, top leg straight, hip height in line with trunk, hip internally rotated",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift leg",
+      "inhale": "Lower leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip abductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip abductor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep knee slightly bent",
+      "Keep pelvis stable as leg moves down and up",
+      "Keep leg and foot relaxed, toes directed toward Mat"
+    ]
+  }
+}

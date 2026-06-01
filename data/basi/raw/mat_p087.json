@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p087.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Arms Straight",
+    "series": "Arms Series",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Arms Bent position (page 85), arms straight",
+    "movement": {
+      "exhale": "Press arms together",
+      "inhale": "Open arms"
+    },
+    "muscle_focus": [
+      "Shoulder horizontal adductors",
+      "Scapular stabilizers",
+      "Elbow extensors"
+    ],
+    "objectives": [
+      "Shoulder horizontal adductor strength",
+      "Scapular stabilization",
+      "Elbow extensor control"
+    ],
+    "cues": [
+      "Maintain upright trunk",
+      "Maintain scapular stabilization",
+      "Maintain tension in circle, increase tension when pressing arms together",
+      "Keep arms straight"
+    ]
+  }
+}

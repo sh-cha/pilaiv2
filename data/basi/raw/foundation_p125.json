@@ -1,0 +1,30 @@
+{
+  "source_page": "foundation:p125.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Reach",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "setup": "Starting in Sitting Forward position (page 110)",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Round trunk into C curve position leaning back / Return hand to PTBar",
+      "inhale": "Release one hand, reach back, palm facing up / Straighten trunk, sit upright, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal lateral flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal lateral flexor stretch"
+    ],
+    "cues": [
+      "Keep foot of stretching side pressing into pole",
+      "Keep reaching arm parallel to mat",
+      "Maintain pelvic lumbar stabilization",
+      "Allow neck to relax when looking back toward hand"
+    ]
+  }
+}

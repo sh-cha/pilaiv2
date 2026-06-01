@@ -1,0 +1,30 @@
+{
+  "source_page": "foundation:p056.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Lunge Standing\nHamstring Stretch Group",
+    "block": "Stretches",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Standing, front leg bent, knee over ankle, knee of other leg placed on carriage, foot against shoulder rest, arms straight, hands placed on footbar, thumb togther with fingers (applies to all exercises), inside hand in line with shoulder",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Stretch hip flexors of leg on carriage (3-5 breaths)",
+      "exhale": "Dorsiflex foot on floor, straighten leg and lower trunk forward (3-5 breaths)"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Hip flexor stretch",
+      "Hip extensor stretch"
+    ],
+    "cues": [
+      "Bias toward posterior tilt of pelvis during hip flexor stretch",
+      "Bias toward anterior tilt of pelvis during hamstring stretch",
+      "Move pelvis along horizontal line"
+    ]
+  }
+}

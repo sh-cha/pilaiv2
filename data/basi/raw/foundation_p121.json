@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p121.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Bicycle",
+    "series": "Single Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "setup": "Starting in Circles Down position (page 104)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lower leg",
+      "inhale": "Bend knee, flex hip bringing leg toward chest, straighten leg toward ceiling, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor control",
+      "Hip disassociation",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain spring tension",
+      "Establish L shape with legs in each cycle",
+      "Keep leg parallel avoiding hip external rotation",
+      "Maintain pelvic lumbar stabilization",
+      "Keep supporting leg elongated and stable"
+    ]
+  }
+}

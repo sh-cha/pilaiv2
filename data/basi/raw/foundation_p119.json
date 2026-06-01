@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p119.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Circles Up",
+    "series": "Single Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "setup": "Starting in Circles Down position (page 104)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Open leg out to side",
+      "inhale": "lift leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Hip adductor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maximize hip disassociation",
+      "Maintain pelvic lumbar stabilization",
+      "Draw straight line up center",
+      "Draw semi-circle as leg circles out, around and up",
+      "Keep supporting leg elongated and stable"
+    ]
+  }
+}

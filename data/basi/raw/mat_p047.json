@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p047.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Double Leg Kick",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Lying prone, legs straight and together, lifted off Mat, fingers interlaced behind back, arms relaxed, head to side, cheek resting on Mat",
+    "movement": {
+      "exhale": "Bend both legs (3 pulses) / Lower trunk, bend arms and legs, turn head to opposite side (3 pulses)",
+      "inhale": "Extend back, turn head to center, straighten legs and arms / Extend back, turn head to center, straighten legs and arms"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Knee flexors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Hip extensor control",
+      "Shoulder and thoracic stretch"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Reach elbows to Mat when hands are resting on back",
+      "Keep legs lifted off Mat"
+    ]
+  }
+}

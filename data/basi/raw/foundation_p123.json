@@ -1,0 +1,32 @@
+{
+  "source_page": "foundation:p123.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Tower Prep",
+    "block": "Spinal Articulation",
+    "level": "Fundamental",
+    "apparatus": "cadillac",
+    "setup": "Lying supine, arms straight and overhead, hands holding poles (close to Mat), legs straight and hip width apart, toes placed on PTBar and plantarflexed",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Roll up onto shoulder girdle, simultaneously bend legs and extend hips | Roll down, simutaneously straighten legs",
+      "inhale": "Pause | Dorsiflex and plantarflex feet"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor control and stretch",
+      "Ankle-foot plantarflexor control and stretch"
+    ],
+    "cues": [
+      "Keep arms straight and maintain scapular stabilization",
+      "Initiate movement with abdominals",
+      "Maintain hip extensor engagement when rolling up and down"
+    ]
+  }
+}

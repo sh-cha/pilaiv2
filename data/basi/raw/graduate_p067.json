@@ -1,0 +1,36 @@
+{
+  "source_page": "graduate:p067.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "1)",
+    "name": "Chest Expansion",
+    "series": "Arms Standing Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Standing upright, facing Cadillac, arms straight and shoulder width apart, hands holding handles (fist or open hand), palms facing back, crossbar at eye level",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Move arms back 20°",
+      "inhale": "Move arms forward, return to start position 20°"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Elbow extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder extensor strength",
+      "Elbow extensor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Maintain trunk stabilization",
+      "Keep arms straight",
+      "Move arms 20 degrees forward and 20 degrees back of trunk"
+    ]
+  }
+}

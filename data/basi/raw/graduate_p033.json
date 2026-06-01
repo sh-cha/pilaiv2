@@ -1,0 +1,36 @@
+{
+  "source_page": "graduate:p033.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Deltoid Reach",
+    "series": "Arms Kneeling Side Series",
+    "block": "Arm Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Kneeling sideways on carriage, legs shoulder width apart and parallel, one leg against shoulder rests, trunk upright, hand closest to shoulder rests in strap, palm facing ear, arm bent, elbow out to side",
+    "resistance": "extra light",
+    "movement": {
+      "exhale": "Straighten arm toward ceiling",
+      "inhale": "Bend arm, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder abductors",
+      "Elbow extensors",
+      "Spinal flexors",
+      "Spinal lateral flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder abductor strength",
+      "Elbow extensor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain trunk stabilization",
+      "Maintain scapular stabilization",
+      "Keep hand on vertical line with shoulder",
+      "Maintain slight external rotation of shoulder"
+    ]
+  }
+}

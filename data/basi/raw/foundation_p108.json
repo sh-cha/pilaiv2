@@ -1,0 +1,32 @@
+{
+  "source_page": "foundation:p108.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Mini Roll-Up",
+    "series": "Warm- Up Series",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs bent and parallel, feet hip width apart, arms straight and shoulder width apart, hands holding PTBar, lift to Chest Lift position (Mat page 17), shoulders under PTBar",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift trunk",
+      "inhale": "Lower trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Maintain C curve position while lifting and lowering",
+      "Minimize use of arms",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

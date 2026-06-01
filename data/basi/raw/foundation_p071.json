@@ -1,0 +1,38 @@
+{
+  "source_page": "foundation:p071.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Up Stretch 2",
+    "series": "Up Stretch Group",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Up Stretch 1 position (page 53)",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Lower pelvis into Front Support position (Mat page 38)",
+      "exhale": "Lift pelvis, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip extensors",
+      "Hip flexors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Hip extensor control",
+      "Hip flexor control",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Keep head aligned with spine",
+      "Pivot around hip joints and shoulder joints",
+      "Emphasize hip and shoulder disassociation",
+      "Maintain consistent angle of arms"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p030.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Double Leg Stretch",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Lying supine, legs bent, hands on knees, shins parallel to Mat, trunk in Chest Lift position (page 17)",
+    "movement": {
+      "inhale": "Reach arms overhead. straighten legs forward",
+      "exhale": "Circle arms around, simultaneously bend legs toward chest, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Trunk stabilization",
+      "Shoulder mobility"
+    ],
+    "cues": [
+      "Keep head aligned with spine",
+      "Reach arms as far back as possible",
+      "Avoid scapular elevation",
+      "Maintain consistent height of trunk"
+    ]
+  }
+}

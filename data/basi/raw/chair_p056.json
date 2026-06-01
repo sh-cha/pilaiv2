@@ -1,0 +1,34 @@
+{
+  "source_page": "chair:p056.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Teaser Prep",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "barrel",
+    "setup": "Lying supine, coccyx on edge of step, arms straight and overhead, legs straight and together, feet plantarflexed, body on diagonal line",
+    "movement": {
+      "exhale": "Lift arms, head and chest up and forward, simultaneously lift legs to perpendicular position",
+      "inhale": "Lower arms, head, chest and legs, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Shoulder flexors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Hip flexor strength",
+      "Shoulder flexor control",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Lift legs perpendicular to floor, arms parallel to floor",
+      "Engage abdominals prior to lifting legs",
+      "Bring trunk close to legs to form pike position",
+      "Allow lower back to sink into step of barrel"
+    ]
+  }
+}

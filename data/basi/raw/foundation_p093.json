@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p093.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Breaststroke",
+    "series": "Long Box Group",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Start in Breaststroke Prep 1 position (page 79), elbows bent by sides of body, thumbs in straps, hands in line with shoulders",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Lift trunk, straighten arms foward, circle arms around to sides of body",
+      "exhale": "Bend arms, lower trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Elbow extensors",
+      "Shoulder abductors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Elbow extensor control",
+      "Shoulder abductor control"
+    ],
+    "cues": [
+      "Keep legs parallel to floor",
+      "Initiate movement with back extensors",
+      "Maintain external rotation of shoulders as body is lowered and elbows bend during final phase of movement"
+    ]
+  }
+}

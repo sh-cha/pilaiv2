@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p057.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Breathing with PT Bar",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Lying supine in neutral spine position, arms straight and shoulder width apart, hands holding PTBar, hips externally rotated, legs straight and together, feet dorsiflexed and placed on trapeze strap",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Move PTBar down and overhead",
+      "exhale": "Move PTBar up, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Shoulder flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Spinal articulation",
+      "Hip extensor control"
+    ],
+    "cues": [
+      "See next page"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p025.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Spine Stretch",
+    "block": "Spinal Articulation",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Sitting upright, legs straight, feet dorsiflexed, shoulder width apart, arms straight and reaching forward, parallel to Mat, palms facing each other",
+    "movement": {
+      "inhale": "Prepare",
+      "exhale": "Roll down and forward through spine"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor stretch",
+      "Spinal articulation",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep toes facing ceiling throughout",
+      "Maintain scapular stabilization",
+      "Articulate spine as if rolling down and up a wall",
+      "Following roll down tip pelvis forward, prior to roll up return pelvis to upright position"
+    ]
+  }
+}

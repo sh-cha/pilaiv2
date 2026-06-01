@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p038.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Skating Single Leg",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Standing upright, one foot on Foot Platform, other foot on front edge of carriage, hands behind head, legs bent, weight on leg on Foot Platform",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten leg on carriage",
+      "inhale": "Bend leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip abductors",
+      "Knee extensors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip abductor strength",
+      "Knee extensor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Keep weight on supporting leg",
+      "Maintain consistent height of body",
+      "Straighten moving leg completely"
+    ]
+  }
+}

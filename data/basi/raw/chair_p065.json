@@ -1,0 +1,31 @@
+{
+  "source_page": "chair:p065.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Side Lift",
+    "block": "Lateral Flexion/Rotation",
+    "level": "Fundamental",
+    "apparatus": "barrel",
+    "setup": "Lying sideways on barrel, bottom leg bent, top leg straight, feet plantarflexed, arms straight overhead, head between arms, leg, trunk and arms in straight line",
+    "movement": {
+      "exhale": "Lift trunk",
+      "inhale": "Lower trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor strength and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep head aligned with spine and between arms",
+      "Maintain co-contraction of abdominals and back extensors",
+      "Imagine moving between two panes of glass",
+      "Keep arms straight"
+    ]
+  }
+}

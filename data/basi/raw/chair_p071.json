@@ -1,0 +1,29 @@
+{
+  "source_page": "chair:p071.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Reach",
+    "code": "F2",
+    "series": "",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "apparatus": "chair",
+    "setup": "Sitting in C curve position, arms straight, shoulder width apart, shoulder height, hands holding handles, legs bent and together, shins perpendicular position to floor",
+    "movement": {
+      "exhale": "Roll down, lift arms up and overhead, simultaneously straighten legs creating straight line continue reaching arms overhead, placing head on barrel",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Shoulder flexors and extensors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Shoulder flexor and extensor control"
+    ],
+    "cues": [
+      "Establish straight line with body prior to and following placing head on barrel, arms overhead"
+    ]
+  }
+}

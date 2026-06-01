@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p027.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Frog Back",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Facing back to Wunda Chair, arms bent, elbows facing back, hands placed on front edge of chair, palms facing back, legs bent, hips externally rotated, feet plantarflexed, toes on pedal, heels together, small V position",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten arms, lifting pedal",
+      "inhale": "Bend arms, lowering pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Shoulder flexors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Shoulder flexor strength",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep elbows facing back, parallel to each other",
+      "Keep distance between heels and pelvis consistent (small)"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "source_page": "graduate:p072.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "6",
+    "name": "Biceps",
+    "series": "Arms Standing Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Starting in Hug-a-Tree position (page 67), arms straight and reaching back, parallel to each other (as close as possible), hands holding handles",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Bend arms",
+      "inhale": "Straighten arms, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Elbow flexor strength",
+      "Shoulder flexor stretch",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain shoulder extension",
+      "Keep upper arms stable",
+      "Maintain scapular stabilization",
+      "Keep scapulae open and shoulders forward",
+      "Maintain trunk stabilization"
+    ]
+  }
+}

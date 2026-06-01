@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p078.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Sitting Back",
+    "series": "Push Through Group",
+    "block": "Full Body Integration II",
+    "level": "Advanced",
+    "apparatus": "cadillac",
+    "setup": "Sitting upright, facing RUBar, arms straight and shoulder width apart, hands holding PTBar, legs straight and together, feet plantarflexed",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Round trunk, leaning back",
+      "inhale": "Move trunk forward over legs"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Shoulder flexor control and stretch"
+    ],
+    "cues": [
+      "Maximize shoulder stretch when leaning back",
+      "Allow arms and trunk to follow PTBar as it lifts",
+      "Articulate through spine when returning to upright position"
+    ]
+  }
+}

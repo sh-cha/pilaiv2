@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p020.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Teaser Prep",
+    "block": "Full Body Integration I",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying supine on Long Box, shoulders over back edge, legs in tabletop position, arms straight and overhead, hands placed in straps",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Roll up, bring arms forward and up to sides of body in line with shoulders, parallel to floor, palms facing up, simultaneously straighten legs to ceiling",
+      "exhale": "Roll down, take arms down and back overhead, simultaneously bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Hip flexor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Scoop arms down and forward when rolling up",
+      "Keep legs perpendicular when straightening to ceiling",
+      "Keep eye line directly forward when lifted",
+      "Keep head aligned with spine when in start position"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "source_page": "graduate:p037.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hamstring Curl",
+    "series": "Long Box Group",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying prone on Long Box, facing footbar, arms hugging front of box, trunk lifted, legs straight and together, thighs lifted off box, feet in straps, ropes shortened",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Bend legs",
+      "inhale": "Straighten legs, return to start position"
+    },
+    "muscle_focus": [
+      "Knee flexors",
+      "Hip extensors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Knee flexor strength",
+      "Hip extensor strength",
+      "Spinal extensor control"
+    ],
+    "cues": [
+      "Keep upper back lifted and chest open",
+      "Keep pressing arms into box",
+      "Keep abdominals engaged",
+      "Maintain hip extension",
+      "Keep eyes focused forward"
+    ]
+  }
+}

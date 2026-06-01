@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p033.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hundred Prep",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "reps": "8 ~ 10 회",
+    "setup": "Lying supine in neutral spine position, legs in tabletop position, arms straight and perpendicular to floor, hands in straps, palms facing forward",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift head and chest, reach arms down to sides of body, parallel to floor",
+      "inhale": "Lower head and chest, lift ams, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Hip flexor control",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Move head together with upper girdle",
+      "Maintain straight arms aligned with shoulders",
+      "Keep eyeline directly forward when in trunk flexion",
+      "Keep tension in straps throughout movement"
+    ]
+  }
+}

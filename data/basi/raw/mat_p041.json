@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p041.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Seal Puppy",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Sitting in balanced position with body in ball shape, legs bent, arms wrapped under legs, feet plantarflexed, palms on top of feet",
+    "movement": {
+      "inhale": "Roll back, clap feet together three times",
+      "exhale": "Roll up, return to start position, clap feet together three times"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip adductors"
+    ],
+    "objectives": [
+      "Trunk stabilization",
+      "Hip joint flexibility"
+    ],
+    "cues": [
+      "Keep eyes forward",
+      "Maintain scapular stabilization",
+      "Maintain consistent curve of spine",
+      "Roll onto shoulders, avoid rolling onto neck"
+    ]
+  }
+}

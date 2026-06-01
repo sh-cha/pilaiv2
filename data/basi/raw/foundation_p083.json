@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p083.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hug-a-Tree",
+    "series": "Arms Sitting Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Sitting upright facing footbar, legs straight and together, pelvis against shoulder rests, arms in T position, micro-bend in elbows, hands in straps, palms facing forward",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Move arms forward",
+      "inhale": "Move arms back, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder horizontal adductors",
+      "Shoulder flexors",
+      "Scapular stabilizers",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder horizontal adductor strength",
+      "Shoulder flexor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Move arms along horizontal line at shoulder height, parallel to floor",
+      "Move arms forward until parallel with each other"
+    ]
+  }
+}

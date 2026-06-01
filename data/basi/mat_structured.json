@@ -1,0 +1,2329 @@
+{
+  "p000.png": {
+    "page_type": "intro",
+    "title": "MAT MOVEMENT ANALYSIS WORKBOOK V1.1",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI Pilates Mat Movement Analysis Workbook cover page",
+    "_source": "mat",
+    "_page_file": "p000.png"
+  },
+  "p007.png": {
+    "page_type": "intro",
+    "title": "BASI Block System",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI Block System teaching methodology with 6 blocks diagram",
+    "_source": "mat",
+    "_page_file": "p007.png"
+  },
+  "p003.png": {
+    "page_type": "intro",
+    "title": "BASI Vision",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI Pilates vision, mission, and welcome statement",
+    "_source": "mat",
+    "_page_file": "p003.png"
+  },
+  "p004.png": {
+    "page_type": "intro",
+    "title": "BASI FOUNDER",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Biography of BASI founder Rael Isacowitz",
+    "_source": "mat",
+    "_page_file": "p004.png"
+  },
+  "p005.png": {
+    "page_type": "intro",
+    "title": "Words from the Founder",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Founder's message about BASI Pilates MAWB sixth edition",
+    "_source": "mat",
+    "_page_file": "p005.png"
+  },
+  "p001.png": {
+    "page_type": "other",
+    "title": "COPYRIGHT",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Copyright notice and intellectual property statement",
+    "_source": "mat",
+    "_page_file": "p001.png"
+  },
+  "p006.png": {
+    "page_type": "intro",
+    "title": "Words from the Founder",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Rael Isacowitz founder message for BASI Mat Work sixth edition",
+    "_source": "mat",
+    "_page_file": "p006.png"
+  },
+  "p008.png": {
+    "page_type": "intro",
+    "title": "Exercise Analysis",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI exercise analysis methodology introduction with description and movement",
+    "_source": "mat",
+    "_page_file": "p008.png"
+  },
+  "p002.png": {
+    "page_type": "toc",
+    "title": "Table of Contents",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [
+      {
+        "title": "BASI Vision",
+        "page": 4
+      },
+      {
+        "title": "Words from the Founder",
+        "page": 5
+      },
+      {
+        "title": "BASI Block System",
+        "page": 8
+      },
+      {
+        "title": "Exercise Analysis",
+        "page": 10
+      },
+      {
+        "title": "Muscle Focus",
+        "page": 11
+      },
+      {
+        "title": "Objectives",
+        "page": 12
+      },
+      {
+        "title": "Cues",
+        "page": 13
+      },
+      {
+        "title": "Exercises",
+        "page": 15
+      },
+      {
+        "title": "Index",
+        "page": 99
+      }
+    ],
+    "raw_text_summary": "Table of Contents with 9 section entries",
+    "_source": "mat",
+    "_page_file": "p002.png"
+  },
+  "p009.png": {
+    "page_type": "intro",
+    "title": "Muscle Focus",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Explains Muscle Focus concept and its importance",
+    "_source": "mat",
+    "_page_file": "p009.png"
+  },
+  "p010.png": {
+    "page_type": "intro",
+    "title": "Objectives",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Explanation of Objectives concept in Pilates exercises",
+    "_source": "mat",
+    "_page_file": "p010.png"
+  },
+  "p011.png": {
+    "page_type": "intro",
+    "title": "CUES",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Explanation of cues role in Pilates teaching",
+    "_source": "mat",
+    "_page_file": "p011.png"
+  },
+  "p012.png": {
+    "page_type": "intro",
+    "title": null,
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Joseph Pilates quote about mastering each exercise",
+    "_source": "mat",
+    "_page_file": "p012.png"
+  },
+  "p013.png": {
+    "page_type": "intro",
+    "title": "EXERCISES",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI exercises intro page with teaser note",
+    "_source": "mat",
+    "_page_file": "p013.png"
+  },
+  "p015.png": {
+    "page_type": "other",
+    "title": null,
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Handwritten notes on Pelvical and Footwork on Cadillac",
+    "_source": "mat",
+    "_page_file": "p015.png"
+  },
+  "p014.png": {
+    "page_type": "exercise_detail",
+    "title": "Pelvic Curl",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "warm up",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Pelvic Curl",
+        "reps": "8-10",
+        "spring_setting": null,
+        "notes": "Foundation level; spinal articulation with hip extensor control and pelvic lumbar stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Pelvic Curl exercise detail, fundamental level, mat",
+    "_source": "mat",
+    "_page_file": "p014.png"
+  },
+  "p017.png": {
+    "page_type": "exercise_detail",
+    "title": "Chest Lift",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "abdominal",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Chest Lift",
+        "reps": "8~10",
+        "spring_setting": null,
+        "notes": "Foundation block, Fundamental level; spinal flexor strength and pelvic lumbar stabilization focus."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Chest Lift exercise detail, Foundation block, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p017.png"
+  },
+  "p016.png": {
+    "page_type": "exercise_detail",
+    "title": "Spine Twist Supine",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": null,
+    "exercises": [
+      {
+        "order": null,
+        "name": "Spine Twist Supine",
+        "reps": "4~5 set",
+        "spring_setting": null,
+        "notes": "Foundation block, Fundamental level; lying supine with arms in T position, legs in tabletop; inhale lower legs to one side, exhale return to start; alternate sides."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Spine Twist Supine exercise detail, Foundation Fundamental level",
+    "_source": "mat",
+    "_page_file": "p016.png"
+  },
+  "p018.png": {
+    "page_type": "exercise_detail",
+    "title": "Chest Lift with Rotation",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "abdominal",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Chest Lift with Rotation",
+        "reps": "4~5 set",
+        "spring_setting": null,
+        "notes": "Foundation block, Fundamental level; rotate to each side while maintaining trunk flexion and pelvic stability."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Chest Lift with Rotation, Foundation, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p018.png"
+  },
+  "p021.png": {
+    "page_type": "exercise_detail",
+    "title": "Hundred Prep",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hundred Prep",
+        "reps": "8-10",
+        "spring_setting": null,
+        "notes": "Lying supine, legs in tabletop position, arms overhead; exhale lift arms, head and chest bringing arms to sides; inhale lower body to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hundred Prep abdominal work fundamental level exercise detail",
+    "_source": "mat",
+    "_page_file": "p021.png"
+  },
+  "p019.png": {
+    "page_type": "exercise_detail",
+    "title": "Single Leg Lift",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": null,
+    "exercises": [
+      {
+        "order": null,
+        "name": "Single Leg Lift",
+        "reps": "5 repetitions per leg",
+        "spring_setting": null,
+        "notes": "Exhale lift one leg plantarflex foot; Inhale lower leg touch Mat with toes; maintain pelvic lumbar stabilization and 90 degree knee angle"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Single Leg Lift mat exercise, Foundation block, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p019.png"
+  },
+  "p020.png": {
+    "page_type": "exercise_detail",
+    "title": "Leg Changes",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": null,
+    "exercises": [
+      {
+        "order": null,
+        "name": "Leg Changes",
+        "reps": "4-5 set",
+        "spring_setting": null,
+        "notes": "Starting in Single Leg Changes; inhale lift one leg foot plantar flexed, exhale switch legs; maintain pelvic lumbar stabilization and consistent knee angle 90 degrees."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Leg Changes exercise detail, Foundation block, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p020.png"
+  },
+  "p022.png": {
+    "page_type": "exercise_detail",
+    "title": "Roll Up",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Roll Up",
+        "reps": "8~10",
+        "spring_setting": null,
+        "notes": "Lying supine in neutral spine; inhale lift arms/head/chest, exhale roll up, inhale pause, exhale roll down; maintain C curve throughout."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Roll Up abdominal work exercise detail with cues",
+    "_source": "mat",
+    "_page_file": "p022.png"
+  },
+  "p023.png": {
+    "page_type": "exercise_detail",
+    "title": "Leg Circles",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Leg Circles",
+        "reps": "5 repetitions each direction",
+        "spring_setting": null,
+        "notes": "Lying supine, one leg straight up to ceiling, foot dorsiflexed, other leg on mat; circle leg across center line, down and around, reverse after 5 reps; focus on pelvic lumbar stabilization and hip disassociation."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Leg Circles exercise detail, Abdominal Work, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p023.png"
+  },
+  "p024.png": {
+    "page_type": "exercise_detail",
+    "title": "Roll-Like-a-Ball",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Roll-Like-a-Ball",
+        "reps": "8~10회",
+        "spring_setting": null,
+        "notes": "Sitting in balanced position, body in ball shape, legs bent, hands on shins, feet off Mat; Inhale roll back, Exhale roll forward; Fundamental level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Roll-Like-a-Ball exercise detail, Fundamental level, Spinal Articulation",
+    "_source": "mat",
+    "_page_file": "p024.png"
+  },
+  "p025.png": {
+    "page_type": "exercise_detail",
+    "title": "Spine Stretch",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Spine Stretch",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Sitting upright, legs straight, feet dorsiflexed, shoulder width apart, arms reaching forward parallel to mat; focus on spinal articulation and hip extensor stretch."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Spine Stretch exercise detail, Fundamental level, Spinal Articulation block",
+    "_source": "mat",
+    "_page_file": "p025.png"
+  },
+  "p026.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Lifts",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Lateral / Flexion Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Lifts",
+        "reps": "8~10",
+        "spring_setting": null,
+        "notes": "Lying on side in neutral spine; exhale lift legs, inhale lower without touching mat; change side after 10 repetitions."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Lifts fundamental mat lateral flexion rotation exercise",
+    "_source": "mat",
+    "_page_file": "p026.png"
+  },
+  "p028.png": {
+    "page_type": "exercise_detail",
+    "title": "Rest Position",
+    "apparatus": "reformer",
+    "series_name": null,
+    "category": "Foundation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Rest Position",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Kneeling, pelvis on heels, breathe freely relaxing back, neck and shoulders; muscle focus: spinal extensors."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Rest Position fundamental block foundation exercise detail",
+    "_source": "mat",
+    "_page_file": "p028.png"
+  },
+  "p029.png": {
+    "page_type": "exercise_detail",
+    "title": "Hundred",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hundred",
+        "reps": "10 breath cycles",
+        "spring_setting": null,
+        "notes": "Starting in Hundred Prep position; pump arms up and down for 5 counts exhale and 5 counts inhale; maintain pelvic lumbar stabilization"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hundred exercise detail, intermediate level, abdominal work",
+    "_source": "mat",
+    "_page_file": "p029.png"
+  },
+  "p027.png": {
+    "page_type": "exercise_detail",
+    "title": "Back Extension",
+    "apparatus": "mat",
+    "series_name": "Back Extension",
+    "category": "back extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Back Extension",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Lying prone, lift upper trunk on inhale, lower without touching mat on exhale; focus on spinal extensor strength and pelvic lumbar stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Back Extension exercise detail, Fundamental level, mat",
+    "_source": "mat",
+    "_page_file": "p027.png"
+  },
+  "p030.png": {
+    "page_type": "exercise_detail",
+    "title": "Double Leg Stretch",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Double Leg Stretch",
+        "reps": "8~10",
+        "spring_setting": null,
+        "notes": "Set up in Chest Lift position; inhale reach arms overhead and straighten legs, exhale circle arms and bend legs back to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Double Leg Stretch abdominal work intermediate level",
+    "_source": "mat",
+    "_page_file": "p030.png"
+  },
+  "p031.png": {
+    "page_type": "exercise_detail",
+    "title": "Single Leg Stretch",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Single Leg Stretch",
+        "reps": "5 set",
+        "spring_setting": null,
+        "notes": "Starting in Double Leg Stretch position; maintain trunk flexion at consistent height; use arms to support position."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Single Leg Stretch abdominal work intermediate level detail",
+    "_source": "mat",
+    "_page_file": "p031.png"
+  },
+  "p032.png": {
+    "page_type": "exercise_detail",
+    "title": "Criss Cross",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Criss Cross",
+        "reps": "5 set",
+        "spring_setting": null,
+        "notes": "Starting in Double Leg Stretch position, hands behind head, fingers interlaced; rotate toward bent knee alternating sides."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Criss Cross abdominal exercise intermediate level mat",
+    "_source": "mat",
+    "_page_file": "p032.png"
+  },
+  "p035.png": {
+    "page_type": "exercise_detail",
+    "title": "Corkscrew",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Corkscrew",
+        "reps": "5 set 3회",
+        "spring_setting": null,
+        "notes": "Lying supine, move legs to one side then circle down and around to opposite side; alternate direction. Level: Intermediate."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Corkscrew exercise detail, lateral flexion/rotation, intermediate",
+    "_source": "mat",
+    "_page_file": "p035.png"
+  },
+  "p034.png": {
+    "page_type": "exercise_detail",
+    "title": "Spine Twist",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Spine Twist",
+        "reps": "2 pulses each side, alternate sides",
+        "spring_setting": null,
+        "notes": "Sitting upright, legs straight together, feet dorsiflexed, arms in T position, palms up; rotate trunk with 2 pulses exhale, inhale to center."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Spine Twist exercise detail, intermediate level, lateral flexion/rotation",
+    "_source": "mat",
+    "_page_file": "p034.png"
+  },
+  "p033.png": {
+    "page_type": "exercise_detail",
+    "title": "Saw",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Saw",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Intermediate level; sitting upright, legs straight, feet dorsiflexed, arms in T position; rotate trunk, reach forward past outside of foot, alternate sides."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Saw exercise detail, lateral flexion rotation, intermediate level",
+    "_source": "mat",
+    "_page_file": "p033.png"
+  },
+  "p036.png": {
+    "page_type": "exercise_detail",
+    "title": "Single Leg Kick",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Single Leg Kick",
+        "reps": "4~5 sets",
+        "spring_setting": null,
+        "notes": "Lying prone, trunk lifted, arms bent, elbows under shoulders, fingers interlaced, legs straight and together, lifted off Mat; Exhale/Inhale: Bend leg (2 pulses), switch legs (2 pulses); Final Inhale: Straighten legs, return to start position"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Single Leg Kick Back Extension Intermediate mat exercise",
+    "_source": "mat",
+    "_page_file": "p036.png"
+  },
+  "p037.png": {
+    "page_type": "exercise_detail",
+    "title": "Cat Stretch",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Bridging/Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Cat Stretch",
+        "reps": "5 set",
+        "spring_setting": null,
+        "notes": "Kneeling in quadruped position, neutral spine, wrists under shoulders, knees under hips; Exhale round spine, Inhale extend spine; focus flexion in lumbar spine, extension in thoracic spine."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Cat Stretch intermediate level bridging full body integration",
+    "_source": "mat",
+    "_page_file": "p037.png"
+  },
+  "p040.png": {
+    "page_type": "exercise_detail",
+    "title": "Back Support",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Bridging",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Back Support",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Lift pelvis on exhale, lower pelvis without touching Mat on inhale; intermediate level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Back Support exercise in Bridging block, intermediate level",
+    "_source": "mat",
+    "_page_file": "p040.png"
+  },
+  "p038.png": {
+    "page_type": "other",
+    "title": null,
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Handwritten Korean notes mentioning Boxer exercise",
+    "_source": "mat",
+    "_page_file": "p038.png"
+  },
+  "p039.png": {
+    "page_type": "exercise_detail",
+    "title": "Front Support",
+    "apparatus": "reformer",
+    "series_name": null,
+    "category": "Bridging",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Front Support",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Plank position alternating knee tucks; focus on spinal flexor control, trunk stabilization, hip flexor control, and scapular stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Front Support plank knee tuck intermediate bridging block",
+    "_source": "mat",
+    "_page_file": "p039.png"
+  },
+  "p041.png": {
+    "page_type": "exercise_detail",
+    "title": "Seal Puppy",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Seal Puppy",
+        "reps": "5~8회",
+        "spring_setting": null,
+        "notes": "Roll back clapping feet three times, roll up returning to start clapping feet three times; trunk stabilization and hip joint flexibility focus."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Seal Puppy spinal articulation intermediate level exercise",
+    "_source": "mat",
+    "_page_file": "p041.png"
+  },
+  "p042.png": {
+    "page_type": "exercise_detail",
+    "title": "Hamstring Pull 1",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hamstring Pull 1",
+        "reps": "2 pulses each side",
+        "spring_setting": null,
+        "notes": "Starting in Chest Lift position, legs perpendicular to Mat, hands behind calves; exhale lower one leg, inhale switch legs with 2 pulses."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hamstring Pull 1 mat exercise intermediate abdominal work",
+    "_source": "mat",
+    "_page_file": "p042.png"
+  },
+  "p043.png": {
+    "page_type": "exercise_detail",
+    "title": "Roll Over",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Roll Over",
+        "reps": "5-8",
+        "spring_setting": null,
+        "notes": "Lying supine, legs at 60 degrees diagonal, spinal flexion roll over with hip extensor stretch; Intermediate level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Roll Over exercise detail, Spinal Articulation, Intermediate level",
+    "_source": "mat",
+    "_page_file": "p043.png"
+  },
+  "p044.png": {
+    "page_type": "exercise_detail",
+    "title": "Open Leg Rocker",
+    "apparatus": "mat",
+    "series_name": "Spinal Articulation",
+    "category": "spinal articulation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Open Leg Rocker",
+        "reps": "5-8",
+        "spring_setting": null,
+        "notes": "Sitting in balanced position, back flat, one hand holding each leg (close to ankles), legs shoulder width apart, arms straight, feet plantarflexed; Inhale to round and roll back, Exhale to roll up, straighten back, return to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Open Leg Rocker exercise detail, intermediate level, spinal articulation",
+    "_source": "mat",
+    "_page_file": "p044.png"
+  },
+  "p045.png": {
+    "page_type": "exercise_detail",
+    "title": "Shoulder Bridge Prep",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Bridging",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Shoulder Bridge Prep",
+        "reps": "5 repetitions per leg",
+        "spring_setting": null,
+        "notes": "Intermediate level; starting in up phase of Pelvic Curl; objectives include pelvic lumbar stabilization, hip extensor strength, hip flexor control, and hip disassociation."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Shoulder Bridge Prep exercise detail, Bridging block, Intermediate",
+    "_source": "mat",
+    "_page_file": "p045.png"
+  },
+  "p047.png": {
+    "page_type": "exercise_detail",
+    "title": "Double Leg Kick",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Double Leg Kick",
+        "reps": "4-5 sets",
+        "spring_setting": null,
+        "notes": "Lying prone, legs straight and together, lifted off Mat, fingers interlaced behind back; exhale bend both legs (3 pulses), inhale extend back and straighten legs and arms."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Double Leg Kick back extension intermediate mat exercise",
+    "_source": "mat",
+    "_page_file": "p047.png"
+  },
+  "p049.png": {
+    "page_type": "exercise_detail",
+    "title": "Rocking Prep",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Rocking Prep",
+        "reps": "5~8",
+        "spring_setting": null,
+        "notes": "Lying prone, knees bent, arms straight reaching back, hands holding feet; lift trunk and legs toward ceiling then lower."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Rocking Prep back extension intermediate level mat exercise",
+    "_source": "mat",
+    "_page_file": "p049.png"
+  },
+  "p050.png": {
+    "page_type": "exercise_detail",
+    "title": "Leg Pull Front",
+    "apparatus": "mat",
+    "series_name": "Bridging",
+    "category": "Bridging",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Leg Pull Front",
+        "reps": "5 repetitions per leg",
+        "spring_setting": null,
+        "notes": "Starting in Front Support Position, one leg lifted slightly off Mat, foot plantarflexed; Exhale lift leg, Inhale lower leg, change leg after 5 repetitions."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Leg Pull Front intermediate exercise on mat, Bridging block",
+    "_source": "mat",
+    "_page_file": "p050.png"
+  },
+  "p048.png": {
+    "page_type": "exercise_detail",
+    "title": "Swimming",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Swimming",
+        "reps": "5 counts inhale, 5 counts exhale",
+        "spring_setting": null,
+        "notes": "Lying prone, arms and legs lifted, alternating arm and leg pattern with cross-coordination; maintain scapular and trunk stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swimming exercise detail, Back Extension block, Intermediate level",
+    "_source": "mat",
+    "_page_file": "p048.png"
+  },
+  "p052.png": {
+    "page_type": "exercise_detail",
+    "title": "Teaser Prep",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Bridging/Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Teaser Prep",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Sitting balanced, back flat, arms forward, legs lifted, knees bent, shins parallel to Mat; exhale roll down, inhale roll up."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Teaser Prep mat exercise intermediate level detail",
+    "_source": "mat",
+    "_page_file": "p052.png"
+  },
+  "p053.png": {
+    "page_type": "exercise_detail",
+    "title": "Hamstring Pull 2",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hamstring Pull 2",
+        "reps": "4~5 set 권장",
+        "spring_setting": null,
+        "notes": "Intermediate level; lower one leg to Mat with 2 pulses while lifting other leg toward chest, then switch legs."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hamstring Pull 2 abdominal work intermediate level exercise",
+    "_source": "mat",
+    "_page_file": "p053.png"
+  },
+  "p054.png": {
+    "page_type": "exercise_detail",
+    "title": "Hamstring Pull 3",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hamstring Pull 3",
+        "reps": "4~5 set",
+        "spring_setting": null,
+        "notes": "Starting in Hamstring Pull 2 position; lower one leg to mat, lift other toward chest, rotate trunk toward lifted leg (2 pulses), then switch."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hamstring Pull 3 exercise detail, intermediate level, abdominal work",
+    "_source": "mat",
+    "_page_file": "p054.png"
+  },
+  "p055.png": {
+    "page_type": "exercise_detail",
+    "title": "Shoulder Bridge",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Bridging",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Shoulder Bridge",
+        "reps": "5 repetitions per leg",
+        "spring_setting": null,
+        "notes": "Starting in up phase of Pelvic Curl, one leg straight, foot plantarflexed, reaching toward ceiling; exhale lower leg, inhale lift leg and dorsiflex foot; change leg after 5 repetitions."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Shoulder Bridge exercise detail, intermediate level, bridging block",
+    "_source": "mat",
+    "_page_file": "p055.png"
+  },
+  "p056.png": {
+    "page_type": "exercise_detail",
+    "title": "Control Balance",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Control Balance",
+        "reps": "5 sets (4~)",
+        "spring_setting": null,
+        "notes": "Advanced level; lift one leg toward ceiling with 2 pulses, switch legs; hip and spinal extensor focus"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Control Balance advanced mat exercise spinal articulation",
+    "_source": "mat",
+    "_page_file": "p056.png"
+  },
+  "p057.png": {
+    "page_type": "exercise_detail",
+    "title": "Jackknife",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": 53,
+        "name": "Jackknife",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Advanced level; starting in Roll Over position; spinal articulation with hip and shoulder extensor control."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Jackknife exercise detail, Advanced, Spinal Articulation block",
+    "_source": "mat",
+    "_page_file": "p057.png"
+  },
+  "p051.png": {
+    "page_type": "exercise_detail",
+    "title": "Leg Pull Back",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Bridging/Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Leg Pull Back",
+        "reps": "5 repetitions per leg",
+        "spring_setting": null,
+        "notes": "Starting in Back Support position; exhale to lift leg, inhale to lower; change leg after 5 repetitions; Intermediate level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Leg Pull Back exercise detail, Intermediate level, mat",
+    "_source": "mat",
+    "_page_file": "p051.png"
+  },
+  "p058.png": {
+    "page_type": "exercise_detail",
+    "title": "Hip Circles Prep",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Lateral Flexion/Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hip Circles Prep",
+        "reps": "5 repetitions each direction",
+        "spring_setting": null,
+        "notes": "Sitting in V position, arms straight behind pelvis; circle legs down and around to opposite side, change direction after 5 repetitions."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hip Circles Prep mat exercise, Advanced level, Lateral Flexion/Rotation",
+    "_source": "mat",
+    "_page_file": "p058.png"
+  },
+  "p059.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Kick Kneeling",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Lateral Flexion/Rotation",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Side Kick Kneeling",
+        "reps": "5 repetitions each side",
+        "spring_setting": null,
+        "notes": "Kneeling on one knee, swing top leg forward with dorsiflex (2 pulses) and back with plantarflex (2 pulses); Advanced level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Kick Kneeling advanced lateral flexion rotation exercise detail",
+    "_source": "mat",
+    "_page_file": "p059.png"
+  },
+  "p060.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Bend",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Lateral Flexion/Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Bend",
+        "reps": "3~5회",
+        "spring_setting": null,
+        "notes": "Advanced level; spinal lateral flexion with rotation, scapular stabilization, shoulder strength focus."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Bend lateral flexion rotation advanced mat exercise",
+    "_source": "mat",
+    "_page_file": "p060.png"
+  },
+  "p063.png": {
+    "page_type": "exercise_detail",
+    "title": "Neck Pull",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Neck Pull",
+        "reps": "5~8",
+        "spring_setting": null,
+        "notes": "Lying supine, hands interlaced behind head, legs straight and together, feet plantarflexed; Advanced level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Neck Pull abdominal work advanced mat exercise detail",
+    "_source": "mat",
+    "_page_file": "p063.png"
+  },
+  "p062.png": {
+    "page_type": "exercise_detail",
+    "title": "Teaser 1",
+    "apparatus": "cadillac",
+    "series_name": null,
+    "category": "Bridging/Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Teaser 1",
+        "reps": "3~5",
+        "spring_setting": null,
+        "notes": "Balance in V position, roll down and up with arms overhead; spinal flexor, extensor, and hip flexor focus."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Teaser 1 exercise detail, Advanced level, Full Body Integration",
+    "_source": "mat",
+    "_page_file": "p062.png"
+  },
+  "p064.png": {
+    "page_type": "exercise_detail",
+    "title": "Scissors",
+    "apparatus": "mat",
+    "series_name": "Bridging/Full Body Integration",
+    "category": "Bridging/Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Scissors",
+        "reps": "4~5 set",
+        "spring_setting": null,
+        "notes": "Advanced level; open legs to Scissors position with 2 pulses on exhale, switch on inhale; muscle focus: hip flexors, hip extensors, spinal flexors"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Scissors exercise, advanced level, bridging/full body integration",
+    "_source": "mat",
+    "_page_file": "p064.png"
+  },
+  "p046.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Kick",
+    "apparatus": "cadillac",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Kick",
+        "reps": "5 repetitions per side (5 set)",
+        "spring_setting": null,
+        "notes": "Swing top leg forward with dorsiflex (2 pulses), swing back with plantarflex (2 pulses); change leg after 5 repetitions."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Kick lateral flexion rotation intermediate level detail",
+    "_source": "mat",
+    "_page_file": "p046.png"
+  },
+  "p066.png": {
+    "page_type": "exercise_detail",
+    "title": "Corkscrew Advanced",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Corkscrew Advanced",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Starting in Roll Over position, legs overhead; rotate and circle legs alternating sides; keep shoulders stable and maintain pelvic lumbar stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Corkscrew Advanced lateral flexion rotation advanced level",
+    "_source": "mat",
+    "_page_file": "p066.png"
+  },
+  "p065.png": {
+    "page_type": "exercise_detail",
+    "title": "Bicycle",
+    "apparatus": "cadillac",
+    "series_name": "Bridging/Full Body Integration",
+    "category": "Bridging/Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Bicycle",
+        "reps": "5 cycles on each leg, reverse direction",
+        "spring_setting": null,
+        "notes": "Starting in Scissors position; maintain pelvic lumbar stabilization throughout; touch floor with foot of bent leg in both directions."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Bicycle exercise, Advanced level, Bridging/Full Body Integration block",
+    "_source": "mat",
+    "_page_file": "p065.png"
+  },
+  "p067.png": {
+    "page_type": "exercise_detail",
+    "title": "Rocking",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Rocking",
+        "reps": "4~5회",
+        "spring_setting": null,
+        "notes": "Starting in lifted position of Rocking Prep (page 48); initiate rock forward with hip extensor activation; keep head aligned with spine."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Rocking exercise, Back Extension block, Advanced level",
+    "_source": "mat",
+    "_page_file": "p067.png"
+  },
+  "p061.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan Dive Prep",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Swan Dive Prep",
+        "reps": "5-8",
+        "spring_setting": null,
+        "notes": "Advanced level; lying prone with elbows close to sides, forearms pressing into mat; lift trunk straightening arms on inhale, lower trunk bending arms and lifting legs on exhale."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan Dive Prep back extension advanced mat exercise",
+    "_source": "mat",
+    "_page_file": "p061.png"
+  },
+  "p068.png": {
+    "page_type": "exercise_detail",
+    "title": "Rocking",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Rocking",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Advanced level back extension; rock forward lifting feet, rock back lifting head, maintaining consistent body shape throughout."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Rocking exercise, Back Extension block, Advanced level",
+    "_source": "mat",
+    "_page_file": "p068.png"
+  },
+  "p069.png": {
+    "page_type": "exercise_detail",
+    "title": "Teaser 2",
+    "apparatus": "cadillac",
+    "series_name": null,
+    "category": "Bridging/Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Teaser 2",
+        "reps": "3~5회",
+        "spring_setting": null,
+        "notes": "Starting in Teaser 1 position; inhale lower legs, exhale lift legs; maintain stable trunk throughout; keep movement of legs controlled."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Teaser 2 advanced exercise on cadillac bridging block",
+    "_source": "mat",
+    "_page_file": "p069.png"
+  },
+  "p070.png": {
+    "page_type": "exercise_detail",
+    "title": "Teaser 3",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Bridging/Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Teaser 3",
+        "reps": "3~5",
+        "spring_setting": null,
+        "notes": "Starting in Teaser 1 position; lower trunk and legs simultaneously reaching arms overhead, then lift arms, trunk and legs to return."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Teaser 3 advanced mat exercise bridging full body integration",
+    "_source": "mat",
+    "_page_file": "p070.png"
+  },
+  "p071.png": {
+    "page_type": "exercise_detail",
+    "title": "Hip Circles",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hip Circles",
+        "reps": "5 repetitions each direction",
+        "spring_setting": null,
+        "notes": "Advanced level; maintain pelvic lumbar stabilization; move legs and pelvis as one unit; move arms, trunk and head as one unit."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hip Circles advanced exercise with lateral flexion rotation",
+    "_source": "mat",
+    "_page_file": "p071.png"
+  },
+  "p072.png": {
+    "page_type": "exercise_detail",
+    "title": "Twist",
+    "apparatus": "cadillac",
+    "series_name": "Lateral Flexion / Rotation",
+    "category": "lateral flexion / rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Twist",
+        "reps": "3.5 회",
+        "spring_setting": null,
+        "notes": "Starting in Side Bend position; spinal rotator control and scapular stabilization focus."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Twist exercise lateral flexion rotation advanced level",
+    "_source": "mat",
+    "_page_file": "p072.png"
+  },
+  "p075.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan Dive",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Swan Dive",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Advanced level; maintain consistent arc shape, engage abdominals throughout, maximize fluidity of movement."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan Dive mat exercise, Back Extension, Advanced level",
+    "_source": "mat",
+    "_page_file": "p075.png"
+  },
+  "p073.png": {
+    "page_type": "exercise_detail",
+    "title": "Push Up",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Bridging / Full Body Integration",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Push Up",
+        "reps": "5회 반복",
+        "spring_setting": null,
+        "notes": "Advanced level; start in Front Support position; elbow extensors, scapular stabilizers, spinal flexors focus."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Push Up exercise detail, Advanced level, Bridging block",
+    "_source": "mat",
+    "_page_file": "p073.png"
+  },
+  "p074.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan Dive Prep with Catch",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Swan Dive Prep with Catch",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Advanced level; starting in lifted position of Swan Dive Prep; maintain consistent arc shape and engage abdominals throughout."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan Dive Prep with Catch advanced back extension mat exercise",
+    "_source": "mat",
+    "_page_file": "p074.png"
+  },
+  "p077.png": {
+    "page_type": "exercise_detail",
+    "title": "Crab",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Crab",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Advanced level; sitting in balanced position, trunk in C curve, legs bent ankles crossed, roll back and over legs placing head on mat."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Crab exercise detail, spinal articulation, advanced level",
+    "_source": "mat",
+    "_page_file": "p077.png"
+  },
+  "p076.png": {
+    "page_type": "exercise_detail",
+    "title": "Boomerang",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Boomerang",
+        "reps": "5",
+        "spring_setting": null,
+        "notes": "Advanced level; sitting with legs straight and crossed, roll down, roll over, switch legs, roll up to Teaser, circle arms behind back, return to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Boomerang exercise detail, Advanced level, Spinal Articulation",
+    "_source": "mat",
+    "_page_file": "p076.png"
+  },
+  "p079.png": {
+    "page_type": "exercise_detail",
+    "title": "Forward and Lift",
+    "apparatus": "cadillac",
+    "series_name": "Gluteals Side Lying Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Forward and Lift",
+        "reps": null,
+        "spring_setting": "light to medium",
+        "notes": "Move leg forward to 90 degree hip flexion, lift leg, lower leg, then move leg back to start; keep pelvis stable throughout."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Forward and Lift exercise from Gluteals Side Lying Series",
+    "_source": "mat",
+    "_page_file": "p079.png"
+  },
+  "p080.png": {
+    "page_type": "exercise_detail",
+    "title": "Forward with Drops",
+    "apparatus": "mat",
+    "series_name": "Gluteals Side Lying Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": 3,
+        "name": "Forward with Drops",
+        "reps": "5 pulses exhale, 5 pulses inhale",
+        "spring_setting": null,
+        "notes": "Starting in Side Leg Lifts position, bringing leg forward to 90 degrees hip flexion; resistance light to medium"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Gluteals Side Lying Series Forward with Drops, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p080.png"
+  },
+  "p078.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Leg Lifts",
+    "apparatus": "mat",
+    "series_name": "Gluteals Side Lying Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Leg Lifts",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Resistance: light to medium; hip abductor strength and pelvic lumbar stabilization focus."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Leg Lifts in Gluteals Side Lying Series, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p078.png"
+  },
+  "p082.png": {
+    "page_type": "exercise_detail",
+    "title": "Hip Abduction Bent Knee",
+    "apparatus": "cadillac",
+    "series_name": "Gluteals Kneeling Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": 3,
+        "name": "Hip Abduction Bent Knee",
+        "reps": null,
+        "spring_setting": "light to medium",
+        "notes": "Lift leg to side while maintaining pelvic stabilization and 90 degree knee angle."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hip Abduction Bent Knee, Gluteals Kneeling Series, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p082.png"
+  },
+  "p081.png": {
+    "page_type": "exercise_detail",
+    "title": "Adductor Lift",
+    "apparatus": "mat",
+    "series_name": "Gluteals Side Lying Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": 4,
+        "name": "Adductor Lift",
+        "reps": "8~10",
+        "spring_setting": null,
+        "notes": "Resistance: light to medium; hip adductor strength and pelvic lumbar stabilization focus"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Adductor Lift exercise detail, Fundamental level, Leg Work",
+    "_source": "mat",
+    "_page_file": "p081.png"
+  },
+  "p083.png": {
+    "page_type": "exercise_detail",
+    "title": "Hip Extension Bent Knee",
+    "apparatus": "cadillac",
+    "series_name": "Gluteals Kneeling Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hip Extension Bent Knee",
+        "reps": null,
+        "spring_setting": "light to medium",
+        "notes": "Kneeling in quadruped position, neutral spine, wrists under shoulders, knees under hips; focus on hip disassociation and pelvic stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hip Extension Bent Knee, Gluteals Kneeling Series, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p083.png"
+  },
+  "p085.png": {
+    "page_type": "exercise_detail",
+    "title": "Chest Lift with Magic Circle",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "abdominal",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Chest Lift with Magic Circle",
+        "reps": "8-10회",
+        "spring_setting": null,
+        "notes": "Lying supine in neutral spine, holding Magic Circle between knees and between hands; exhale to lift head and chest pressing circles, inhale pause, exhale lower and return."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Chest Lift with Magic Circle, Foundation, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p085.png"
+  },
+  "p087.png": {
+    "page_type": "exercise_detail",
+    "title": "Arms Straight",
+    "apparatus": "other",
+    "series_name": "Arms Series",
+    "category": "Arm Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Arms Straight",
+        "reps": "8~10",
+        "spring_setting": null,
+        "notes": "Starting in Arms Bent position with arms straight; exhale press arms together, inhale open arms."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Arms Straight exercise, Arm Work block, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p087.png"
+  },
+  "p086.png": {
+    "page_type": "exercise_detail",
+    "title": "Arms Bent",
+    "apparatus": "other",
+    "series_name": "Arms Series",
+    "category": "Arm Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Arms Bent",
+        "reps": "8~10회",
+        "spring_setting": null,
+        "notes": "Standing or sitting with Magic Circle at chest height, arms bent; exhale press arms together, inhale open arms. Kneeling variation possible."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Arms Bent with Magic Circle, Arm Work, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p086.png"
+  },
+  "p088.png": {
+    "page_type": "exercise_detail",
+    "title": "Arms Overhead",
+    "apparatus": "cadillac",
+    "series_name": "Arms Series",
+    "category": "Arm Work",
+    "exercises": [
+      {
+        "order": 3,
+        "name": "Arms Overhead",
+        "reps": "8-10 회",
+        "spring_setting": null,
+        "notes": "Starting in Arms Bent position, arms straight and overhead; exhale press arms together, inhale open arms."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Arms Overhead exercise, Arm Work block, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p088.png"
+  },
+  "p090.png": {
+    "page_type": "exercise_detail",
+    "title": "Single Arm Bicep",
+    "apparatus": "other",
+    "series_name": "Arms Series",
+    "category": "Arm Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Single Arm Bicep",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Starting in Single Arm Side Press position, holding Magic Circle in one hand resting on shoulder; exhale press arm down, inhale lift arm."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Single Arm Bicep with Magic Circle, Arms Series",
+    "_source": "mat",
+    "_page_file": "p090.png"
+  },
+  "p089.png": {
+    "page_type": "exercise_detail",
+    "title": "Single Arm Side Press",
+    "apparatus": "other",
+    "series_name": "Arms Series",
+    "category": "Arm Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Single Arm Side Press",
+        "reps": "8~10회",
+        "spring_setting": null,
+        "notes": "Standing or kneeling, hand holding Magic Circle in one hand, resting it against side of body; exhale press arm, inhale open arm; maintain slight internal rotation of shoulder."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Single Arm Side Press with Magic Circle, Arm Work",
+    "_source": "mat",
+    "_page_file": "p089.png"
+  },
+  "p084.png": {
+    "page_type": "exercise_detail",
+    "title": "Hip Extension Straight Leg",
+    "apparatus": "cadillac",
+    "series_name": "Gluteals Kneeling Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hip Extension Straight Leg",
+        "reps": null,
+        "spring_setting": "light to medium",
+        "notes": "Starting in Hip Extension Bent Knee position, one leg straight back, foot plantarflexed; focus on hip disassociation and pelvic stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hip Extension Straight Leg, Gluteals Kneeling Series, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p084.png"
+  },
+  "p091.png": {
+    "page_type": "exercise_detail",
+    "title": "Ankles",
+    "apparatus": "other",
+    "series_name": "Sitting Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Ankles",
+        "reps": "8~10",
+        "spring_setting": null,
+        "notes": "Magic Circle above ankles; press legs together on exhale, open on inhale; keep shins parallel"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Ankles exercise with Magic Circle, Sitting Series, Fundamental",
+    "_source": "mat",
+    "_page_file": "p091.png"
+  },
+  "p093.png": {
+    "page_type": "exercise_detail",
+    "title": "Above Knees",
+    "apparatus": "other",
+    "series_name": "Sitting Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Above Knees",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Magic Circle above knees, perpendicular to floor; press legs together on exhale, open on inhale."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Above Knees Sitting Series Leg Work Fundamental level",
+    "_source": "mat",
+    "_page_file": "p093.png"
+  },
+  "p092.png": {
+    "page_type": "exercise_detail",
+    "title": "Below Knees",
+    "apparatus": "other",
+    "series_name": "Sitting Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Below Knees",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Magic Circle below knees, parallel to floor; press legs together on exhale, open on inhale; hip adductor strength and trunk stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Below Knees Sitting Series Leg Work Fundamental level exercise",
+    "_source": "mat",
+    "_page_file": "p092.png"
+  },
+  "p094.png": {
+    "page_type": "exercise_detail",
+    "title": "Adductor Squeeze",
+    "apparatus": "cadillac",
+    "series_name": "Supine Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Adductor Squeeze",
+        "reps": "8~10",
+        "spring_setting": null,
+        "notes": "Lying supine in neutral spine, feet together, knees bent and apart, Magic Circle between knees; exhale press legs together, inhale open legs."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Adductor Squeeze supine with Magic Circle, fundamental level",
+    "_source": "mat",
+    "_page_file": "p094.png"
+  },
+  "p096.png": {
+    "page_type": "exercise_detail",
+    "title": "Ankles",
+    "apparatus": "other",
+    "series_name": "Supine Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Ankles",
+        "reps": "8~10회",
+        "spring_setting": null,
+        "notes": "Magic Circle above ankles; press legs together on exhale, open on inhale; fundamental level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Supine Series Ankles exercise with Magic Circle, fundamental level",
+    "_source": "mat",
+    "_page_file": "p096.png"
+  },
+  "p098.png": {
+    "page_type": "exercise_detail",
+    "title": "Ankles Straight Knees Prone Series",
+    "apparatus": "mat",
+    "series_name": "Prone Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Ankles Straight Knees Prone Series",
+        "reps": "8-10",
+        "spring_setting": null,
+        "notes": "Starting in Ankles Bent Knees, legs straight, thighs lifted off Mat, Magic Circle above ankles; Exhale press legs together, Inhale open legs."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Ankles Straight Knees Prone Series, Leg Work, Fundamental",
+    "_source": "mat",
+    "_page_file": "p098.png"
+  },
+  "p099.png": {
+    "page_type": "exercise_detail",
+    "title": "Hamstrings Prone Series",
+    "apparatus": "mat",
+    "series_name": "Prone Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hamstrings Prone Series",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Starting in Ankles Bent Knees Position, one leg straight, other leg bent and thigh off Mat, Magic Circle below gluteals and under heel; exhale bend leg, inhale straighten leg."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hamstrings Prone Series with Magic Circle, Fundamental level",
+    "_source": "mat",
+    "_page_file": "p099.png"
+  },
+  "p095.png": {
+    "page_type": "exercise_detail",
+    "title": "Knees",
+    "apparatus": "mat",
+    "series_name": "Supine Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Knees",
+        "reps": "8~10회",
+        "spring_setting": null,
+        "notes": "Lying supine, legs in table top position, placing Magic Circle above knees, parallel to Mat; press legs together on exhale, open on inhale."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Knees supine series with Magic Circle, fundamental level",
+    "_source": "mat",
+    "_page_file": "p095.png"
+  },
+  "p097.png": {
+    "page_type": "exercise_detail",
+    "title": "Ankles Bent Knees",
+    "apparatus": "mat",
+    "series_name": "Prone Series",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Ankles Bent Knees",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Lying prone, knees bent at 90 degrees, thighs lifted off mat, feet plantarflexed, Magic Circle above ankles, head resting on back of hands; press legs together on exhale, open legs on inhale."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Prone Series Ankles Bent Knees, Fundamental level, Leg Work block",
+    "_source": "mat",
+    "_page_file": "p097.png"
+  },
+  "p100.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan 1",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Swan 1",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Lying prone, arms straight overhead, Magic Circle between hands, parallel to Mat; lift trunk on inhale, lower on exhale."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan 1 back extension exercise with Magic Circle, intermediate level",
+    "_source": "mat",
+    "_page_file": "p100.png"
+  },
+  "p101.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan 2",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Swan 2",
+        "reps": "5~8",
+        "spring_setting": null,
+        "notes": "Magic Circle between hands, perpendicular to Mat; maintain tension in circle throughout movement."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan 2 back extension with Magic Circle, fundamental level",
+    "_source": "mat",
+    "_page_file": "p101.png"
+  },
+  "p104.png": {
+    "page_type": "other",
+    "title": "BASI Pilates Contact Page",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI Pilates logo and contact information page",
+    "_source": "mat",
+    "_page_file": "p104.png"
+  },
+  "p103.png": {
+    "page_type": "toc",
+    "title": "INDEX",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [
+      {
+        "title": "Saw (Lateral Flexion/Rotation)",
+        "page": 33
+      },
+      {
+        "title": "Scissors (Bridging)",
+        "page": 63
+      },
+      {
+        "title": "Seal Puppy (Spinal Articulation)",
+        "page": 40
+      },
+      {
+        "title": "Shoulder Bridge (Bridging/Full Body Integration)",
+        "page": 54
+      },
+      {
+        "title": "Shoulder Bridge Prep (Bridging/Full Body Integration)",
+        "page": 44
+      },
+      {
+        "title": "Side Bend (Lateral Flexion/Rotation)",
+        "page": 59
+      },
+      {
+        "title": "Side Kick (Lateral Flexion/Rotation)",
+        "page": 45
+      },
+      {
+        "title": "Side Kick Kneeling (Lateral Flexion/Rotation)",
+        "page": 58
+      },
+      {
+        "title": "Side Lifts (Lateral Flexion/Rotation)",
+        "page": 26
+      },
+      {
+        "title": "Single Leg Kick (Back Extension)",
+        "page": 36
+      },
+      {
+        "title": "Single Leg Lifts (Foundation)",
+        "page": 19
+      },
+      {
+        "title": "Single Leg Stretch (Abdominal Work)",
+        "page": 31
+      },
+      {
+        "title": "Sitting Series - Above Knees (Leg Work) Magic Circle",
+        "page": 91
+      },
+      {
+        "title": "Sitting Series - Ankles (Leg Work) Magic Circle",
+        "page": 89
+      },
+      {
+        "title": "Sitting Series - Below Knees (Leg Work) Magic Circle",
+        "page": 90
+      },
+      {
+        "title": "Spine Stretch (Spinal Articulation)",
+        "page": 25
+      },
+      {
+        "title": "Spine Twist (Lateral Flexion/Rotation)",
+        "page": 34
+      },
+      {
+        "title": "Spine Twist Supine (Foundation)",
+        "page": 16
+      },
+      {
+        "title": "Supine Series - Ankles (Leg Work) Magic Circle",
+        "page": 94
+      },
+      {
+        "title": "Supine Series - Knees (Leg Work) Magic Circle",
+        "page": 93
+      },
+      {
+        "title": "Swan 1 (Back Extension) Magic Circle",
+        "page": 98
+      },
+      {
+        "title": "Swan 2 (Back Extension) Magic Circle",
+        "page": 99
+      },
+      {
+        "title": "Swan Dive (Back Extension)",
+        "page": 73
+      },
+      {
+        "title": "Swan Dive Prep (Back Extension)",
+        "page": 60
+      },
+      {
+        "title": "Swan Dive Prep with Catch (Back Extension)",
+        "page": 72
+      },
+      {
+        "title": "Swimming (Back Extension)",
+        "page": 47
+      },
+      {
+        "title": "Teaser 1 (Bridging/Full Body Integration)",
+        "page": 61
+      },
+      {
+        "title": "Teaser 2 (Bridging/Full Body Integration)",
+        "page": 67
+      },
+      {
+        "title": "Teaser 3 (Bridging/Full Body Integration)",
+        "page": 68
+      },
+      {
+        "title": "Teaser Prep (Abdominal Work)",
+        "page": 51
+      },
+      {
+        "title": "Twist (Lateral Flexion / Rotation)",
+        "page": 70
+      }
+    ],
+    "raw_text_summary": "Index entries S and T, mat exercises",
+    "_source": "mat",
+    "_page_file": "p103.png"
+  },
+  "p102.png": {
+    "page_type": "toc",
+    "title": "INDEX",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [
+      {
+        "title": "Arms Bent (Arm Work) Magic Circle",
+        "page": 84
+      },
+      {
+        "title": "Arms Overhead (Arm Work) Magic Circle",
+        "page": 86
+      },
+      {
+        "title": "Arms Straight (Arm Work) Magic Circle",
+        "page": 85
+      },
+      {
+        "title": "Single Arm Bicep (Arm Work) Magic Circle",
+        "page": 88
+      },
+      {
+        "title": "Single Arm Side Press (Arm Work) Magic Circle",
+        "page": 87
+      },
+      {
+        "title": "Back Extension (Back Extension)",
+        "page": 27
+      },
+      {
+        "title": "Back Support (Bridging/Full Body Integration)",
+        "page": 39
+      },
+      {
+        "title": "Bicycle (Bridging/Full Body Integration)",
+        "page": 64
+      },
+      {
+        "title": "Boomerang (Spinal Articulation)",
+        "page": 74
+      },
+      {
+        "title": "Cat Stretch (Full Body Integration)",
+        "page": 37
+      },
+      {
+        "title": "Chest Lift (Abdominal Work) Magic Circle",
+        "page": 83
+      },
+      {
+        "title": "Chest Lift (Foundation)",
+        "page": 17
+      },
+      {
+        "title": "Chest Lift with Rotation (Foundation)",
+        "page": 18
+      },
+      {
+        "title": "Control Balance (Spinal Articulation)",
+        "page": 55
+      },
+      {
+        "title": "Corkscrew (Lateral Flexion / Rotation)",
+        "page": 35
+      },
+      {
+        "title": "Corkscrew Advanced (Lateral Flexion / Rotation)",
+        "page": 65
+      },
+      {
+        "title": "Crab (Spinal Articulation)",
+        "page": 75
+      },
+      {
+        "title": "Criss Cross (Abdominal Work)",
+        "page": 32
+      },
+      {
+        "title": "Double Leg Kick (Back Extension)",
+        "page": 46
+      },
+      {
+        "title": "Double Leg Stretch (Abdominal Work)",
+        "page": 30
+      },
+      {
+        "title": "Front Support (Bridging/Full Body Integration)",
+        "page": 38
+      },
+      {
+        "title": "Adductor Lift (Leg Work) Leg Weights",
+        "page": 79
+      },
+      {
+        "title": "Hip Abduction Bent Knee (Leg Work)",
+        "page": 80
+      },
+      {
+        "title": "Hip Extension Bent Knee (Leg Work) Leg Weights",
+        "page": 81
+      },
+      {
+        "title": "Hip Extension Straight Leg (Leg Work) Leg Weights",
+        "page": 82
+      },
+      {
+        "title": "Adductor Squeeze (Leg Work) Magic Circle",
+        "page": 92
+      },
+      {
+        "title": "Forward and Lift (Leg Work) Leg Weights",
+        "page": 77
+      },
+      {
+        "title": "Forward with Drops (Leg Work) Leg Weights",
+        "page": 78
+      },
+      {
+        "title": "Side Leg Lifts (Leg Work) Leg Weights",
+        "page": 76
+      },
+      {
+        "title": "Hamstring Pull 1 (Abdominal Work)",
+        "page": 41
+      },
+      {
+        "title": "Hamstring Pull 2 (Abdominal Work)",
+        "page": 52
+      },
+      {
+        "title": "Hamstring Pull 3 (Abdominal Work)",
+        "page": 53
+      },
+      {
+        "title": "Hip Circles (Lateral Flexion / Rotation)",
+        "page": 69
+      },
+      {
+        "title": "Hip Circles Prep (Lateral Flexion / Rotation)",
+        "page": 57
+      },
+      {
+        "title": "Hundred (Abdominal Work)",
+        "page": 29
+      },
+      {
+        "title": "Hundred Prep (Abdominal Work)",
+        "page": 21
+      },
+      {
+        "title": "Jackknife (Spinal Articulation)",
+        "page": 56
+      },
+      {
+        "title": "Leg Changes (Foundation)",
+        "page": 20
+      },
+      {
+        "title": "Leg Circles (Abdominal Work)",
+        "page": 23
+      },
+      {
+        "title": "Leg Pull Back (Bridging/Full Body Integration)",
+        "page": 50
+      },
+      {
+        "title": "Leg Pull Front (Bridging/Full Body Integration)",
+        "page": 49
+      },
+      {
+        "title": "Neck Pull (Abdominal Work)",
+        "page": 62
+      },
+      {
+        "title": "Open Leg Rocker (Spinal Articulation)",
+        "page": 43
+      },
+      {
+        "title": "Pelvic Curl (Foundation)",
+        "page": 15
+      },
+      {
+        "title": "Ankles Bent Knees (Leg Work) Magic Circle",
+        "page": 95
+      },
+      {
+        "title": "Ankles Straight Knees (Leg Work) Magic Circle",
+        "page": 96
+      },
+      {
+        "title": "Hamstrings (Leg Work) Magic Circle",
+        "page": 97
+      },
+      {
+        "title": "Push Up (Bridging/Full Body Integration)",
+        "page": 71
+      },
+      {
+        "title": "Rest Position (Foundation)",
+        "page": 28
+      },
+      {
+        "title": "Rocking (Back Extension)",
+        "page": 66
+      },
+      {
+        "title": "Rocking Prep (Back Extension)",
+        "page": 48
+      },
+      {
+        "title": "Roll-Like-a-Ball (Spinal Articulation)",
+        "page": 24
+      },
+      {
+        "title": "Roll Over (Spinal Articulation)",
+        "page": 42
+      },
+      {
+        "title": "Roll Up (Abdominal Work)",
+        "page": 22
+      }
+    ],
+    "raw_text_summary": "Alphabetical index of mat exercises with page numbers",
+    "_source": "mat",
+    "_page_file": "p102.png"
+  }
+}

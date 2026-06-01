@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p044.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Up Stretch 3",
+    "series": "Up Stretch Group",
+    "block": "Full Body Integration II",
+    "level": "Advanced",
+    "apparatus": "Reformer",
+    "setup": "Starting in Up Stretch 1 position (page 53 Reformer MAWB)",
+    "movement": {
+      "inhale": "Lower pelvis into Front Support position (page 38 Mat MAWB), move carriage forward to stopper",
+      "exhale": "Lift pelvis, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors",
+      "Shoulder flexors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Trunk stabilization",
+      "Shoulder flexor control",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maintain trunk stabilization",
+      "Hold carriage on stopper when transitioning from Long Stretch (page 61 Reformer MAWB) to Up Stretch 1,",
+      "Initate lifting pelvis from Long Stretch to Up Stretch with abdominals followed by back extensors"
+    ]
+  }
+}

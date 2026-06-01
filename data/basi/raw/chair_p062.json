@@ -1,0 +1,31 @@
+{
+  "source_page": "chair:p062.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Roll Over",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "apparatus": "spine corrector",
+    "setup": "Lying supine with lower back and pelvis on barrel, legs straight and together, feet plantarflexed, hands holding handles, body on diagonal line",
+    "movement": {
+      "inhale": "Lift legs to 90 degrees in hip joint",
+      "exhale": "Roll over, legs parallel to floor\nDorsiflex feet, Separate legs, lower legs toward mat\nRoll back, lift legs perpendicular to floor, plantarflex feet, lower legs to diagonal line, bring legs together, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Lower back stretch",
+      "Hip extensor stretch"
+    ],
+    "cues": [
+      "Maintain 90 degree angle in hip joint during roll over",
+      "Keep thighs close to chest when rolling back",
+      "Avoid lowering legs beyond diagonal line"
+    ]
+  }
+}

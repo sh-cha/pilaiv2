@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p068.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Stomach Massage Round Back",
+    "series": "Stomach Massage Group",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Sitting on carriage, legs bent, toes placed on footbar. feet in V position, hands placed on front edge of carriage. trunk in C curve position",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Straighten legs, dorsiflex feet, plantarflex feet",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Knee extensors",
+      "Ankle-foot plantarflexors"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Knee extensor control",
+      "Ankle-foot plantarflexor strength"
+    ],
+    "cues": [
+      "Maintain C curve position",
+      "Keep shoulders aligned over hips",
+      "Press hands against front of carriage",
+      "Straighten legs completely prior to dorsiflexion and plantarflexion"
+    ]
+  }
+}

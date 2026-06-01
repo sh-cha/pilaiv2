@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p034.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Spine Twist",
+    "apparatus": "mat",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Intermediate",
+    "setup": "Sitting upright, legs straight and together, feet dorsiflexed, toes toward ceiling, arms in T position, palms facing up",
+    "movement": {
+      "exhale": "Rotate trunk to one side (2 pulses)",
+      "inhale": "Rotate to center"
+    },
+    "muscle_focus": [
+      "Spinal rotators",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Trunk mobility",
+      "Spinal rotator control",
+      "Spinal extensor control"
+    ],
+    "cues": [
+      "Keep pelvis and legs stable throughout",
+      "Move head and arms together with trunk",
+      "Initiate movement from trunk and not arms",
+      "Maintain T position with arms",
+      "Keep head aligned with spine, nose aligned with sternum"
+    ]
+  }
+}

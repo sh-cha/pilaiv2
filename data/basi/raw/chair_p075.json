@@ -1,0 +1,34 @@
+{
+  "source_page": "chair:p075.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Frog",
+    "series": "Supine Leg Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Lying supine, lower back and pelvis on barrel, shoulders on Mat, hands holding levers, legs bent, hips externally rotated, feet dorsiflexed in straps, heels together",
+    "spring_setting": "Y/S",
+    "movement": {
+      "exhale": "Straighten legs up",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Knee extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Knee extensor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Avoid bending knees beyond 90 degrees",
+      "Inititate movement with hip adductors",
+      "Establish perpendicular position with legs when straight",
+      "Keep holding handles firmly and pulling barrel toward back"
+    ]
+  }
+}

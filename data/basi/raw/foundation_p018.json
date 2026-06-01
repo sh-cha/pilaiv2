@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p018.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "1)",
+    "name": "Parallel Heels",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs parallel, heels placed on footbar, hip width apart",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor control",
+      "Knee extensor strength",
+      "Ankle and foot control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Initiate movement with hip extensors",
+      "Keep feet dorsiflexed and stable as if standing on floor",
+      "Straighten legs completely, avoiding hyperextension",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

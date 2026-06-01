@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p117.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Frog",
+    "series": "Single Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs parallel, one foot in strap, dorsiflexed, hip and knee at 90 degrees, other leg placed on Mat, leg straight, foot plantarflexed, arms bent, 90 degrees in shoulder and elbow joints, hands holding poles",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten leg",
+      "inhale": "Bend leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor control",
+      "Knee extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Initiate movment with hip extensors",
+      "Keep heel traveling along horizontal line",
+      "Maintain pelvic lumbar stabilization",
+      "Keep supporting leg elongated and stable"
+    ]
+  }
+}

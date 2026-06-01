@@ -1,0 +1,37 @@
+{
+  "source_page": "foundation:p026.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Open V - Position Toes",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position. Hips externally rotated, toes placed on outside edge of footbar. Wide V position",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor control",
+      "Knee extensor strength",
+      "Ankle and foot control",
+      "Hip adductor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Initiate movement with hip extensors",
+      "Straighten legs completely, avoiding hyperextension",
+      "Engage hip adductors",
+      "Establish plantarflexion when legs are straight",
+      "Keep heels stable moving around ankle joint",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

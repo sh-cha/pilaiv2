@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p067.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Down Stretch",
+    "series": "Down Stretch Group",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Kneeling on carriage, feet against shoulder rest, arms straight, shoulder width apart, hands placed on footbar, body in arc shape",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Move body down and back",
+      "inhale": "Move body up and forward, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Trunk stabilization",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Keep abdominals engaged to avoid pressure on lumbar spine",
+      "Keep heels pressing against shoulder rests",
+      "Bias toward posterior tilt of pelvis",
+      "Maintain consistent arc shape with body",
+      "Begin and end movement with carriage against stopper"
+    ]
+  }
+}

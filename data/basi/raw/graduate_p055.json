@@ -1,0 +1,35 @@
+{
+  "source_page": "graduate:p055.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Teaser 1",
+    "block": "Full Body Integration II",
+    "level": "Advanced",
+    "apparatus": "cadillac",
+    "setup": "Starting in Teaser 1 position (page 61 Mat MAWB), arms straight and shoulder width apart, hands holding PTBar",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Roll down",
+      "inhale": "Roll up, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal extensor strength",
+      "Hip flexor strength",
+      "Shoulder flexor control"
+    ],
+    "cues": [
+      "Keep legs at consistent angle",
+      "Articulate through spine when rolling down and up",
+      "Use shoulder flexors to assist in establishing V position",
+      "Keep arms straight"
+    ]
+  }
+}

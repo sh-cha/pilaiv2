@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p075.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Swan Dive",
+    "block": "Back Extension",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Starting in lifted position of Swan Dive Prep (page 60)",
+    "movement": {
+      "exhale": "Drop trunk forward, place hands under forehead, lift legs toward ceiling",
+      "inhale": "Lift trunk, lower legs, reach arms overhead toward ceiling, shoulder width apart"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Hip extensor strength",
+      "Spinal flexor control"
+    ],
+    "cues": [
+      "Maintain consistent arc shape",
+      "Engage abdominals throughout",
+      "Maximize fluidity of movement"
+    ]
+  }
+}

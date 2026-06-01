@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p045.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Circles Down",
+    "series": "Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position. Legs straight, perpendicular to floor. Hips externally rotated. Feet in straps, plantarflexed.",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lower legs",
+      "inhale": "Open legs and circle around, lift legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Hip extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Focus on hip disassociation",
+      "Maintain pelvic lumbar stabilization",
+      "Draw straight line down center, squeezing heels together",
+      "Draw two semi-circles back to back as legs circle around",
+      "Maintain consistent flow of movement"
+    ]
+  }
+}

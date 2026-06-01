@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p020.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Leg Changes",
+    "block": "Foundation",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Single Leg Changes (page 19)",
+    "movement": {
+      "inhale": "Lift one leg, foot plantar flexed",
+      "exhale": "Switch legs"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip flexor control",
+      "Hip disassociation",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Keep shoulders relaxed",
+      "Maintain consistent angle of knee joint (90 degrees)"
+    ]
+  }
+}

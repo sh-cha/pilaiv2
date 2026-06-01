@@ -1,0 +1,35 @@
+{
+  "source_page": "graduate:p021.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Teaser",
+    "block": "Full Body Integration II",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Starting in Teaser Prep position (page 20), legs straight and together on diagonal line",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Roll up to V position, bring arms forward and up to sides of body, in line with shoulders, parallel to floor, palms facing up",
+      "exhale": "Roll down, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal extensor control",
+      "Hip flexor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep legs at consistent angle",
+      "Articulate through spine when rolling up and down",
+      "Keep eye line directly forward when lifted",
+      "Keep head aligned with spine when in start position"
+    ]
+  }
+}

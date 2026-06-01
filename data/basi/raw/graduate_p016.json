@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p016.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "4",
+    "name": "Double Leg",
+    "series": "Abdominals Legs in Straps series",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying supine, pelvis in front of shoulder rests (approximately 1/4 way down carriage from shoulder rests), legs in tabletop position, straps around thighs, above knees, chest lifted, fingers interlaced behind head, footbar down",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Straighten legs (not completely)",
+      "exhale": "Bend legs"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Hip flexor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Draw knees in toward forehead beyond tabletop position",
+      "Maintain pelvic lumbar stabilization",
+      "Maintain consistent height of trunk",
+      "Maintain slight tension in straps when straightening legs"
+    ]
+  }
+}

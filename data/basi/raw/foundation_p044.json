@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p044.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "1",
+    "name": "Frog",
+    "series": "Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, hips externally rotated, feet in straps, dorsiflexed, heels together, hips and knees at 90 degrees",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip adductor control",
+      "Hip extensor control",
+      "Knee extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep squeezing heels together",
+      "Avoid bending knees beyond 90 degrees",
+      "Keep heels traveling along horizontal line",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p049.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Rocking Prep",
+    "apparatus": "mat",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "setup": "Lying prone, knees bent, arms straight and reaching back, feet plantarflexed, hands holding feet",
+    "movement": {
+      "inhale": "Lift trunk and legs toward ceiling",
+      "exhale": "Lower trunk and legs to Mat, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Hip extensor control",
+      "Knee extensor control",
+      "Chest stretch"
+    ],
+    "cues": [
+      "Reach toes toward ceiling",
+      "Keep head aligned with spine",
+      "Extend hips, knees and back simultaneously",
+      "Maintain scapular stabilization"
+    ]
+  }
+}

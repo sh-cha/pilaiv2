@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p073.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Push Up",
+    "block": "Bridging",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Starting in Front Support postion (see page 38)",
+    "movement": {
+      "inhale": "Bend arms",
+      "exhale": "Straighten arms (repeat), lift pelvis upward, walk hands toward feet, arms straight, transfer weight to feet, roll up"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Scapular stabilizers",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep elbows close to sides of body when bending",
+      "Maintain scapular stabilization",
+      "Maintain pelvic lumbar stabilization, bias toward posterior tilt of pelvis"
+    ]
+  }
+}

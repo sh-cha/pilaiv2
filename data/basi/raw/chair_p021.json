@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p021.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Torso Press Sit",
+    "block": "Abdominal Work",
+    "level": "Advanced",
+    "apparatus": "chair",
+    "setup": "Sitting facing back of Wunda Chair, arms straight, shoulder width apart, hands placed on pedal, palms facing forward, legs straight and together, parallel to Mat, feet plantarflexed",
+    "resistance": "extra light to light",
+    "movement": {
+      "inhale": "Lower trunk, pressing pedal down",
+      "exhale": "Raise trunk, lifting pedal up, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Hip flexor control"
+    ],
+    "cues": [
+      "Maintain trunk stabilization",
+      "Keep head aligned with spine",
+      "Keep legs stable",
+      "Hinge around hip and shoulder joints"
+    ]
+  }
+}

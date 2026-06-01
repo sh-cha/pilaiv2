@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p035.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Triceps",
+    "series": "Arms Kneeling Side Series",
+    "block": "Arm Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Kneeling sideways on carriage, eyes looking toward hand on shoulder rest, legs shoulder width apart and parallel, one leg aligned with front edge of carriage, trunk in lateral flexion, bottom arm straight, hand on shoulder rest, top arm bent, elbow reaching to ceiling, hand in strap, palm facing up",
+    "resistance": "extra light",
+    "movement": {
+      "exhale": "Straighten arm toward ceiling",
+      "inhale": "Bend arm, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Spinal flexors",
+      "Spinal lateral flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Lateral flexor stretch",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep pressing bottom hand into shoulder rest",
+      "Keep weight evenly distributed on both legs and pelvis level"
+    ]
+  }
+}

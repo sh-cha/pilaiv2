@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p089.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Single Arm Side Press",
+    "series": "Arms Series",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Standing or kneeling, hand holding Magic Circle in one hand, resting it against side of body",
+    "movement": {
+      "exhale": "Press arm",
+      "inhale": "Open arm"
+    },
+    "muscle_focus": [
+      "Shoulder adductors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Shoulder adductor strength",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Keep elbow slightly bent and facing outward",
+      "Maintain tension in circle, increase tension when pressing arm",
+      "Maintain slight internal rotation of shoulder"
+    ]
+  }
+}

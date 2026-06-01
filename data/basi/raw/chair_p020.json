@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p020.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Pike Front",
+    "block": "Abdominal Work",
+    "level": "Advanced",
+    "apparatus": "chair",
+    "setup": "Standing on pedal facing Wunda Chair, legs straight, hip width apart, feet plantarflexed, arms straight, shoulders over wrists, hands placed on outside of back edge of chair, trunk rounded",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Raise body, lifting pedal up",
+      "inhale": "Lower body, pressing pedal down (without touching bottom)"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Scapular abductors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Scapular abductor control",
+      "Shoulder flexor strength"
+    ],
+    "cues": [
+      "Maximize spinal flexion",
+      "Keep shoulders over wrists, avoid shoulders moving forward",
+      "Maintain scapular stabilization",
+      "Keep head aligned with spine, eyes directed toward body"
+    ]
+  }
+}

@@ -1,0 +1,1519 @@
+{
+  "p003.png": {
+    "page_type": "intro",
+    "title": "BASI VISION",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI Pilates vision, mission, and welcome statement",
+    "_source": "chair",
+    "_page_file": "p003.png"
+  },
+  "p007.png": {
+    "page_type": "intro",
+    "title": "BASI Block System",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI Block System teaching methodology with 12-block wheel diagram",
+    "_source": "chair",
+    "_page_file": "p007.png"
+  },
+  "p004.png": {
+    "page_type": "intro",
+    "title": "BASI Founder",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Biography of BASI founder Rael Isacowitz",
+    "_source": "chair",
+    "_page_file": "p004.png"
+  },
+  "p001.png": {
+    "page_type": "other",
+    "title": "COPYRIGHT",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Copyright notice against photocopying and plagiarism",
+    "_source": "chair",
+    "_page_file": "p001.png"
+  },
+  "p005.png": {
+    "page_type": "intro",
+    "title": "Words From The Founder",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Founder's message about BASI Pilates sixth edition workbooks",
+    "_source": "chair",
+    "_page_file": "p005.png"
+  },
+  "p006.png": {
+    "page_type": "intro",
+    "title": "Words from the Founder",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Founder Rael Isacowitz's message acknowledging contributors and gratitude",
+    "_source": "chair",
+    "_page_file": "p006.png"
+  },
+  "p000.png": {
+    "page_type": "intro",
+    "title": "Graduate Program Wunda Chair, F2 System, Auxiliary Movement Analysis Workbook V1.1",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI Pilates Graduate Program Wunda Chair workbook cover",
+    "_source": "chair",
+    "_page_file": "p000.png"
+  },
+  "p002.png": {
+    "page_type": "toc",
+    "title": "Table of Contents",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [
+      {
+        "title": "BASI Vision",
+        "page": 4
+      },
+      {
+        "title": "Words from the Founder",
+        "page": 5
+      },
+      {
+        "title": "BASI Block System",
+        "page": 8
+      },
+      {
+        "title": "Exercise Analysis",
+        "page": 10
+      },
+      {
+        "title": "Muscle Focus",
+        "page": 11
+      },
+      {
+        "title": "Objectives",
+        "page": 12
+      },
+      {
+        "title": "Cues",
+        "page": 13
+      },
+      {
+        "title": "Resistance: Spring & Settings",
+        "page": 15
+      },
+      {
+        "title": "Exercises",
+        "page": 18
+      },
+      {
+        "title": "Index",
+        "page": 79
+      }
+    ],
+    "raw_text_summary": "BASI Pilates manual table of contents page",
+    "_source": "chair",
+    "_page_file": "p002.png"
+  },
+  "p010.png": {
+    "page_type": "intro",
+    "title": "Objectives",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Explanation of Objectives concept in BASI Pilates exercises",
+    "_source": "chair",
+    "_page_file": "p010.png"
+  },
+  "p009.png": {
+    "page_type": "intro",
+    "title": "Muscle Focus",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Explains Muscle Focus concept and its importance",
+    "_source": "chair",
+    "_page_file": "p009.png"
+  },
+  "p011.png": {
+    "page_type": "intro",
+    "title": "Cues",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Explanation of cues as vital teaching communication tool",
+    "_source": "chair",
+    "_page_file": "p011.png"
+  },
+  "p013.png": {
+    "page_type": "intro",
+    "title": "Resistance: Springs & Settings",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Explanation of spring resistance settings across Pilates equipment",
+    "_source": "chair",
+    "_page_file": "p013.png"
+  },
+  "p008.png": {
+    "page_type": "intro",
+    "title": "Exercise Analysis",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI exercise analysis methodology: description, movement, set up",
+    "_source": "chair",
+    "_page_file": "p008.png"
+  },
+  "p012.png": {
+    "page_type": "intro",
+    "title": "Resistance: Springs & Settings",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Explains progressive resistance via springs and spring settings",
+    "_source": "chair",
+    "_page_file": "p012.png"
+  },
+  "p014.png": {
+    "page_type": "other",
+    "title": "THE F2 SYSTEM",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "F2 system socket lever spring adjustment description",
+    "_source": "chair",
+    "_page_file": "p014.png"
+  },
+  "p016.png": {
+    "page_type": "intro",
+    "title": "WUNDA CHAIR",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Wunda Chair section intro with instructor photo",
+    "_source": "chair",
+    "_page_file": "p016.png"
+  },
+  "p017.png": {
+    "page_type": "other",
+    "title": "체어의 구조 (Chair Structure)",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Chair spring weight system and resistance level notes",
+    "_source": "chair",
+    "_page_file": "p017.png"
+  },
+  "p019.png": {
+    "page_type": "exercise_detail",
+    "title": "Pike Front",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Pike Front",
+        "reps": "5-8",
+        "spring_setting": "medium",
+        "notes": "Advanced level; spinal flexors, scapular abductors, shoulder flexors focus; maximize spinal flexion and keep shoulders over wrists."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Wunda Chair Pike Front advanced abdominal work exercise detail",
+    "_source": "chair",
+    "_page_file": "p019.png"
+  },
+  "p020.png": {
+    "page_type": "exercise_detail",
+    "title": "Pike Front",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Pike Front",
+        "reps": null,
+        "spring_setting": "medium",
+        "notes": "Advanced level; standing on pedal facing Wunda Chair, trunk rounded, maximize spinal flexion."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Pike Front advanced abdominal work on Wunda Chair",
+    "_source": "chair",
+    "_page_file": "p020.png"
+  },
+  "p022.png": {
+    "page_type": "exercise_detail",
+    "title": "Pelvic Curl",
+    "apparatus": "reformer",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Pelvic Curl",
+        "reps": "5~8",
+        "spring_setting": "light to medium",
+        "notes": "Set up in neutral spine, prehensile position; exhale roll pelvis and spine up, inhale pause, exhale return."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Reformer Pelvic Curl spinal articulation intermediate level",
+    "_source": "chair",
+    "_page_file": "p022.png"
+  },
+  "p021.png": {
+    "page_type": "exercise_detail",
+    "title": "Torso Press Sit",
+    "apparatus": "wunda_chair",
+    "series_name": "Abdominal Work",
+    "category": "abdominal",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Torso Press Sit",
+        "reps": null,
+        "spring_setting": "extra light to light",
+        "notes": "Advanced level; spinal flexor and extensor control with hip flexor control; hinge around hip and shoulder joints."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Wunda Chair Torso Press Sit advanced abdominal work exercise",
+    "_source": "chair",
+    "_page_file": "p021.png"
+  },
+  "p024.png": {
+    "page_type": "exercise_detail",
+    "title": "Shrugs",
+    "apparatus": "wunda_chair",
+    "series_name": "Arm Work",
+    "category": "Arm Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Shrugs",
+        "reps": "8~10",
+        "spring_setting": "medium",
+        "notes": "Sitting upright on box with back to Wunda Chair; raise and lower shoulders while pressing pedal; focus on scapular depressor control and trunk stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Wunda Chair Shrugs arm work fundamental level",
+    "_source": "chair",
+    "_page_file": "p024.png"
+  },
+  "p023.png": {
+    "page_type": "exercise_detail",
+    "title": "Jackknife",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Jackknife",
+        "reps": "3~5",
+        "spring_setting": "Resistance 2/0~3/0 (light)",
+        "notes": "Lying supine in front of Wunda Chair in Roll Over position; lift legs perpendicular, roll over, lift toward ceiling, roll down to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Jackknife exercise on Wunda Chair, Advanced level",
+    "_source": "chair",
+    "_page_file": "p023.png"
+  },
+  "p025.png": {
+    "page_type": "exercise_detail",
+    "title": "Tricep Press Sit",
+    "apparatus": "wunda_chair",
+    "series_name": "Arm Work",
+    "category": "Arm Work",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Tricep Press Sit",
+        "reps": "8-10",
+        "spring_setting": "medium",
+        "notes": "Starting in Shrugs position; inhale bend arms lifting pedal, exhale straighten arms lowering pedal"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Wunda Chair Tricep Press Sit Arm Work Intermediate",
+    "_source": "chair",
+    "_page_file": "p025.png"
+  },
+  "p018.png": {
+    "page_type": "exercise_detail",
+    "title": "Pike Sitting",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Pike Sitting",
+        "reps": "8~10",
+        "spring_setting": "extra light to light",
+        "notes": "Sitting on Mat facing Wunda Chair, trunk in C curve position; exhale lower arms pressing pedal down, inhale raise arms lifting pedal up"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Pike Sitting on Wunda Chair, Abdominal Work, Intermediate",
+    "_source": "chair",
+    "_page_file": "p018.png"
+  },
+  "p026.png": {
+    "page_type": "exercise_detail",
+    "title": "Triceps Prone",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Arm Work",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Triceps Prone",
+        "reps": "8-10회",
+        "spring_setting": "light to medium (3:0 ~ 3:3)",
+        "notes": "Lying prone on Wunda Chair, arms straight, shoulders over wrists, hands on pedal, palms facing back, legs straight and together, feet plantarflexed, body parallel to Mat."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Wunda Chair Triceps Prone arm work intermediate level",
+    "_source": "chair",
+    "_page_file": "p026.png"
+  },
+  "p015.png": {
+    "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'messages.0.content.0.image.source.base64: image exceeds 5 MB maximum: 5347824 bytes > 5242880 bytes'}, 'request_id': 'req_011CaJSnHD56uTJFkwAgnTet'}",
+    "page_type": "other",
+    "_source": "chair",
+    "_page_file": "p015.png"
+  },
+  "p027.png": {
+    "page_type": "exercise_detail",
+    "title": "Frog Back",
+    "apparatus": "wunda_chair",
+    "series_name": "Arm Work",
+    "category": "arm work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Frog Back",
+        "reps": "8-10",
+        "spring_setting": "medium to heavy",
+        "notes": "Facing back to Wunda Chair, hips externally rotated, feet plantarflexed, heels together, small V position; exhale straighten arms lifting pedal, inhale bend arms lowering pedal."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Wunda Chair Frog Back arm work intermediate level",
+    "_source": "chair",
+    "_page_file": "p027.png"
+  },
+  "p028.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Arm Kneeling",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Arm Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Arm Kneeling",
+        "reps": "8~10",
+        "spring_setting": "3/10",
+        "notes": "Kneeling side in front of Wunda Chair; elbow extensors and spinal lateral flexor focus; light to medium resistance."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Arm Kneeling on Wunda Chair, Intermediate level",
+    "_source": "chair",
+    "_page_file": "p028.png"
+  },
+  "p029.png": {
+    "page_type": "exercise_detail",
+    "title": "Cat Stretch Kneeling",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Cat Stretch Kneeling",
+        "reps": "2~3 / 7~8회",
+        "spring_setting": "light to medium",
+        "notes": "Kneeling upright on Wunda Chair, roll down flattening trunk and lowering pedal, roll up rounding trunk and lifting pedal."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Cat Stretch Kneeling on Wunda Chair, Intermediate level",
+    "_source": "chair",
+    "_page_file": "p029.png"
+  },
+  "p030.png": {
+    "page_type": "exercise_detail",
+    "title": "Cat Stretch Kneeling",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Cat Stretch Kneeling",
+        "reps": null,
+        "spring_setting": "light to medium",
+        "notes": "Kneeling upright on Wunda Chair, roll down flattening trunk and lower pedal, roll up rounding trunk and lift pedal; focuses on spinal flexors and extensors."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Cat Stretch Kneeling on Wunda Chair, Intermediate level",
+    "_source": "chair",
+    "_page_file": "p030.png"
+  },
+  "p031.png": {
+    "page_type": "exercise_detail",
+    "title": "Tendon Stretch",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Full Body Integration",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Tendon Stretch",
+        "reps": "5회 / 2:2~4:4",
+        "spring_setting": "medium",
+        "notes": "Facing back to Wunda Chair, trunk rounded, arms straight, legs straight, feet plantarflexed; lift pelvis upward maximizing spinal flexion."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Wunda Chair Tendon Stretch advanced full body integration",
+    "_source": "chair",
+    "_page_file": "p031.png"
+  },
+  "p032.png": {
+    "page_type": "exercise_detail",
+    "title": "Lunge Forward",
+    "apparatus": "wunda_chair",
+    "series_name": "Lunge Group",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Lunge Forward",
+        "reps": "2/2 ~ 4/4, 3~5 reps",
+        "spring_setting": "heavy (Resistance: heavy)",
+        "notes": "Standing upright facing Wunda Chair, one foot on chair leg bent knee aligned over ankle, other foot on pedal plantarflexed leg straight; exhale straighten leg lifting pedal, inhale bend leg lowering pedal without touching bottom."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Lunge Forward exercise detail on Wunda Chair advanced level",
+    "_source": "chair",
+    "_page_file": "p032.png"
+  },
+  "p035.png": {
+    "page_type": "exercise_detail",
+    "title": "Hip Opener",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hip Opener",
+        "reps": "8~10",
+        "spring_setting": "light",
+        "notes": "Lying supine, hips externally rotated, soles of feet together on pedal halfway down; exhale lower legs pressing pedal down, inhale raise legs lifting pedal."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hip Opener exercise on Wunda Chair, Intermediate level",
+    "_source": "chair",
+    "_page_file": "p035.png"
+  },
+  "p033.png": {
+    "page_type": "exercise_detail",
+    "title": "Step Down Back",
+    "apparatus": "wunda_chair",
+    "series_name": "Step Down Group",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Step Down Back",
+        "reps": "Each 10",
+        "spring_setting": "2/2 ~ 4/4 (medium to heavy)",
+        "notes": "Standing upright facing Wunda Chair, one foot on chair leg bent, other foot on pedal plantarflexed; exhale lift pedal, inhale lower pedal."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Step Down Back on Wunda Chair, Leg Work, Intermediate",
+    "_source": "chair",
+    "_page_file": "p033.png"
+  },
+  "p036.png": {
+    "page_type": "exercise_detail",
+    "title": "Frog Front",
+    "apparatus": "wunda_chair",
+    "series_name": "Leg Work",
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Frog Front",
+        "reps": "10",
+        "spring_setting": "Resistance: 2/2 ~ 4/4, medium to heavy",
+        "notes": "Standing on pedal facing Wunda Chair, legs bent, hips externally rotated, feet plantarflexed, heels together in V position; exhale straighten legs lowering pedal without touching bottom, inhale bend legs lifting pedal to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Frog Front on Wunda Chair, Leg Work, Intermediate",
+    "_source": "chair",
+    "_page_file": "p036.png"
+  },
+  "p034.png": {
+    "page_type": "exercise_detail",
+    "title": "Hamstring Curl",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Leg Work",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Hamstring Curl",
+        "reps": "8-10",
+        "spring_setting": "light",
+        "notes": "Lying supine in neutral spine; exhale bend legs lowering pedal, inhale straighten legs lifting pedal; focus on knee flexion and pelvic lumbar stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Wunda Chair Hamstring Curl Fundamental Leg Work",
+    "_source": "chair",
+    "_page_file": "p034.png"
+  },
+  "p037.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Stretch Kneeling",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Stretch Kneeling",
+        "reps": "5~8회",
+        "spring_setting": "light to medium",
+        "notes": "Kneeling side in front of Wunda Chair, legs parallel, hip width apart; exhale arc trunk sideways lowering pedal, inhale return to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Stretch Kneeling on Wunda Chair, Intermediate level",
+    "_source": "chair",
+    "_page_file": "p037.png"
+  },
+  "p040.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan Single Arm",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Swan Single Arm",
+        "reps": "5 each",
+        "spring_setting": "3/0 ~ 4/0",
+        "notes": "Lying prone on Wunda Chair, one hand on pedal, other arm out to side; intermediate level; very challenging."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan Single Arm on Wunda Chair, Back Extension, Intermediate",
+    "_source": "chair",
+    "_page_file": "p040.png"
+  },
+  "p039.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan on floor",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Swan on floor",
+        "reps": "5~8",
+        "spring_setting": "extra light to light",
+        "notes": "Lying prone on Mat facing Wunda Chair, arms straight, shoulder width apart, hands placed on pedal, legs straight and together, feet plantarflexed; Intermediate level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan on floor Back Extension Intermediate Wunda Chair exercise",
+    "_source": "chair",
+    "_page_file": "p039.png"
+  },
+  "p038.png": {
+    "page_type": "exercise_detail",
+    "title": "Pike Side",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Pike Side",
+        "reps": "2:2 ~ 4:4",
+        "spring_setting": "medium to heavy",
+        "notes": "Standing side to Wunda Chair, trunk rounded, legs straight, feet placed on pedal, inside leg in front; spinal flexors and rotators focus; advanced level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Pike Side on Wunda Chair, lateral flexion rotation, advanced",
+    "_source": "chair",
+    "_page_file": "p038.png"
+  },
+  "p042.png": {
+    "page_type": "exercise_detail",
+    "title": "Shoulder Stretch Flexion",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Stretches",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Shoulder Stretch Flexion",
+        "reps": "2 sets, hold 3-5 breaths",
+        "spring_setting": null,
+        "notes": "Fundamental level; standing facing Ladder Barrel, flex hips and shoulders until trunk parallel to floor, hold and return."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Shoulder Stretch Flexion on Ladder Barrel, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p042.png"
+  },
+  "p041.png": {
+    "page_type": "intro",
+    "title": "LADDER BARREL",
+    "apparatus": "other",
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Ladder Barrel intro page with BASI education note",
+    "_source": "chair",
+    "_page_file": "p041.png"
+  },
+  "p043.png": {
+    "page_type": "exercise_detail",
+    "title": "Shoulder Stretch Extension",
+    "apparatus": "other",
+    "series_name": "Stretches",
+    "category": "stretches",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Shoulder Stretch Extension",
+        "reps": "3-5 breaths",
+        "spring_setting": null,
+        "notes": "Standing facing back to Ladder Barrel; placing hands closer together on ladder will intensify stretch."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Ladder Barrel shoulder stretch extension, fundamental level",
+    "_source": "chair",
+    "_page_file": "p043.png"
+  },
+  "p044.png": {
+    "page_type": "exercise_detail",
+    "title": "Gluteals",
+    "apparatus": "other",
+    "series_name": "Ladder Barrel Stretch Series",
+    "category": "Stretches",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Gluteals",
+        "reps": "Hold 3-5 breaths",
+        "spring_setting": null,
+        "notes": "Standing closer to barrel will intensify stretch; hip extensors, abductors, external rotators focus"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Ladder Barrel Gluteals stretch, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p044.png"
+  },
+  "p046.png": {
+    "page_type": "exercise_detail",
+    "title": "Adductors",
+    "apparatus": "other",
+    "series_name": "Ladder Barrel Stretch Series",
+    "category": "Stretches",
+    "exercises": [
+      {
+        "order": 8,
+        "name": "Adductors",
+        "reps": "Hold 3-5 breaths",
+        "spring_setting": null,
+        "notes": "Dorsi flexing foot will intensify stretch; lateral trunk flexion over leg on ladder barrel."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Ladder Barrel Adductors stretch, fundamental level",
+    "_source": "chair",
+    "_page_file": "p046.png"
+  },
+  "p047.png": {
+    "page_type": "exercise_detail",
+    "title": "Hip Flexors",
+    "apparatus": "other",
+    "series_name": "Ladder Barrel Stretch Series",
+    "category": "Stretches",
+    "exercises": [
+      {
+        "order": 4,
+        "name": "Hip Flexors",
+        "reps": "Hold 3-5 breaths",
+        "spring_setting": null,
+        "notes": "Bend leg further for additional stretch; maintain pelvic stabilization and avoid lumbar hyperlordosis"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hip Flexors stretch on Ladder Barrel, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p047.png"
+  },
+  "p045.png": {
+    "page_type": "exercise_detail",
+    "title": "Hamstrings",
+    "apparatus": "other",
+    "series_name": "Ladder Barrel Stretch Series",
+    "category": "Stretches",
+    "exercises": [
+      {
+        "order": 2,
+        "name": "Hamstrings",
+        "reps": "1번씩, 총 3~5회",
+        "spring_setting": null,
+        "notes": "Starting in Gluteal Stretch position; leg straight on barrel in line with hip; foot dorsiflexed; hinge from hips when leaning forward."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Ladder Barrel Hamstrings stretch fundamental level exercise",
+    "_source": "chair",
+    "_page_file": "p045.png"
+  },
+  "p049.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Over",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Over",
+        "reps": "좌우 각 5회",
+        "spring_setting": null,
+        "notes": "Lying sideways on Ladder Barrel; arc trunk sideways lowering and lifting trunk; focuses on spinal lateral flexors."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Over on Ladder Barrel, Intermediate level",
+    "_source": "chair",
+    "_page_file": "p049.png"
+  },
+  "p052.png": {
+    "page_type": "intro",
+    "title": "SPINE CORRECTOR",
+    "apparatus": "other",
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Spine Corrector apparatus introduction page with instructor photo",
+    "_source": "chair",
+    "_page_file": "p052.png"
+  },
+  "p051.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Swan",
+        "reps": "3~5",
+        "spring_setting": null,
+        "notes": "Starting in Swan Prep position; spinal extensors, hip extensors, shoulder flexors focus; Advanced level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan back extension exercise on barrel, Advanced level",
+    "_source": "chair",
+    "_page_file": "p051.png"
+  },
+  "p050.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan Prep",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Swan Prep",
+        "reps": "5",
+        "spring_setting": null,
+        "notes": "Lying prone on Ladder Barrel; lift trunk to diagonal line, straighten arms overhead, then return; focus on spinal extensor strength and trunk stabilization."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan Prep on Ladder Barrel, Back Extension, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p050.png"
+  },
+  "p055.png": {
+    "page_type": "exercise_detail",
+    "title": "Overhead Stretch",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Overhead Stretch",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Intermediate level; spinal flexor control with shoulder mobility and thoracic stretch on barrel."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Overhead Stretch abdominal work intermediate level exercise detail",
+    "_source": "chair",
+    "_page_file": "p055.png"
+  },
+  "p048.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Over Prep",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Over Prep",
+        "reps": "5~8회",
+        "spring_setting": null,
+        "notes": "Standing sideways to Ladder Barrel; arc trunk sideways over barrel then straighten and lift trunk back to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Over Prep on Ladder Barrel, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p048.png"
+  },
+  "p057.png": {
+    "page_type": "exercise_detail",
+    "title": "Openings",
+    "apparatus": "other",
+    "series_name": "Supine Leg Series",
+    "category": "Hip Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Openings",
+        "reps": "8-10",
+        "spring_setting": null,
+        "notes": "Hip adductor control and stretch; pelvic lumbar stabilization; intermediate level"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Openings exercise from Supine Leg Series, Hip Work block",
+    "_source": "chair",
+    "_page_file": "p057.png"
+  },
+  "p056.png": {
+    "page_type": "exercise_detail",
+    "title": "Teaser Prep",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Teaser Prep",
+        "reps": "5~8회",
+        "spring_setting": null,
+        "notes": "Lying supine on barrel step, lift arms/head/chest and legs simultaneously to perpendicular position; Intermediate level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Teaser Prep abdominal work exercise on barrel, intermediate",
+    "_source": "chair",
+    "_page_file": "p056.png"
+  },
+  "p054.png": {
+    "page_type": "exercise_detail",
+    "title": "Reach",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Reach",
+        "reps": "5~8회",
+        "spring_setting": null,
+        "notes": "Sitting in C curve position, arms straight, shoulder width apart, shoulder height, hands holding pole, legs bent and together, shins perpendicular to floor; exhale roll down lifting arms overhead while straightening legs, inhale pause, exhale roll up returning to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Reach exercise, Abdominal Work, Fundamental level, wunda chair",
+    "_source": "chair",
+    "_page_file": "p054.png"
+  },
+  "p053.png": {
+    "page_type": "exercise_detail",
+    "title": "Chest Lift",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Chest Lift",
+        "reps": "8-10",
+        "spring_setting": null,
+        "notes": "Fundamental level; lying supine, legs bent, shins perpendicular to floor, feet hip width apart, fingers interlaced behind head."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Chest Lift abdominal work fundamental level exercise detail",
+    "_source": "chair",
+    "_page_file": "p053.png"
+  },
+  "p059.png": {
+    "page_type": "exercise_detail",
+    "title": "Scissors",
+    "apparatus": "other",
+    "series_name": "Supine Leg Series",
+    "category": "Hip Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Scissors",
+        "reps": "5 set",
+        "spring_setting": null,
+        "notes": "Open legs to Scissors position with 2 pulses, switch legs; intermediate level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Scissors exercise from Supine Leg Series, Hip Work block",
+    "_source": "chair",
+    "_page_file": "p059.png"
+  },
+  "p058.png": {
+    "page_type": "exercise_detail",
+    "title": "Helicopter",
+    "apparatus": "other",
+    "series_name": "Supine Leg Series",
+    "category": "Hip Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Helicopter",
+        "reps": "5 repetitions each direction",
+        "spring_setting": null,
+        "notes": "Starting in Openings position; circle legs around to Scissors position on opposite side, change direction after 5 repetitions."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Helicopter exercise from Supine Leg Series, Hip Work",
+    "_source": "chair",
+    "_page_file": "p058.png"
+  },
+  "p060.png": {
+    "page_type": "exercise_detail",
+    "title": "Bicycle",
+    "apparatus": "mat",
+    "series_name": "Supine Leg Series",
+    "category": "Hip Work",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Bicycle",
+        "reps": "5 cycles on each leg",
+        "spring_setting": null,
+        "notes": "Starting in Scissors position, open legs to V position; avoid externally rotating hip when bending back knee."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Bicycle exercise from Supine Leg Series, Intermediate level",
+    "_source": "chair",
+    "_page_file": "p060.png"
+  },
+  "p061.png": {
+    "page_type": "exercise_detail",
+    "title": "Bicycle Reverse",
+    "apparatus": "mat",
+    "series_name": "Supine Leg Series",
+    "category": "Hip Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Bicycle Reverse",
+        "reps": "5 cycles on each leg, 5 sets",
+        "spring_setting": null,
+        "notes": "Maintain pelvic lumbar stabilization; avoid externally rotating hip when bending back knee."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Bicycle Reverse exercise, Hip Work, Intermediate level",
+    "_source": "chair",
+    "_page_file": "p061.png"
+  },
+  "p062.png": {
+    "page_type": "exercise_detail",
+    "title": "Roll Over",
+    "apparatus": "other",
+    "series_name": "Spinal Articulation",
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Roll Over",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Intermediate level; lying supine on barrel/spine corrector; spinal flexors, hip flexors, hip extensors focus"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Roll Over exercise on spine corrector, intermediate level",
+    "_source": "chair",
+    "_page_file": "p062.png"
+  },
+  "p063.png": {
+    "page_type": "exercise_detail",
+    "title": "Shoulder Stretch Lying Side",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Stretches",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Shoulder Stretch Lying Side",
+        "reps": "5 repetitions each direction",
+        "spring_setting": null,
+        "notes": "Fundamental level; lying sideways on barrel, coordinate arm circle with body roll and hip rotation."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Shoulder Stretch Lying Side on barrel, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p063.png"
+  },
+  "p064.png": {
+    "page_type": "exercise_detail",
+    "title": "Spine Twist Supine",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Spine Twist Supine",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Lying supine with lower back and pelvis on barrel, legs in tabletop position, thighs perpendicular to floor, hands holding handles; alternate sides lowering and lifting legs."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Spine Twist Supine on barrel, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p064.png"
+  },
+  "p065.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Lift",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Lateral Flexion/Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Lift",
+        "reps": "8-10",
+        "spring_setting": null,
+        "notes": "Lying sideways on barrel; lift trunk on exhale, lower on inhale; focus on spinal lateral flexors."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Lift on barrel, Lateral Flexion/Rotation, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p065.png"
+  },
+  "p067.png": {
+    "page_type": "exercise_detail",
+    "title": "Corkscrew Advanced",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Corkscrew Advanced",
+        "reps": "3 sets x 4 set",
+        "spring_setting": null,
+        "notes": "Starting in Roll Over position, legs overhead; alternate sides; point lateral flexion (x)"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Corkscrew Advanced lateral flexion rotation advanced level",
+    "_source": "chair",
+    "_page_file": "p067.png"
+  },
+  "p066.png": {
+    "page_type": "exercise_detail",
+    "title": "Corkscrew",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Lateral Flexion/Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Corkscrew",
+        "reps": "4x set",
+        "spring_setting": null,
+        "notes": "Intermediate level; starting on Scissors position; alternate direction; spinal flexor, rotator, and hip flexor control."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Corkscrew exercise lateral flexion rotation intermediate level",
+    "_source": "chair",
+    "_page_file": "p066.png"
+  },
+  "p068.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan Prep",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Swan Prep",
+        "reps": null,
+        "spring_setting": null,
+        "notes": "Fundamental level; lying prone on barrel, lift trunk to diagonal line then straighten arms overhead and return."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan Prep on barrel, Back Extension, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p068.png"
+  },
+  "p072.png": {
+    "page_type": "other",
+    "title": "Lever Orientation & Lever Length",
+    "apparatus": "reformer",
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "Lever orientation and length notes with reformer spring image",
+    "_source": "chair",
+    "_page_file": "p072.png"
+  },
+  "p070.png": {
+    "page_type": "intro",
+    "title": "F2 Spine Corrector",
+    "apparatus": "other",
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "F2 Spine Corrector intro page with BASI note",
+    "_source": "chair",
+    "_page_file": "p070.png"
+  },
+  "p069.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan",
+    "apparatus": "mat",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Swan",
+        "reps": "3~5회",
+        "spring_setting": null,
+        "notes": "Starting in Swan Prep position, hips externally rotated; lift trunk, straighten arms overhead with legs and plantarflex feet, bend arms placing hands behind head, lower trunk and legs returning to start."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan back extension advanced level exercise detail",
+    "_source": "chair",
+    "_page_file": "p069.png"
+  },
+  "p071.png": {
+    "page_type": "exercise_detail",
+    "title": "Reach",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Reach",
+        "reps": "5~8",
+        "spring_setting": "Y/S",
+        "notes": "Sitting in C curve position, arms straight, shoulder width apart; roll down, lift arms overhead, straighten legs, place head on barrel."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Reach exercise, Abdominal Work, Fundamental level, barrel",
+    "_source": "chair",
+    "_page_file": "p071.png"
+  },
+  "p073.png": {
+    "page_type": "exercise_detail",
+    "title": "Hundred Prep",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Hundred Prep",
+        "reps": "5~8회",
+        "spring_setting": "Y/S",
+        "notes": "Lying supine over barrel, arms straight, legs bent and together, shins perpendicular to floor; spinal flexors focus"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Hundred Prep abdominal work fundamental level barrel",
+    "_source": "chair",
+    "_page_file": "p073.png"
+  },
+  "p074.png": {
+    "page_type": "exercise_detail",
+    "title": "Teaser Prep",
+    "apparatus": "wunda_chair",
+    "series_name": null,
+    "category": "Abdominal Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Teaser Prep",
+        "reps": "5~8회",
+        "spring_setting": "Y/S",
+        "notes": "Lying supine over barrel; lift arms, head, chest and legs simultaneously; spinal and hip flexor strength and stretch."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Teaser Prep exercise on Wunda Chair, Fundamental level",
+    "_source": "chair",
+    "_page_file": "p074.png"
+  },
+  "p076.png": {
+    "page_type": "exercise_detail",
+    "title": "Openings",
+    "apparatus": "cadillac",
+    "series_name": "Supine Leg Series",
+    "category": "Hip Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Openings",
+        "reps": "5",
+        "spring_setting": "Y/S",
+        "notes": "Starting in Frog position, hips externally rotated, legs straight and together, perpendicular to floor, feet plantarflexed; open legs out to sides on inhale, close on exhale."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Openings exercise from Supine Leg Series, Hip Work block",
+    "_source": "chair",
+    "_page_file": "p076.png"
+  },
+  "p075.png": {
+    "page_type": "exercise_detail",
+    "title": "Frog",
+    "apparatus": "cadillac",
+    "series_name": "Supine Leg Series",
+    "category": "Hip Work",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Frog",
+        "reps": "5",
+        "spring_setting": "Y/S",
+        "notes": "Lying supine, lower back and pelvis on barrel, shoulders on Mat, hands holding levers, legs bent, hips externally rotated, feet dorsiflexed in straps, heels together"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Frog exercise, Supine Leg Series, Hip Work, Intermediate",
+    "_source": "chair",
+    "_page_file": "p075.png"
+  },
+  "p079.png": {
+    "page_type": "exercise_detail",
+    "title": "Roll Over",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Spinal Articulation",
+    "exercises": [
+      {
+        "order": 1,
+        "name": "Roll Over",
+        "reps": null,
+        "spring_setting": "Y/S",
+        "notes": "Spine corrector roll over; start with legs at 90 degrees (position 4); spinal flexors and hip flexors focus; intermediate level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Roll Over exercise on spine corrector, intermediate level",
+    "_source": "chair",
+    "_page_file": "p079.png"
+  },
+  "p077.png": {
+    "page_type": "exercise_detail",
+    "title": "Scissors",
+    "apparatus": "cadillac",
+    "series_name": "Supine Leg Series",
+    "category": "Hip Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Scissors",
+        "reps": "5 set",
+        "spring_setting": "Y/S",
+        "notes": "Starting in Frog position, hips externally rotated, legs straight and together, perpendicular to floor, feet plantarflexed; open legs to Scissors position (2 pulses) then switch legs (2 pulses)."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Scissors exercise, Supine Leg Series, Hip Work, Intermediate",
+    "_source": "chair",
+    "_page_file": "p077.png"
+  },
+  "p078.png": {
+    "page_type": "exercise_detail",
+    "title": "Helicopter",
+    "apparatus": "cadillac",
+    "series_name": "Supine Leg Series",
+    "category": "Hip Work",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Helicopter",
+        "reps": "5 repetitions each direction",
+        "spring_setting": "Y/S",
+        "notes": "Starting in Frog position, hips externally rotated, legs straight and together, perpendicular to floor, feet plantarflexed; change direction after 5 repetitions"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Helicopter supine leg series hip work intermediate level",
+    "_source": "chair",
+    "_page_file": "p078.png"
+  },
+  "p080.png": {
+    "page_type": "exercise_detail",
+    "title": "Side Over with Extended Arms",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Lateral Flexion / Rotation",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Side Over with Extended Arms",
+        "reps": null,
+        "spring_setting": "Y/S (Short)",
+        "notes": "Lying sideways on barrel, bottom leg bent, foot plantarflexed, top leg straight in strap, arms straight and overhead; Intermediate level."
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Side Over with Extended Arms on barrel, intermediate level",
+    "_source": "chair",
+    "_page_file": "p080.png"
+  },
+  "p083.png": {
+    "page_type": "other",
+    "title": "BASI Pilates Contact Page",
+    "apparatus": null,
+    "series_name": null,
+    "category": null,
+    "exercises": [],
+    "toc_entries": [],
+    "raw_text_summary": "BASI Pilates logo and contact information page",
+    "_source": "chair",
+    "_page_file": "p083.png"
+  },
+  "p081.png": {
+    "page_type": "exercise_detail",
+    "title": "Swan",
+    "apparatus": "other",
+    "series_name": null,
+    "category": "Back Extension",
+    "exercises": [
+      {
+        "order": null,
+        "name": "Swan",
+        "reps": null,
+        "spring_setting": "N/A",
+        "notes": "Lying prone over barrel, feet on floor, legs bent and together, hands on levers, elbows out to sides; Socket C, Lever Orientation 0, Lever Length 1, Lever Direction 7"
+      }
+    ],
+    "toc_entries": [],
+    "raw_text_summary": "Swan back extension exercise on barrel, intermediate level",
+    "_source": "chair",
+    "_page_file": "p081.png"
+  },
+  "p082.png": {
+    "error": "JSONDecodeError: Expecting value: line 60 column 75 (char 4002)",
+    "page_type": "other",
+    "_source": "chair",
+    "_page_file": "p082.png"
+  }
+}

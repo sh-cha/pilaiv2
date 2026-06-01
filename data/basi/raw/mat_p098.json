@@ -1,0 +1,34 @@
+{
+  "source_page": "mat:p098.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Ankles Straight Knees",
+    "series": "Prone Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Ankles Bent Knees (page 95), legs straight, thighs lifted off Mat, Magic Circle above ankles",
+    "movement": {
+      "exhale": "Press legs together",
+      "inhale": "Open legs"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Hip extensors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Hip extensor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep legs straight",
+      "Keep hips extended",
+      "Maintain abdominal support to avoid pressure on lower back",
+      "Maintain tension in circle, increase tension when pressing legs together"
+    ]
+  }
+}

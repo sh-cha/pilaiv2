@@ -1,0 +1,30 @@
+{
+  "source_page": "mat:p017.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Chest Lift",
+    "block": "Foundation",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying supine in neutral spine position, legs parallel, knees bent, feet hip width apart, fingers interlaced behind head",
+    "movement": {
+      "exhale": "Lift head and chest",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip adductors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain neutral pelvis (if appropriate)",
+      "Keep head aligned with spine when lifting into spinal flexion",
+      "Allow head to rest in hands",
+      "Engage hip adductors throughout"
+    ]
+  }
+}

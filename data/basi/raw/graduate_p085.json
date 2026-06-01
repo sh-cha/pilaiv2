@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p085.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hanging Back",
+    "series": "Hanging Group",
+    "block": "Back Extension",
+    "level": "Advanced",
+    "apparatus": "cadillac",
+    "setup": "Hanging, arms straight, hands holding top crossbars of Cadillac, legs straight, hips externally rotated, feet placed on trapeze, feet dorsiflexed and hooked behind springs",
+    "movement": {
+      "exhale": "Roll pelvis and spine up to horizontal line, plantarflexing feet",
+      "inhale": "Reach crown of head to Mat, extending spine"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Spinal flexor control",
+      "Hip extensor control"
+    ],
+    "cues": [
+      "Reach tailbone to Mat when hanging in start position",
+      "Initiate movement with abdominals",
+      "Maximize extension in upper and mid back prior to lumbar extension and hip extension",
+      "Avoid excessive extension of cervical spine"
+    ]
+  }
+}

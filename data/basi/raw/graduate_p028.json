@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p028.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Rowing Back 2",
+    "series": "Rowing Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Rowing Back 1 position (page 26), palms facing up",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Bend arms to 90 degrees",
+      "exhale": "Roll down, lowering arms to sides"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Elbow flexors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Elbow flexor control"
+    ],
+    "cues": [
+      "Avoid hyperlordosis when lifting from supine to sitting",
+      "Keep elbows at 90 degrees when rolling down",
+      "Initiate lift of trunk with spinal flexion prior to spinal extension"
+    ]
+  }
+}

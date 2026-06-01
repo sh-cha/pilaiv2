@@ -1,0 +1,31 @@
+{
+  "source_page": "chair:p042.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shoulder Stretch Flexion",
+    "block": "Stretches",
+    "level": "Fundamental",
+    "apparatus": "Ladder Barrel",
+    "setup": "Standing facing Ladder Barrel, hands placed on ladder, arms straight, shoulder width apart, body on diagonal line\nNote: Placing hands closer together on ladder will intensify stretch",
+    "movement": {
+      "inhale": "Bend legs, flex hips and shoulders, lowering trunk forward until parallel (as close as possible) to floor",
+      "exhale": "Hold position for 3 -5 breathes, straighten legs, lift trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder extensor stretch",
+      "Trunk stabilization",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Keep arms straight",
+      "Maintain trunk stabilization, particularly during stretch",
+      "Engage abdominals to avoid ribs flaring and lumbar hyperextension"
+    ]
+  }
+}

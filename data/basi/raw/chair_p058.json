@@ -1,0 +1,35 @@
+{
+  "source_page": "chair:p058.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Helicopter",
+    "series": "Supine Leg Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Starting in Openings position (page 54)",
+    "movement": {
+      "inhale": "Open legs to Scissors position",
+      "exhale": "Circle legs around to Scissors position on opposite side, return to start position"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip extensors",
+      "Hip adductors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip joint control",
+      "Hip joint mobility",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic stabilization",
+      "Touch each point of circle as legs circle around",
+      "Pass through perpendicular position following each circle",
+      "Keep feet at consistent distance from floor throughout circle",
+      "Keep holding handles firmly and pulling barrel toward back"
+    ]
+  }
+}

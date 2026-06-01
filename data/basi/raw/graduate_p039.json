@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p039.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Split Side",
+    "series": "Split Side Group",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Standing upright, feet aligned with each other, one foot on front of Foot Platform, other foot against shoulder rest, arms in T position, palms facing down",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Open legs, moving carriage out",
+      "exhale": "Close legs, moving carriage in, return to start position"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Hip adductor stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Pause when carriage is fully out and when carriage is against stopper",
+      "Imagine reaching crown of head to ceiling throughout"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p060.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Scissors",
+    "series": "Lying Side Single Leg Series",
+    "block": "Hip Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Lying on side in neutral spine position, bottom arm straight, head resting on arm, pelvis perpendicular to Mat, top arm holding pole, legs straight, aligned with trunk, hips externally rotated, feet plantarflexed, top foot in strap",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Open legs to Scissors position (2 pulses)",
+      "inhale": "Switch"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip extensor control and stretch",
+      "Hip flexor control and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Create even V position when legs are open"
+    ]
+  }
+}

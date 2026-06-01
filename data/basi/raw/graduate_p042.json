@@ -1,0 +1,35 @@
+{
+  "source_page": "graduate:p042.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Single Leg Parallel",
+    "series": "Jumping Series",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs parallel, one foot on Jump Board, heel pressing down , other leg in tabletop position",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten leg, plantarflex foot, jump",
+      "inhale": "Land, bend leg, return to start position"
+    },
+    "muscle_focus": [
+      "Knee extensors",
+      "Ankle-foot plantarflexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Knee extensor strength",
+      "Ankle-foot plantarflexor strength",
+      "Hip extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep leg that is in tabletop position stable",
+      "Articulate through foot on take off and landing",
+      "Maintain heel contact with Jump Board prior to jump and following landing",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

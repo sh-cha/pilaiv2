@@ -1,0 +1,37 @@
+{
+  "source_page": "graduate:p069.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "3",
+    "name": "Circles Up",
+    "series": "Arms Standing Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Starting in Hug-a-Tree position (page 67)",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Move arms forward until parallel with each other",
+      "inhale": "Rotate arms, palms facing down, lift arms overhead, circle out to sides, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder horizontal adductors",
+      "Shoulder extensors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder horizontal adductor strength",
+      "Shoulder extensor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Keep leaning into springs, maintaining consistent diagonal line",
+      "Move arms forward until parallel with each other",
+      "Move arms back within range of scapular stabilization",
+      "Lift arms directly overhead while maintaining trunk stabilization"
+    ]
+  }
+}

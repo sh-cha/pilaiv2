@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p055.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Overhead Stretch",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Sitting upright, arms straight, shoulder width apart, shoulder height, palms facing each other, legs bent, shins perpendicular position to floor, feet hip width apart",
+    "movement": {
+      "exhale": "Roll down, lift arms up and overhead / Roll up to C curve position",
+      "inhale": "Circle arms around / Extend trunk, sit upright, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Shoulder mobility",
+      "Thoracic stretch"
+    ],
+    "cues": [
+      "Keep head aligned with spine",
+      "Lift arms overhead when trunk reaches full extension",
+      "Coordinate lifting head as arms circle around",
+      "Rest back and head on barrel when arms are overhead"
+    ]
+  }
+}

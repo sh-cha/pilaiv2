@@ -1,0 +1,34 @@
+{
+  "source_page": "chair:p032.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Lunge Forward",
+    "series": "Lunge Group",
+    "block": "Leg Work",
+    "level": "Advanced",
+    "apparatus": "chair",
+    "resistance": "heavy",
+    "setup": "Standing upright facing Wunda Chair, one foot on Wunda Chair, leg bent, knee aligned over ankle, other foot placed on pedal, plantarflexed, leg straight",
+    "movement": {
+      "exhale": "Straighten leg, lifting pedal",
+      "inhale": "Bend leg, lowering pedal, return to start position (without touching bottom)"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Hip abductors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Hip abductor control",
+      "Knee extensor strength"
+    ],
+    "cues": [
+      "Maintain upright alignment",
+      "Maintain pelvic and trunk stabilization",
+      "Initate movement with hip extensors",
+      "Keep hip joint aligned over pedal (as close as possible) and knee behind or aligned with toes when lifting and lowering pedal"
+    ]
+  }
+}

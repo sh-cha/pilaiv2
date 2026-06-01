@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p053.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Chest Lift",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "apparatus": "chair",
+    "setup": "Lying supine, legs bent, shins perpendicular to floor, feet hip width apart, fingers interlaced behind head",
+    "movement": {
+      "exhale": "Lift head and chest",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip adductors"
+    ],
+    "objectives": [
+      "Spinal flexor control and stretch",
+      "Hip adductor control",
+      "Pelvic lumbar stabilization",
+      "Thoracic stretch"
+    ],
+    "cues": [
+      "Keep elbows wide",
+      "Keep legs parallel",
+      "Support head with hands",
+      "Keep lumbar spine in contact with barrel"
+    ]
+  }
+}

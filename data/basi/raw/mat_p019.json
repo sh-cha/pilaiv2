@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p019.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Single Leg Lift",
+    "block": "Foundation",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying supine in neutral spine position, knees bent, feet placed firmly on Mat, arms by sides",
+    "movement": {
+      "exhale": "Lift one leg, plantarflex foot",
+      "inhale": "Lower leg, touch Mat with toes"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip flexor control",
+      "Hip disassociation",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Keep shoulders relaxed",
+      "Maintain consistent angle of knee joint (90 degrees)"
+    ]
+  }
+}

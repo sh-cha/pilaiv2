@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p035.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Coordination",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Hundred Prep position (page 27)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift head and chest, reach arms down to sides of body, straighten legs forward, open legs, close legs",
+      "inhale": "Bend legs toward chest, lift arms, lower head and chest, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Hip flexor control",
+      "Pelvic lumbar stabilization",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Keep feet opposite eye line when in trunk flexion",
+      "Bend knees toward chest before lifting arms and lowering trunk",
+      "Open legs no wider than footbar"
+    ]
+  }
+}

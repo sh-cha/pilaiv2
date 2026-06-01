@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p077.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Saw",
+    "series": "Push Through Group",
+    "block": "Full Body Integration II",
+    "level": "Advanced",
+    "apparatus": "cadillac",
+    "setup": "Starting in Sitting Forward position (page 110)",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Round trunk into C curve, lean back\nReach forward, trunk over leg, hand to outside of foot",
+      "inhale": "Release one arm, extend trunk to upright position, rotate trunk toward arm holding PTBar\nLift trunk to upright, rotate to center, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal flexor and rotator control",
+      "Spinal extensor control",
+      "Hip extensor stretch"
+    ],
+    "cues": [
+      "Rotate trunk on longitudinal axis prior to and following stretch",
+      "Keep back extensors engaged",
+      "Keep head aligned with spine during rotation and stretch"
+    ]
+  }
+}

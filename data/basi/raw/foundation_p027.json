@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p027.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "6",
+    "name": "Calf Raises",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "setup": "Lying supine in neutral spine position, legs straight and parallel, toes placed on footbar, feet hip width apart and plantarflexed",
+    "resistance": "medium to heavy",
+    "movement": {
+      "inhale": "Lower heels",
+      "exhale": "Lift heels, return to start position"
+    },
+    "muscle_focus": [
+      "Ankle-foot plantarflexors",
+      "Ankle-foot dorsiflexors"
+    ],
+    "objectives": [
+      "Ankle-foot plantarflexor strength",
+      "Ankle-foot dorsiflexor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Lower heels with control",
+      "Use full range of motion of ankle joint",
+      "Maintain straight legs, avoiding hyperextension",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

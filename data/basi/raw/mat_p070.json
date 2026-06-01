@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p070.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Teaser 3",
+    "block": "Bridging/Full Body Integration",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Starting in Teaser 1 position (page 61)",
+    "movement": {
+      "exhale": "Lower trunk and legs simultaneously, reach arms overhead",
+      "inhale": "Lift arms, trunk and legs, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal extensor strength",
+      "Hip flexor strength"
+    ],
+    "cues": [
+      "Lower legs to slightly above Mat",
+      "Articulate through spine when rolling down and rolling up",
+      "Keep arms at shoulder height prior to reaching overhead following roll down and roll up"
+    ]
+  }
+}

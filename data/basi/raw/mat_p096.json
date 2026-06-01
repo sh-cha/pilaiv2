@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p096.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Ankles",
+    "series": "Supine Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Knees position (page 93), legs straight on diagonal line, Magic Circle above ankles",
+    "movement": {
+      "exhale": "Press legs together",
+      "inhale": "Open legs"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep legs at consistent height",
+      "Maintain pelvic lumbar stabilization",
+      "Maintain tension in circle, increase tension when pressing legs together"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p048.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Frog Extended",
+    "series": "Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, hips externally rotated, feet in straps, dorsiflexed, heels together, hips and knees at 80 degrees",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Open legs"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Hip adductor stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep heels squeezing together as legs straighten",
+      "Keep carriage still as legs bend in from open position",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

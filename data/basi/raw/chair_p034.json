@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p034.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hamstring Curl",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "chair",
+    "setup": "Lying supine in neutral spine position, heels placed on pedal, feet dorsiflexed, legs straight (not completely), hip width apart, arms by sides, palms down",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Bend legs, lowering pedal",
+      "inhale": "Straighten legs (not completely), lifting pedal, return to start position"
+    },
+    "muscle_focus": [
+      "Knee flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Knee flexor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain neutral pelvis",
+      "Initiate movement using hamstrings",
+      "Focus on knee flexion",
+      "Take pedal approximately halfway down"
+    ]
+  }
+}

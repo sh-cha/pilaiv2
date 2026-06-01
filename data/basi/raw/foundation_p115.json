@@ -1,0 +1,31 @@
+{
+  "source_page": "foundation:p115.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Bicycle",
+    "series": "Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Fundamental",
+    "setup": "Starting in Walking position (page 101)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lower one leg toward Mat, create L shape, bend knee, flex hip bringing leg toward chest, straighten leg toward ceiling, simultaneously lower opposite leg, create L shape",
+      "inhale": "Lower top leg toward Mat, simutaneously bend knee, flex hip bringing leg toward chest, straighten leg toward ceiling, create L shape"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Hip disassociation",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Establish L shape with legs in each cycle",
+      "Keep legs parallel avoiding hip external rotation",
+      "Maintain spring tension"
+    ]
+  }
+}

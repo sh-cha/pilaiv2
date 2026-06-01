@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p084.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Prone 2",
+    "series": "Push Through Group",
+    "block": "Back Extension",
+    "level": "Advanced",
+    "apparatus": "cadillac",
+    "setup": "Starting in Prone 1 position (page 81)",
+    "resistance": "medium to heavy",
+    "movement": {
+      "inhale": "Bend arms, elbows facing outward, moving PTBar forward and up",
+      "exhale": "Lift trunk, straightening arms toward ceiling"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Spinal flexor control",
+      "Shoulder stretch"
+    ],
+    "cues": [
+      "Keep abdominals engaged",
+      "Initiate back extension from crown of head and articulate through spine",
+      "Maintain scapular stabilization",
+      "Maximize shoulder stretch prior to and following back extension"
+    ]
+  }
+}

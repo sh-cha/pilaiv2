@@ -1,0 +1,35 @@
+{
+  "source_page": "graduate:p076.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "5∧8∪",
+    "name": "Squats",
+    "block": "Leg Work",
+    "level": "Advanced",
+    "apparatus": "cadillac",
+    "setup": "Standing upright, facing Cadillac, arms straight and shoulder width apart, hands holding handles, palms facing body, elbows bent to 90 degrees, crossbar at eye level",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Bend legs",
+      "exhale": "Straighten legs, return to start position"
+    },
+    "muscle_focus": [
+      "Knee extensors",
+      "Elbow flexors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Knee extensor strength",
+      "Elbow flexor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Hold arms parallel to each other",
+      "Keep upper arms stable and parallel to the floor",
+      "Keep trunk upright as if moving up and down wall",
+      "Keep knees behind line of toes when bending"
+    ]
+  }
+}

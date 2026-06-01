@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p069.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Stomach Massage Flat Back",
+    "series": "Stomach Massage Group",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Stomach Massage position (page 57), arms bent, hands on shoulder rests, fingers facing away from body, back straight",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Straighten legs, dorsiflex feet, plantarflex feet",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors",
+      "Knee extensors",
+      "Ankle-foot plantarflexors"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Knee extensor control",
+      "Ankle-foot plantarflexor strength"
+    ],
+    "cues": [
+      "Keep trunk upright and stable",
+      "Keep elbows slightly bent and reaching back",
+      "Maintain scapular stabilization (as close as possible)",
+      "Straighten legs completely prior to dorsiflexion and plantarflexion"
+    ]
+  }
+}

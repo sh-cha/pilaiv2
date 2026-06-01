@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p077.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Triceps",
+    "series": "Arms Supine Series",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Starting in Extension Position (page 62), hands in straps, arms straight by sides of body, palms facing carriage",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Bend arms",
+      "exhale": "Straighten arms, return to start positon"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Scapular stabilizers",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Keep trunk and legs stable",
+      "Keep elbows pressing against sides of body",
+      "Keep wrists straight and stable",
+      "Keep upper arms parallel to floor and in line with shoulders"
+    ]
+  }
+}

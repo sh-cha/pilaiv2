@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p095.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Pulling Straps 2",
+    "series": "Long Box Group",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Pulling Straps 1 position (page 82), arms in T position, parallel to floor, holding straps, palms facing down",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Lift trunk, move arms to sides of body",
+      "exhale": "Lower trunk, move arms to T position, return to start postition"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Shoulder adductors",
+      "Shoulder horizontal abductors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Hip extensor control",
+      "Shoulder adductor control"
+    ],
+    "cues": [
+      "Move arms on horizontal line, parallel to floor",
+      "Emphasize mid and upper back extensors",
+      "Keep palms facing floor",
+      "Keep legs parallel to floor"
+    ]
+  }
+}

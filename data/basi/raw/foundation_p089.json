@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p089.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Biceps",
+    "series": "Arns Kneeling Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Start in Circles Up position (page 74), arms straight and back of trunk, parallel to each other (as close as possible). hands holding straps",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Bend arms",
+      "inhale": "Straighten arms, return to start position"
+    },
+    "muscle_focus": [
+      "Elbow flexors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Elbow flexor strength",
+      "Shoulder flexor stretch",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain trunk stabilization, avoiding ribs flaring",
+      "Keep upper arms and elbows stable",
+      "Maintain neutral postion of scapulae (as close as possible)",
+      "Maintain neutral position of wrists"
+    ]
+  }
+}

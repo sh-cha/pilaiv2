@@ -1,0 +1,29 @@
+{
+  "source_page": "mat:p027.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Back Extension",
+    "block": "Back Extension",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying prone, head aligned with spine, arms straight and by sides, pressing against legs",
+    "movement": {
+      "inhale": "Lift upper trunk",
+      "exhale": "Lower upper trunk, without touching Mat"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep head aligned with spine",
+      "Keep legs together",
+      "Maintain abdominal support"
+    ]
+  }
+}

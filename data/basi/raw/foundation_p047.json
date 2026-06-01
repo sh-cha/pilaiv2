@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p047.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "8-10",
+    "name": "Openings",
+    "series": "Hip Supine Series",
+    "block": "Hip Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs straight on diagonal line (45 to 60 degrees), hips externally rotated, feet in straps, plantarflexed",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Open legs",
+      "exhale": "Close legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Hip adductor stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Keep feet moving at consistent height from floor as legs open and close",
+      "Move within the limits of pelvic lumbar control"
+    ]
+  }
+}

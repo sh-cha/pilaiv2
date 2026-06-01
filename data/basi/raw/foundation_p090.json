@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p090.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Mermaid",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "resistance": "light",
+    "setup": "Sitting sideways on carriage, one leg bent against shoulder rests, other leg bent in front of body, arms straight, one hand placed in middle of footbar, other arm down by side",
+    "movement": {
+      "inhale": "Push carriage out, lower body until arm is parallel with floor, simultaneously lift other arm to diagonal line",
+      "exhale": "Rotate trunk, bring arm around to footbar"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal rotators",
+      "Spinal extensors",
+      "Shoulder abductors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor and rotator control",
+      "Spinal mobility",
+      "Shoulder abductor control"
+    ],
+    "cues": [
+      "Keep both arms straight",
+      "Pivot around supporting shoulder during rotation",
+      "Keep carriage still when rotating trunk"
+    ]
+  }
+}

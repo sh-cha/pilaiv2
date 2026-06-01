@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p033.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Saw",
+    "apparatus": "mat",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Intermediate",
+    "setup": "Sitting upright, legs straight, feet dorsiflexed shoulder width apart, arms in T position, palms facing forward",
+    "movement": {
+      "inhale": "Rotate trunk",
+      "exhale": "Reach forward as back arm internally rotates, front hand reaches past outside of foot"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Spinal extensors",
+      "Spinal rotators"
+    ],
+    "objectives": [
+      "Hip extensor stretch",
+      "Spinal extensor control",
+      "Spinal rotator control"
+    ],
+    "cues": [
+      "Rotate around longitudinal axis",
+      "Maintain back extensor engagement",
+      "Keep head aligned with spine, nose aligned with sternum"
+    ]
+  }
+}

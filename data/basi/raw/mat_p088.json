@@ -1,0 +1,36 @@
+{
+  "source_page": "mat:p088.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Arms Overhead",
+    "series": "Arms Series",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Arms Bent position (page 85), arms straight and overhead",
+    "movement": {
+      "exhale": "Press arms together",
+      "inhale": "Open arms"
+    },
+    "muscle_focus": [
+      "Shoulder flexors",
+      "Shoulder abductors",
+      "Scapular stabilizers",
+      "Elbow extensors"
+    ],
+    "objectives": [
+      "Shoulder flexor strength",
+      "Shoulder abductor strength",
+      "Scapular stabilization",
+      "Elbow extensor control"
+    ],
+    "cues": [
+      "Maintain upright trunk",
+      "Maintain scapular stabilization",
+      "Maintain tension in circle",
+      "Lift arms as high as flexibility of shoulders allow",
+      "Keep arms straight"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p043.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Leg Changes",
+    "series": "Jumping Series",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs parallel, one foot on Jump Board, heel pressing down, other leg in tabletop position",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten leg, plantarflex foot, jump, simutaneously straighten other leg",
+      "inhale": "Land on opposite foot, bend leg, alternate"
+    },
+    "muscle_focus": [
+      "Knee extensors",
+      "Ankle-foot plantarflexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Knee extensor strength",
+      "Ankle plantarflexor strength",
+      "Hip extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Straighten both legs after jump and prior to landing",
+      "Articulate through foot on take off and landing",
+      "Maintain heel contact with Jump Board prior to jump and following landing"
+    ]
+  }
+}

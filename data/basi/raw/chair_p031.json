@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p031.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Tendon Stretch",
+    "block": "Full Body Integration",
+    "level": "Advanced",
+    "apparatus": "chair",
+    "setup": "Facing back to Wunda Chair, trunk rounded, arms straight, shoulder width apart, hands placed on front edge of chair, palms down, fingers wrapped around, legs straight, hip width apart, feet plantarflexed,",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Raise body, lifting pedal up",
+      "inhale": "Lower body, pressing pedal down (without touching bottom)"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Shoulder flexors",
+      "Scapular abductors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Shoulder flexor strength",
+      "Scapular abductor control"
+    ],
+    "cues": [
+      "Lift pelvis upward, maximizing spinal flexion",
+      "Keep head aligned with spine, eyes directed toward body",
+      "Maintain scapular stabilization"
+    ]
+  }
+}

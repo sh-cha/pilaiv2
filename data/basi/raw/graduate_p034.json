@@ -1,0 +1,37 @@
+{
+  "source_page": "graduate:p034.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Cross Arm Pull",
+    "series": "Arms Kneeling Side Series",
+    "block": "Arm Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Starting in Deltoid Reach position (page 33), opposite hand in strap, palm facing body",
+    "resistance": "extra light",
+    "movement": {
+      "exhale": "Straighten arm out to side",
+      "inhale": "Bend arm, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder abductors",
+      "Elbow extensors",
+      "Spinal flexors",
+      "Spinal lateral flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder abductor strength",
+      "Elbow extensor strength",
+      "Trunk stabilization",
+      "Shoulder internal rotator control"
+    ],
+    "cues": [
+      "Position hand between navel and sternum in set up",
+      "Begin movement with upper arm followed by lower arm",
+      "Keep elbow higher than hand when straightening and bending arm",
+      "Maintain neutral postion of wrist"
+    ]
+  }
+}

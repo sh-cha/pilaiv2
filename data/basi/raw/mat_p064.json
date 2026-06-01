@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p064.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Scissors",
+    "apparatus": "mat",
+    "block": "Bridging/Full Body Integration",
+    "level": "Advanced",
+    "setup": "Resting on shoulder girdle and upper arms, arms bent and parallel (as close as possible), hands holding pelvis, back arched, legs straight and together, feet plantarflexed, reaching toward ceiling",
+    "movement": {
+      "exhale": "Open legs to Scissors position (2 pulses)",
+      "inhale": "Switch"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic stabilization",
+      "Pass through the perpendicular position following each repetition",
+      "Create even V when legs are in Scissors position"
+    ]
+  }
+}

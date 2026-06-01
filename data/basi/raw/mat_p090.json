@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p090.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Single Arm Bicep",
+    "series": "Arms Series",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Single Arm Side Press position (page 88), hand holding Magic Circle in one hand, resting it on shoulder",
+    "movement": {
+      "exhale": "Press arm down",
+      "inhale": "Lift arm"
+    },
+    "muscle_focus": [
+      "Elbow flexors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Elbow flexor strength",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Press straight down, not at an angle",
+      "Press with palm of hand, not with fingers",
+      "Find comfortable position to rest Magic Circle on shoulder",
+      "Maintain tension in circle, increase tension when bending arm"
+    ]
+  }
+}

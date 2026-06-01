@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p070.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Stomach Massage Reaching",
+    "series": "Stomach Massage Group",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Stomach Massage Flat Back position (page 58), back straight, arms staight, reaching up and forward, wide V position, palms facing down",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Straighten legs, dorsiflex feet, plantarflex feet",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Spinal flexors",
+      "Knee extensors",
+      "Ankle-foot plantarflexors"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Knee extensor control",
+      "Ankle-foot plantarflexor strength"
+    ],
+    "cues": [
+      "Keep trunk upright and stable",
+      "Keep arms on consistent diagonal line",
+      "Maintain scapular stabilization",
+      "Straighten legs completely prior to dorsiflexion and plantarflexion"
+    ]
+  }
+}

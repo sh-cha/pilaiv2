@@ -1,0 +1,32 @@
+{
+  "source_page": "graduate:p046.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Long Back Stretch",
+    "block": "Full Body Integration II",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Facing risers, hands placed on footbar, shoulder width apart, fingers facing feet, arms straight, feet dorsiflexed against shoulder rests, trunk upright in neutral spine position",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Bend arms, lower body",
+      "exhale": "Curl pelvis up, simultaneously move carriage out and straighten arms creating straight diagonal line with body, round trunk, move carriage back to stopper"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Spinal flexors",
+      "Spinal extensors",
+      "Scapular stabilizers",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Trunk stabilization",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maximize and maintain trunk flexion when bringing carriage in"
+    ]
+  }
+}

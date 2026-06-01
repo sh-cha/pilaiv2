@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p040.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Parallel Position Jumping Series",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs bent and parallel, feet placed on Jump Board, hip width apart, heels pressing down",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten legs, plantarflex feet, jump",
+      "inhale": "Land, bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Knee extensors",
+      "Ankle-foot plantarflexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Knee extensor strength",
+      "Ankle-foot plantarflexor strength",
+      "Hip extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Articulate through feet on take off and landing",
+      "Maintain heel contact with Jump Board prior to jump and following landing",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

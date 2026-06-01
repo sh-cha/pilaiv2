@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p029.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Cat Stretch Kneeling",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "chair",
+    "setup": "Kneeling upright on Wunda Chair, close to front edge, facing forward, legs parallel, hip width apart, roll down, trunk rounded, arms straight, hands placed on pedal, palms facing down, fingers facing forward, shoulder and hip joints aligned horizontally",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Roll down, flattening trunk and lowering pedal",
+      "exhale": "Roll up, rounding trunk and lifting pedal"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maintain hips aligned over knees (as close as possible)",
+      "Lift pedal until shoulders are aligned horizontally with hips",
+      "Reach crown of head towards pedal when rolling down",
+      "Place head between arms when trunk is flat and pedal down"
+    ]
+  }
+}

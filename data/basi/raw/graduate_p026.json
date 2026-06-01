@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p026.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Rowing Back 1",
+    "series": "Rowing Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Sitting upright on carriage facing risers, approximately 8in (20cm) from front edge, legs straight between shoulder rests (crossed if necessary), footbar down, arms straight and shoulder height, hands holding straps, fist position, palms facing each other",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Bend arms, elbows out to sides, bring hands to sternum",
+      "exhale": "Roll down"
+    },
+    "muscle_focus": [
+      "Shoulder flexors",
+      "Shoulder abductors",
+      "Shoulder internal rotators",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder control",
+      "Spinal flexor control",
+      "Spinal extensor control"
+    ],
+    "cues": [
+      "See next page"
+    ]
+  }
+}

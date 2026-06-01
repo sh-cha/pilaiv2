@@ -1,0 +1,31 @@
+{
+  "source_page": "foundation:p034.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hundred",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "setup": "Starting in Hundred Prep position (page 27)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift head and chest, reach arms down to sides of body, parallel to floor, straighten legs forward",
+      "inhale": "Prepare"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Hip flexor control",
+      "Shoulder extensor/flexor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep pumps of arms small",
+      "Keep legs stable at safe height",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

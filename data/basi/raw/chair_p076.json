@@ -1,0 +1,30 @@
+{
+  "source_page": "chair:p076.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Openings",
+    "series": "Supine Leg Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "setup": "Starting in Frog position (page 71), hips externally rotated, legs straight and together, perpendicular to floor, feet plantarflexed",
+    "movement": {
+      "inhale": "Open legs out to sides",
+      "exhale": "Close legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip adductor strength and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Open legs as wide as possible while maintaining spring tension",
+      "Pause in perpendicular position between each repetition",
+      "Keep holding handles firmly and pulling barrel toward back"
+    ]
+  }
+}

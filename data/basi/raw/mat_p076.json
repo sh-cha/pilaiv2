@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p076.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Boomerang",
+    "block": "Spinal Articulation",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Sitting with legs straight and crossed, trunk over legs, arms straight and reaching forward",
+    "movement": {
+      "inhale": "Roll down, lift legs",
+      "exhale": "Roll over"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal extensor strength",
+      "Hip flexor strength"
+    ],
+    "cues": [
+      "Keep movement fluid",
+      "Maximize stretch for shoulders and chest",
+      "Create Boomerang position (BASI Rock) in Chest Lift position, legs lifted"
+    ]
+  }
+}

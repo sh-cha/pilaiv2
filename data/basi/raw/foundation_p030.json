@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p030.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "9",
+    "name": "Single Leg Heel",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, heel of one foot placed on footbar, other leg bent at 90 degree angle in hip and knee joints (tabletop position)",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten working leg",
+      "inhale": "Bend leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor control",
+      "Knee extensor strength",
+      "Ankle and foot control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Initiate movement with hip extensors",
+      "Straighten leg completely, avoiding hyperextension",
+      "Keep bent leg stable",
+      "Keep foot of working leg dorsiflexed and stable as if standing on floor",
+      "Maintain pelvic lumbar stabilization"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p062.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Teaser 1",
+    "block": "Bridging/Full Body Integration",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Balance in V position, legs straight and together on diagonal line, back flat, arms straight and overhead, shoulder width apart",
+    "movement": {
+      "exhale": "Roll down, lift arms overhead",
+      "inhale": "Roll up, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal extensor strength",
+      "Hip flexor strength"
+    ],
+    "cues": [
+      "Keep legs at consistent angle",
+      "Articulate through spine when rolling down and up",
+      "Keep arms at shoulder height prior to reaching overhead following roll down and roll up"
+    ]
+  }
+}

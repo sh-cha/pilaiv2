@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p080.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Butterfly",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Advanced",
+    "apparatus": "cadillac",
+    "setup": "Starting in Hug-a-Tree position (page 67)",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Laterally flex trunk",
+      "exhale": "Rotate trunk toward Cadillac, bring top arm up and over, bottom arm under and across, reach both arms back"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors and rotators",
+      "Shoulder adductors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal lateral flexor and rotator control and stretch",
+      "Shoulder adductor control",
+      "Shoulder extensor control",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maintain constant tension in springs",
+      "Keep arms wide during lateral flexion",
+      "Keep pelvis facing forward (as much as possible)",
+      "Keep shoulder adductors engaged when taking arm overhead"
+    ]
+  }
+}

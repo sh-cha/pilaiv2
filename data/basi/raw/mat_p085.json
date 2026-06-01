@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p085.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Chest Lift with Magic Circle",
+    "block": "Foundation",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying supine in neutral spine position, knees bent, legs parallel, feet flat on Mat, holding one Magic Circle between knees, holding other Magic Circle between hands, arms straight and perpendicular",
+    "movement": {
+      "exhale": "Lift head and chest, press legs and arms together",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip adductors",
+      "Shoulder horizontal adductors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Hip adductor strength",
+      "Shoulder horizontal adductor strength"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Keep head aligned with spine when lifting into spinal flexion",
+      "Maintain tension in both circles, increase tension when lifting"
+    ]
+  }
+}

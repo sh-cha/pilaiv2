@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p122.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Monkey",
+    "block": "Spinal Articulation",
+    "level": "Fundamental",
+    "apparatus": "cadillac",
+    "setup": "Lying supine, arms straight and shoulder width apart, hands holding PTBar, legs bent, toes placed on PTBar, feet hip width apart and plantarflexed",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Roll up, simultaneously straighten legs / Roll down, simultaneously bend legs, return to start position",
+      "inhale": "Dorsiflex and plantarflex feet"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip extensors",
+      "Ankle-foot plantarflexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Hip extensor and ankle-foot plantarflexor stretch"
+    ],
+    "cues": [
+      "Initiate movement with abdominals",
+      "Maintain plantarflexion while rolling up and down",
+      "Engage back extensors in pike position",
+      "Maintain scapular stabilization"
+    ]
+  }
+}

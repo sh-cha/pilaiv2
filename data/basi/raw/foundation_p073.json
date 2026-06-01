@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p073.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Arms Supine Series",
+    "series": "Extension",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, legs in tabletop position, arms straight and perpendicular to floor, hands in straps, palms facing forward",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lower arms to sides of body",
+      "inhale": "Lift arms, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Elbow extensors",
+      "Scapular stabilizers",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Shoulder extensor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Keep trunk and legs stable",
+      "Keep arms straight",
+      "Maintain tension in straps"
+    ]
+  }
+}

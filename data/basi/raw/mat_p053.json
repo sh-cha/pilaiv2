@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p053.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hamstring Pull 2",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Starting in Hamstring Pull 1 position (page 41), fingers interlaced behind head",
+    "movement": {
+      "exhale": "Lower one leg to Mat, lift other leg toward chest (2 pulses)",
+      "inhale": "Switch legs"
+    },
+    "muscle_focus": [
+      "Spinal Flexors",
+      "Hip flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Pelvic lumbar stabilization",
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch"
+    ],
+    "cues": [
+      "Support head with hands",
+      "Maintain stability of trunk and pelvis as legs change",
+      "Anchor bottom leg on Mat and keep stable (no pulses)",
+      "Maintain consistent height of trunk"
+    ]
+  }
+}

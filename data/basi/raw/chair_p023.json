@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p023.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Jackknife",
+    "block": "Spinal Articulation",
+    "level": "Advanced",
+    "apparatus": "chair",
+    "setup": "Lying supine in front of Wunda Chair in Roll Over position (page 42 Mat MAWB), arms straight, shoulder width apart, hands holding pedal, palms facing up",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Lift legs, perpendicular to Mat",
+      "exhale": "Roll over"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip extensors",
+      "Spinal extensors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor control",
+      "Spinal extensor control",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Utilize hip, back and shoulder extensors to achieve vertical line"
+    ]
+  }
+}

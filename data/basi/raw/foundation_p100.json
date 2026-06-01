@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p100.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "V - Position Toes",
+    "series": "Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "setup": "Lying supine, toes placed on PTBar, heels together, feet in small V position, legs bent",
+    "resistance": "medium to heavy",
+    "movement": {
+      "exhale": "Straighten legs",
+      "inhale": "Bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength",
+      "Knee extensor control",
+      "Foot alignment and stabilization",
+      "Hip adductor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Establish plantarflexion when legs are straight",
+      "Keep heels stable, moving around ankle joint",
+      "Maintain hip extensor engagement",
+      "Maintain pelvic lumbar stabilization",
+      "Avoid excessive knee flexion (maximum 90 degrees)",
+      "Straighten legs completely, avoiding hyperextension"
+    ]
+  }
+}

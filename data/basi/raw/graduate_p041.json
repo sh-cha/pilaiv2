@@ -1,0 +1,36 @@
+{
+  "source_page": "graduate:p041.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "V-Position",
+    "series": "Jumping Series",
+    "block": "Leg Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying supine in neutral spine position, hips externally rotated, feet placed on Jump Board in small V position, heels pressing down",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Straighten legs, plantarflex feet, jump",
+      "inhale": "Land, bend legs, return to start position"
+    },
+    "muscle_focus": [
+      "Knee extensors",
+      "Ankle-foot plantarflexors",
+      "Hip adductors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Knee extensor strength",
+      "Ankle plantarflexor strength",
+      "Hip adductor control",
+      "Hip extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep knees aligned over feet",
+      "Keep legs together during jump",
+      "Maintain heel contact with Jump Board prior to jump and following landing"
+    ]
+  }
+}

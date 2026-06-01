@@ -1,0 +1,34 @@
+{
+  "source_page": "foundation:p036.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Round Back",
+    "series": "Short Box Series",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Sitting upright at front of Short Box, knees bent, feet under foot strap, arms crossed and resting on chest",
+    "resistance": "all springs attached to hold carriage in place",
+    "movement": {
+      "exhale": "Round trunk into C curve, shoulders above hip joints, lift arms parallel to floor, lower trunk back",
+      "inhale": "Pause"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Hip flexor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Initiate with trunk flexion prior to lowering trunk back",
+      "Maintain C curve position during lowering and lifting phases",
+      "In final phase extend trunk when shoulders are above hip joints"
+    ]
+  }
+}

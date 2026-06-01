@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p105.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Single Leg Heel Supine Series",
+    "block": "Foot Work",
+    "level": "Fundamental",
+    "setup": "Lying supine, heel of one foot placed on PTBar, leg bent, other leg placed on Mat, leg straight, foot plantarflexed",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Straighten leg",
+      "inhale": "Bend leg, return to start position"
+    },
+    "muscle_focus": [
+      "Hip extensors",
+      "Knee extensors"
+    ],
+    "objectives": [
+      "Hip extensor strength and stretch",
+      "Hip flexor stretch (supporting leg)",
+      "Knee extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain hip extensor engagement",
+      "Maintain pelvic lumbar stabilization",
+      "Reach heel toward ceiling when straightening leg",
+      "Avoid excessive knee flexion (maximum 90 degrees)",
+      "Straighten leg completely, avoiding hyperextension"
+    ]
+  }
+}

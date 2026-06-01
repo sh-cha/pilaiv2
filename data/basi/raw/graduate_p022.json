@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p022.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Semi-Circle",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Resting on shoulder girdle, arms overhead, hands placed against shoulder rests, toes placed on footbar, feet in V position, pelvis lifted",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "② Inhale: Straighten legs (not completely)\n④ Inhale: Bend legs, return to start position",
+      "exhale": "① Exhale: Roll down\n③ Exhale: Roll up"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip extensors",
+      "Elbow extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor control",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep hip adductors engaged",
+      "Keep heels stable and squeezing together",
+      "Minimize movement of carriage when rolling down and up",
+      "Articulate through each vertebra when rolling down and up"
+    ]
+  }
+}

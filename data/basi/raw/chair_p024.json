@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p024.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shrugs",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "chair",
+    "setup": "Sitting upright (on box) with back to Wunda Chair, legs bent and parallel, hip width apart, arms straight, shoulder width apart, hands placed on pedal, palms facing back",
+    "resistance": "medium",
+    "movement": {
+      "inhale": "Raise shoulders, lifting pedal up",
+      "exhale": "Lower shoulders, pressing pedal down, return to start position"
+    },
+    "muscle_focus": [
+      "Scapular depressors",
+      "Spinal extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Scapular depressor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain trunk stabilization",
+      "Keep body upright",
+      "Keep arms straight",
+      "Elevate shoulders directly upward toward ears"
+    ]
+  }
+}

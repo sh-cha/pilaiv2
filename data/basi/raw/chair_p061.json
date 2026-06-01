@@ -1,0 +1,32 @@
+{
+  "source_page": "chair:p061.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Bicycle Reverse",
+    "series": "Supine Leg Series",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Starting in Scissors position (page 56), open legs to V position",
+    "movement": {
+      "inhale": "Bend front knee toward chest, move leg back, touch step with toes, straighten leg, simultaneously move opposite leg up and forward to create Scissors position on opposite side",
+      "exhale": "Repeat cycle"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Create even V in Scissors position",
+      "Avoid externally rotating hip when bending back knee"
+    ]
+  }
+}

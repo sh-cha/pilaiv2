@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p018.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Chest Lift with Rotation",
+    "block": "Foundation",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Chest Lift position (page 17)",
+    "movement": {
+      "exhale": "Rotate to one side / Rotate to other side",
+      "inhale": "Return to center / Return to center"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal rotators"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal rotator strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep pelvis stable",
+      "Maximize rotation while avoiding lateral flexion",
+      "Move head, shoulders and chest together as one unit",
+      "Maintain trunk flexion at consistent height"
+    ]
+  }
+}

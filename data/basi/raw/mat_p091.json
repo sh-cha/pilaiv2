@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p091.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Ankles",
+    "series": "Sitting Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Sitting upright, legs bent, shins parallel, feet placed firmly on floor, Magic Circle above ankles, parallel to floor",
+    "movement": {
+      "exhale": "Press legs together",
+      "inhale": "Open legs"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maximize engagement of intrinsic muscles of foot",
+      "Maintain trunk stabilization",
+      "Maintain tension in circle, increase tension when pressing together",
+      "Keep shins parallel as legs press together"
+    ]
+  }
+}

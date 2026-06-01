@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p094.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Adductor Squeeze",
+    "series": "Supine Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying supine in neutral spine position, feet together, knees bent and apart, Magic Circle between knees",
+    "movement": {
+      "exhale": "Press legs together",
+      "inhale": "Open legs"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain neutral pelvis",
+      "Keep shoulders and neck relaxed",
+      "Maintain tension in circle, increase tension when pressing legs together"
+    ]
+  }
+}

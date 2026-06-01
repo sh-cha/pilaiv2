@@ -1,0 +1,34 @@
+{
+  "source_page": "graduate:p047.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Tendon Stretch",
+    "block": "Full Body Integration II",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Facing risers, hands placed on footbar, shoulder width apart, fingers facing feet, arms straight, feet dorsiflexed placed on front edge of carriage, trunk rounded",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Lower trunk, moving carriage out,",
+      "exhale": "Lift trunk, moving carriage back to stopper, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Shoulder flexors",
+      "Scapular abductors",
+      "Ankle-foot dorsiflexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Shoulder flexor control",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maximize spinal flexion",
+      "Maintain scapular stabilization",
+      "Keep head aligned with spine, eyes directed toward body",
+      "Press heels down throughout, front edge of carriage under balls of feet"
+    ]
+  }
+}

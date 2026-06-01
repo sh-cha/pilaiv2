@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p032.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Criss Cross",
+    "apparatus": "mat",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "setup": "Starting in Double Leg Stretch position (page 30), place hands behind head, fingers interlaced",
+    "movement": {
+      "exhale": "Straighten one leg, rotate toward bent knee",
+      "inhale": "Switch legs"
+    },
+    "muscle_focus": [
+      "Spinal rotators",
+      "Spinal flexors",
+      "Hip extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal rotator strength",
+      "Spinal flexor strength",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain trunk flexion at consistent height",
+      "Maximize engagement of abdominal obliques",
+      "Maximize rotation while avoiding lateral flexion",
+      "Keep elbows wide"
+    ]
+  }
+}

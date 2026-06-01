@@ -1,0 +1,35 @@
+{
+  "source_page": "mat:p054.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hamstring Pull 3",
+    "apparatus": "mat",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "setup": "Starting in Hamstring Pull 2 position (page 52)",
+    "movement": {
+      "exhale": "Lower one leg to Mat, lift other leg toward chest, rotate trunk toward lifted leg (2 pulses)",
+      "inhale": "Switch"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal rotators",
+      "Hip flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Spinal rotator strength",
+      "Pelvic lumbar stabilization",
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch"
+    ],
+    "cues": [
+      "Maximize rotation while avoiding lateral flexion",
+      "Maintain stability of trunk and pelvis as legs change",
+      "Anchor bottom leg on Mat and keep stable (no pulses)",
+      "Maintain consistent height of trunk"
+    ]
+  }
+}

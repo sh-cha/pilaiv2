@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p076.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Circles Down",
+    "series": "Arms Supine Series",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "setup": "Starting in Extension Position (page 62)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lower arms to sides of body, rotate arms, palms face body",
+      "inhale": "Open arms to T position, lift arms perpendicular to floor, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder extensors",
+      "Shoulder Adductors",
+      "Scapular stabilizers",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Shoulder extensor control",
+      "Shoulder adductor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Keep trunk and legs stable",
+      "Keep movement fluid"
+    ]
+  }
+}

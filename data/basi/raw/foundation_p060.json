@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p060.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Scooter",
+    "series": "Knee Stretch Group",
+    "block": "Full Body Integration",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Standing, one foot on floor, leg bent, other foot against shoulder rest, leg bent, heel of foot on floor lined up with other foot, arms straight, hands placed on footbar, inside hand in line with shoulder, trunk in C curve position",
+    "resistance": "light to medium",
+    "movement": {
+      "inhale": "Straighten leg against shoulder rest (not completely)",
+      "exhale": "Bend leg, return to start position"
+    },
+    "reps": "Change sides after 10 repetitions",
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Pelvic lumbar stabilization",
+      "Scapular stabilization",
+      "Knee extensor control",
+      "Hip extensor control"
+    ],
+    "cues": [
+      "Maintain C curve position",
+      "Focus on hip disassociation",
+      "Keep standing leg bent and stable",
+      "Keep pelvis at consistent height"
+    ]
+  }
+}

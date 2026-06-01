@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p075.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Circles Up",
+    "series": "Arms Supine Series",
+    "block": "Arm Work",
+    "level": "Fundamental",
+    "apparatus": "reformer",
+    "setup": "Starting in Adduction Position (page 62)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Move arms to sides of body, rotate arms, palms facing down",
+      "inhale": "Lift arms perpendicular to floor, move arms out to sides, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder Adductors",
+      "Scapular stabilizers",
+      "Spinal flexors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Shoulder adductor control",
+      "Shoulder extensor control",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Maintain scapular stabilization",
+      "Keep trunk and legs stable",
+      "Keep movement fluid",
+      "Reach each point of the circle"
+    ]
+  }
+}

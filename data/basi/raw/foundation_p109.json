@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p109.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Mini Roll-Up Oblique",
+    "series": "Warm Up Series",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "setup": "Start in Mini Roll-Up position (page 95), one hand holding PTBar, palm facing up aligned with shoulder, other hand behind head, lift to Chest Lift position, rotate trunk to Chest Lift with Rotation position (Mat page 18)",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift trunk",
+      "inhale": "Lower trunk, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal rotators",
+      "Spinal flexors",
+      "Shoulder flexors"
+    ],
+    "objectives": [
+      "Spinal rotator strength",
+      "Spinal flexor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Maximize rotation while avoiding lateral flexion",
+      "Maintain engagement of abdominal obliques",
+      "Keep nose aligned over sternum"
+    ]
+  }
+}

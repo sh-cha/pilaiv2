@@ -1,0 +1,36 @@
+{
+  "source_page": "graduate:p071.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "code": "t)",
+    "name": "Punches",
+    "series": "Arms Standing Series",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "setup": "Starting in Hug-a-Tree position (page 67), hands holding handles (fist or open hand) at eye level, palms facing down, arms bent, elbows out to sides",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Straighten one arm forward, switch arm simultaneously",
+      "inhale": "Repeat movement pattern"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Shoulder horizontal adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Shoulder horizontal adductor strength",
+      "Scapular stabilization",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Arms move in straight line directly opposite eyes",
+      "Maintain scapular stabilization",
+      "Maintain trunk stabilization",
+      "Keep movement focused in arms"
+    ]
+  }
+}

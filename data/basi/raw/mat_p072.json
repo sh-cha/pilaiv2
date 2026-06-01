@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p072.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Twist",
+    "block": "Lateral Flexion / Rotation",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Starting in Side Bend position (page 59)",
+    "movement": {
+      "inhale": "Lift pelvis, straighten legs, raise top arm to shoulder height, body on diagonal line",
+      "exhale": "Lift pelvis toward ceiling, rotate trunk, reach arm under and back"
+    },
+    "muscle_focus": [
+      "Spinal lateral flexors",
+      "Spinal rotators",
+      "Scapular stabilizers",
+      "Shoulder abductors"
+    ],
+    "objectives": [
+      "Spinal rotator control",
+      "Scapular stabilization",
+      "Shoulder strength"
+    ],
+    "cues": [
+      "Keep legs together and weight on foot of top leg",
+      "Create pyramid shape when lifting pelvis toward ceiling",
+      "Maximize use of lateral flexors and minimize use of legs",
+      "Reach arm back maximizing spinal rotation"
+    ]
+  }
+}

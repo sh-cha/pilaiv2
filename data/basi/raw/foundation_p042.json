@@ -1,0 +1,31 @@
+{
+  "source_page": "foundation:p042.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Climb-a-Tree",
+    "series": "Short Box Series",
+    "block": "Abdominal Work",
+    "level": "Advanced",
+    "apparatus": "reformer",
+    "setup": "Sitting upright at front of Long Box, one foot under foot strap, other leg bent with thigh to chest, holding leg below knee",
+    "resistance": "all springs attached to hold carriage in place",
+    "movement": {
+      "exhale": "Pump knee to chest 3 times\nRound back, walk hands down leg 3 times beginning with outside hand, lifting leg to perpendicular to floor\nWalk hands up leg 3 times beginning with inside hand",
+      "inhale": "Straighten leg holding above ankle\nArch back over box, circle arms overhead and around, lift head and chest, rounding trunk, hold onto leg\nStraighten spine, bend leg, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal extensor control",
+      "Hamstring stretch"
+    ],
+    "cues": [
+      "Keep leg perpendicular to floor as arms circle around",
+      "Maintain pelvic lumbar stabilization as arms circle around"
+    ]
+  }
+}

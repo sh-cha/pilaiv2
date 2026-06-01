@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p039.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Twist",
+    "series": "Short Box Series",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Flat Back position (page 31)",
+    "resistance": "all springs attached to hold carriage in place",
+    "movement": {
+      "inhale": "Rotate trunk, lower trunk diagonally back",
+      "exhale": "Lift trunk to center, rotate to front, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal rotators",
+      "Spinal flexors",
+      "Spinal extensors",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal rotator strength",
+      "Trunk stabilization",
+      "Hip flexor strength"
+    ],
+    "cues": [
+      "Maintain co-contraction of abdominals and back extensors",
+      "Keep both sit bones in contact with box",
+      "Rotate on longitudinal axis prior to hinging diagonally back",
+      "Return to longitudinal axis prior to facing front"
+    ]
+  }
+}

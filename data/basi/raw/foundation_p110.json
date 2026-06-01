@@ -1,0 +1,33 @@
+{
+  "source_page": "foundation:p110.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Roll-Up with PTBar",
+    "series": "Warm Up Series",
+    "block": "Abdominal Work",
+    "level": "Intermediate",
+    "setup": "Lying supine in neutral spine position, arms straight and shoulder width apart, hands holding PTBar, legs straight and together, feet plantarflexed",
+    "movement": {
+      "inhale": "Lift head and chest",
+      "exhale": "Roll up to upright sitting position, arms overhead"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal extensors",
+      "Shoulder flexors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Spinal flexor and spinal extensor control",
+      "Shoulder stretch",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Bend arms until PTBar is aligned with top of head",
+      "Maintain scapular stabilization",
+      "Maintain slight shoulder external rotation and reach elbows out to sides when bending arms",
+      "Maintain trunk stabilization"
+    ]
+  }
+}

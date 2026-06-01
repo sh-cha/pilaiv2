@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p061.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Swan Dive Prep",
+    "block": "Back Extension",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Lying prone, elbows close to sides of body, forearms pressing into Mat",
+    "movement": {
+      "inhale": "Lift trunk, straighten arms",
+      "exhale": "Lower trunk, bend arms, simultaneoulsy lift legs off Mat"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Hip extensor control",
+      "Spinal flexor control"
+    ],
+    "cues": [
+      "Maintain abdominal engagement throughout",
+      "Lift trunk as high as possible prior to lifting forearms and straightening arms",
+      "Keep elbows close to sides of body",
+      "Maintain scapular stabilization"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p025.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shoulder Push Single Arm",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Starting in Shoulder Push position (page 24), one hand placed on footbar in line with shoulder, arm straight, other hand placed on front edge of carriage, trunk on diagonal line, neutral spine position, lower trunk to thighs, pushing carriage out",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Bend arm",
+      "exhale": "Straighten arm"
+    },
+    "muscle_focus": [
+      "Elbow extensors",
+      "Shoulder abductors",
+      "Spinal extensors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Elbow extensor strength",
+      "Trunk stabilization",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Reach elbow out to side as arm bends",
+      "Maintain engagement of back extensors",
+      "Maintain scapular stabilization"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "source_page": "mat:p081.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Adductor Lift",
+    "series": "Gluteals Side Lying Series",
+    "block": "Leg Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Starting in Side Leg Lifts position (page 76), top leg in front of bottom leg, hip externally rotated, bottom leg straight and parallel, foot plantarflexed",
+    "resistance": "light to medium",
+    "movement": {
+      "exhale": "Lift leg",
+      "inhale": "Lower leg"
+    },
+    "muscle_focus": [
+      "Hip adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Hip adductor strength",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep pelvis perpendicular to Mat",
+      "Maintain neutral spine position throughout",
+      "Keep bent leg stable, knee reaching toward ceiling",
+      "Avoid resting leg on Mat between repetitions"
+    ]
+  }
+}

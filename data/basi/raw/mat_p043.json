@@ -1,0 +1,31 @@
+{
+  "source_page": "mat:p043.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Roll Over",
+    "block": "Spinal Articulation",
+    "level": "Intermediate",
+    "apparatus": "mat",
+    "setup": "Lying supine, arms by sides of body, legs straight and together, on diagonal line (approximately 60 degrees), feet plantarflexed",
+    "movement": {
+      "inhale": "Lift legs, perpendicular to Mat",
+      "exhale": "Roll over, legs parallel to Mat"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Hip extensors"
+    ],
+    "objectives": [
+      "Spinal articulation",
+      "Hip extensor stretch"
+    ],
+    "cues": [
+      "Use spinal flexion for roll over",
+      "Maintain 90 degree angle in hip joint during roll over",
+      "Keep thighs close to chest when rolling back down",
+      "Plantarflex feet when legs are perpendicular to Mat following roll down"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p058.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hip Circles Prep",
+    "block": "Lateral Flexion/Rotation",
+    "level": "Advanced",
+    "apparatus": "mat",
+    "setup": "Sitting in V position, arms straight and parallel, hands placed on Mat behind pelvis, fingers facing away from body, legs straight and together on diagonal line, feet plantarflexed",
+    "movement": {
+      "inhale": "Move legs to one side",
+      "exhale": "Circle legs down and around to opposite side, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal rotators",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal rotator control",
+      "Hip flexor control"
+    ],
+    "cues": [
+      "Move pelvis and legs as one unit",
+      "Keep legs together",
+      "Initiate movement with spinal rotators",
+      "Maintain pelvic lumbar stabilization (bend knees if necessary)"
+    ]
+  }
+}

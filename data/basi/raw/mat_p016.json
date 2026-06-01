@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p016.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Spine Twist Supine",
+    "block": "Foundation",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying supine, arms in T position, palms facing up (or holding handles), legs in tabletop position (hips and knees at 90 degrees)",
+    "movement": {
+      "inhale": "Lower legs to one side",
+      "exhale": "Lift legs to center, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Spinal rotators",
+      "Hip flexors"
+    ],
+    "objectives": [
+      "Spinal flexor control",
+      "Spinal rotator control and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Keep shoulders relaxed and scapulae on Mat",
+      "Move legs and pelvis as one unit",
+      "Initiate rotation with abdominals",
+      "Alternate sides"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "source_page": "foundation:p094.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Pulling Straps 1",
+    "series": "Long Box Group",
+    "block": "Back Extension",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Lying prone on Long Box, neutral spine position, legs straight and together, parallel to floor, feet plantarflexed toward footbar, arms straight, forward of shoulders, hands holding folded straps, palms facing each other",
+    "resistance": "light",
+    "movement": {
+      "inhale": "Lift trunk, move arms back to sides of body",
+      "exhale": "Lower trunk, move arms forward, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal extensors",
+      "Hip extensors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal extensor strength",
+      "Hip extensor control",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Keep palms facing each other",
+      "Initiate movement with back extensors",
+      "Articulate spine into extension starting from crown of head",
+      "Bring arms forward of shoulder line no more than 20 degrees",
+      "Keep legs parallel to floor"
+    ]
+  }
+}

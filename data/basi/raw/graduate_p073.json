@@ -1,0 +1,33 @@
+{
+  "source_page": "graduate:p073.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Shoulder Adduction Single Arm",
+    "series": "Push Through Group",
+    "block": "Arm Work",
+    "level": "Intermediate",
+    "apparatus": "cadillac",
+    "setup": "Sitting upright, facing sideways, arms straight, one hand holding PTBar, palm facing up, other hand reaching out to side, fingertips touching mat",
+    "resistance": "medium",
+    "movement": {
+      "exhale": "Bend arm",
+      "inhale": "Straighten arm, return to start position"
+    },
+    "muscle_focus": [
+      "Shoulder adductors",
+      "Spinal flexors",
+      "Spinal extensors"
+    ],
+    "objectives": [
+      "Shoulder adductor control",
+      "Trunk stabilization"
+    ],
+    "cues": [
+      "Initiate movement with latissimus dorsi",
+      "Minimize use of biceps",
+      "Maintain slight external rotation of shoulder",
+      "Maintain trunk stabilization"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "source_page": "mat:p021.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Hundred Prep",
+    "block": "Abdominal Work",
+    "level": "Fundamental",
+    "apparatus": "mat",
+    "setup": "Lying supine/legs in tabletop position/arms overhead, palms facing up",
+    "movement": {
+      "exhale": "Lift arms, head and chest, bringing arms to sides",
+      "inhale": "Lower body, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Shoulder extensors"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Trunk stabilization",
+      "Shoulder extensor control"
+    ],
+    "cues": [
+      "Move head and chest as one unit",
+      "Maintain pelvic and lumbar stabilization",
+      "Minimize neck tension",
+      "Maintain tabletop position with legs"
+    ]
+  }
+}

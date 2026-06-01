@@ -1,0 +1,36 @@
+{
+  "source_page": "foundation:p066.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Knee Stretch Reverse",
+    "series": "Knee Stretch Group",
+    "reps": "8~10회",
+    "block": "Full Body Integration",
+    "level": "Intermediate",
+    "apparatus": "reformer",
+    "setup": "Kneeling on carriage, quadruped position, knees slightly away from shoulder rests, arms straight, hands placed on F2 handles (or rails), shoulders slightly forward of hands, trunk in C curve position",
+    "resistance": "light",
+    "movement": {
+      "exhale": "Move legs forward",
+      "inhale": "Move legs back, return to start position"
+    },
+    "muscle_focus": [
+      "Spinal flexors",
+      "Hip flexors",
+      "Scapular stabilizers"
+    ],
+    "objectives": [
+      "Spinal flexor strength",
+      "Hip flexor strength",
+      "Pelvic lumbar stabilization",
+      "Scapular stabilization"
+    ],
+    "cues": [
+      "Maintain C curve position",
+      "Focus on hip disassociation",
+      "Move knees toward chest",
+      "Engage shoulder extensors as knees move forward"
+    ]
+  }
+}

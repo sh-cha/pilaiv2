@@ -1,0 +1,33 @@
+{
+  "source_page": "chair:p077.png",
+  "page_type": "exercise_detail",
+  "handwritten_present": true,
+  "printed": {
+    "name": "Scissors",
+    "series": "Supine Leg Series",
+    "apparatus": "cadillac",
+    "block": "Hip Work",
+    "level": "Intermediate",
+    "setup": "Starting in Frog position (page 71), hips externally rotated, legs straight and together, perpendicular to floor, feet plantarflexed",
+    "movement": {
+      "exhale": "Open legs to Scissors position (2 pulses)",
+      "inhale": "Switch legs (2 pulses)"
+    },
+    "muscle_focus": [
+      "Hip flexors",
+      "Hip extensors",
+      "Spinal flexors"
+    ],
+    "objectives": [
+      "Hip flexor control and stretch",
+      "Hip extensor control and stretch",
+      "Pelvic lumbar stabilization"
+    ],
+    "cues": [
+      "Maintain pelvic lumbar stabilization",
+      "Create even V in Scissors position",
+      "Pass through the perpendicular position following each repetition",
+      "Keep holding handles firmly and pulling barrel toward back"
+    ]
+  }
+}
