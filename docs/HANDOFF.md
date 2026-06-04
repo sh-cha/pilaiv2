@@ -33,6 +33,7 @@
   - `src/lib/types.ts`
   - `App.tsx` — 탭(생성 / 카탈로그 / **기록**). **회원 선택/등록**(프로필 자동채움)→생성(**이력 반영 변주**)→**편집(삭제·추가)**→**최종본 저장**(diff+memberId 캡처). 기록=캡처 목록(회원명·diff)+JSON 내보내기
   - 테스트: `npm test`(오프라인 33개, 라이브는 스킵). 라이브(실 API·**유료**): `RUN_LIVE=1 EXPO_PUBLIC_ANTHROPIC_API_KEY=… npx vitest run src/lib/generateSequence.live.test.ts`
+  - **셀프 시각 QA**: `cd app && npm run shots` → expo 웹 빌드 + headless Chrome으로 4화면 스샷 → `/tmp/pilai-*.png`. **Claude가 Read로 직접 봄 → 사용자 수동 스샷 불필요.** (웹 의존성 react-dom·react-native-web·playwright-core는 이 용도. RN-웹이라 iOS와 픽셀 동일친 않지만 레이아웃·여백·위계 검증엔 충분)
   - `app/.env` — `EXPO_PUBLIC_ANTHROPIC_API_KEY` (gitignore됨)
 
 ## 실제 생성 결과 (검증됨)
