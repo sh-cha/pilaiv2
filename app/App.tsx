@@ -536,6 +536,7 @@ function EditableSequence({
                     {ex.name}
                     {cat ? '  ›' : '  (카탈로그 외)'}
                   </Text>
+                  {ex.reps ? <Text style={styles.exReps}>{ex.reps}</Text> : null}
                   {ex.reason ? <Text style={styles.exReason}>{ex.reason}</Text> : null}
                   {ex.caution ? <Text style={styles.exCaution}>주의 · {ex.caution}</Text> : null}
                 </Pressable>
@@ -632,6 +633,7 @@ function SequenceView({ seq }: { seq: Sequence }) {
           {b.exercises.map((ex, j) => (
             <Text key={j} style={styles.histEx}>
               · {ex.name}
+              {ex.reps ? ` — ${ex.reps}` : ''}
             </Text>
           ))}
         </View>
@@ -912,6 +914,7 @@ const styles = StyleSheet.create({
   blockApp: { fontSize: 12, fontWeight: '700', color: C.accent, textTransform: 'uppercase', letterSpacing: 0.5 },
   exRow: { flexDirection: 'row', alignItems: 'center', paddingVertical: 9, borderTopWidth: 1, borderTopColor: C.border },
   exName: { fontSize: 15, fontWeight: '600', color: C.text },
+  exReps: { fontSize: 13, color: C.accent, fontWeight: '700', marginTop: 2 },
   exReason: { fontSize: 13, color: C.sub, marginTop: 2 },
   exCaution: { fontSize: 13, color: C.caution, marginTop: 3, fontWeight: '600' },
   delBtn: { paddingHorizontal: 10, paddingVertical: 4, marginLeft: 8 },

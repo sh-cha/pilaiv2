@@ -9,7 +9,7 @@ export type MemberInput = {
   history?: string // 최근 이력 요약 (Phase 2 변주). flywheel.summarizeHistory 결과.
 }
 
-export type SeqExercise = { name: string; reason?: string; caution?: string }
+export type SeqExercise = { name: string; reps?: string; reason?: string; caution?: string }
 export type SeqBlock = { block: string; apparatus: string; exercises: SeqExercise[] }
 export type Sequence = {
   member_summary: string

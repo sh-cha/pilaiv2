@@ -44,7 +44,8 @@ const SYSTEM = `당신은 BASI 필라테스 시퀀스 생성 전문가입니다.
 
 ## 출력
 - 반드시 emit_sequence 도구를 1회 호출한다.
-- 카탈로그에 실제로 있는 동작 이름만 사용한다 (지어내지 않는다).`
+- 카탈로그에 실제로 있는 동작 이름만 사용한다 (지어내지 않는다).
+- 각 동작에 reps(반복수 또는 시간)를 반드시 채운다 — 선생님이 수업 중 그대로 보고 진행한다.`
 
 const SEQUENCE_TOOL = {
   name: 'emit_sequence',
@@ -70,6 +71,7 @@ const SEQUENCE_TOOL = {
                 type: 'object',
                 properties: {
                   name: { type: 'string', description: '카탈로그의 동작 이름' },
+                  reps: { type: 'string', description: '반복수 또는 시간. 예: "8~10회", "양쪽 각 6회", "30초 홀드". 반드시 채운다.' },
                   reason: { type: 'string', description: '이 회원에게 왜 넣었는지 (간단히)' },
                   caution: { type: 'string', description: '주의/수정 (없으면 생략)' },
                 },
