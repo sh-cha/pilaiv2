@@ -31,7 +31,6 @@ async function tab(label, file) {
     console.log('shot:', label)
   } catch (e) { console.log('FAIL', label, e.message.slice(0, 120)) }
 }
-await tab('카탈로그', '/tmp/pilai-catalog.png')
 await tab('기록', '/tmp/pilai-history.png')
 
 try {

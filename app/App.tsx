@@ -19,7 +19,7 @@ import { generateSequence, type GenerateResult } from './src/lib/generateSequenc
 import { appendSession, buildCapturedSession, computeDiff, loadSessions, sessionsForMember, summarizeHistory, type CapturedSession } from './src/lib/flywheel'
 import { deleteMember, loadMembers, upsertMember, type Member } from './src/lib/members'
 import type { KV } from './src/lib/storage'
-import type { MemberInput, Sequence } from './src/lib/types'
+import type { MemberInput, Sequence, SeqExercise } from './src/lib/types'
 
 const C = {
   bg: '#FAF8F4',
@@ -69,7 +69,7 @@ const kv: KV = {
 const clone = (s: Sequence): Sequence => JSON.parse(JSON.stringify(s))
 
 export default function App() {
-  const [tab, setTab] = useState<'generate' | 'catalog' | 'history'>('generate')
+  const [tab, setTab] = useState<'generate' | 'history'>('generate')
   const [modalEx, setModalEx] = useState<Ex | null>(null)
   const [classSeq, setClassSeq] = useState<Sequence | null>(null)
   return (
@@ -80,15 +80,12 @@ export default function App() {
       <View style={styles.flex}>
         {tab === 'generate' ? (
           <GenerateScreen onPick={setModalEx} onClass={setClassSeq} />
-        ) : tab === 'catalog' ? (
-          <CatalogScreen onPick={setModalEx} />
         ) : (
           <HistoryScreen onClass={setClassSeq} />
         )}
       </View>
       <View style={styles.tabBar}>
         <TabButton label="생성" active={tab === 'generate'} onPress={() => setTab('generate')} />
-        <TabButton label="카탈로그" active={tab === 'catalog'} onPress={() => setTab('catalog')} />
         <TabButton label="기록" active={tab === 'history'} onPress={() => setTab('history')} />
       </View>
       <ExerciseModal ex={modalEx} onClose={() => setModalEx(null)} />
@@ -541,10 +538,9 @@ function EditableSequence({
                     {ex.name}
                     {cat ? '  ›' : '  (카탈로그 외)'}
                   </Text>
-                  {ex.reps ? <Text style={styles.exReps}>{ex.reps}</Text> : null}
-                  {ex.reason ? <Text style={styles.exReason}>{ex.reason}</Text> : null}
                   {ex.caution ? <Text style={styles.exCaution}>주의 · {ex.caution}</Text> : null}
                 </Pressable>
+                {ex.reps ? <Text style={styles.repsBadge}>{ex.reps}</Text> : null}
                 <Pressable hitSlop={8} style={styles.delBtn} onPress={() => onRemove(bi, ei)}>
                   <Text style={styles.delText}>✕</Text>
                 </Pressable>
@@ -747,6 +743,31 @@ function HistoryRow({ s, memberName, onClass }: { s: CapturedSession; memberName
   )
 }
 
+function ClassExercise({ ex }: { ex: SeqExercise }) {
+  const [open, setOpen] = useState(false)
+  const cat = exByName.get(ex.name)
+  const cues = cat ? tArr(cat.cues_ko, cat.cues) : []
+  return (
+    <Pressable style={styles.classCard} onPress={() => cues.length && setOpen((o) => !o)}>
+      <View style={styles.classCardHead}>
+        <Text style={styles.classExName}>{ex.name}</Text>
+        {ex.reps ? <Text style={styles.repsBadge}>{ex.reps}</Text> : null}
+      </View>
+      {ex.caution ? <Text style={styles.classCaution}>⚠ {ex.caution}</Text> : null}
+      {open && cues.length ? (
+        <View style={styles.classCues}>
+          {cues.map((c, i) => (
+            <Text key={i} style={styles.classCue}>
+              · {c}
+            </Text>
+          ))}
+        </View>
+      ) : null}
+      {cues.length ? <Text style={styles.cueToggle}>{open ? '큐 접기 ▲' : '큐 보기 ▼'}</Text> : null}
+    </Pressable>
+  )
+}
+
 function ClassMode({ seq, onClose }: { seq: Sequence | null; onClose: () => void }) {
   return (
     <Modal visible={!!seq} animationType="slide" onRequestClose={onClose}>
@@ -759,30 +780,14 @@ function ClassMode({ seq, onClose }: { seq: Sequence | null; onClose: () => void
         </View>
         {seq ? (
           <ScrollView contentContainerStyle={styles.classBody}>
-            <Text style={styles.classSummary}>{seq.member_summary}</Text>
             {seq.blocks.map((b, bi) => (
               <View key={bi} style={styles.classBlock}>
                 <Text style={styles.classBlockTitle}>
                   {b.block} · {b.apparatus}
                 </Text>
-                {b.exercises.map((ex, ei) => {
-                  const cat = exByName.get(ex.name)
-                  const cues = cat ? tArr(cat.cues_ko, cat.cues) : []
-                  return (
-                    <View key={ei} style={styles.classEx}>
-                      <View style={styles.classExHead}>
-                        <Text style={styles.classExName}>{ex.name}</Text>
-                        {ex.reps ? <Text style={styles.classReps}>{ex.reps}</Text> : null}
-                      </View>
-                      {ex.caution ? <Text style={styles.classCaution}>⚠ {ex.caution}</Text> : null}
-                      {cues.slice(0, 3).map((c, i) => (
-                        <Text key={i} style={styles.classCue}>
-                          · {c}
-                        </Text>
-                      ))}
-                    </View>
-                  )
-                })}
+                {b.exercises.map((ex, ei) => (
+                  <ClassExercise key={ei} ex={ex} />
+                ))}
               </View>
             ))}
           </ScrollView>
@@ -1054,4 +1059,9 @@ const styles = StyleSheet.create({
   classReps: { fontSize: 16, fontWeight: '800', color: C.accent },
   classCaution: { fontSize: 14, color: C.caution, fontWeight: '600', marginTop: 4 },
   classCue: { fontSize: 15, color: C.sub, lineHeight: 22, marginTop: 4 },
+  classCard: { backgroundColor: C.card, borderRadius: 14, padding: 14, marginBottom: 10, borderWidth: 1, borderColor: C.border },
+  classCardHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  classCues: { marginTop: 10 },
+  cueToggle: { marginTop: 8, fontSize: 12, color: C.accent, fontWeight: '700' },
+  repsBadge: { backgroundColor: C.accentSoft, color: C.accent, fontWeight: '800', fontSize: 14, paddingHorizontal: 10, paddingVertical: 4, borderRadius: 10, overflow: 'hidden', marginLeft: 8 },
 })
