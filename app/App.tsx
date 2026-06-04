@@ -75,7 +75,6 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.appBar}>
         <Text style={styles.wordmark}>Pilai</Text>
-        <Text style={styles.wordmarkSub}>필라테스 시퀀스</Text>
       </View>
       <View style={styles.flex}>
         {tab === 'generate' ? (
@@ -364,7 +363,7 @@ function MemberSelector({
       <View style={styles.memberBarHead}>
         <Text style={styles.label}>회원</Text>
         {selected ? (
-          <Pressable onPress={onEdit}>
+          <Pressable hitSlop={10} onPress={onEdit}>
             <Text style={styles.editLink}>프로필 수정</Text>
           </Pressable>
         ) : null}
@@ -451,9 +450,10 @@ function MemberFormModal({
     <Modal visible={visible} animationType="slide" transparent onRequestClose={onClose}>
       <View style={styles.modalWrap}>
         <View style={styles.modalCard}>
+          <View style={styles.grabber} />
           <View style={styles.pickerHead}>
             <Text style={styles.pickerTitle}>{initial ? '회원 수정' : '새 회원'}</Text>
-            <Pressable onPress={onClose}>
+            <Pressable hitSlop={12} onPress={onClose}>
               <Text style={styles.modalCloseText}>닫기</Text>
             </Pressable>
           </View>
@@ -588,9 +588,10 @@ function AddExercisePicker({
     <Modal visible={apparatus != null} animationType="slide" transparent onRequestClose={onClose}>
       <View style={styles.modalWrap}>
         <View style={styles.modalCard}>
+          <View style={styles.grabber} />
           <View style={styles.pickerHead}>
             <Text style={styles.pickerTitle}>동작 추가 · {apparatus}</Text>
-            <Pressable onPress={onClose}>
+            <Pressable hitSlop={12} onPress={onClose}>
               <Text style={styles.modalCloseText}>닫기</Text>
             </Pressable>
           </View>
@@ -676,9 +677,10 @@ function HistoryScreen() {
         ) : null}
       </View>
       {sessions.length === 0 ? (
-        <Text style={styles.histEmpty}>
-          저장된 시퀀스가 없습니다.{'\n'}시퀀스를 생성·편집한 뒤 "최종본 저장"을 누르면 여기에 학습 데이터로 쌓입니다.
-        </Text>
+        <View style={styles.emptyWrap}>
+          <Text style={styles.emptyTitle}>아직 기록이 없어요</Text>
+          <Text style={styles.emptyBody}>시퀀스를 생성·편집한 뒤 "최종본 저장"을 누르면{'\n'}여기에 학습 데이터로 쌓입니다.</Text>
+        </View>
       ) : (
         <FlatList
           data={sessions}
@@ -736,6 +738,7 @@ function ExerciseModal({ ex, onClose }: { ex: Ex | null; onClose: () => void }) 
     <Modal visible={!!ex} animationType="slide" transparent onRequestClose={onClose}>
       <View style={styles.modalWrap}>
         <View style={styles.modalCard}>
+          <View style={styles.grabber} />
           <Pressable style={styles.modalClose} onPress={onClose}>
             <Text style={styles.modalCloseText}>닫기</Text>
           </Pressable>
@@ -798,6 +801,7 @@ function CatalogScreen({ onPick }: { onPick: (e: Ex) => void }) {
         data={list}
         keyExtractor={(e) => e.id}
         keyboardShouldPersistTaps="handled"
+        ListEmptyComponent={<Text style={styles.noResults}>검색 결과가 없어요</Text>}
         contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 16 }}
         renderItem={({ item }) => (
           <Pressable style={styles.catRow} onPress={() => onPick(item)}>
@@ -923,6 +927,7 @@ const styles = StyleSheet.create({
   metaSub: { fontSize: 13, color: C.sub, marginTop: 3 },
   modalWrap: { flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(0,0,0,0.35)' },
   modalCard: { backgroundColor: C.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, maxHeight: '85%', paddingTop: 8 },
+  grabber: { alignSelf: 'center', width: 36, height: 4, borderRadius: 2, backgroundColor: C.border, marginTop: 8, marginBottom: 2 },
   modalClose: { alignSelf: 'flex-end', paddingHorizontal: 20, paddingVertical: 10 },
   modalCloseText: { fontSize: 15, color: C.accent, fontWeight: '700' },
   modalBody: { paddingHorizontal: 22, paddingBottom: 40 },
@@ -946,6 +951,10 @@ const styles = StyleSheet.create({
   histHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 16, paddingTop: 4 },
   exportBtn: { color: C.accent, fontWeight: '700', fontSize: 14, marginBottom: 16 },
   histEmpty: { paddingHorizontal: 16, color: C.sub, fontSize: 14, lineHeight: 22 },
+  emptyWrap: { flex: 1, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 32, paddingBottom: 60 },
+  emptyTitle: { fontSize: 17, fontWeight: '800', color: C.text, marginBottom: 8 },
+  emptyBody: { fontSize: 14, color: C.sub, textAlign: 'center', lineHeight: 21 },
+  noResults: { textAlign: 'center', color: C.sub, fontSize: 14, paddingVertical: 40 },
   histRow: { backgroundColor: C.card, borderRadius: 12, padding: 14, marginBottom: 8, borderWidth: 1, borderColor: C.border },
   histRowHead: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 },
   histCond: { fontSize: 15, fontWeight: '700', color: C.text, flex: 1 },
