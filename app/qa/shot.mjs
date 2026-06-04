@@ -64,6 +64,17 @@ if (process.env.SHOT_GENERATE) {
     await page.waitForTimeout(1000)
     await page.screenshot({ path: '/tmp/pilai-result.png' })
     console.log('shot: result/state')
+    // 수업 보기(클래스 모드) — 같은 생성 재사용, 읽기 좋은 크기로
+    try {
+      const cls = page.locator('text="수업 보기"').first()
+      await cls.scrollIntoViewIfNeeded({ timeout: 5000 })
+      await cls.click({ timeout: 5000 })
+      await page.waitForTimeout(1200)
+      await page.setViewportSize({ width: 390, height: 900 })
+      await page.waitForTimeout(400)
+      await page.screenshot({ path: '/tmp/pilai-class.png' })
+      console.log('shot: class')
+    } catch (e) { console.log('FAIL class', e.message.slice(0, 140)) }
   } catch (e) { console.log('FAIL result', e.message.slice(0, 160)) }
 }
 
