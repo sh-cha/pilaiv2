@@ -71,6 +71,7 @@ const clone = (s: Sequence): Sequence => JSON.parse(JSON.stringify(s))
 export default function App() {
   const [tab, setTab] = useState<'generate' | 'catalog' | 'history'>('generate')
   const [modalEx, setModalEx] = useState<Ex | null>(null)
+  const [classSeq, setClassSeq] = useState<Sequence | null>(null)
   return (
     <View style={styles.container}>
       <View style={styles.appBar}>
@@ -78,11 +79,11 @@ export default function App() {
       </View>
       <View style={styles.flex}>
         {tab === 'generate' ? (
-          <GenerateScreen onPick={setModalEx} />
+          <GenerateScreen onPick={setModalEx} onClass={setClassSeq} />
         ) : tab === 'catalog' ? (
           <CatalogScreen onPick={setModalEx} />
         ) : (
-          <HistoryScreen />
+          <HistoryScreen onClass={setClassSeq} />
         )}
       </View>
       <View style={styles.tabBar}>
@@ -91,6 +92,7 @@ export default function App() {
         <TabButton label="기록" active={tab === 'history'} onPress={() => setTab('history')} />
       </View>
       <ExerciseModal ex={modalEx} onClose={() => setModalEx(null)} />
+      <ClassMode seq={classSeq} onClose={() => setClassSeq(null)} />
       <StatusBar style="dark" />
     </View>
   )
@@ -104,7 +106,7 @@ function TabButton({ label, active, onPress }: { label: string; active: boolean;
   )
 }
 
-function GenerateScreen({ onPick }: { onPick: (e: Ex) => void }) {
+function GenerateScreen({ onPick, onClass }: { onPick: (e: Ex) => void; onClass: (s: Sequence) => void }) {
   const [conditions, setConditions] = useState('')
   const [goals, setGoals] = useState('')
   const [minutes, setMinutes] = useState('50')
@@ -313,6 +315,7 @@ function GenerateScreen({ onPick }: { onPick: (e: Ex) => void }) {
           onRemove={removeExercise}
           onAdd={(bi) => setPickerBlock(bi)}
           onSave={onSave}
+          onClass={onClass}
         />
       ) : null}
 
@@ -506,6 +509,7 @@ function EditableSequence({
   onRemove,
   onAdd,
   onSave,
+  onClass,
 }: {
   gen: GenerateResult
   seq: Sequence
@@ -515,6 +519,7 @@ function EditableSequence({
   onRemove: (bi: number, ei: number) => void
   onAdd: (bi: number) => void
   onSave: () => void
+  onClass: (s: Sequence) => void
 }) {
   return (
     <View style={styles.result}>
@@ -558,6 +563,9 @@ function EditableSequence({
             ? `AI 생성본 대비 편집 ${editCount}건 — 저장 시 학습 데이터로 캡처됩니다`
             : '편집 없음 (그대로 저장 가능)'}
         </Text>
+        <Pressable style={styles.classBtn} onPress={() => onClass(seq)}>
+          <Text style={styles.classBtnText}>수업 보기</Text>
+        </Pressable>
         <Pressable style={[styles.saveBtn, saved && styles.saveBtnDone]} onPress={onSave}>
           <Text style={styles.saveText}>{saved ? '저장됨 ✓ (다시 저장)' : '최종본 저장'}</Text>
         </Pressable>
@@ -642,7 +650,7 @@ function SequenceView({ seq }: { seq: Sequence }) {
   )
 }
 
-function HistoryScreen() {
+function HistoryScreen({ onClass }: { onClass: (s: Sequence) => void }) {
   const [sessions, setSessions] = useState<CapturedSession[] | null>(null)
   const [memberNames, setMemberNames] = useState<Record<string, string>>({})
 
@@ -688,14 +696,16 @@ function HistoryScreen() {
           data={sessions}
           keyExtractor={(s) => s.id}
           contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 16 }}
-          renderItem={({ item }) => <HistoryRow s={item} memberName={item.memberId ? memberNames[item.memberId] : undefined} />}
+          renderItem={({ item }) => (
+            <HistoryRow s={item} memberName={item.memberId ? memberNames[item.memberId] : undefined} onClass={onClass} />
+          )}
         />
       )}
     </View>
   )
 }
 
-function HistoryRow({ s, memberName }: { s: CapturedSession; memberName?: string }) {
+function HistoryRow({ s, memberName, onClass }: { s: CapturedSession; memberName?: string; onClass: (seq: Sequence) => void }) {
   const [open, setOpen] = useState(false)
   const date = s.createdAt.slice(0, 16).replace('T', ' ')
   return (
@@ -716,6 +726,9 @@ function HistoryRow({ s, memberName }: { s: CapturedSession; memberName?: string
 
       {open ? (
         <View style={styles.histDetail}>
+          <Pressable style={styles.classBtn} onPress={() => onClass(s.final)}>
+            <Text style={styles.classBtnText}>수업 보기</Text>
+          </Pressable>
           {s.diff.length ? (
             <>
               <Text style={styles.secLabel}>편집 diff (학습 신호)</Text>
@@ -731,6 +744,51 @@ function HistoryRow({ s, memberName }: { s: CapturedSession; memberName?: string
         </View>
       ) : null}
     </Pressable>
+  )
+}
+
+function ClassMode({ seq, onClose }: { seq: Sequence | null; onClose: () => void }) {
+  return (
+    <Modal visible={!!seq} animationType="slide" onRequestClose={onClose}>
+      <View style={styles.classWrap}>
+        <View style={styles.classHead}>
+          <Text style={styles.classTitle}>수업 진행</Text>
+          <Pressable hitSlop={12} onPress={onClose}>
+            <Text style={styles.modalCloseText}>닫기</Text>
+          </Pressable>
+        </View>
+        {seq ? (
+          <ScrollView contentContainerStyle={styles.classBody}>
+            <Text style={styles.classSummary}>{seq.member_summary}</Text>
+            {seq.blocks.map((b, bi) => (
+              <View key={bi} style={styles.classBlock}>
+                <Text style={styles.classBlockTitle}>
+                  {b.block} · {b.apparatus}
+                </Text>
+                {b.exercises.map((ex, ei) => {
+                  const cat = exByName.get(ex.name)
+                  const cues = cat ? tArr(cat.cues_ko, cat.cues) : []
+                  return (
+                    <View key={ei} style={styles.classEx}>
+                      <View style={styles.classExHead}>
+                        <Text style={styles.classExName}>{ex.name}</Text>
+                        {ex.reps ? <Text style={styles.classReps}>{ex.reps}</Text> : null}
+                      </View>
+                      {ex.caution ? <Text style={styles.classCaution}>⚠ {ex.caution}</Text> : null}
+                      {cues.slice(0, 3).map((c, i) => (
+                        <Text key={i} style={styles.classCue}>
+                          · {c}
+                        </Text>
+                      ))}
+                    </View>
+                  )
+                })}
+              </View>
+            ))}
+          </ScrollView>
+        ) : null}
+      </View>
+    </Modal>
   )
 }
 
@@ -981,4 +1039,19 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   body: { fontSize: 15, lineHeight: 23, color: C.text },
+  classBtn: { borderWidth: 1, borderColor: C.accent, borderRadius: 12, paddingVertical: 14, alignItems: 'center', marginBottom: 10 },
+  classBtnText: { color: C.accent, fontWeight: '700', fontSize: 16 },
+  classWrap: { flex: 1, backgroundColor: C.bg, paddingTop: 54 },
+  classHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 20, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: C.border },
+  classTitle: { fontSize: 20, fontWeight: '800', color: C.text },
+  classBody: { padding: 20, paddingBottom: 60 },
+  classSummary: { fontSize: 15, lineHeight: 23, color: C.text, backgroundColor: C.accentSoft, padding: 14, borderRadius: 12, marginBottom: 20 },
+  classBlock: { marginBottom: 24 },
+  classBlockTitle: { fontSize: 13, fontWeight: '800', color: C.accent, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 10 },
+  classEx: { marginBottom: 16, borderLeftWidth: 3, borderLeftColor: C.border, paddingLeft: 12 },
+  classExHead: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 },
+  classExName: { fontSize: 19, fontWeight: '700', color: C.text, flex: 1 },
+  classReps: { fontSize: 16, fontWeight: '800', color: C.accent },
+  classCaution: { fontSize: 14, color: C.caution, fontWeight: '600', marginTop: 4 },
+  classCue: { fontSize: 15, color: C.sub, lineHeight: 22, marginTop: 4 },
 })
