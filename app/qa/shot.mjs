@@ -43,5 +43,29 @@ try {
   console.log('shot: memberform')
 } catch (e) { console.log('FAIL memberform', e.message.slice(0, 120)) }
 
+// SHOT_GENERATE=1 일 때만: 실제 폼 입력 → 라이브 생성(유료) → 결과/편집 뷰 캡처
+if (process.env.SHOT_GENERATE) {
+  try {
+    await page.goto(url, { waitUntil: 'load', timeout: 30000 }) // 깨끗한 상태(모달 닫기)
+    await page.waitForTimeout(2500)
+    await page.getByPlaceholder('목디스크, 거북목, 말린 어깨').fill('목디스크, 거북목, 말린 어깨')
+    await page.getByPlaceholder('자세교정, 코어').first().fill('자세교정, 코어')
+    await page.locator('text="시퀀스 생성"').last().click({ timeout: 6000 }) // 제목 말고 버튼(마지막)
+    try { await page.waitForSelector('text=만들고 있어요', { timeout: 8000 }); console.log('생성 시작됨') }
+    catch { console.log('⚠ 생성 시작 안 됨 (버튼 클릭 실패?)') }
+    console.log('생성 중 (라이브 API)...')
+    try {
+      await page.waitForSelector('text="최종본 저장"', { timeout: 150000 })
+      console.log('결과 도착')
+    } catch {
+      console.log('결과 대기 타임아웃 — 현재 화면(에러일 수 있음) 캡처')
+    }
+    await page.setViewportSize({ width: 390, height: 2800 })
+    await page.waitForTimeout(1000)
+    await page.screenshot({ path: '/tmp/pilai-result.png' })
+    console.log('shot: result/state')
+  } catch (e) { console.log('FAIL result', e.message.slice(0, 160)) }
+}
+
 await browser.close()
 console.log('DONE — /tmp/pilai-*.png')
