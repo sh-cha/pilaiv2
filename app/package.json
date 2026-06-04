@@ -7,10 +7,13 @@
     "expo": "~56.0.8",
     "expo-status-bar": "~56.0.4",
     "react": "19.2.3",
-    "react-native": "0.85.3"
+    "react-dom": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-web": "^0.21.2"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
+    "playwright-core": "^1.60.0",
     "typescript": "~6.0.3",
     "vitest": "^3.2.4"
   },
@@ -21,7 +24,8 @@
     "web": "expo start --web",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "shots": "bash qa/screenshots.sh"
   },
   "private": true
 }
