@@ -120,10 +120,16 @@ function GenerateScreen({ onPick, onClass }: { onPick: (e: Ex) => void; onClass:
   const [selected, setSelected] = useState<Member | null>(null)
   const [formOpen, setFormOpen] = useState(false)
   const [formInitial, setFormInitial] = useState<Member | null>(null)
+  const [memberSessions, setMemberSessions] = useState<CapturedSession[]>([])
 
   useEffect(() => {
     loadMembers(kv).then(setMembers)
   }, [])
+
+  useEffect(() => {
+    if (selected) loadSessions(kv).then((all) => setMemberSessions(sessionsForMember(all, selected.id)))
+    else setMemberSessions([])
+  }, [selected])
 
   function selectMember(m: Member | null) {
     setSelected(m)
@@ -225,7 +231,8 @@ function GenerateScreen({ onPick, onClass }: { onPick: (e: Ex) => void; onClass:
       usage: gen.usage,
     })
     try {
-      await appendSession(kv, session)
+      const all = await appendSession(kv, session)
+      if (selected) setMemberSessions(sessionsForMember(all, selected.id))
       setSaved(true)
       Alert.alert('저장됨', session.edited ? `편집 ${session.diff.length}건을 학습 데이터로 캡처했습니다.` : '편집 없이 저장했습니다.')
     } catch (e) {
@@ -246,6 +253,23 @@ function GenerateScreen({ onPick, onClass }: { onPick: (e: Ex) => void; onClass:
         onNew={openNewMember}
         onEdit={openEditMember}
       />
+
+      {selected && memberSessions.length ? (
+        <View style={styles.pastBox}>
+          <Text style={styles.pastTitle}>지난 수업 · {memberSessions.length}</Text>
+          {memberSessions.slice(0, 4).map((s) => (
+            <Pressable key={s.id} style={styles.pastRow} onPress={() => onClass(s.final)}>
+              <View style={styles.flex}>
+                <Text style={styles.pastDate}>{s.createdAt.slice(0, 10)}</Text>
+                <Text style={styles.metaSub}>
+                  {s.input.apparatus.join(', ')} · {s.edited ? `편집 ${s.diff.length}` : '편집 없음'}
+                </Text>
+              </View>
+              <Text style={styles.pastView}>수업 보기 ›</Text>
+            </Pressable>
+          ))}
+        </View>
+      ) : null}
 
       <View style={styles.formCard}>
         <Field label="통증·제약">
@@ -675,7 +699,7 @@ function HistoryScreen({ onClass }: { onClass: (s: Sequence) => void }) {
   return (
     <View style={styles.flex}>
       <View style={styles.histHead}>
-        <Text style={styles.screenTitle}>기록 · {sessions.length}</Text>
+        <Text style={styles.screenTitle}>기록{sessions.length ? ` · ${sessions.length}` : ''}</Text>
         {sessions.length ? (
           <Pressable onPress={onExport}>
             <Text style={styles.exportBtn}>내보내기</Text>
@@ -991,6 +1015,11 @@ const styles = StyleSheet.create({
   saveText: { color: '#fff', fontSize: 16, fontWeight: '700' },
   catRow: { backgroundColor: C.card, borderRadius: 12, padding: 14, marginBottom: 8, borderWidth: 1, borderColor: C.border },
   metaSub: { fontSize: 13, color: C.sub, marginTop: 3 },
+  pastBox: { marginBottom: 14, backgroundColor: C.card, borderRadius: 14, borderWidth: 1, borderColor: C.border, padding: 14 },
+  pastTitle: { fontSize: 12, fontWeight: '700', color: C.sub, textTransform: 'uppercase', letterSpacing: 0.5, marginBottom: 8 },
+  pastRow: { flexDirection: 'row', alignItems: 'center', paddingVertical: 8, borderTopWidth: 1, borderTopColor: C.border },
+  pastDate: { fontSize: 14, fontWeight: '700', color: C.text },
+  pastView: { fontSize: 13, color: C.accent, fontWeight: '700' },
   modalWrap: { flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(0,0,0,0.35)' },
   modalCard: { backgroundColor: C.card, borderTopLeftRadius: 24, borderTopRightRadius: 24, maxHeight: '85%', paddingTop: 8 },
   grabber: { alignSelf: 'center', width: 36, height: 4, borderRadius: 2, backgroundColor: C.border, marginTop: 8, marginBottom: 2 },
