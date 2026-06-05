@@ -108,13 +108,18 @@ export function ExerciseSheet({ name, reps, block, onClose }: Props) {
             {tab === 'setup' && (
               <>
                 <Label>셋업</Label>
-                <Text style={st.p}>{setup !== '-' ? setup : '셋업 정보가 아직 등록되지 않았어요.'}</Text>
+                <View style={st.setupCard}>
+                  <Text style={st.setupText}>{setup !== '-' ? setup : '셋업 정보가 아직 등록되지 않았어요.'}</Text>
+                </View>
                 {goals.length > 0 && (
                   <>
                     <Label style={{ marginTop: 18 }}>목표</Label>
-                    <View style={{ gap: 6 }}>
+                    <View style={{ gap: 9 }}>
                       {goals.map((g, i) => (
-                        <Text key={i} style={st.li}>· {g}</Text>
+                        <View key={i} style={st.goalRow}>
+                          <View style={st.goalDot} />
+                          <Text style={st.goalText}>{g}</Text>
+                        </View>
                       ))}
                     </View>
                   </>
@@ -158,4 +163,9 @@ const st = StyleSheet.create({
   muted: { fontFamily: font.regular, fontSize: 14, color: colors.muted, marginTop: 4 },
   p: { fontFamily: font.regular, fontSize: 15.5, lineHeight: 26, color: colors.ink },
   li: { fontFamily: font.regular, fontSize: 15.5, lineHeight: 24, color: colors.ink },
+  setupCard: { backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.line, borderRadius: radius.field, padding: 15, marginTop: 4 },
+  setupText: { fontFamily: font.regular, fontSize: 15, lineHeight: 25, color: colors.ink },
+  goalRow: { flexDirection: 'row', gap: 9, alignItems: 'flex-start' },
+  goalDot: { width: 5, height: 5, borderRadius: 3, backgroundColor: colors.primary, marginTop: 8 },
+  goalText: { flex: 1, fontFamily: font.regular, fontSize: 15, lineHeight: 23, color: colors.ink },
 })

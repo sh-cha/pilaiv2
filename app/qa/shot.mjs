@@ -71,19 +71,29 @@ if (process.env.SHOT_GENERATE) {
     await page.setViewportSize({ width: 390, height: 3400 })
     await page.waitForTimeout(1000)
     await page.screenshot({ path: '/tmp/pilai-result.png' })
-    console.log('shot: result/state')
-    // reps 인라인 편집 — reps 영역(+회수 또는 배지) 클릭 시 입력칸이 뜨는지 캡처
+    console.log('shot: result (보기 모드)')
+    // 편집 모드 — "편집" 버튼 클릭 시 컨트롤(▲▼·삭제·추가) 노출
     try {
-      await page.setViewportSize({ width: 390, height: 1500 })
+      await page.setViewportSize({ width: 390, height: 2200 })
+      await page.waitForTimeout(400)
+      await page.click('text="편집"', { timeout: 5000 })
       await page.waitForTimeout(500)
-      const repsBtn = page.locator('text="+ 회수"').first()
-      if (await repsBtn.count()) {
-        await repsBtn.click({ timeout: 4000 })
-        await page.waitForTimeout(600)
-        await page.screenshot({ path: '/tmp/pilai-repsedit.png' })
-        console.log('shot: repsedit')
-      } else { console.log('repsedit: "+ 회수" 없음(모든 동작에 reps 있음) — 스킵') }
-    } catch (e) { console.log('FAIL repsedit', e.message.slice(0, 140)) }
+      await page.screenshot({ path: '/tmp/pilai-edit.png' })
+      console.log('shot: edit (편집모드)')
+      await page.click('text="완료"', { timeout: 4000 })
+      await page.waitForTimeout(300)
+    } catch (e) { console.log('FAIL edit', e.message.slice(0, 130)) }
+    // 동작 상세 → 셋업 탭 (페이지 참조 제거 + 카드 디자인 확인)
+    try {
+      await page.locator('text=/ ›/').first().click({ timeout: 5000 })
+      await page.waitForTimeout(600)
+      await page.click('text="셋업·호흡"', { timeout: 5000 })
+      await page.waitForTimeout(400)
+      await page.setViewportSize({ width: 390, height: 1000 })
+      await page.waitForTimeout(300)
+      await page.screenshot({ path: '/tmp/pilai-setup.png' })
+      console.log('shot: setup')
+    } catch (e) { console.log('FAIL setup', e.message.slice(0, 130)) }
   } catch (e) { console.log('FAIL result', e.message.slice(0, 160)) }
 }
 
