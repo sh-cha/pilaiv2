@@ -261,7 +261,7 @@ export function SequenceScreen() {
           onClose={() => setRegenOpen(false)}
           onRegen={(adjust) => {
             setRegenOpen(false)
-            nav.setCtx({ genInput: { ...input!, adjust } })
+            nav.setCtx({ genInput: { ...input!, adjust, baseSequence: seq } })
             nav.go('generating')
           }}
         />

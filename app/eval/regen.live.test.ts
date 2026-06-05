@@ -37,7 +37,7 @@ describe.runIf(process.env.RUN_EVAL)(`EVAL 재생성 adjust (rubric ${RUBRIC_VER
     let cost = 0
     for (const c of REGEN_CASES) {
       const orig = await generateSequence(c.input)
-      const regen = await generateSequence({ ...c.input, adjust: c.adjust })
+      const regen = await generateSequence({ ...c.input, adjust: c.adjust, baseSequence: orig.sequence })
       cost += estimateCost(MODEL, orig.usage) + estimateCost(MODEL, regen.usage)
       const diff = diffSummary(orig.sequence, regen.sequence)
       const context = `회원 통증·제약: ${c.input.conditions} / 목표: ${c.input.goals}

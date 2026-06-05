@@ -8,6 +8,7 @@ export type MemberInput = {
   todayCondition?: string // 그날 컨디션 (릴렉스 모드 분기)
   history?: string // 최근 이력 요약 (Phase 2 변주). flywheel.summarizeHistory 결과.
   adjust?: string // 재생성 시 방향 지시 (예: "더 쉽게, 하체 강화")
+  baseSequence?: Sequence // 재생성 시 직전 생성본 — 이걸 기반으로 adjust만 반영(과교정 방지)
 }
 
 export type SeqExercise = { name: string; reps?: string; reason?: string; caution?: string }

@@ -13,7 +13,8 @@ import { aggregate, formatReport, type CaseScore, type RunMeta } from './score'
 import { seqToText, estimateCost } from './seq'
 
 const OPUS = 'claude-opus-4-8'
-const MODELS = [MODEL, OPUS] // sonnet, opus
+// 기본은 sonnet만 평가(프로덕션 모델). opus 비교는 의사결정용 opt-in: EVAL_OPUS=1 일 때만.
+const MODELS = process.env.EVAL_OPUS ? [MODEL, OPUS] : [MODEL]
 const RUNS = path.join(process.cwd(), 'eval', 'runs.jsonl')
 
 const depsFor = (model: string): GenerateDeps => ({ callModel: makeClaudeCall(model), validate: validateSequence, maxRepairs: 2 })
@@ -49,9 +50,11 @@ describe.runIf(process.env.RUN_EVAL)(`EVAL 시퀀스 sonnet↔opus (rubric ${RUB
     }
 
     const son = aggregate(SEQUENCE_RUBRIC, byModel[MODEL].cases)
-    const opus = aggregate(SEQUENCE_RUBRIC, byModel[OPUS].cases)
-    console.log(`\nΔ opus - sonnet: ${opus.pct - son.pct}%p  (sonnet ${son.pct}% / opus ${opus.pct}%)`)
-    console.log(`비용배수 opus/sonnet ≈ ${(byModel[OPUS].cost / Math.max(byModel[MODEL].cost, 1e-9)).toFixed(1)}x`)
+    if (byModel[OPUS]) {
+      const opus = aggregate(SEQUENCE_RUBRIC, byModel[OPUS].cases)
+      console.log(`\nΔ opus - sonnet: ${opus.pct - son.pct}%p  (sonnet ${son.pct}% / opus ${opus.pct}%)`)
+      console.log(`비용배수 opus/sonnet ≈ ${(byModel[OPUS].cost / Math.max(byModel[MODEL].cost, 1e-9)).toFixed(1)}x`)
+    }
 
     expect(son.pct).toBeGreaterThan(40) // sonnet 회귀 가드
   }, 1_200_000) // opus가 느려 케이스×모델이 길다. 20분.

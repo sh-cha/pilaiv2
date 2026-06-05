@@ -118,11 +118,20 @@ function catalogBlock(apparatus: string[]) {
   }
 }
 
+// 원본 시퀀스를 프롬프트용으로 간결 직렬화 (재생성 시 "기반"으로 제공 → 과교정 방지)
+function seqToPromptText(seq: Sequence): string {
+  return (seq.blocks ?? [])
+    .map((b) => `[${b.block} · ${b.apparatus}] ${(b.exercises ?? []).map((e) => e.name + (e.reps ? `(${e.reps})` : '')).join(', ')}`)
+    .join('\n')
+}
+
 // 비캐시 후행 블록: 회원 정보 + 이력 (매 요청 가변).
 function memberBlock(input: MemberInput) {
   const history = input.history ? `\n\n${input.history}` : ''
   const adjust = input.adjust
-    ? `\n\n## 재조정 요청\n직전 생성본을 본 선생님이 이렇게 바꿔달라고 했습니다: "${input.adjust}"\n이 요청을 우선 반영하되, 안전·금기·기구 흐름 규칙은 그대로 지키세요.`
+    ? input.baseSequence
+      ? `\n\n## 재조정 요청 (직전 생성본 기반 편집)\n아래가 직전 생성본입니다. 이것을 **기반**으로, 선생님이 요청한 방향만 반영해 수정하세요.\n\n[직전 생성본]\n${seqToPromptText(input.baseSequence)}\n\n선생님 요청: "${input.adjust}"\n- 요청한 방향만 반영하고 나머지는 원본을 최대한 유지하세요. **전면 재작성 금지.**\n- 특히 통증·금기 대응 동작과 회원 목표의 핵심 처방은, 요청과 직접 충돌하지 않는 한 **유지**하세요.\n- 안전·금기·기구 흐름 규칙은 그대로 지키세요.`
+      : `\n\n## 재조정 요청\n직전 생성본을 본 선생님이 이렇게 바꿔달라고 했습니다: "${input.adjust}"\n이 요청을 우선 반영하되, 안전·금기·기구 흐름 규칙은 그대로 지키세요.`
     : ''
   return {
     type: 'text' as const,
