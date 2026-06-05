@@ -15,7 +15,7 @@ export const DEMO_TODOS: TodoItem[] = [
 ]
 
 // 강사 본인 정보 — 로그인(OAuth) 백엔드가 없어 데모. 설정에서 보여주고 홈에서 인사.
-export const INSTRUCTOR = { name: '이지수', login: '카카오 로그인' }
+export const INSTRUCTOR = { name: '한지은', login: '카카오 로그인' }
 
 export const SCHEDULE_LABEL: Record<ScheduleItem['status'], string> = {
   done: '체크인 완료',

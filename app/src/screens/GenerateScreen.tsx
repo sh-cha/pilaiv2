@@ -20,6 +20,7 @@ export function GenerateScreen() {
   const [pain, setPain] = useState<string[]>([])
   const [customPain, setCustomPain] = useState('')
   const [goals, setGoals] = useState<string[]>([])
+  const [customGoal, setCustomGoal] = useState('')
   const [apps, setApps] = useState<string[]>(['reformer'])
   const [inten, setInten] = useState('보통')
   const [dur, setDur] = useState('50')
@@ -36,7 +37,9 @@ export function GenerateScreen() {
     const conds = splitTags(m.conditions)
     setPain(conds.filter((c) => PAIN_CHIPS.includes(c)))
     setCustomPain(conds.filter((c) => !PAIN_CHIPS.includes(c)).join(', '))
-    setGoals(splitTags(m.goals).filter((g) => GOAL_CHIPS.includes(g)))
+    const gs = splitTags(m.goals)
+    setGoals(gs.filter((g) => GOAL_CHIPS.includes(g)))
+    setCustomGoal(gs.filter((g) => !GOAL_CHIPS.includes(g)).join(', '))
   }, [mid, members])
 
   const selected = members.find((m) => m.id === mid) ?? nav.ctx.member
@@ -48,7 +51,7 @@ export function GenerateScreen() {
       name: selected?.name,
       age: selected?.age,
       conditions,
-      goals: goals.join(', '),
+      goals: [...goals, customGoal].map((s) => s.trim()).filter(Boolean).join(', '),
       minutes: Number(dur) || 50,
       apparatus: apps,
       todayCondition: cond !== '좋음' ? cond : undefined,
@@ -85,11 +88,12 @@ export function GenerateScreen() {
 
         <View style={{ marginBottom: 18 }}>
           <Label>목표</Label>
-          <ChipRow>
+          <ChipRow style={{ marginBottom: 10 }}>
             {GOAL_CHIPS.map((c) => (
               <Chip key={c} label={c} on={goals.includes(c)} onPress={() => tog(goals, setGoals, c)} />
             ))}
           </ChipRow>
+          <Input value={customGoal} onChangeText={setCustomGoal} placeholder="직접 입력…" />
         </View>
 
         <View style={{ marginBottom: 18 }}>

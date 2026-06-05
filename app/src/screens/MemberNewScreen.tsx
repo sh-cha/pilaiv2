@@ -17,7 +17,9 @@ export function MemberNewScreen() {
   const [sex, setSex] = useState('여')
   const [age, setAge] = useState('')
   const [pain, setPain] = useState<string[]>([])
+  const [customPain, setCustomPain] = useState('')
   const [goals, setGoals] = useState<string[]>([])
+  const [customGoal, setCustomGoal] = useState('')
   const [exp, setExp] = useState('6개월~2년')
   const tog = (arr: string[], set: (v: string[]) => void, v: string) => set(arr.includes(v) ? arr.filter((x) => x !== v) : [...arr, v])
 
@@ -28,8 +30,8 @@ export function MemberNewScreen() {
       name: name.trim(),
       sex,
       age: age.trim() || undefined,
-      conditions: pain.join(', '),
-      goals: goals.join(', '),
+      conditions: [...pain, customPain].map((s) => s.trim()).filter(Boolean).join(', '),
+      goals: [...goals, customGoal].map((s) => s.trim()).filter(Boolean).join(', '),
       createdAt: now,
       updatedAt: now,
     })
@@ -77,23 +79,25 @@ export function MemberNewScreen() {
 
       {step === 1 && (
         <>
-          <Label>통증 · 진단 (복수 선택)</Label>
-          <ChipRow>
+          <Label>통증 · 진단 (복수 선택 + 직접 입력)</Label>
+          <ChipRow style={{ marginBottom: 12 }}>
             {PAIN_CHIPS.map((c) => (
               <Chip key={c} label={c} on={pain.includes(c)} onPress={() => tog(pain, setPain, c)} />
             ))}
           </ChipRow>
+          <Input value={customPain} onChangeText={setCustomPain} placeholder="직접 입력 (예: 어깨충돌증후군, 족저근막염)" multiline />
         </>
       )}
 
       {step === 2 && (
         <>
-          <Label>목표 (복수 선택)</Label>
-          <ChipRow style={{ marginBottom: 20 }}>
+          <Label>목표 (복수 선택 + 직접 입력)</Label>
+          <ChipRow style={{ marginBottom: 12 }}>
             {GOAL_CHIPS.map((c) => (
               <Chip key={c} label={c} on={goals.includes(c)} onPress={() => tog(goals, setGoals, c)} />
             ))}
           </ChipRow>
+          <Input value={customGoal} onChangeText={setCustomGoal} placeholder="직접 입력 (예: 출산 후 회복, 마라톤 대비)" style={{ marginBottom: 20 }} />
           <Label>필라테스 경력</Label>
           <ChipRow>
             {EXP_CHIPS.map((e) => (
