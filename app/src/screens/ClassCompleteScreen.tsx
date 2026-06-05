@@ -1,27 +1,18 @@
 import React, { useState } from 'react'
-import { View, Text, Pressable, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
-import { Card, SectionLabel, Button, Input } from '../components/ui'
+import { SectionLabel, Button, Input } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { updateSession } from '../lib/flywheel'
-
-function Toggle({ on, onPress }: { on: boolean; onPress: () => void }) {
-  return (
-    <Pressable onPress={onPress} style={[st.toggle, { backgroundColor: on ? colors.primary : colors.line }]}>
-      <View style={[st.knob, { left: on ? 23 : 3 }]} />
-    </Pressable>
-  )
-}
 
 export function ClassCompleteScreen() {
   const nav = useNav()
   const member = nav.ctx.member
   const count = nav.ctx.classSeq ? nav.ctx.classSeq.blocks.reduce((n, b) => n + b.exercises.length, 0) : 0
   const [note, setNote] = useState('')
-  const [reqFb, setReqFb] = useState(true)
 
   return (
     <AppShell
@@ -48,14 +39,6 @@ export function ClassCompleteScreen() {
 
       <SectionLabel>강사 노트</SectionLabel>
       <Input value={note} onChangeText={setNote} placeholder="오늘 어깨 가동범위 좋아짐, 다음엔 후면체인 강화…" multiline style={{ minHeight: 92, textAlignVertical: 'top' }} />
-
-      <Card style={{ marginTop: 20, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
-        <View style={{ flex: 1 }}>
-          <Text style={st.fbTitle}>회원에게 피드백 요청</Text>
-          <Text style={st.fbSub}>수업 1시간 후 알림 발송</Text>
-        </View>
-        <Toggle on={reqFb} onPress={() => setReqFb(!reqFb)} />
-      </Card>
     </AppShell>
   )
 }

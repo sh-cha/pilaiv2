@@ -7,6 +7,7 @@ import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { loadSessions, type CapturedSession } from '../lib/flywheel'
+import { loadMembers, type Member } from '../lib/members'
 import { ExerciseSheet } from '../components/ExerciseSheet'
 
 export function SessionDetailScreen() {
@@ -14,10 +15,15 @@ export function SessionDetailScreen() {
   const id: string | undefined = nav.route.params?.id
   const name: string | undefined = nav.route.params?.name
   const [session, setSession] = useState<CapturedSession | null>(null)
+  const [member, setMember] = useState<Member | null>(null)
   const [sheet, setSheet] = useState<{ name: string; reps?: string } | null>(null)
 
   useEffect(() => {
-    loadSessions(kv).then((all) => setSession(all.find((s) => s.id === id) ?? null))
+    loadSessions(kv).then((all) => {
+      const s = all.find((x) => x.id === id) ?? null
+      setSession(s)
+      if (s?.memberId) loadMembers(kv).then((ms) => setMember(ms.find((m) => m.id === s.memberId) ?? null))
+    })
   }, [id])
 
   const date = session?.createdAt ? `${Number(session.createdAt.slice(5, 7))}/${session.createdAt.slice(8, 10)}` : ''
@@ -32,9 +38,9 @@ export function SessionDetailScreen() {
             <Button
               title="실시간으로 진행하기"
               icon={<Icon name="spark" size={18} color="#fff" />}
-              onPress={() => { nav.setCtx({ classSeq: session.final, savedSessionId: session.id }); nav.go('classPlay') }}
+              onPress={() => { nav.setCtx({ classSeq: session.final, savedSessionId: session.id, member: member ?? undefined }); nav.go('classPlay') }}
             />
-            <Pressable onPress={() => { nav.setCtx({ classSeq: session.final, savedSessionId: session.id }); nav.go('classComplete') }} style={st.doneOnly}>
+            <Pressable onPress={() => { nav.setCtx({ classSeq: session.final, savedSessionId: session.id, member: member ?? undefined }); nav.go('classComplete') }} style={st.doneOnly}>
               <Text style={st.doneOnlyText}>실시간 없이 완료 처리</Text>
             </Pressable>
           </>
