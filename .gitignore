@@ -24,3 +24,4 @@ data/basi/extracted_pages/
 
 # ── macOS ──
 .DS_Store
+.gstack/

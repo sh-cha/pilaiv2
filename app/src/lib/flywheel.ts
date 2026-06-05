@@ -23,6 +23,8 @@ export type CapturedSession = {
   finalValidation: { ok: boolean; errors: string[] } // 최종본이 룰을 만족하는지 (전문가가 어긴 룰 = 룰 재검토 신호)
   attempts: number // 생성에 든 repair 횟수+1
   usage: Usage // 비용 (PRD §7)
+  note?: string // 수업 후 강사 노트 (수업 완료 시 추가)
+  nextTags?: string[] // 다음 수업 태그
 }
 
 function multiset(names: string[]): Map<string, number> {
@@ -100,6 +102,14 @@ export async function loadSessions(kv: KV): Promise<CapturedSession[]> {
 export async function appendSession(kv: KV, s: CapturedSession): Promise<CapturedSession[]> {
   const all = await loadSessions(kv)
   const next = [s, ...all]
+  await kv.setItem(SESSIONS_KEY, JSON.stringify(next))
+  return next
+}
+
+// 저장된 세션에 수업 후 정보(노트·다음 태그)를 덧붙인다.
+export async function updateSession(kv: KV, id: string, patch: Partial<Pick<CapturedSession, 'note' | 'nextTags'>>): Promise<CapturedSession[]> {
+  const all = await loadSessions(kv)
+  const next = all.map((s) => (s.id === id ? { ...s, ...patch } : s))
   await kv.setItem(SESSIONS_KEY, JSON.stringify(next))
   return next
 }
