@@ -90,7 +90,7 @@ export function MemberDetailScreen() {
         )}
       </Card>
 
-      <SectionLabel>AI 인사이트</SectionLabel>
+      <SectionLabel>인사이트</SectionLabel>
       <Insight icon={<Icon name="spark" size={16} color={colors.primary} />}>{insightLoading ? '분석 중…' : insight}</Insight>
 
       {balance ? (

@@ -41,7 +41,7 @@ export function SplashScreen() {
     <Pressable style={st.splash} onPress={() => nav.reset('login')}>
       <Image source={require('../../assets/icon.png')} style={st.icon} />
       <Text style={st.logo}>Pil<Text style={{ opacity: 0.7 }}>ai</Text></Text>
-      <Text style={st.tag}>AI 필라테스 시퀀스</Text>
+      <Text style={st.tag}>맞춤 필라테스 시퀀스</Text>
       <DotLine />
     </Pressable>
   )

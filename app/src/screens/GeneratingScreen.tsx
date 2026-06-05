@@ -7,7 +7,7 @@ import { kv } from '../lib/kv'
 import { generateSequence } from '../lib/generateSequence'
 import { loadSessions, sessionsForMember, summarizeHistory } from '../lib/flywheel'
 
-const STEPS = ['회원 컨텍스트 수집', '금기사항 기반 동작 필터링', '시퀀스 최적화 (AI)', '안전 규칙 검증']
+const STEPS = ['회원 컨텍스트 수집', '금기사항 기반 동작 필터링', '시퀀스 최적화', '안전 규칙 검증']
 
 function Spinner() {
   const rot = useRef(new Animated.Value(0)).current
