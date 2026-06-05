@@ -38,7 +38,7 @@ describe.runIf(process.env.RUN_EVAL)(`EVAL 인사이트 품질 (rubric ${RUBRIC_
     const history: RunRecord[] = fs.existsSync(RUNS)
       ? fs.readFileSync(RUNS, 'utf8').trim().split('\n').filter(Boolean).map((l) => JSON.parse(l))
       : []
-    const cur: RunRecord = { rubricId: meta.rubricId, rubricVersion: meta.rubricVersion, pct: agg.pct }
+    const cur: RunRecord = { rubricId: meta.rubricId, rubricVersion: meta.rubricVersion, model: meta.model, pct: agg.pct }
     const cmp = compareToPrev(cur, history)
     if (cmp) console.log(`이전 동일 rubric 대비: ${cmp.prevPct}% → ${agg.pct}% (${cmp.delta >= 0 ? '+' : ''}${cmp.delta})`)
     else console.log('동일 rubric 버전의 이전 실행 없음(첫 기준점)')

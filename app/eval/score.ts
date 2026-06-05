@@ -34,11 +34,14 @@ export function aggregate(rubric: RubricItem[], cases: CaseScore[]): Aggregate {
   return { n, perItem, totalAvg, totalMax, pct }
 }
 
-// 이력 비교용 최소 레코드 (runs.jsonl 한 줄). rubric이 바뀌면(version 다름) 비교하지 않는다.
-export type RunRecord = { rubricId: string; rubricVersion: string; pct: number }
+// 이력 비교용 최소 레코드 (runs.jsonl 한 줄). 같은 (rubricId, rubricVersion, model)끼리만 비교한다.
+// rubric이 바뀌거나(version) 모델이 다르면 사과-사과 비교가 아니므로 제외.
+export type RunRecord = { rubricId: string; rubricVersion: string; model: string; pct: number }
 
 export function compareToPrev(current: RunRecord, history: RunRecord[]): { prevPct: number; delta: number } | null {
-  const same = history.filter((h) => h.rubricId === current.rubricId && h.rubricVersion === current.rubricVersion)
+  const same = history.filter(
+    (h) => h.rubricId === current.rubricId && h.rubricVersion === current.rubricVersion && h.model === current.model,
+  )
   const prev = same[same.length - 1]
   if (!prev) return null
   return { prevPct: prev.pct, delta: current.pct - prev.pct }

@@ -8,7 +8,7 @@ import { validateSequence, type ValidationResult } from './validateSequence'
 declare const process: { env: Record<string, string | undefined> }
 
 const API_KEY = process.env.EXPO_PUBLIC_ANTHROPIC_API_KEY ?? ''
-const MODEL = 'claude-sonnet-4-6'
+export const MODEL = 'claude-sonnet-4-6' // 기본 생성 모델. eval에서 opus와 비교 시 makeClaudeCall로 교체.
 const MAX_REPAIRS = 2
 
 type Ex = {
@@ -44,8 +44,10 @@ const SYSTEM = `당신은 BASI 필라테스 시퀀스 생성 전문가입니다.
 
 ## 출력
 - 반드시 emit_sequence 도구를 1회 호출한다.
+- **blocks(시퀀스 본체)를 반드시 채운다 — 절대 비우지 않는다.** 진단이 복잡한 회원(임신·다중 통증 등)이라도 blocks 생성이 최우선이며, 안전이 걱정되면 더 보수적인 동작으로 채우되 시퀀스는 항상 만든다.
+- member_summary는 핵심만 간결하게 쓴다(5~6문장 이내, 길게 늘이지 말 것). 상세 설명보다 blocks(실제 시퀀스)가 본체다.
+- summary_points는 진단 핵심 2~3개 불릿으로 (강사가 한눈에 본다).
 - 카탈로그에 실제로 있는 동작 이름만 사용한다 (지어내지 않는다).
-- member_summary는 상세 진단, summary_points는 그 핵심을 2~3개 불릿으로 간결하게 (강사가 한눈에 본다).
 - 각 동작에 reps(반복수 또는 시간)를 반드시 채운다 — 선생님이 수업 중 그대로 보고 진행한다.`
 
 const SEQUENCE_TOOL = {
@@ -146,30 +148,33 @@ export type Usage = {
 type Message = { role: 'user' | 'assistant'; content: unknown }
 export type ModelCall = (messages: Message[]) => Promise<{ sequence: Sequence; toolUseId: string; usage: Usage }>
 
-const callClaude: ModelCall = async (messages) => {
-  if (!API_KEY) throw new Error('EXPO_PUBLIC_ANTHROPIC_API_KEY가 없습니다 (app/.env)')
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'x-api-key': API_KEY,
-      'anthropic-version': '2023-06-01',
-      'content-type': 'application/json',
-      'anthropic-dangerous-direct-browser-access': 'true',
-    },
-    body: JSON.stringify({
-      model: MODEL,
-      max_tokens: 4000,
-      system: SYSTEM,
-      tools: [SEQUENCE_TOOL],
-      tool_choice: { type: 'tool', name: 'emit_sequence' },
-      messages,
-    }),
-  })
-  if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`)
-  const data = await res.json()
-  const tool = data.content?.find((b: { type: string }) => b.type === 'tool_use')
-  if (!tool) throw new Error('no tool_use in response')
-  return { sequence: tool.input as Sequence, toolUseId: tool.id as string, usage: data.usage as Usage }
+// 모델을 받아 ModelCall을 만든다(기본 sonnet). eval에서 opus 등 다른 모델을 주입해 비교한다.
+export function makeClaudeCall(model: string = MODEL): ModelCall {
+  return async (messages) => {
+    if (!API_KEY) throw new Error('EXPO_PUBLIC_ANTHROPIC_API_KEY가 없습니다 (app/.env)')
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'x-api-key': API_KEY,
+        'anthropic-version': '2023-06-01',
+        'content-type': 'application/json',
+        'anthropic-dangerous-direct-browser-access': 'true',
+      },
+      body: JSON.stringify({
+        model,
+        max_tokens: 8000, // 진단이 긴 회원(임신 등)에서 blocks 전에 잘리지 않도록 여유
+        system: SYSTEM,
+        tools: [SEQUENCE_TOOL],
+        tool_choice: { type: 'tool', name: 'emit_sequence' },
+        messages,
+      }),
+    })
+    if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`)
+    const data = await res.json()
+    const tool = data.content?.find((b: { type: string }) => b.type === 'tool_use')
+    if (!tool) throw new Error('no tool_use in response')
+    return { sequence: tool.input as Sequence, toolUseId: tool.id as string, usage: data.usage as Usage }
+  }
 }
 
 // ── 오케스트레이터: gen → verify → [실패] repair(≤MAX_REPAIRS) ─────────────
@@ -186,7 +191,7 @@ export type GenerateDeps = {
   maxRepairs: number
 }
 
-const defaultDeps: GenerateDeps = { callModel: callClaude, validate: validateSequence, maxRepairs: MAX_REPAIRS }
+const defaultDeps: GenerateDeps = { callModel: makeClaudeCall(), validate: validateSequence, maxRepairs: MAX_REPAIRS }
 
 function emptyUsage(): Usage {
   return { input_tokens: 0, output_tokens: 0, cache_creation_input_tokens: 0, cache_read_input_tokens: 0 }

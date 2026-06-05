@@ -17,6 +17,15 @@ export const INSIGHT_RUBRIC: RubricItem[] = [
   { key: 'concise', label: '간결성', max: 2, guide: '0=장황·군더더기, 1=약간 김, 2=핵심 1~2문장' },
 ]
 
+// 시퀀스 본체(generateSequence)용 — 안전·기능해부 정합·기구 흐름·블록 균형·reps
+export const SEQUENCE_RUBRIC: RubricItem[] = [
+  { key: 'safety', label: '안전·금기', max: 2, guide: '0=금기 동작 포함(예: 목디스크에 경추 부하), 1=주의 미흡, 2=금기 회피 + caution 명시' },
+  { key: 'anatomy', label: '기능해부 정합', max: 2, guide: '0=증상-처방 무관, 1=느슨한 연결, 2=원인 근육을 정확히 타깃하는 처방' },
+  { key: 'flow', label: '기구 흐름', max: 2, guide: '0=전환 과다·난잡, 1=보통, 2=전환 최소·기구별 블록화' },
+  { key: 'balance', label: '블록 균형', max: 2, guide: '0=편중/필수 블록 누락, 1=대체로 적절, 2=BASI 블록 순서·회원 목표 비중 적절' },
+  { key: 'reps', label: 'reps 적절성', max: 2, guide: '0=비거나 부적절, 1=일부만, 2=동작별로 적절한 반복수/시간' },
+]
+
 // 재생성(adjust)용 — 후속 확장 자리(같은 harness 재사용)
 export const REGEN_RUBRIC: RubricItem[] = [
   { key: 'follow', label: '지시 반영', max: 2, guide: '0=adjust 방향 무시, 1=일부 반영, 2=명확히 반영' },
