@@ -55,13 +55,18 @@ export function FieldGhost({ text, onPress, style }: { text: string; onPress?: (
   )
 }
 
-export function Insight({ children, icon, style }: { children: React.ReactNode; icon?: React.ReactNode; style?: StyleProp<ViewStyle> }) {
-  return (
+export function Insight({ children, icon, style, collapsible, lines = 3 }: { children: React.ReactNode; icon?: React.ReactNode; style?: StyleProp<ViewStyle>; collapsible?: boolean; lines?: number }) {
+  const [open, setOpen] = React.useState(false)
+  const body = (
     <View style={[s.insight, style]}>
       {icon}
-      <Text style={s.insightText}>{children}</Text>
+      <View style={{ flex: 1 }}>
+        <Text style={s.insightText} numberOfLines={collapsible && !open ? lines : undefined}>{children}</Text>
+        {collapsible ? <Text style={s.insightMore}>{open ? '접기' : '더보기'}</Text> : null}
+      </View>
     </View>
   )
+  return collapsible ? <Pressable onPress={() => setOpen((o) => !o)}>{body}</Pressable> : body
 }
 
 export function Avatar({ name, large, style }: { name: string; large?: boolean; style?: StyleProp<ViewStyle> }) {
@@ -128,6 +133,25 @@ export function TabSeg<T extends string>({ tabs, value, onChange }: { tabs: [T, 
   )
 }
 
+// 세그먼트 컨트롤 (단일 선택) — pilai 새 생성폼의 .segc. options는 문자열 또는 {key,label}
+type SegOpt<T extends string> = T | { key: T; label: React.ReactNode }
+export function Segmented<T extends string>({ options, value, onChange }: { options: SegOpt<T>[]; value: T; onChange: (v: T) => void }) {
+  return (
+    <View style={s.segc}>
+      {options.map((o) => {
+        const key = (typeof o === 'object' ? o.key : o) as T
+        const label = typeof o === 'object' ? o.label : o
+        const on = key === value
+        return (
+          <Pressable key={key} onPress={() => onChange(key)} style={[s.segcO, on && s.segcOn]}>
+            <Text style={[s.segcText, on && { color: colors.ink, fontFamily: font.bold }]}>{label}</Text>
+          </Pressable>
+        )
+      })}
+    </View>
+  )
+}
+
 const s = StyleSheet.create({
   card: { backgroundColor: colors.surface, borderRadius: radius.card, padding: 18, ...shadow.card },
   btn: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8, borderRadius: radius.btn, paddingVertical: 16, backgroundColor: colors.primary },
@@ -144,7 +168,8 @@ const s = StyleSheet.create({
   sec: { fontFamily: font.bold, fontSize: 13, color: colors.muted, marginTop: 20, marginBottom: 10, marginHorizontal: 2 },
   input: { backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.line, borderRadius: radius.field, paddingVertical: 13, paddingHorizontal: 15, fontSize: 16, color: colors.ink, fontFamily: font.regular },
   insight: { backgroundColor: colors.tint, borderRadius: radius.card, paddingVertical: 16, paddingHorizontal: 17, flexDirection: 'row', gap: 10 },
-  insightText: { fontFamily: font.regular, fontSize: 15, lineHeight: 24, color: colors.tintInk, flex: 1 },
+  insightText: { fontFamily: font.regular, fontSize: 15, lineHeight: 24, color: colors.tintInk },
+  insightMore: { fontFamily: font.bold, fontSize: 13, color: colors.tintInk, marginTop: 6, opacity: 0.8 },
   av: { width: 46, height: 46, borderRadius: 23, backgroundColor: colors.tint, alignItems: 'center', justifyContent: 'center' },
   avLg: { width: 64, height: 64, borderRadius: 32 },
   rep: { backgroundColor: colors.tint, borderRadius: radius.chip, paddingVertical: 5, paddingHorizontal: 11, alignSelf: 'flex-start' },
@@ -162,4 +187,8 @@ const s = StyleSheet.create({
   tsegT: { flex: 1, alignItems: 'center', paddingVertical: 9, paddingHorizontal: 6, borderRadius: 10 },
   tsegTOn: { backgroundColor: colors.surface, ...shadow.sm },
   tsegText: { fontFamily: font.bold, fontSize: 14, color: colors.muted },
+  segc: { flexDirection: 'row', gap: 4, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.line, borderRadius: 12, padding: 4 },
+  segcO: { flex: 1, alignItems: 'center', paddingVertical: 10, paddingHorizontal: 6, borderRadius: 9 },
+  segcOn: { backgroundColor: colors.surface, ...shadow.sm },
+  segcText: { fontFamily: font.semibold, fontSize: 14, color: colors.muted },
 })
