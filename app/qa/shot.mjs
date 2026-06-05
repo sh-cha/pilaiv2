@@ -72,6 +72,15 @@ if (process.env.SHOT_GENERATE) {
     await page.waitForTimeout(1000)
     await page.screenshot({ path: '/tmp/pilai-result.png' })
     console.log('shot: result (보기 모드)')
+    // 진단 "자세히" 펼침 — 요약 2줄 + 상세 설명 확인
+    try {
+      await page.setViewportSize({ width: 390, height: 1500 })
+      await page.waitForTimeout(300)
+      await page.click('text="자세히"', { timeout: 4000 })
+      await page.waitForTimeout(400)
+      await page.screenshot({ path: '/tmp/pilai-detail.png' })
+      console.log('shot: 진단 자세히')
+    } catch (e) { console.log('FAIL 자세히', e.message.slice(0, 120)) }
     // 편집 모드 — "편집" 버튼 클릭 시 컨트롤(▲▼·삭제·추가) 노출
     try {
       await page.setViewportSize({ width: 390, height: 2200 })

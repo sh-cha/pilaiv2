@@ -41,25 +41,23 @@ function RegenSheet({ onClose, onRegen }: { onClose: () => void; onRegen: (adjus
   )
 }
 
-// 진단 — 불릿 대신 풀어쓴 문장으로 편하게. 길면 "자세히"로 펼침.
-function DiagnosisCard({ detail }: { detail: string }) {
+// 진단 — 짧은 요약(summary_points를 문장으로) 기본, "자세히"로 상세(member_summary) 펼침.
+function DiagnosisCard({ points, detail }: { points?: string[]; detail: string }) {
   const [open, setOpen] = useState(false)
-  const [clamped, setClamped] = useState(false)
+  const summary = points && points.length ? points.join(' ') : detail
+  const hasDetail = !!detail && detail.trim() !== summary.trim()
   return (
     <View style={st.diagCard}>
       <Icon name="spark" size={16} color={colors.primary} />
       <View style={{ flex: 1 }}>
-        <Text
-          style={st.diagText}
-          numberOfLines={open ? undefined : 4}
-          onTextLayout={(e) => { if (!open && e.nativeEvent.lines.length > 4) setClamped(true) }}
-        >
-          {detail}
-        </Text>
-        {clamped || open ? (
-          <Pressable hitSlop={6} onPress={() => setOpen((o) => !o)}>
-            <Text style={st.diagMore}>{open ? '접기' : '자세히'}</Text>
-          </Pressable>
+        <Text style={st.diagText}>{summary}</Text>
+        {hasDetail ? (
+          <>
+            <Pressable hitSlop={6} onPress={() => setOpen((o) => !o)}>
+              <Text style={st.diagMore}>{open ? '접기' : '자세히'}</Text>
+            </Pressable>
+            {open ? <Text style={st.diagDetail}>{detail}</Text> : null}
+          </>
         ) : null}
       </View>
     </View>
@@ -166,7 +164,7 @@ export function SequenceScreen() {
       </View>
 
       {!editMode ? (
-        <DiagnosisCard detail={seq.member_summary} />
+        <DiagnosisCard points={seq.summary_points} detail={seq.member_summary} />
       ) : (
         <Text style={st.editHint}>손잡이(⋮)를 끌어 순서를 바꾸고, 동작을 탭해 상세를 봐요.</Text>
       )}
@@ -293,6 +291,7 @@ const st = StyleSheet.create({
   diagCard: { flexDirection: 'row', gap: 10, backgroundColor: colors.tint, borderRadius: 20, paddingVertical: 16, paddingHorizontal: 17, marginBottom: 16 },
   diagText: { fontFamily: font.regular, fontSize: 15, lineHeight: 23, color: colors.tintInk },
   diagMore: { fontFamily: font.bold, fontSize: 13, color: colors.tintInk, marginTop: 8, opacity: 0.8 },
+  diagDetail: { fontFamily: font.regular, fontSize: 14.5, lineHeight: 23, color: colors.tintInk, marginTop: 8, opacity: 0.92 },
   regenBackdrop: { flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(20,22,18,0.4)' },
   regenSheet: { backgroundColor: colors.surface, borderTopLeftRadius: 24, borderTopRightRadius: 24, paddingHorizontal: 20, paddingBottom: 28, paddingTop: 8 },
   grab: { width: 40, height: 5, borderRadius: 3, backgroundColor: colors.line, alignSelf: 'center', marginTop: 8, marginBottom: 12 },
