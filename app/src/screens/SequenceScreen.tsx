@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { View, Text, Pressable, StyleSheet, Modal, TextInput } from 'react-native'
+import { View, Text, Pressable, StyleSheet, Modal } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
 import { Card, Button, Chip, ChipRow, Input, Rep } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { ExerciseSheet } from '../components/ExerciseSheet'
 import { AddExercisePicker } from '../components/AddExercisePicker'
+import { DraggableExercises } from '../components/DraggableExercises'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { exByName, tArr } from '../lib/catalog'
@@ -77,8 +78,6 @@ export function SequenceScreen() {
   const [sheet, setSheet] = useState<{ name: string; reps?: string; block: string } | null>(null)
   const [pickerBlock, setPickerBlock] = useState<number | null>(null)
   const [regenOpen, setRegenOpen] = useState(false)
-  const [editingReps, setEditingReps] = useState<{ bi: number; ei: number } | null>(null)
-  const [repsDraft, setRepsDraft] = useState('')
   const [editMode, setEditMode] = useState(false)
 
   if (!seq || !gen) {
@@ -103,37 +102,16 @@ export function SequenceScreen() {
       next.blocks[bi].exercises.push({ name })
       return next
     })
-  // 동작 순서 변경 (▲▼) — 블록 내 인접 스왑 [#13]
-  const move = (bi: number, ei: number, dir: -1 | 1) =>
-    setSeq((prev) => {
-      if (!prev) return prev
-      const j = ei + dir
-      const arr = prev.blocks[bi].exercises
-      if (j < 0 || j >= arr.length) return prev
-      const next = clone(prev)
-      const e = next.blocks[bi].exercises
-      ;[e[ei], e[j]] = [e[j], e[ei]]
-      return next
-    })
-  // reps 인라인 편집 [#13]
-  const openRepsEdit = (bi: number, ei: number, cur?: string) => {
-    setRepsDraft(cur ?? '')
-    setEditingReps({ bi, ei })
-  }
-  const commitReps = () => {
-    if (!editingReps) return
-    const { bi, ei } = editingReps
-    const v = repsDraft.trim()
+  // 동작 순서 변경 — 핸들 드래그로 from→to 이동
+  const reorder = (bi: number, from: number, to: number) =>
     setSeq((prev) => {
       if (!prev) return prev
       const next = clone(prev)
-      const ex = next.blocks[bi].exercises[ei]
-      if (v) ex.reps = v
-      else delete ex.reps
+      const arr = next.blocks[bi].exercises
+      const [item] = arr.splice(from, 1)
+      arr.splice(to, 0, item)
       return next
     })
-    setEditingReps(null)
-  }
 
   const editCount = computeDiff(gen.sequence, seq).length
 
@@ -178,7 +156,7 @@ export function SequenceScreen() {
           {setupLine ? <Text style={st.setup}>{setupLine}</Text> : null}
         </View>
         {editMode ? (
-          <Chip label="완료" on onPress={() => { setEditMode(false); setEditingReps(null) }} />
+          <Chip label="완료" on onPress={() => setEditMode(false)} />
         ) : (
           <View style={{ flexDirection: 'row', gap: 8 }}>
             <Chip label="편집" onPress={() => setEditMode(true)} />
@@ -187,7 +165,11 @@ export function SequenceScreen() {
         )}
       </View>
 
-      <DiagnosisCard detail={seq.member_summary} />
+      {!editMode ? (
+        <DiagnosisCard detail={seq.member_summary} />
+      ) : (
+        <Text style={st.editHint}>손잡이(⋮)를 끌어 순서를 바꾸고, 동작을 탭해 상세를 봐요.</Text>
+      )}
 
       {seq.blocks.map((b, bi) => (
         <Card key={bi} style={{ marginBottom: 14 }}>
@@ -195,62 +177,64 @@ export function SequenceScreen() {
             <Text style={st.phaseTitle}>{b.block}</Text>
             <Text style={st.appTag}>{b.apparatus.toUpperCase()}</Text>
           </View>
-          {b.exercises.map((it, ei) => {
-            const ex = exByName.get(it.name)
-            const muscles = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])
-            const muscle = muscles[0]
-            const lastItem = ei === b.exercises.length - 1
-            const editing = editingReps?.bi === bi && editingReps?.ei === ei
-            return (
-              <View key={ei} style={st.exRow}>
-                <View style={st.timeline}>
-                  <View style={st.node}><Text style={st.nodeText}>{ei + 1}</Text></View>
-                  {!lastItem ? <View style={st.line} /> : null}
-                </View>
-                <View style={{ flex: 1, paddingBottom: lastItem ? 0 : 14 }}>
-                  <View style={st.exTop}>
-                    <Pressable style={{ flex: 1 }} hitSlop={4} onPress={() => setSheet({ name: it.name, reps: it.reps, block: b.block })}>
-                      <Text style={st.exName} numberOfLines={2}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
-                    </Pressable>
-                    <View style={st.exCtrl}>
-                      {!editMode ? (
-                        it.reps ? <Rep>{it.reps}</Rep> : null
-                      ) : (
-                        <>
-                          {editing ? (
-                            <TextInput
-                              value={repsDraft}
-                              onChangeText={setRepsDraft}
-                              onBlur={commitReps}
-                              onSubmitEditing={commitReps}
-                              autoFocus
-                              returnKeyType="done"
-                              placeholder="10회"
-                              placeholderTextColor={colors.faint}
-                              style={st.repsInput}
-                            />
-                          ) : (
-                            <Pressable hitSlop={6} onPress={() => openRepsEdit(bi, ei, it.reps)}>
-                              {it.reps ? <Rep>{it.reps}</Rep> : <Text style={st.repsAdd}>+ 회수</Text>}
-                            </Pressable>
-                          )}
-                          <Pressable hitSlop={6} disabled={ei === 0} onPress={() => move(bi, ei, -1)}>
-                            <Icon name="up" size={17} color={ei === 0 ? colors.line : colors.muted} />
-                          </Pressable>
-                          <Pressable hitSlop={6} disabled={lastItem} onPress={() => move(bi, ei, 1)}>
-                            <Icon name="down" size={17} color={lastItem ? colors.line : colors.muted} />
-                          </Pressable>
-                          <Pressable hitSlop={6} onPress={() => del(bi, ei)}><Icon name="x" size={15} color={colors.faint} /></Pressable>
-                        </>
-                      )}
+          {!editMode
+            ? b.exercises.map((it, ei) => {
+                const ex = exByName.get(it.name)
+                const muscle = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])[0]
+                const lastItem = ei === b.exercises.length - 1
+                return (
+                  <View key={ei} style={st.exRow}>
+                    <View style={st.timeline}>
+                      <View style={st.node}><Text style={st.nodeText}>{ei + 1}</Text></View>
+                      {!lastItem ? <View style={st.line} /> : null}
+                    </View>
+                    <View style={{ flex: 1, paddingBottom: lastItem ? 0 : 14 }}>
+                      <View style={st.exTop}>
+                        <Pressable style={{ flex: 1 }} hitSlop={4} onPress={() => setSheet({ name: it.name, reps: it.reps, block: b.block })}>
+                          <Text style={st.exName} numberOfLines={2}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
+                        </Pressable>
+                        {it.reps ? <Rep>{it.reps}</Rep> : null}
+                      </View>
+                      {muscle ? <Chip label={muscle} variant="tint" style={st.muscleChip} textStyle={{ fontSize: 11.5 }} /> : null}
+                      {it.caution ? <Text style={st.caution}>⚠ {it.caution}</Text> : null}
                     </View>
                   </View>
-                  {muscle ? <Chip label={muscle} variant="tint" style={st.muscleChip} textStyle={{ fontSize: 11.5 }} /> : null}
-                  {it.caution ? <Text style={st.caution}>⚠ {it.caution}</Text> : null}
-                </View>
-              </View>
-            )
-          })}
+                )
+              })
+            : (
+                <DraggableExercises
+                  count={b.exercises.length}
+                  onReorder={(from, to) => reorder(bi, from, to)}
+                  renderRow={(ei, handle, dragging) => {
+                    const it = b.exercises[ei]
+                    if (!it) return null
+                    const ex = exByName.get(it.name)
+                    const muscle = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])[0]
+                    return (
+                      <View style={[st.exRow, { paddingVertical: 6, opacity: dragging ? 0.97 : 1 }]}>
+                        <View style={st.handle} {...handle}>
+                          <View style={st.handleBar} />
+                          <View style={st.handleBar} />
+                          <View style={st.handleBar} />
+                        </View>
+                        <View style={{ flex: 1 }}>
+                          <View style={st.exTop}>
+                            <Pressable style={{ flex: 1 }} hitSlop={4} onPress={() => setSheet({ name: it.name, reps: it.reps, block: b.block })}>
+                              <Text style={st.exName} numberOfLines={2}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
+                            </Pressable>
+                            <View style={st.exCtrl}>
+                              {it.reps ? <Rep>{it.reps}</Rep> : null}
+                              <Pressable hitSlop={6} onPress={() => del(bi, ei)}><Icon name="x" size={15} color={colors.faint} /></Pressable>
+                            </View>
+                          </View>
+                          {muscle ? <Chip label={muscle} variant="tint" style={st.muscleChip} textStyle={{ fontSize: 11.5 }} /> : null}
+                          {it.caution ? <Text style={st.caution}>⚠ {it.caution}</Text> : null}
+                        </View>
+                      </View>
+                    )
+                  }}
+                />
+              )}
           {editMode ? (
             <Pressable style={st.addBtn} onPress={() => setPickerBlock(bi)}>
               <Text style={st.addText}>+ 동작 추가</Text>
@@ -296,8 +280,9 @@ const st = StyleSheet.create({
   exTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 },
   exName: { flex: 1, fontFamily: font.bold, fontSize: 15.5, color: colors.ink, paddingTop: 2 },
   exCtrl: { flexDirection: 'row', alignItems: 'center', gap: 7 },
-  repsAdd: { fontFamily: font.bold, fontSize: 12, color: colors.faint },
-  repsInput: { minWidth: 56, borderWidth: 1.5, borderColor: colors.primary, borderRadius: 9, paddingVertical: 3, paddingHorizontal: 9, fontFamily: font.mono, fontSize: 13, color: colors.ink, backgroundColor: colors.surface, textAlign: 'center' },
+  handle: { width: 30, paddingVertical: 8, paddingRight: 8, gap: 3, alignItems: 'center', justifyContent: 'center' },
+  handleBar: { width: 16, height: 2, borderRadius: 1, backgroundColor: colors.faint },
+  editHint: { fontFamily: font.regular, fontSize: 13.5, color: colors.muted, marginBottom: 14, marginHorizontal: 2, lineHeight: 20 },
   muscleChip: { paddingVertical: 2, paddingHorizontal: 9, marginTop: 5, alignSelf: 'flex-start' },
   caution: { fontFamily: font.semibold, fontSize: 12.5, color: colors.warnInk, marginTop: 5 },
   addBtn: { borderWidth: 1.5, borderColor: colors.line, borderStyle: 'dashed', borderRadius: 999, paddingVertical: 13, alignItems: 'center', marginTop: 8 },
