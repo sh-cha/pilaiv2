@@ -5,7 +5,7 @@ import { colors } from '../theme/tokens'
 
 export type IconName =
   | 'home' | 'people' | 'spark' | 'list' | 'gear' | 'back' | 'chev'
-  | 'x' | 'plus' | 'check' | 'bell' | 'msg'
+  | 'x' | 'plus' | 'check' | 'bell' | 'msg' | 'up' | 'down'
 
 type Props = { name: IconName; size?: number; color?: string }
 
@@ -86,6 +86,18 @@ export function Icon({ name, size = 22, color = colors.ink }: Props) {
       return (
         <Svg width={size} height={size} viewBox="0 0 24 24" {...box}>
           <Path d="M4 5h16v11H8l-4 3V5z" stroke={color} strokeWidth={1.7} strokeLinejoin="round" />
+        </Svg>
+      )
+    case 'up':
+      return (
+        <Svg width={size} height={size} viewBox="0 0 24 24" {...box}>
+          <Path d="M5 15l7-7 7 7" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+        </Svg>
+      )
+    case 'down':
+      return (
+        <Svg width={size} height={size} viewBox="0 0 24 24" {...box}>
+          <Path d="M5 9l7 7 7-7" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
         </Svg>
       )
   }

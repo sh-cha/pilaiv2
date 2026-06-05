@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Text, Pressable, StyleSheet, Modal } from 'react-native'
+import { View, Text, Pressable, StyleSheet, Modal, TextInput } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
 import { Card, Button, Chip, ChipRow, Input, Rep } from '../components/ui'
@@ -85,6 +85,8 @@ export function SequenceScreen() {
   const [sheet, setSheet] = useState<{ name: string; reps?: string; block: string } | null>(null)
   const [pickerBlock, setPickerBlock] = useState<number | null>(null)
   const [regenOpen, setRegenOpen] = useState(false)
+  const [editingReps, setEditingReps] = useState<{ bi: number; ei: number } | null>(null)
+  const [repsDraft, setRepsDraft] = useState('')
 
   if (!seq || !gen) {
     return (
@@ -108,6 +110,37 @@ export function SequenceScreen() {
       next.blocks[bi].exercises.push({ name })
       return next
     })
+  // 동작 순서 변경 (▲▼) — 블록 내 인접 스왑 [#13]
+  const move = (bi: number, ei: number, dir: -1 | 1) =>
+    setSeq((prev) => {
+      if (!prev) return prev
+      const j = ei + dir
+      const arr = prev.blocks[bi].exercises
+      if (j < 0 || j >= arr.length) return prev
+      const next = clone(prev)
+      const e = next.blocks[bi].exercises
+      ;[e[ei], e[j]] = [e[j], e[ei]]
+      return next
+    })
+  // reps 인라인 편집 [#13]
+  const openRepsEdit = (bi: number, ei: number, cur?: string) => {
+    setRepsDraft(cur ?? '')
+    setEditingReps({ bi, ei })
+  }
+  const commitReps = () => {
+    if (!editingReps) return
+    const { bi, ei } = editingReps
+    const v = repsDraft.trim()
+    setSeq((prev) => {
+      if (!prev) return prev
+      const next = clone(prev)
+      const ex = next.blocks[bi].exercises[ei]
+      if (v) ex.reps = v
+      else delete ex.reps
+      return next
+    })
+    setEditingReps(null)
+  }
 
   const editCount = computeDiff(gen.sequence, seq).length
 
@@ -169,23 +202,48 @@ export function SequenceScreen() {
             const muscles = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])
             const muscle = muscles[0]
             const lastItem = ei === b.exercises.length - 1
+            const editing = editingReps?.bi === bi && editingReps?.ei === ei
             return (
               <View key={ei} style={st.exRow}>
                 <View style={st.timeline}>
                   <View style={st.node}><Text style={st.nodeText}>{ei + 1}</Text></View>
                   {!lastItem ? <View style={st.line} /> : null}
                 </View>
-                <Pressable style={{ flex: 1, paddingBottom: lastItem ? 0 : 14 }} onPress={() => setSheet({ name: it.name, reps: it.reps, block: b.block })}>
+                <View style={{ flex: 1, paddingBottom: lastItem ? 0 : 14 }}>
                   <View style={st.exTop}>
-                    <Text style={st.exName}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
-                    <View style={st.exRight}>
-                      {it.reps ? <Rep>{it.reps}</Rep> : null}
-                      <Pressable hitSlop={8} onPress={() => del(bi, ei)}><Icon name="x" size={15} color={colors.faint} /></Pressable>
+                    <Pressable style={{ flex: 1 }} hitSlop={4} onPress={() => setSheet({ name: it.name, reps: it.reps, block: b.block })}>
+                      <Text style={st.exName} numberOfLines={2}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
+                    </Pressable>
+                    <View style={st.exCtrl}>
+                      {editing ? (
+                        <TextInput
+                          value={repsDraft}
+                          onChangeText={setRepsDraft}
+                          onBlur={commitReps}
+                          onSubmitEditing={commitReps}
+                          autoFocus
+                          returnKeyType="done"
+                          placeholder="10회"
+                          placeholderTextColor={colors.faint}
+                          style={st.repsInput}
+                        />
+                      ) : (
+                        <Pressable hitSlop={6} onPress={() => openRepsEdit(bi, ei, it.reps)}>
+                          {it.reps ? <Rep>{it.reps}</Rep> : <Text style={st.repsAdd}>+ 회수</Text>}
+                        </Pressable>
+                      )}
+                      <Pressable hitSlop={6} disabled={ei === 0} onPress={() => move(bi, ei, -1)}>
+                        <Icon name="up" size={17} color={ei === 0 ? colors.line : colors.muted} />
+                      </Pressable>
+                      <Pressable hitSlop={6} disabled={lastItem} onPress={() => move(bi, ei, 1)}>
+                        <Icon name="down" size={17} color={lastItem ? colors.line : colors.muted} />
+                      </Pressable>
+                      <Pressable hitSlop={6} onPress={() => del(bi, ei)}><Icon name="x" size={15} color={colors.faint} /></Pressable>
                     </View>
                   </View>
                   {muscle ? <Chip label={muscle} variant="tint" style={st.muscleChip} textStyle={{ fontSize: 11.5 }} /> : null}
                   {it.caution ? <Text style={st.caution}>⚠ {it.caution}</Text> : null}
-                </Pressable>
+                </View>
               </View>
             )
           })}
@@ -232,7 +290,9 @@ const st = StyleSheet.create({
   line: { width: 2, flex: 1, backgroundColor: colors.line, marginTop: 4 },
   exTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 },
   exName: { flex: 1, fontFamily: font.bold, fontSize: 15.5, color: colors.ink, paddingTop: 2 },
-  exRight: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  exCtrl: { flexDirection: 'row', alignItems: 'center', gap: 7 },
+  repsAdd: { fontFamily: font.bold, fontSize: 12, color: colors.faint },
+  repsInput: { minWidth: 56, borderWidth: 1.5, borderColor: colors.primary, borderRadius: 9, paddingVertical: 3, paddingHorizontal: 9, fontFamily: font.mono, fontSize: 13, color: colors.ink, backgroundColor: colors.surface, textAlign: 'center' },
   muscleChip: { paddingVertical: 2, paddingHorizontal: 9, marginTop: 5, alignSelf: 'flex-start' },
   caution: { fontFamily: font.semibold, fontSize: 12.5, color: colors.warnInk, marginTop: 5 },
   addBtn: { borderWidth: 1.5, borderColor: colors.line, borderStyle: 'dashed', borderRadius: 999, paddingVertical: 13, alignItems: 'center', marginTop: 8 },

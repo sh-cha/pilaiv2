@@ -12,6 +12,13 @@ const seq = (exNames: string[]): Sequence => ({
   blocks: [{ block: '웜업', apparatus: 'reformer', exercises: exNames.map((name) => ({ name })) }],
 })
 
+// reps까지 지정하는 시퀀스 (편집 깊이 [#13] 테스트용)
+const seqR = (exs: { name: string; reps?: string }[]): Sequence => ({
+  member_summary: 's',
+  mode: 'treatment',
+  blocks: [{ block: '웜업', apparatus: 'reformer', exercises: exs }],
+})
+
 function fakeKV() {
   const store: Record<string, string> = {}
   const kv: KV = {
@@ -50,6 +57,42 @@ describe('computeDiff', () => {
   it('중복 동작 멀티셋 처리', () => {
     const d = computeDiff(seq(['Pelvic Curl', 'Pelvic Curl']), seq(['Pelvic Curl']))
     expect(d).toEqual([{ type: 'remove', block: '웜업', name: 'Pelvic Curl' }])
+  })
+
+  // ── 편집 깊이 [#13]: reps 수정 · 순서 변경 ──
+  it('reps 변경 → reps op (from/to)', () => {
+    const d = computeDiff(seqR([{ name: 'Pelvic Curl', reps: '10회' }]), seqR([{ name: 'Pelvic Curl', reps: '8회' }]))
+    expect(d).toEqual([{ type: 'reps', block: '웜업', name: 'Pelvic Curl', from: '10회', to: '8회' }])
+  })
+
+  it('reps 신규 입력(없음→값) → reps op', () => {
+    const d = computeDiff(seqR([{ name: 'Pelvic Curl' }]), seqR([{ name: 'Pelvic Curl', reps: '12회' }]))
+    expect(d).toEqual([{ type: 'reps', block: '웜업', name: 'Pelvic Curl', to: '12회' }])
+  })
+
+  it('reps 동일하면 diff 없음', () => {
+    expect(computeDiff(seqR([{ name: 'A', reps: '10회' }]), seqR([{ name: 'A', reps: '10회' }]))).toEqual([])
+  })
+
+  it('순서만 바뀌면(멀티셋 동일) → reorder op 1건', () => {
+    const d = computeDiff(seq(['A', 'B', 'C']), seq(['C', 'A', 'B']))
+    expect(d).toEqual([{ type: 'reorder', block: '웜업' }])
+  })
+
+  it('add/remove가 있으면 reorder는 내지 않음(중복 신호 방지)', () => {
+    const d = computeDiff(seq(['A', 'B']), seq(['B', 'C']))
+    expect(d.some((o) => o.type === 'reorder')).toBe(false)
+    expect(d).toContainEqual({ type: 'remove', block: '웜업', name: 'A' })
+    expect(d).toContainEqual({ type: 'add', block: '웜업', name: 'C' })
+  })
+
+  it('reps 변경 + 순서 변경 동시 캡처', () => {
+    const d = computeDiff(
+      seqR([{ name: 'A', reps: '10회' }, { name: 'B' }]),
+      seqR([{ name: 'B' }, { name: 'A', reps: '8회' }]),
+    )
+    expect(d).toContainEqual({ type: 'reps', block: '웜업', name: 'A', from: '10회', to: '8회' })
+    expect(d).toContainEqual({ type: 'reorder', block: '웜업' })
   })
 })
 

@@ -51,11 +51,16 @@ export function SessionDetailScreen() {
             <>
               <SectionLabel>편집 diff (학습 신호)</SectionLabel>
               <Card>
-                {session.diff.map((d, i) => (
-                  <Text key={i} style={[st.diff, { color: d.type === 'remove' ? colors.warnInk : colors.primary }]}>
-                    {d.type === 'remove' ? '−' : '+'} [{d.block}] {d.name}
-                  </Text>
-                ))}
+                {session.diff.map((d, i) => {
+                  const color =
+                    d.type === 'remove' ? colors.warnInk : d.type === 'add' ? colors.primary : colors.muted
+                  const text =
+                    d.type === 'remove' ? `−  [${d.block}] ${d.name}`
+                    : d.type === 'add' ? `+  [${d.block}] ${d.name}`
+                    : d.type === 'reps' ? `↺  [${d.block}] ${d.name} · 반복 ${d.from ?? '없음'} → ${d.to ?? '없음'}`
+                    : `⇅  [${d.block}] 순서 변경`
+                  return <Text key={i} style={[st.diff, { color }]}>{text}</Text>
+                })}
               </Card>
             </>
           )}

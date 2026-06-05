@@ -2,14 +2,17 @@
 // "완벽한 출력"은 불가능해도 "완벽한 캡처 장치"는 1일차부터 가능 → MVP부터 반드시 저장.
 // 가장 값진 신호 = 편집 diff (틀린 지점 + 정답을 동시에).
 import { validateSequence } from './validateSequence'
-import type { MemberInput, Sequence } from './types'
+import type { MemberInput, Sequence, SeqExercise } from './types'
 import type { Usage } from './generateSequence'
 import type { KV } from './storage'
 
-// 블록 단위 동작 추가/삭제 diff. (move = remove+add로 표현, reorder/텍스트편집은 후순위)
+// 편집 신호 diff. 동작 추가/삭제(add/remove) + 운동량 수정(reps) + 순서 변경(reorder).
+// reps·reorder는 "선생님이 AI 처방을 어떻게 미세조정하는가"라는 학습 신호 [#13].
 export type DiffOp =
   | { type: 'remove'; block: string; name: string }
   | { type: 'add'; block: string; name: string }
+  | { type: 'reps'; block: string; name: string; from?: string; to?: string }
+  | { type: 'reorder'; block: string }
 
 export type CapturedSession = {
   id: string
@@ -33,30 +36,61 @@ function multiset(names: string[]): Map<string, number> {
   return m
 }
 
-function blockNames(seq: Sequence): Map<string, string[]> {
-  const m = new Map<string, string[]>()
+function blockExercises(seq: Sequence): Map<string, SeqExercise[]> {
+  const m = new Map<string, SeqExercise[]>()
   for (const b of seq.blocks ?? []) {
     const cur = m.get(b.block) ?? []
-    m.set(b.block, [...cur, ...(b.exercises ?? []).map((e) => e.name)])
+    m.set(b.block, [...cur, ...(b.exercises ?? [])])
   }
   return m
 }
 
-// 생성본 → 최종본: 블록별로 빠진 동작(remove) / 추가된 동작(add)을 멀티셋 비교로 산출.
+// 생성본 → 최종본 diff. 블록별로:
+//  1) 동작 추가/삭제: 이름 멀티셋 delta
+//  2) reps 수정: 양쪽 공통 동작의 reps를 등장순으로 비교
+//  3) 순서 변경: add/remove가 없는(멀티셋 동일) 블록에서 이름 순서가 바뀌면 reorder 1건
+//     (add/remove가 있으면 순서 변화가 그에 섞여 모호 → 중복 신호 방지로 reorder는 생략)
 export function computeDiff(generated: Sequence, final: Sequence): DiffOp[] {
-  const gen = blockNames(generated)
-  const fin = blockNames(final)
+  const gen = blockExercises(generated)
+  const fin = blockExercises(final)
   const blocks = new Set<string>([...gen.keys(), ...fin.keys()])
   const ops: DiffOp[] = []
 
   for (const block of blocks) {
-    const g = multiset(gen.get(block) ?? [])
-    const f = multiset(fin.get(block) ?? [])
+    const gEx = gen.get(block) ?? []
+    const fEx = fin.get(block) ?? []
+    const gNames = gEx.map((e) => e.name)
+    const fNames = fEx.map((e) => e.name)
+    const g = multiset(gNames)
+    const f = multiset(fNames)
     const names = new Set<string>([...g.keys(), ...f.keys()])
+
+    // 1) 동작 추가/삭제
+    let structural = false
     for (const name of names) {
       const delta = (f.get(name) ?? 0) - (g.get(name) ?? 0)
-      if (delta < 0) for (let i = 0; i < -delta; i++) ops.push({ type: 'remove', block, name })
-      else if (delta > 0) for (let i = 0; i < delta; i++) ops.push({ type: 'add', block, name })
+      if (delta < 0) {
+        for (let i = 0; i < -delta; i++) ops.push({ type: 'remove', block, name })
+        structural = true
+      } else if (delta > 0) {
+        for (let i = 0; i < delta; i++) ops.push({ type: 'add', block, name })
+        structural = true
+      }
+    }
+
+    // 2) reps 수정 (공통 동작만, 등장순 매칭)
+    for (const name of names) {
+      const gr = gEx.filter((e) => e.name === name).map((e) => e.reps)
+      const fr = fEx.filter((e) => e.name === name).map((e) => e.reps)
+      const n = Math.min(gr.length, fr.length)
+      for (let i = 0; i < n; i++) {
+        if ((gr[i] ?? '') !== (fr[i] ?? '')) ops.push({ type: 'reps', block, name, from: gr[i], to: fr[i] })
+      }
+    }
+
+    // 3) 순서 변경
+    if (!structural && gNames.length === fNames.length && gNames.some((n, i) => n !== fNames[i])) {
+      ops.push({ type: 'reorder', block })
     }
   }
   return ops
