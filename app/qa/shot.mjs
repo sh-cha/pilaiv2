@@ -63,7 +63,7 @@ if (process.env.SHOT_GENERATE) {
     catch { console.log('⚠ 생성 시작 안 됨 (버튼 클릭 실패?)') }
     console.log('생성 중 (라이브 API)...')
     try {
-      await page.waitForSelector('text="저장만 하고 나중에"', { timeout: 150000 }) // SequenceScreen 도착
+      await page.waitForSelector('text="시퀀스 저장"', { timeout: 150000 }) // SequenceScreen 도착
       console.log('결과 도착')
     } catch {
       console.log('결과 대기 타임아웃 — 현재 화면(에러일 수 있음) 캡처')

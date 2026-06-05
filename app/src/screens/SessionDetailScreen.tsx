@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, Pressable, StyleSheet } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
-import { Card, SectionLabel, Divider, Button, Chip, ChipRow } from '../components/ui'
+import { Card, SectionLabel, Divider, Button } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { loadSessions, type CapturedSession } from '../lib/flywheel'
+import { ExerciseSheet } from '../components/ExerciseSheet'
 
 export function SessionDetailScreen() {
   const nav = useNav()
   const id: string | undefined = nav.route.params?.id
   const name: string | undefined = nav.route.params?.name
   const [session, setSession] = useState<CapturedSession | null>(null)
+  const [sheet, setSheet] = useState<{ name: string; reps?: string } | null>(null)
 
   useEffect(() => {
     loadSessions(kv).then((all) => setSession(all.find((s) => s.id === id) ?? null))
@@ -24,7 +26,20 @@ export function SessionDetailScreen() {
   return (
     <AppShell
       title={`${name ?? '수업'}${date ? ` · ${date}` : ''}`}
-      footer={session ? <Button title="이 시퀀스로 수업 시작" icon={<Icon name="spark" size={18} color="#fff" />} onPress={() => { nav.setCtx({ classSeq: session.final }); nav.go('classPlay') }} /> : undefined}
+      footer={
+        session ? (
+          <>
+            <Button
+              title="실시간으로 진행하기"
+              icon={<Icon name="spark" size={18} color="#fff" />}
+              onPress={() => { nav.setCtx({ classSeq: session.final, savedSessionId: session.id }); nav.go('classPlay') }}
+            />
+            <Pressable onPress={() => { nav.setCtx({ classSeq: session.final, savedSessionId: session.id }); nav.go('classComplete') }} style={st.doneOnly}>
+              <Text style={st.doneOnlyText}>실시간 없이 완료 처리</Text>
+            </Pressable>
+          </>
+        ) : undefined
+      }
     >
       {!session ? null : (
         <>
@@ -40,31 +55,6 @@ export function SessionDetailScreen() {
               <Card><Text style={st.noteText}>{session.note}</Text></Card>
             </>
           ) : null}
-          {session.nextTags && session.nextTags.length > 0 ? (
-            <>
-              <SectionLabel>다음 수업 태그</SectionLabel>
-              <ChipRow>{session.nextTags.map((t) => <Chip key={t} label={t} variant="tint" />)}</ChipRow>
-            </>
-          ) : null}
-
-          {session.diff.length > 0 && (
-            <>
-              <SectionLabel>편집 diff (학습 신호)</SectionLabel>
-              <Card>
-                {session.diff.map((d, i) => {
-                  const color =
-                    d.type === 'remove' ? colors.warnInk : d.type === 'add' ? colors.primary : colors.muted
-                  const text =
-                    d.type === 'remove' ? `−  [${d.block}] ${d.name}`
-                    : d.type === 'add' ? `+  [${d.block}] ${d.name}`
-                    : d.type === 'reps' ? `↺  [${d.block}] ${d.name} · 반복 ${d.from ?? '없음'} → ${d.to ?? '없음'}`
-                    : `⇅  [${d.block}] 순서 변경`
-                  return <Text key={i} style={[st.diff, { color }]}>{text}</Text>
-                })}
-              </Card>
-            </>
-          )}
-
           <SectionLabel>수행한 시퀀스</SectionLabel>
           {session.final.blocks.map((b, bi) => (
             <Card key={bi} style={{ marginBottom: 12 }}>
@@ -74,15 +64,16 @@ export function SessionDetailScreen() {
               </View>
               <Divider style={{ marginTop: 4, marginBottom: 8 }} />
               {b.exercises.map((it, ei) => (
-                <View key={ei} style={st.exRow}>
-                  <Text style={st.exName}>{it.name}</Text>
+                <Pressable key={ei} style={st.exRow} onPress={() => setSheet({ name: it.name, reps: it.reps })}>
+                  <Text style={st.exName}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
                   {it.reps ? <Text style={st.exReps}>{it.reps}</Text> : null}
-                </View>
+                </Pressable>
               ))}
             </Card>
           ))}
         </>
       )}
+      {sheet ? <ExerciseSheet name={sheet.name} reps={sheet.reps} onClose={() => setSheet(null)} /> : null}
     </AppShell>
   )
 }
@@ -99,4 +90,6 @@ const st = StyleSheet.create({
   exRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingVertical: 7, gap: 8 },
   exName: { flex: 1, fontFamily: font.semibold, fontSize: 14.5, color: colors.ink },
   exReps: { fontFamily: font.mono, fontSize: 13, color: colors.faint },
+  doneOnly: { alignItems: 'center', paddingVertical: 4 },
+  doneOnlyText: { fontFamily: font.semibold, fontSize: 14, color: colors.muted },
 })

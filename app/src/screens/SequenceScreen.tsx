@@ -97,7 +97,7 @@ export function SequenceScreen() {
     setSeq((prev) => {
       if (!prev) return prev
       const next = clone(prev)
-      next.blocks[bi].exercises.push({ name })
+      next.blocks[bi].exercises.push({ name, reps: '10회' })
       return next
     })
   // 동작 순서 변경 — 핸들 드래그로 from→to 이동
@@ -113,7 +113,7 @@ export function SequenceScreen() {
 
   const editCount = computeDiff(gen.sequence, seq).length
 
-  const save = async (then: 'home' | 'class') => {
+  const save = async () => {
     const session = buildCapturedSession({
       id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
       memberId: member?.id,
@@ -125,13 +125,8 @@ export function SequenceScreen() {
       usage: gen.usage,
     })
     await appendSession(kv, session)
-    if (then === 'class') {
-      nav.setCtx({ classSeq: seq, member, savedSessionId: session.id })
-      nav.reset('classPlay')
-    } else {
-      nav.toast(session.edited ? `편집 ${session.diff.length}건을 학습 데이터로 캡처했어요` : '시퀀스를 저장했어요')
-      nav.tab('home')
-    }
+    nav.toast('시퀀스를 저장했어요')
+    nav.tab('home')
   }
 
   const setupLine = input ? `${input.apparatus.join(', ')} · ${input.minutes}분${input.goals ? ' · ' + input.goals : ''}` : ''
@@ -139,14 +134,7 @@ export function SequenceScreen() {
   return (
     <AppShell
       title="생성된 시퀀스"
-      footer={
-        <>
-          <Button variant="dark" title="수업 시작" onPress={() => save('class')} />
-          <Pressable onPress={() => save('home')} style={st.saveOnly}>
-            <Text style={st.saveOnlyText}>저장만 하고 나중에</Text>
-          </Pressable>
-        </>
-      }
+      footer={<Button variant="dark" title="시퀀스 저장" onPress={save} />}
     >
       <View style={st.titleRow}>
         <View style={{ flex: 1 }}>

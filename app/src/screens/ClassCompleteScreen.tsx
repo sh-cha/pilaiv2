@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import { View, Text, Pressable, StyleSheet } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
-import { Card, SectionLabel, Chip, ChipRow, Button, Input } from '../components/ui'
+import { Card, SectionLabel, Button, Input } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { updateSession } from '../lib/flywheel'
-
-const NEXT_TAGS = ['#하체강화', '#골반교정', '#스프링업', '#코어유지', '#후면체인']
 
 function Toggle({ on, onPress }: { on: boolean; onPress: () => void }) {
   return (
@@ -23,9 +21,7 @@ export function ClassCompleteScreen() {
   const member = nav.ctx.member
   const count = nav.ctx.classSeq ? nav.ctx.classSeq.blocks.reduce((n, b) => n + b.exercises.length, 0) : 0
   const [note, setNote] = useState('')
-  const [tags, setTags] = useState<string[]>([])
   const [reqFb, setReqFb] = useState(true)
-  const tog = (v: string) => setTags((t) => (t.includes(v) ? t.filter((x) => x !== v) : [...t, v]))
 
   return (
     <AppShell
@@ -35,8 +31,8 @@ export function ClassCompleteScreen() {
           title="수업 종료"
           onPress={async () => {
             const sid = nav.ctx.savedSessionId
-            if (sid && (note.trim() || tags.length)) {
-              await updateSession(kv, sid, { note: note.trim() || undefined, nextTags: tags.length ? tags : undefined })
+            if (sid && note.trim()) {
+              await updateSession(kv, sid, { note: note.trim() })
             }
             nav.toast('수업을 마쳤어요')
             nav.tab('home')
@@ -52,13 +48,6 @@ export function ClassCompleteScreen() {
 
       <SectionLabel>강사 노트</SectionLabel>
       <Input value={note} onChangeText={setNote} placeholder="오늘 어깨 가동범위 좋아짐, 다음엔 후면체인 강화…" multiline style={{ minHeight: 92, textAlignVertical: 'top' }} />
-
-      <SectionLabel>다음 수업 태그</SectionLabel>
-      <ChipRow>
-        {NEXT_TAGS.map((t) => (
-          <Chip key={t} label={t} on={tags.includes(t)} onPress={() => tog(t)} />
-        ))}
-      </ChipRow>
 
       <Card style={{ marginTop: 20, flexDirection: 'row', alignItems: 'center', gap: 12 }}>
         <View style={{ flex: 1 }}>
