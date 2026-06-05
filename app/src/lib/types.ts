@@ -7,12 +7,14 @@ export type MemberInput = {
   minutes: number // 수업 길이
   todayCondition?: string // 그날 컨디션 (릴렉스 모드 분기)
   history?: string // 최근 이력 요약 (Phase 2 변주). flywheel.summarizeHistory 결과.
+  adjust?: string // 재생성 시 방향 지시 (예: "더 쉽게, 하체 강화")
 }
 
 export type SeqExercise = { name: string; reps?: string; reason?: string; caution?: string }
 export type SeqBlock = { block: string; apparatus: string; exercises: SeqExercise[] }
 export type Sequence = {
-  member_summary: string
+  member_summary: string // 상세 진단 (전체 설명)
+  summary_points?: string[] // 핵심 요약 불릿 2~3개 (강사 한눈 파악용). 구 세션은 없을 수 있어 optional
   mode: 'treatment' | 'relax'
   blocks: SeqBlock[]
 }

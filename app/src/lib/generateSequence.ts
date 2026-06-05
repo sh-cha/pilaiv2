@@ -45,6 +45,7 @@ const SYSTEM = `당신은 BASI 필라테스 시퀀스 생성 전문가입니다.
 ## 출력
 - 반드시 emit_sequence 도구를 1회 호출한다.
 - 카탈로그에 실제로 있는 동작 이름만 사용한다 (지어내지 않는다).
+- member_summary는 상세 진단, summary_points는 그 핵심을 2~3개 불릿으로 간결하게 (강사가 한눈에 본다).
 - 각 동작에 reps(반복수 또는 시간)를 반드시 채운다 — 선생님이 수업 중 그대로 보고 진행한다.`
 
 const SEQUENCE_TOOL = {
@@ -55,7 +56,12 @@ const SEQUENCE_TOOL = {
     properties: {
       member_summary: {
         type: 'string',
-        description: '회원 진단 요약 (증상 → 원인 근육 → 처방 방향, 2~3문장)',
+        description: '상세 진단 (증상 → 원인 근육 → 처방 방향). 강사가 "자세히"로 펼쳐 읽는 전체 설명.',
+      },
+      summary_points: {
+        type: 'array',
+        items: { type: 'string' },
+        description: '위 진단의 핵심을 강사가 한눈에 보는 2~3개 불릿. 각 한 문장, 간결하게. 예: "목디스크 고려해 경추 부하 동작 제외", "흉추 신전·견갑 안정화 우선".',
       },
       mode: { type: 'string', enum: ['treatment', 'relax'] },
       blocks: {
@@ -83,7 +89,7 @@ const SEQUENCE_TOOL = {
         },
       },
     },
-    required: ['member_summary', 'mode', 'blocks'],
+    required: ['member_summary', 'summary_points', 'mode', 'blocks'],
   },
 }
 
@@ -113,6 +119,9 @@ function catalogBlock(apparatus: string[]) {
 // 비캐시 후행 블록: 회원 정보 + 이력 (매 요청 가변).
 function memberBlock(input: MemberInput) {
   const history = input.history ? `\n\n${input.history}` : ''
+  const adjust = input.adjust
+    ? `\n\n## 재조정 요청\n직전 생성본을 본 선생님이 이렇게 바꿔달라고 했습니다: "${input.adjust}"\n이 요청을 우선 반영하되, 안전·금기·기구 흐름 규칙은 그대로 지키세요.`
+    : ''
   return {
     type: 'text' as const,
     text: `## 회원
@@ -122,7 +131,7 @@ function memberBlock(input: MemberInput) {
 목표: ${input.goals}
 사용 기구: ${input.apparatus.join(', ')}
 수업 길이: ${input.minutes}분
-그날 컨디션: ${input.todayCondition ?? '보통'}${history}`,
+그날 컨디션: ${input.todayCondition ?? '보통'}${history}${adjust}`,
   }
 }
 
