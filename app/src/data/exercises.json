@@ -9,7 +9,7 @@
     "block": "Leg Work",
     "series": "Sitting Series",
     "level": "Fundamental",
-    "setup": "Starting in Ankles position (page 90), Magic Circle above knees, perpendicular to floor",
+    "setup": "Starting in Ankles position, Magic Circle above knees, perpendicular to floor",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -35,7 +35,7 @@
     ],
     "block_ko": "레그 워크",
     "level_ko": "기초",
-    "setup_ko": "발목 포지션(90페이지 참고)에서 시작하여, 매직 서클을 무릎 위에 놓고 바닥과 수직이 되도록 위치시킵니다.",
+    "setup_ko": "발목 포지션에서 시작하여, 매직 서클을 무릎 위에 놓고 바닥과 수직이 되도록 위치시킵니다.",
     "movement_ko": {
       "exhale": "날숨: 두 다리를 모아 서클을 누릅니다.",
       "inhale": "들숨: 두 다리를 벌려 서클을 열어줍니다."
@@ -64,7 +64,7 @@
     "block": "Arm Work",
     "series": "Arms Supine Series",
     "level": "Fundamental",
-    "setup": "Starting in Extension Position (page 62) with arms out to sides in T position, hands in straps, palms facing body",
+    "setup": "Starting in Extension Position with arms out to sides in T position, hands in straps, palms facing body",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -95,7 +95,7 @@
     "block_ko": "팔 운동",
     "level_ko": "기초",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "익스텐션 포지션(62페이지)에서 시작합니다. 양팔을 옆으로 벌려 T자 형태로 뻗고, 손은 스트랩에 걸어 손바닥이 몸통을 향하도록 합니다.",
+    "setup_ko": "익스텐션 포지션에서 시작합니다. 양팔을 옆으로 벌려 T자 형태로 뻗고, 손은 스트랩에 걸어 손바닥이 몸통을 향하도록 합니다.",
     "movement_ko": {
       "exhale": "날숨과 함께 양팔을 몸통 옆으로 모읍니다.",
       "inhale": "들숨과 함께 양팔을 몸통에서 멀리 벌리며 시작 자세로 돌아옵니다."
@@ -128,7 +128,7 @@
     "block": "Leg Work",
     "series": "Gluteals Side Lying Series",
     "level": "Fundamental",
-    "setup": "Starting in Side Leg Lifts position (page 76), top leg in front of bottom leg, hip externally rotated, bottom leg straight and parallel, foot plantarflexed",
+    "setup": "Starting in Side Leg Lifts position, top leg in front of bottom leg, hip externally rotated, bottom leg straight and parallel, foot plantarflexed",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -157,7 +157,7 @@
     "block_ko": "다리 운동",
     "level_ko": "기초",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "옆으로 누운 다리 들기 자세(76페이지)에서 시작합니다. 위쪽 다리를 아래쪽 다리 앞에 놓고, 고관절을 외회전합니다. 아래쪽 다리는 곧게 펴서 평행하게 유지하고, 발은 족저굴곡(발끝을 뻗은 상태)합니다.",
+    "setup_ko": "옆으로 누운 다리 들기 자세에서 시작합니다. 위쪽 다리를 아래쪽 다리 앞에 놓고, 고관절을 외회전합니다. 아래쪽 다리는 곧게 펴서 평행하게 유지하고, 발은 족저굴곡(발끝을 뻗은 상태)합니다.",
     "movement_ko": {
       "exhale": "날숨에 다리를 들어올립니다.",
       "inhale": "들숨에 다리를 내립니다."
@@ -428,7 +428,7 @@
     "block": "Leg Work",
     "series": "Prone Series",
     "level": "Fundamental",
-    "setup": "Starting in Ankles Bent Knees (page 95), legs straight, thighs lifted off Mat, Magic Circle above ankles",
+    "setup": "Starting in Ankles Bent Knees, legs straight, thighs lifted off Mat, Magic Circle above ankles",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -458,7 +458,7 @@
     ],
     "block_ko": "다리 운동",
     "level_ko": "기초",
-    "setup_ko": "Ankles Bent Knees(95페이지) 자세에서 시작하여, 다리를 펴고 허벅지를 매트에서 들어 올린 상태로 매직 서클을 발목 위쪽에 위치시킵니다.",
+    "setup_ko": "Ankles Bent Knees 자세에서 시작하여, 다리를 펴고 허벅지를 매트에서 들어 올린 상태로 매직 서클을 발목 위쪽에 위치시킵니다.",
     "movement_ko": {
       "exhale": "다리를 모아 서클을 누릅니다.",
       "inhale": "다리를 벌립니다."
@@ -547,7 +547,7 @@
     "block": "Arm Work",
     "series": "Arms Kneeling Side Series",
     "level": "Advanced",
-    "setup": "Starting in Triceps position (page 35), arms in T position, palms facing up",
+    "setup": "Starting in Triceps position, arms in T position, palms facing up",
     "resistance": "extra light",
     "reps": null,
     "spring_setting": null,
@@ -581,7 +581,7 @@
     "block_ko": "팔 운동",
     "level_ko": "고급",
     "resistance_ko": "매우 가벼운 저항",
-    "setup_ko": "트라이셉스 자세(35페이지)에서 시작하여, 팔을 T자 모양으로 벌리고 손바닥이 위를 향하도록 합니다.",
+    "setup_ko": "트라이셉스 자세에서 시작하여, 팔을 T자 모양으로 벌리고 손바닥이 위를 향하도록 합니다.",
     "movement_ko": {
       "exhale": "팔을 머리 위로 들어 올립니다.",
       "inhale": "팔을 내려 시작 자세로 돌아옵니다."
@@ -616,7 +616,7 @@
     "block": "Arm Work",
     "series": "Arms Series",
     "level": "Fundamental",
-    "setup": "Starting in Arms Bent position (page 85), arms straight",
+    "setup": "Starting in Arms Bent position, arms straight",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -645,7 +645,7 @@
     ],
     "block_ko": "팔 운동",
     "level_ko": "기초",
-    "setup_ko": "팔 굽힌 자세(85페이지)에서 시작하여 팔을 곧게 뻗습니다.",
+    "setup_ko": "팔 굽힌 자세에서 시작하여 팔을 곧게 뻗습니다.",
     "movement_ko": {
       "exhale": "팔을 모아 누릅니다.",
       "inhale": "팔을 양옆으로 벌립니다."
@@ -918,12 +918,12 @@
     "block": "Full Body Integration II",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in Balance Control Back Prep (page 48)",
+    "setup": "Starting in Balance Control Back Prep",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
     "movement": {
-      "exhale": "Lift pelvis to Back Support position (page 39 Mat MAWB), moving carriage out",
+      "exhale": "Lift pelvis to Back Support position, moving carriage out",
       "inhale": "Lower pelvis, moving carriage in toward stopper, return to start position"
     },
     "muscle_focus": [
@@ -947,9 +947,9 @@
     "block_ko": "전신 통합 II",
     "level_ko": "상급",
     "resistance_ko": "약한 저항",
-    "setup_ko": "Balance Control Back Prep 시작 자세(48페이지)에서 시작합니다.",
+    "setup_ko": "Balance Control Back Prep 시작 자세에서 시작합니다.",
     "movement_ko": {
-      "exhale": "골반을 들어 올려 백 서포트 자세(매트 MAWB 39페이지)로 이동하며, 캐리지를 바깥쪽으로 밀어냅니다.",
+      "exhale": "골반을 들어 올려 백 서포트 자세로 이동하며, 캐리지를 바깥쪽으로 밀어냅니다.",
       "inhale": "골반을 내려 캐리지를 스토퍼 쪽으로 당기며 시작 자세로 돌아옵니다."
     },
     "muscle_focus_ko": [
@@ -1040,7 +1040,7 @@
     "block": "Full Body Integration II",
     "series": null,
     "level": "Advanced",
-    "setup": "Standing on carriage facing risers, hands placed on shoulder rests, shoulders over wrists, place one foot on footbar, plantarflexed, straighten leg, place other foot on footbar, plantarflexed, straighten leg into Front Support position (page 38 Mat MAWB)",
+    "setup": "Standing on carriage facing risers, hands placed on shoulder rests, shoulders over wrists, place one foot on footbar, plantarflexed, straighten leg, place other foot on footbar, plantarflexed, straighten leg into Front Support position",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -1069,7 +1069,7 @@
     "block_ko": "전신 통합 II",
     "level_ko": "상급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "캐리지 위에 리저 방향을 바라보고 서서, 양손을 숄더 레스트에 짚고 어깨가 손목 바로 위에 오도록 정렬합니다. 한 발씩 풋바 위에 올려 발목을 족저굴곡(발끝을 뻗은 상태)하고 무릎을 펴서, 양발 모두 풋바에 위치한 프론트 서포트(Front Support) 자세를 만듭니다 (매트 MAWB 38페이지 참고).",
+    "setup_ko": "캐리지 위에 리저 방향을 바라보고 서서, 양손을 숄더 레스트에 짚고 어깨가 손목 바로 위에 오도록 정렬합니다. 한 발씩 풋바 위에 올려 발목을 족저굴곡(발끝을 뻗은 상태)하고 무릎을 펴서, 양발 모두 풋바에 위치한 프론트 서포트(Front Support) 자세를 만듭니다.",
     "movement_ko": {
       "exhale": "날숨: 어깨를 굴곡하며 캐리지를 바깥쪽으로 밀어냅니다.",
       "inhale": "들숨: 어깨를 신전하며 캐리지를 스토퍼 방향으로 되돌려 시작 자세로 돌아옵니다."
@@ -1100,7 +1100,7 @@
     "block": "Leg Work",
     "series": "Sitting Series",
     "level": "Fundamental",
-    "setup": "Starting in Ankles position (page 90), Magic Circle below knees, parallel to floor",
+    "setup": "Starting in Ankles position, Magic Circle below knees, parallel to floor",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -1126,7 +1126,7 @@
     ],
     "block_ko": "다리 운동",
     "level_ko": "기초",
-    "setup_ko": "앵클스 포지션(90페이지)에서 시작하여, 매직 서클을 무릎 아래에 위치시키고 바닥과 평행하게 놓습니다.",
+    "setup_ko": "앵클스 포지션에서 시작하여, 매직 서클을 무릎 아래에 위치시키고 바닥과 평행하게 놓습니다.",
     "movement_ko": {
       "exhale": "날숨: 다리를 모아 서클을 누릅니다.",
       "inhale": "들숨: 다리를 벌립니다."
@@ -1156,7 +1156,7 @@
     "block": "Arm Work",
     "series": "Arms Sitting Series",
     "level": "Intermediate",
-    "setup": "Starting in Hug-a-Tree position (page 67), arms straight and reaching back, parallel to each other (as close as possible), hands holding handles",
+    "setup": "Starting in Hug-a-Tree position, arms straight and reaching back, parallel to each other (as close as possible), hands holding handles",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -1191,7 +1191,7 @@
     "block_ko": "팔 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운 저항에서 중간 저항",
-    "setup_ko": "허그 어 트리(Hug-a-Tree) 자세(67페이지)에서 시작합니다. 양팔을 쭉 펴서 뒤쪽으로 뻗고, 두 팔이 서로 평행하게(최대한 가깝게) 유지하며, 손으로 핸들을 잡습니다.",
+    "setup_ko": "허그 어 트리(Hug-a-Tree) 자세에서 시작합니다. 양팔을 쭉 펴서 뒤쪽으로 뻗고, 두 팔이 서로 평행하게(최대한 가깝게) 유지하며, 손으로 핸들을 잡습니다.",
     "movement_ko": {
       "exhale": "팔꿈치를 구부립니다.",
       "inhale": "팔을 펴서 시작 자세로 돌아옵니다."
@@ -1226,7 +1226,7 @@
     "block": "Hip Work",
     "series": "Supine Leg Series",
     "level": "Intermediate",
-    "setup": "Starting in Scissors position (page 56), open legs to V position",
+    "setup": "Starting in Scissors position, open legs to V position",
     "resistance": "light to medium",
     "reps": "Repeat 5 cycles on each leg",
     "spring_setting": null,
@@ -1261,7 +1261,7 @@
     "block_ko": "고관절 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운 강도에서 중간 강도",
-    "setup_ko": "시저스 자세(56페이지)에서 시작하여 두 다리를 V자 위치로 벌립니다.",
+    "setup_ko": "시저스 자세에서 시작하여 두 다리를 V자 위치로 벌립니다.",
     "movement_ko": {
       "exhale": "뒤쪽 무릎을 구부려 발끝으로 발판을 터치하고, 무릎을 가슴 쪽으로 당겨오면서 다리를 얼굴 위로 쭉 펴줍니다. 동시에 반대쪽 다리를 위로 올리며 뒤로 보내 반대 방향의 시저스 자세를 만들어줍니다.",
       "inhale": "같은 사이클을 반복합니다."
@@ -1295,7 +1295,7 @@
     "block": "Hip Work",
     "series": "Supine Leg Series",
     "level": "Intermediate",
-    "setup": "Starting in Scissors position (page 56), open legs to V position",
+    "setup": "Starting in Scissors position, open legs to V position",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -1324,7 +1324,7 @@
     "block_ko": "고관절 운동",
     "level_ko": "중급",
     "resistance_ko": "",
-    "setup_ko": "시저스 자세(56페이지)에서 시작하여 두 다리를 V자 형태로 벌립니다.",
+    "setup_ko": "시저스 자세에서 시작하여 두 다리를 V자 형태로 벌립니다.",
     "movement_ko": {
       "inhale": "앞쪽 무릎을 가슴 쪽으로 구부리며 다리를 뒤로 보내고, 발끝으로 스텝을 터치한 후 다리를 뻗습니다. 동시에 반대쪽 다리를 위로 들어 앞으로 보내 반대 방향의 시저스 자세를 만듭니다.",
       "exhale": "같은 동작을 반복합니다."
@@ -1431,7 +1431,7 @@
       "Hip extensor control"
     ],
     "cues": [
-      "Foot position is same as Parallel Toes in Footwork (page 18)/",
+      "Foot position is same as Parallel Toes in Footwork/",
       "Keep heels still/ adductors engaged and legs parallel/",
       "Minimize movement of carriage when rolling spine up and down",
       "Articulate through each vertebra as spine rolls up and down"
@@ -1456,7 +1456,7 @@
       "고관절 신전근 조절력 향상"
     ],
     "cues_ko": [
-      "발 위치는 풋워크의 패럴렐 토즈(18페이지)와 동일하게 설정합니다",
+      "발 위치는 풋워크의 패럴렐 토즈와 동일하게 설정합니다",
       "뒤꿈치는 고정하고 / 내전근에 힘을 주어 다리가 평행을 유지하도록 합니다",
       "척추를 롤업·롤다운할 때 캐리지의 움직임을 최소화합니다",
       "척추를 롤업·롤다운할 때 척추뼈 하나하나를 순서대로 분절하며 움직입니다"
@@ -1472,7 +1472,7 @@
     "block": "Spinal Articulation",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Bottom Lift position (page 42)",
+    "setup": "Starting in Bottom Lift position",
     "resistance": "medium",
     "reps": null,
     "spring_setting": null,
@@ -1491,7 +1491,7 @@
       "Knee extensor control"
     ],
     "cues": [
-      "Foot position is same as Parallel Toes in Footwork (page 18)",
+      "Foot position is same as Parallel Toes in Footwork",
       "Keep heels still, adductors engaged and legs parallel",
       "Do not straighten knees completely",
       "Keep pelvis lifted during extensions"
@@ -1503,7 +1503,7 @@
     "block_ko": "척추 분절 운동",
     "level_ko": "중급",
     "resistance_ko": "중간 강도",
-    "setup_ko": "바텀 리프트 자세에서 시작합니다 (42페이지 참고)",
+    "setup_ko": "바텀 리프트 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "날숨: 척추를 분절하며 위로 롤업합니다",
       "inhale": "들숨: 잠시 멈추고 자세를 유지합니다"
@@ -1519,7 +1519,7 @@
       "무릎 신전근 조절 능력 강화"
     ],
     "cues_ko": [
-      "발 위치는 풋워크의 패러렐 토우즈와 동일하게 유지합니다 (18페이지 참고)",
+      "발 위치는 풋워크의 패러렐 토우즈와 동일하게 유지합니다",
       "뒤꿈치를 고정하고, 내전근을 조여 두 다리를 평행하게 유지하세요",
       "무릎을 완전히 펴지 않도록 주의하세요",
       "익스텐션 동작 중에는 골반이 내려오지 않도록 높이를 유지하세요"
@@ -1595,7 +1595,7 @@
     "block": "Back Extension",
     "series": "Long Box Group",
     "level": "Intermediate",
-    "setup": "Start in Breaststroke Prep 1 position (page 79), elbows bent by sides of body, thumbs in straps, hands in line with shoulders",
+    "setup": "Start in Breaststroke Prep 1 position, elbows bent by sides of body, thumbs in straps, hands in line with shoulders",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -1625,7 +1625,7 @@
     "block_ko": "등 신전",
     "level_ko": "중급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "Breaststroke Prep 1 자세(79페이지 참고)로 시작합니다. 팔꿈치를 몸통 옆에서 구부리고, 엄지손가락을 스트랩에 걸어 손이 어깨와 일직선이 되도록 합니다.",
+    "setup_ko": "Breaststroke Prep 1 자세로 시작합니다. 팔꿈치를 몸통 옆에서 구부리고, 엄지손가락을 스트랩에 걸어 손이 어깨와 일직선이 되도록 합니다.",
     "movement_ko": {
       "inhale": "상체를 들어 올리며 팔을 앞으로 쭉 뻗은 후, 양옆으로 크게 원을 그리며 몸통 옆으로 가져옵니다.",
       "exhale": "팔꿈치를 구부리며 상체를 내려 시작 자세로 돌아옵니다."
@@ -1721,7 +1721,7 @@
     "block": "Back Extension",
     "series": "Long Box Group",
     "level": "Fundamental",
-    "setup": "Start in Breaststroke Prep 1 position (page 79)",
+    "setup": "Start in Breaststroke Prep 1 position",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -1752,7 +1752,7 @@
     "block_ko": "등 신전",
     "level_ko": "기초",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "Breaststroke Prep 1 자세에서 시작합니다 (79페이지 참고)",
+    "setup_ko": "Breaststroke Prep 1 자세에서 시작합니다",
     "movement_ko": {
       "inhale": "팔을 펴면서 동시에 상체를 들어올립니다",
       "exhale": "팔을 구부리며 상체를 내려 시작 자세로 돌아옵니다"
@@ -1854,7 +1854,7 @@
     "block": "Lateral Flexion / Rotation",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in Hug-a-Tree position (page 67)",
+    "setup": "Starting in Hug-a-Tree position",
     "resistance": "medium",
     "reps": null,
     "spring_setting": null,
@@ -1886,7 +1886,7 @@
     "block_ko": "측면 굴곡 / 회전",
     "level_ko": "고급",
     "resistance_ko": "중간",
-    "setup_ko": "Hug-a-Tree 자세에서 시작합니다 (67페이지 참고)",
+    "setup_ko": "Hug-a-Tree 자세에서 시작합니다",
     "movement_ko": {
       "inhale": "몸통을 측면으로 굴곡합니다",
       "exhale": "몸통을 캐딜락 방향으로 회전시키며, 위쪽 팔은 머리 위를 넘겨 호를 그리듯 가져가고, 아래쪽 팔은 몸 아래로 지나 반대편으로 뻗으며, 양팔을 뒤쪽으로 길게 뻗습니다"
@@ -2360,7 +2360,7 @@
     "block": "Foundation",
     "series": null,
     "level": "Fundamental",
-    "setup": "Starting in Chest Lift position (page 17)",
+    "setup": "Starting in Chest Lift position",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -2388,7 +2388,7 @@
     ],
     "block_ko": "기초",
     "level_ko": "기본",
-    "setup_ko": "체스트 리프트 자세에서 시작합니다 (17페이지 참고)",
+    "setup_ko": "체스트 리프트 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "한쪽 방향으로 회전합니다 / 반대쪽 방향으로 회전합니다",
       "inhale": "중립으로 돌아옵니다 / 중립으로 돌아옵니다"
@@ -2754,7 +2754,7 @@
     "block": "Spinal Articulation",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in Roll Over position (page 42), feet dorsiflexed and anchored on Mat, arms straight and overhead, hands holding feet (or calves)",
+    "setup": "Starting in Roll Over position, feet dorsiflexed and anchored on Mat, arms straight and overhead, hands holding feet (or calves)",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -2781,7 +2781,7 @@
     ],
     "block_ko": "척추 분절 운동",
     "level_ko": "상급",
-    "setup_ko": "롤 오버 자세(42페이지 참고)에서 시작합니다. 발목을 배측굴곡하여 매트에 고정하고, 팔은 머리 위로 뻗어 손으로 발(또는 종아리)을 잡습니다.",
+    "setup_ko": "롤 오버 자세에서 시작합니다. 발목을 배측굴곡하여 매트에 고정하고, 팔은 머리 위로 뻗어 손으로 발(또는 종아리)을 잡습니다.",
     "movement_ko": {
       "exhale": "한쪽 다리를 천장 방향으로 들어 올리며 2회 펄스합니다.",
       "inhale": "다리를 바꿉니다."
@@ -2811,7 +2811,7 @@
     "block": "Abdominal Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Hundred Prep position (page 27)",
+    "setup": "Starting in Hundred Prep position",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -2841,7 +2841,7 @@
     "block_ko": "복부 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "헌드레드 프렙 자세로 시작합니다 (27페이지 참고)",
+    "setup_ko": "헌드레드 프렙 자세로 시작합니다",
     "movement_ko": {
       "exhale": "머리와 가슴을 들어 올리고, 팔을 몸통 옆으로 뻗으며, 다리를 앞으로 펴고, 다리를 벌렸다가 모읍니다",
       "inhale": "무릎을 가슴 쪽으로 굽히고, 팔을 들어 올리며, 머리와 가슴을 내리고 시작 자세로 돌아옵니다"
@@ -2939,7 +2939,7 @@
     "block": "Lateral Flexion / Rotation",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in Roll Over position (page 59), legs overhead",
+    "setup": "Starting in Roll Over position, legs overhead",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -2970,7 +2970,7 @@
     ],
     "block_ko": "측면 굴곡 / 회전",
     "level_ko": "고급",
-    "setup_ko": "롤 오버 자세(59페이지 참조)에서 시작하여 다리를 머리 위로 들어올린 상태",
+    "setup_ko": "롤 오버 자세에서 시작하여 다리를 머리 위로 들어올린 상태",
     "movement_ko": {
       "inhale": "척추를 회전하며 다리를 한쪽으로 이동",
       "exhale": "몸통 측면을 따라 아래로 롤다운하며 다리를 원형으로 돌리고, 척추를 회전하여 반대쪽 몸통으로 롤업한 뒤, 척추를 회전하며 다리를 중앙으로 가져와 시작 자세로 돌아옴"
@@ -3064,7 +3064,7 @@
     "block": "Abdominal Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Double Leg Stretch position (page 30), place hands behind head, fingers interlaced",
+    "setup": "Starting in Double Leg Stretch position, place hands behind head, fingers interlaced",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -3094,7 +3094,7 @@
     ],
     "block_ko": "복부 운동",
     "level_ko": "중급",
-    "setup_ko": "더블 레그 스트레치 자세(30페이지)에서 시작하여, 양손을 깍지 끼어 머리 뒤에 받칩니다.",
+    "setup_ko": "더블 레그 스트레치 자세에서 시작하여, 양손을 깍지 끼어 머리 뒤에 받칩니다.",
     "movement_ko": {
       "exhale": "한쪽 다리를 길게 뻗으며 구부린 무릎 쪽으로 몸통을 회전합니다.",
       "inhale": "다리를 교체합니다."
@@ -3127,7 +3127,7 @@
     "block": "Arm Work",
     "series": "Arms Kneeling Side Series",
     "level": "Advanced",
-    "setup": "Starting in Deltoid Reach position (page 33), opposite hand in strap, palm facing body",
+    "setup": "Starting in Deltoid Reach position, opposite hand in strap, palm facing body",
     "resistance": "extra light",
     "reps": null,
     "spring_setting": null,
@@ -3160,7 +3160,7 @@
     "block_ko": "팔 운동",
     "level_ko": "고급",
     "resistance_ko": "매우 가벼운 저항",
-    "setup_ko": "델토이드 리치 자세(33페이지)에서 시작하며, 반대쪽 손으로 스트랩을 잡고 손바닥이 몸 쪽을 향하도록 합니다.",
+    "setup_ko": "델토이드 리치 자세에서 시작하며, 반대쪽 손으로 스트랩을 잡고 손바닥이 몸 쪽을 향하도록 합니다.",
     "movement_ko": {
       "exhale": "팔을 옆으로 쭉 뻗습니다.",
       "inhale": "팔을 굽혀 시작 자세로 돌아옵니다."
@@ -3380,7 +3380,7 @@
     "block": "Abdominal Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Lying supine, legs bent, hands on knees, shins parallel to Mat, trunk in Chest Lift position (page 17)",
+    "setup": "Lying supine, legs bent, hands on knees, shins parallel to Mat, trunk in Chest Lift position",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -3409,7 +3409,7 @@
     "block_ko": "복근 운동",
     "level_ko": "중급",
     "resistance_ko": "",
-    "setup_ko": "바닥에 등을 대고 누워, 무릎을 구부리고 양손을 무릎 위에 올립니다. 정강이는 매트와 평행하게 유지하고, 상체는 체스트 리프트 자세를 취합니다 (17페이지 참고).",
+    "setup_ko": "바닥에 등을 대고 누워, 무릎을 구부리고 양손을 무릎 위에 올립니다. 정강이는 매트와 평행하게 유지하고, 상체는 체스트 리프트 자세를 취합니다.",
     "movement_ko": {
       "inhale": "팔을 머리 위로 뻗으며 동시에 다리를 앞으로 쭉 펴줍니다.",
       "exhale": "팔을 원을 그리며 돌려 내리는 동시에 무릎을 가슴 쪽으로 당겨 시작 자세로 돌아옵니다."
@@ -3440,7 +3440,7 @@
     "block": "Abdominal Work",
     "series": "Abdominals Legs in Straps",
     "level": "Intermediate",
-    "setup": "Starting in Double Leg position (page 17)",
+    "setup": "Starting in Double Leg position",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -3471,7 +3471,7 @@
     "block_ko": "복부 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "Double Leg 시작 자세로 준비합니다 (17페이지 참고)",
+    "setup_ko": "Double Leg 시작 자세로 준비합니다",
     "movement_ko": {
       "inhale": "다리를 펴줍니다",
       "exhale": "다리를 구부리면서 몸통을 한쪽으로 회전합니다"
@@ -3566,7 +3566,7 @@
     "block": "Full Body Integration",
     "series": "Up Stretch Group",
     "level": "Fundamental",
-    "setup": "Starting in Up Stretch 1 position (page 53), feet flat on carriage, heels against shoulder rests",
+    "setup": "Starting in Up Stretch 1 position, feet flat on carriage, heels against shoulder rests",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -3599,7 +3599,7 @@
     "block_ko": "전신 통합",
     "level_ko": "기초",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "업 스트레치 1 자세(53페이지)에서 시작합니다. 발바닥 전체를 캐리지 위에 평평하게 놓고, 발뒤꿈치를 숄더 레스트에 붙입니다.",
+    "setup_ko": "업 스트레치 1 자세에서 시작합니다. 발바닥 전체를 캐리지 위에 평평하게 놓고, 발뒤꿈치를 숄더 레스트에 붙입니다.",
     "movement_ko": {
       "inhale": "들숨: 다리를 뒤로 밀어냅니다.",
       "exhale": "날숨: 다리를 앞으로 당겨 시작 자세로 돌아옵니다."
@@ -3634,7 +3634,7 @@
     "block": "Abdominal Work",
     "series": "Short Box Series",
     "level": "Intermediate",
-    "setup": "Starting in Round Back position (page 30), hands interlaced behind head",
+    "setup": "Starting in Round Back position, hands interlaced behind head",
     "resistance": "all springs attached to hold carriage in place",
     "reps": null,
     "spring_setting": null,
@@ -3666,7 +3666,7 @@
     "block_ko": "복부 운동",
     "level_ko": "중급",
     "resistance_ko": "캐리지가 움직이지 않도록 모든 스프링 연결",
-    "setup_ko": "Round Back 자세(30페이지)에서 시작하여 양손을 깍지 끼어 머리 뒤에 받칩니다",
+    "setup_ko": "Round Back 자세에서 시작하여 양손을 깍지 끼어 머리 뒤에 받칩니다",
     "movement_ko": {
       "inhale": "들숨: 몸통을 뒤로 힌지합니다",
       "exhale": "날숨: 몸통을 앞으로 힌지하며 시작 자세로 돌아옵니다"
@@ -3764,7 +3764,7 @@
     "block": "Leg Work",
     "series": "Gluteals Side Lying Series",
     "level": "Fundamental",
-    "setup": "Starting in Side Leg Lifts position (page 76)",
+    "setup": "Starting in Side Leg Lifts position",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -3793,7 +3793,7 @@
     "block_ko": "다리 운동",
     "level_ko": "기초",
     "resistance_ko": "가벼움에서 중간",
-    "setup_ko": "사이드 레그 리프트 자세로 시작합니다 (76페이지 참조)",
+    "setup_ko": "사이드 레그 리프트 자세로 시작합니다",
     "movement_ko": {
       "exhale": "다리를 앞으로 이동하여 고관절 굴곡 90도를 만들고, 다리를 들어 올린 후 내려줍니다",
       "inhale": "다리를 뒤로 이동하여 시작 자세로 돌아옵니다"
@@ -3824,7 +3824,7 @@
     "block": "Leg Work",
     "series": "Gluteals Side Lying Series",
     "level": "Fundamental",
-    "setup": "Starting in Side Leg Lifts position (page 76), bringing leg forward to 90 degrees hip flexion",
+    "setup": "Starting in Side Leg Lifts position, bringing leg forward to 90 degrees hip flexion",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -3854,7 +3854,7 @@
     "block_ko": "다리 운동",
     "level_ko": "기초",
     "resistance_ko": "가벼움에서 중간",
-    "setup_ko": "Side Leg Lifts 자세(76페이지)에서 시작하여 다리를 앞으로 가져와 고관절을 90도 굴곡시킵니다.",
+    "setup_ko": "Side Leg Lifts 자세에서 시작하여 다리를 앞으로 가져와 고관절을 90도 굴곡시킵니다.",
     "movement_ko": {
       "exhale": "다리를 내리고 올리며 5번 펄스",
       "inhale": "다리를 내리고 올리며 5번 펄스"
@@ -4078,7 +4078,7 @@
     "block": "Hip Work",
     "series": "Supine Leg Series",
     "level": "Intermediate",
-    "setup": "Starting in Frog Extended position (page 40)",
+    "setup": "Starting in Frog Extended position",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -4107,7 +4107,7 @@
     "block_ko": "고관절 운동",
     "level_ko": "중급",
     "resistance_ko": "약~중 저항",
-    "setup_ko": "Frog Extended 자세에서 시작합니다 (40페이지 참고)",
+    "setup_ko": "Frog Extended 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "날숨: 다리를 양옆으로 쭉 펴 뻗습니다",
       "inhale": "들숨: 잠시 멈추고 / 다리를 구부려 시작 자세로 돌아옵니다"
@@ -4390,7 +4390,7 @@
     "block": "Abdominal Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Chest Lift position (page 17), legs together, perpendicular to Mat, hands behind calves",
+    "setup": "Starting in Chest Lift position, legs together, perpendicular to Mat, hands behind calves",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -4420,7 +4420,7 @@
     ],
     "block_ko": "복부 운동",
     "level_ko": "중급",
-    "setup_ko": "체스트 리프트 자세(17페이지)에서 시작합니다. 두 다리를 모아 매트와 수직이 되도록 들어 올리고, 손은 종아리 뒤를 잡습니다.",
+    "setup_ko": "체스트 리프트 자세에서 시작합니다. 두 다리를 모아 매트와 수직이 되도록 들어 올리고, 손은 종아리 뒤를 잡습니다.",
     "movement_ko": {
       "exhale": "한쪽 다리를 매트 쪽으로 내리면서, 반대쪽 다리는 종아리를 잡고 가슴 방향으로 당깁니다 (2회 펄스).",
       "inhale": "다리를 서로 바꿉니다 (2회 펄스)."
@@ -4453,7 +4453,7 @@
     "block": "Abdominal Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Hamstring Pull 1 position (page 41), fingers interlaced behind head",
+    "setup": "Starting in Hamstring Pull 1 position, fingers interlaced behind head",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -4483,7 +4483,7 @@
     ],
     "block_ko": "복부 운동",
     "level_ko": "중급",
-    "setup_ko": "Hamstring Pull 1 자세(41페이지)에서 시작하며, 양손 손가락을 깍지 끼어 머리 뒤를 받칩니다.",
+    "setup_ko": "Hamstring Pull 1 자세에서 시작하며, 양손 손가락을 깍지 끼어 머리 뒤를 받칩니다.",
     "movement_ko": {
       "exhale": "한쪽 다리를 매트 쪽으로 내리면서, 반대쪽 다리를 가슴 쪽으로 당깁니다 (2회 펄스).",
       "inhale": "두 다리를 서로 바꿉니다."
@@ -4516,7 +4516,7 @@
     "block": "Abdominal Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Hamstring Pull 2 position (page 52)",
+    "setup": "Starting in Hamstring Pull 2 position",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -4548,7 +4548,7 @@
     ],
     "block_ko": "복부 운동",
     "level_ko": "중급",
-    "setup_ko": "Hamstring Pull 2 자세에서 시작합니다 (52페이지 참고)",
+    "setup_ko": "Hamstring Pull 2 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "한쪽 다리를 매트 쪽으로 내리고, 반대쪽 다리를 가슴 방향으로 들어올리면서 몸통을 들어올린 다리 쪽으로 회전합니다 (2회 펄스)",
       "inhale": "다리를 바꿉니다"
@@ -4584,7 +4584,7 @@
     "block": "Stretches",
     "series": "Ladder Barrel Stretch Series",
     "level": "Fundamental",
-    "setup": "Starting in Gluteal Stretch position (page 41) leg straight on barrel in line with hips foot dorsiflexed\nNote: Dorsiflexing foot, engaging back extensors and tilting pelvis anteriorly will intensify stretch",
+    "setup": "Starting in Gluteal Stretch position leg straight on barrel in line with hips foot dorsiflexed\nNote: Dorsiflexing foot, engaging back extensors and tilting pelvis anteriorly will intensify stretch",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -4615,7 +4615,7 @@
     ],
     "block_ko": "스트레칭",
     "level_ko": "기초",
-    "setup_ko": "둔근 스트레칭 자세(41페이지)에서 시작합니다. 한쪽 다리를 곧게 펴서 배럴 위에 올리고 고관절과 일직선이 되도록 정렬하며, 발목은 배측굴곡(dorsiflexion) 상태를 유지합니다.\\n※ 발목 배측굴곡, 등 신전근 활성화, 골반 전방경사를 함께 적용하면 스트레칭 강도가 높아집니다.",
+    "setup_ko": "둔근 스트레칭 자세에서 시작합니다. 한쪽 다리를 곧게 펴서 배럴 위에 올리고 고관절과 일직선이 되도록 정렬하며, 발목은 배측굴곡(dorsiflexion) 상태를 유지합니다.\\n※ 발목 배측굴곡, 등 신전근 활성화, 골반 전방경사를 함께 적용하면 스트레칭 강도가 높아집니다.",
     "movement_ko": {
       "inhale": "상체를 구부린 다리 쪽으로 앞으로 내려줍니다.",
       "exhale": "그 자세를 유지하며 3~5회 호흡을 반복한 후, 상체를 들어 올려 시작 자세로 돌아옵니다."
@@ -4709,7 +4709,7 @@
     "block": "Hip Work",
     "series": "Supine Leg Series",
     "level": "Intermediate",
-    "setup": "Starting in Frog position (page 71), hips externally rotated, legs straight and together, perpendicular to floor, feet plantarflexed",
+    "setup": "Starting in Frog position, hips externally rotated, legs straight and together, perpendicular to floor, feet plantarflexed",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -4741,7 +4741,7 @@
     ],
     "block_ko": "고관절 운동",
     "level_ko": "중급",
-    "setup_ko": "프로그 자세(71페이지)에서 시작합니다. 고관절을 외회전하고, 다리를 펴서 모은 뒤 바닥과 수직이 되도록 들어올립니다. 발은 발바닥굴곡(족저굴곡) 상태를 유지합니다.",
+    "setup_ko": "프로그 자세에서 시작합니다. 고관절을 외회전하고, 다리를 펴서 모은 뒤 바닥과 수직이 되도록 들어올립니다. 발은 발바닥굴곡(족저굴곡) 상태를 유지합니다.",
     "movement_ko": {
       "inhale": "다리를 벌려 시저스(Scissors) 자세로 엽니다.",
       "exhale": "다리를 원을 그리며 반대쪽 시저스(Scissors) 자세로 이동한 후 시작 자세로 돌아옵니다."
@@ -4775,7 +4775,7 @@
     "block": "Leg Work",
     "series": "Gluteals Kneeling Series",
     "level": "Fundamental",
-    "setup": "Starting in Hip Extension Bent Knee position (page 80)",
+    "setup": "Starting in Hip Extension Bent Knee position",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -4805,7 +4805,7 @@
     "block_ko": "다리 운동",
     "level_ko": "기초",
     "resistance_ko": "약~중간 저항",
-    "setup_ko": "Hip Extension Bent Knee 자세(80페이지)에서 시작합니다",
+    "setup_ko": "Hip Extension Bent Knee 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "다리를 옆으로 들어 올립니다",
       "inhale": "다리를 내려 시작 자세로 돌아옵니다"
@@ -4957,7 +4957,7 @@
     "block": "Hip Work",
     "series": "Single Hip Supine Series",
     "level": "Intermediate",
-    "setup": "Starting in Circles Down position (page 104)",
+    "setup": "Starting in Circles Down position",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -4986,7 +4986,7 @@
     "block_ko": "고관절 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "Circles Down 자세에서 시작합니다 (104페이지 참조)",
+    "setup_ko": "Circles Down 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "다리를 아래로 내립니다",
       "inhale": "다리를 들어 올려 시작 자세로 돌아옵니다"
@@ -5076,7 +5076,7 @@
     "block": "Leg Work",
     "series": "Gluteals Kneeling Series",
     "level": "Fundamental",
-    "setup": "Starting in Hip Extension Bent Knee position (page 80), one leg straight back, foot plantarflexed",
+    "setup": "Starting in Hip Extension Bent Knee position, one leg straight back, foot plantarflexed",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -5104,7 +5104,7 @@
     "block_ko": "다리 운동",
     "level_ko": "기초",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "Hip Extension Bent Knee 자세(80페이지)에서 시작하여, 한쪽 다리를 뒤로 쭉 뻗고 발목은 족저굴곡(발등을 길게 뻗은 상태)으로 유지합니다.",
+    "setup_ko": "Hip Extension Bent Knee 자세에서 시작하여, 한쪽 다리를 뒤로 쭉 뻗고 발목은 족저굴곡(발등을 길게 뻗은 상태)으로 유지합니다.",
     "movement_ko": {
       "exhale": "다리를 위로 들어올립니다.",
       "inhale": "다리를 내려 시작 자세로 돌아옵니다."
@@ -5327,7 +5327,7 @@
     "block": "Abdominal Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Hundred Prep position (page 27)",
+    "setup": "Starting in Hundred Prep position",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -5359,7 +5359,7 @@
     "block_ko": "복부 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼움에서 중간",
-    "setup_ko": "Hundred Prep 자세에서 시작합니다 (27페이지 참고)",
+    "setup_ko": "Hundred Prep 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "머리와 가슴을 들어 올리고, 양팔을 몸 옆으로 뻗어 바닥과 평행하게 유지하면서 두 다리를 앞으로 쭉 펴냅니다",
       "inhale": "동작을 준비합니다"
@@ -5458,7 +5458,7 @@
     "block": "Spinal Articulation",
     "series": null,
     "level": "Advanced",
-    "setup": "Lying supine in front of Wunda Chair in Roll Over position (page 42 Mat MAWB), arms straight, shoulder width apart, hands holding pedal, palms facing up",
+    "setup": "Lying supine in front of Wunda Chair in Roll Over position, arms straight, shoulder width apart, hands holding pedal, palms facing up",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -5491,7 +5491,7 @@
     "block_ko": "척추 분절 운동",
     "level_ko": "고급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "Wunda Chair 앞에서 롤 오버 자세로 등을 대고 눕습니다 (매트 MAWB 42페이지 참고). 양팔은 곧게 펴고 어깨 너비로 벌린 뒤, 손바닥이 위를 향하도록 하여 페달을 잡습니다.",
+    "setup_ko": "Wunda Chair 앞에서 롤 오버 자세로 등을 대고 눕습니다. 양팔은 곧게 펴고 어깨 너비로 벌린 뒤, 손바닥이 위를 향하도록 하여 페달을 잡습니다.",
     "movement_ko": {
       "inhale": "다리를 매트와 수직이 되도록 들어 올립니다.",
       "exhale": "롤 오버합니다."
@@ -5771,7 +5771,7 @@
     "block": "Bridging / Full Body Integration",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Back Support position (page 39)",
+    "setup": "Starting in Back Support position",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -5802,7 +5802,7 @@
     ],
     "block_ko": "브리징 / 전신 통합",
     "level_ko": "중급",
-    "setup_ko": "백 서포트 자세(39페이지)에서 시작합니다.",
+    "setup_ko": "백 서포트 자세에서 시작합니다.",
     "movement_ko": {
       "exhale": "다리를 들어올립니다.",
       "inhale": "다리를 내려줍니다."
@@ -5836,7 +5836,7 @@
     "block": "Bridging",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Front Support Position (page 38), one leg lifted slightly off Mat, foot plantarflexed",
+    "setup": "Starting in Front Support Position, one leg lifted slightly off Mat, foot plantarflexed",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -5867,7 +5867,7 @@
     ],
     "block_ko": "브리징",
     "level_ko": "중급",
-    "setup_ko": "프론트 서포트 포지션(38페이지)에서 시작하여, 한쪽 다리를 매트에서 살짝 들어 올리고 발끝을 뻗습니다.",
+    "setup_ko": "프론트 서포트 포지션에서 시작하여, 한쪽 다리를 매트에서 살짝 들어 올리고 발끝을 뻗습니다.",
     "movement_ko": {
       "exhale": "다리를 위로 들어 올립니다.",
       "inhale": "다리를 천천히 내립니다."
@@ -6019,7 +6019,7 @@
     "block": "Full Body Integration",
     "series": "Up Stretch Group",
     "level": "Intermediate",
-    "setup": "Starting in Front Support (Mat page 38) position, heels against shoulder rests",
+    "setup": "Starting in Front Support position, heels against shoulder rests",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -6051,7 +6051,7 @@
     "block_ko": "전신 통합",
     "level_ko": "중급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "프론트 서포트(매트 38페이지) 자세에서 시작하며, 뒤꿈치를 숄더 레스트에 댑니다.",
+    "setup_ko": "프론트 서포트 자세에서 시작하며, 뒤꿈치를 숄더 레스트에 댑니다.",
     "movement_ko": {
       "inhale": "들숨: 몸을 앞으로 밀어냅니다.",
       "exhale": "날숨: 몸을 뒤로 당겨 시작 자세로 돌아옵니다."
@@ -6379,7 +6379,7 @@
     "block": "Abdominal Work",
     "series": "Warm- Up Series",
     "level": "Intermediate",
-    "setup": "Lying supine in neutral spine position, legs bent and parallel, feet hip width apart, arms straight and shoulder width apart, hands holding PTBar, lift to Chest Lift position (Mat page 17), shoulders under PTBar",
+    "setup": "Lying supine in neutral spine position, legs bent and parallel, feet hip width apart, arms straight and shoulder width apart, hands holding PTBar, lift to Chest Lift position, shoulders under PTBar",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -6407,7 +6407,7 @@
     "block_ko": "복부 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "바로 누운 자세에서 척추 중립을 유지하고, 무릎을 구부려 다리를 나란히 놓습니다. 발은 골반 너비로 벌리고, 팔은 곧게 펴서 어깨 너비로 벌린 채 PT바를 양손으로 잡습니다. 체스트 리프트 자세(매트 17페이지 참고)로 올라온 후, PT바가 어깨 아래에 위치하도록 합니다.",
+    "setup_ko": "바로 누운 자세에서 척추 중립을 유지하고, 무릎을 구부려 다리를 나란히 놓습니다. 발은 골반 너비로 벌리고, 팔은 곧게 펴서 어깨 너비로 벌린 채 PT바를 양손으로 잡습니다. 체스트 리프트 자세로 올라온 후, PT바가 어깨 아래에 위치하도록 합니다.",
     "movement_ko": {
       "exhale": "날숨: 상체를 들어 올립니다.",
       "inhale": "들숨: 상체를 천천히 내려 시작 자세로 돌아옵니다."
@@ -6437,7 +6437,7 @@
     "block": "Abdominal Work",
     "series": "Warm Up Series",
     "level": "Intermediate",
-    "setup": "Start in Mini Roll-Up position (page 95), one hand holding PTBar, palm facing up aligned with shoulder, other hand behind head, lift to Chest Lift position, rotate trunk to Chest Lift with Rotation position (Mat page 18)",
+    "setup": "Start in Mini Roll-Up position, one hand holding PTBar, palm facing up aligned with shoulder, other hand behind head, lift to Chest Lift position, rotate trunk to Chest Lift with Rotation position",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -6468,7 +6468,7 @@
     "block_ko": "복부 운동",
     "level_ko": "중급",
     "resistance_ko": "약~중 저항",
-    "setup_ko": "Mini Roll-Up 자세(95페이지)에서 시작합니다. 한 손으로 PTBar를 잡고 손바닥이 위를 향하도록 하여 어깨 높이에 맞춰 정렬합니다. 반대 손은 머리 뒤에 놓습니다. Chest Lift 자세까지 들어 올린 후, 몸통을 회전하여 Chest Lift with Rotation 자세(매트 18페이지)를 취합니다.",
+    "setup_ko": "Mini Roll-Up 자세에서 시작합니다. 한 손으로 PTBar를 잡고 손바닥이 위를 향하도록 하여 어깨 높이에 맞춰 정렬합니다. 반대 손은 머리 뒤에 놓습니다. Chest Lift 자세까지 들어 올린 후, 몸통을 회전하여 Chest Lift with Rotation 자세를 취합니다.",
     "movement_ko": {
       "exhale": "날숨: 몸통을 들어 올립니다.",
       "inhale": "들숨: 몸통을 내려 시작 자세로 돌아옵니다."
@@ -7210,7 +7210,7 @@
     "block": "Spinal Articulation",
     "series": null,
     "level": "Intermediate",
-    "setup": "Lying supine in neutral spine position, legs bent, hip width apart, feet placed on pedal in Prehensile position (page 27 Foudation Reformer MAWB), pedal pressed down, arms by sides, palms down",
+    "setup": "Lying supine in neutral spine position, legs bent, hip width apart, feet placed on pedal in Prehensile position, pedal pressed down, arms by sides, palms down",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -7240,7 +7240,7 @@
     "block_ko": "척추 분절 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "바로 누운 자세에서 척추 중립을 유지하고, 무릎을 구부린 채 다리를 골반 너비로 벌립니다. 발은 프리헨사일 포지션으로 페달 위에 올려놓고(Foundation Reformer MAWB 27페이지 참조) 페달을 아래로 누릅니다. 팔은 몸 옆에 자연스럽게 내려놓고 손바닥은 바닥을 향합니다.",
+    "setup_ko": "바로 누운 자세에서 척추 중립을 유지하고, 무릎을 구부린 채 다리를 골반 너비로 벌립니다. 발은 프리헨사일 포지션으로 페달 위에 올려놓고 페달을 아래로 누릅니다. 팔은 몸 옆에 자연스럽게 내려놓고 손바닥은 바닥을 향합니다.",
     "movement_ko": {
       "exhale": "골반과 척추를 위로 말아 올립니다.",
       "inhale": "동작을 멈추고 유지합니다."
@@ -7647,7 +7647,7 @@
     "block": "Back Extension",
     "series": "Push Through Group",
     "level": "Advanced",
-    "setup": "Starting in Prone 1 position (page 81)",
+    "setup": "Starting in Prone 1 position",
     "resistance": "medium to heavy",
     "reps": null,
     "spring_setting": null,
@@ -7676,7 +7676,7 @@
     "block_ko": "등 신전",
     "level_ko": "고급",
     "resistance_ko": "중간~강함",
-    "setup_ko": "Prone 1 자세에서 시작합니다 (81페이지 참고)",
+    "setup_ko": "Prone 1 자세에서 시작합니다",
     "movement_ko": {
       "inhale": "팔꿈치가 바깥쪽을 향하도록 팔을 구부리며 PTBar를 앞쪽 위로 당깁니다",
       "exhale": "상체를 들어 올리며 팔을 천장 방향으로 뻗어 펴줍니다"
@@ -7771,7 +7771,7 @@
     "block": "Back Extension",
     "series": "Long Box Group",
     "level": "Intermediate",
-    "setup": "Starting in Pulling Straps 1 position (page 82), arms in T position, parallel to floor, holding straps, palms facing down",
+    "setup": "Starting in Pulling Straps 1 position, arms in T position, parallel to floor, holding straps, palms facing down",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -7802,7 +7802,7 @@
     "block_ko": "등 신전",
     "level_ko": "중급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "Pulling Straps 1 자세(82페이지)에서 시작합니다. 팔을 T자 형태로 벌려 바닥과 평행하게 위치시키고, 스트랩을 잡은 손바닥이 아래를 향하도록 합니다.",
+    "setup_ko": "Pulling Straps 1 자세에서 시작합니다. 팔을 T자 형태로 벌려 바닥과 평행하게 위치시키고, 스트랩을 잡은 손바닥이 아래를 향하도록 합니다.",
     "movement_ko": {
       "inhale": "몸통을 들어 올리면서 팔을 몸 옆으로 모아줍니다.",
       "exhale": "몸통을 내리면서 팔을 다시 T자 위치로 되돌려 시작 자세로 돌아옵니다."
@@ -7835,7 +7835,7 @@
     "block": "Arm Work",
     "series": "Arms Standing Series",
     "level": "Intermediate",
-    "setup": "Starting in Hug-a-Tree position (page 67), hands holding handles (fist or open hand) at eye level, palms facing down, arms bent, elbows out to sides",
+    "setup": "Starting in Hug-a-Tree position, hands holding handles (fist or open hand) at eye level, palms facing down, arms bent, elbows out to sides",
     "resistance": "medium",
     "reps": null,
     "spring_setting": null,
@@ -7868,7 +7868,7 @@
     "block_ko": "팔 운동",
     "level_ko": "중급",
     "resistance_ko": "중간 저항",
-    "setup_ko": "Hug-a-Tree 자세(67페이지)에서 시작합니다. 핸들을 쥐고(주먹 또는 손바닥 펼침) 눈높이에서 손바닥이 아래를 향하도록 하며, 팔을 구부리고 팔꿈치를 양옆으로 벌립니다.",
+    "setup_ko": "Hug-a-Tree 자세에서 시작합니다. 핸들을 쥐고(주먹 또는 손바닥 펼침) 눈높이에서 손바닥이 아래를 향하도록 하며, 팔을 구부리고 팔꿈치를 양옆으로 벌립니다.",
     "movement_ko": {
       "exhale": "한쪽 팔을 앞으로 쭉 펴는 동시에 반대쪽 팔로 교차하며 스위치합니다.",
       "inhale": "동일한 동작 패턴을 반복합니다."
@@ -7902,7 +7902,7 @@
     "block": "Bridging",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in Front Support postion (see page 38)",
+    "setup": "Starting in Front Support postion",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -7930,7 +7930,7 @@
     ],
     "block_ko": "브리징",
     "level_ko": "고급",
-    "setup_ko": "프론트 서포트 자세에서 시작합니다 (38페이지 참고)",
+    "setup_ko": "프론트 서포트 자세에서 시작합니다",
     "movement_ko": {
       "inhale": "팔꿈치를 구부립니다",
       "exhale": "팔을 펴줍니다 (반복 후), 골반을 위로 들어올리고, 손을 발 쪽으로 걸어오며, 팔을 곧게 편 상태에서 체중을 발로 이동하고, 척추를 위로 천천히 롤업합니다"
@@ -8072,7 +8072,7 @@
     "block": "Arm Work",
     "series": "Arms Sitting Series",
     "level": "Intermediate",
-    "setup": "Starting in Biceps position (page 68), arms bent at 90 degrees and parallel to each other, shoulder height, forearms in straps, palms facing body",
+    "setup": "Starting in Biceps position, arms bent at 90 degrees and parallel to each other, shoulder height, forearms in straps, palms facing body",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -8104,7 +8104,7 @@
     "block_ko": "팔 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "바이셉스 자세(68페이지)에서 시작합니다. 양팔을 90도로 구부려 서로 평행하게 유지하고, 어깨 높이에서 전완을 스트랩에 끼운 채 손바닥이 몸을 향하도록 합니다.",
+    "setup_ko": "바이셉스 자세에서 시작합니다. 양팔을 90도로 구부려 서로 평행하게 유지하고, 어깨 높이에서 전완을 스트랩에 끼운 채 손바닥이 몸을 향하도록 합니다.",
     "movement_ko": {
       "exhale": "팔을 양 옆으로 벌립니다.",
       "inhale": "팔을 앞으로 모아 시작 자세로 돌아옵니다."
@@ -8138,7 +8138,7 @@
     "block": "Arm Work",
     "series": "Arms Sitting Series",
     "level": "Advanced",
-    "setup": "Starting in Rhomboids 1 position (page 69).",
+    "setup": "Starting in Rhomboids 1 position.",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -8171,7 +8171,7 @@
     "block_ko": "팔 운동",
     "level_ko": "고급",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "Rhomboids 1 자세(69페이지)에서 시작합니다.",
+    "setup_ko": "Rhomboids 1 자세에서 시작합니다.",
     "movement_ko": {
       "exhale": "팔을 양옆으로 벌리며 견갑골을 안쪽으로 모아줍니다.",
       "inhale": "견갑골을 바깥쪽으로 벌리며 팔을 앞으로 가져와 시작 자세로 돌아옵니다."
@@ -8206,7 +8206,7 @@
     "block": "Back Extension",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in lifted position of Rocking Prep (page 48)",
+    "setup": "Starting in lifted position of Rocking Prep",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -8236,7 +8236,7 @@
     ],
     "block_ko": "등 신전",
     "level_ko": "고급",
-    "setup_ko": "Rocking Prep(48페이지)의 들어 올린 자세에서 시작합니다",
+    "setup_ko": "Rocking Prep의 들어 올린 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "앞으로 흔들며 발을 천장 방향으로 들어 올립니다",
       "inhale": "뒤로 흔들며 정수리를 천장 방향으로 들어 올립니다"
@@ -8477,7 +8477,7 @@
       "Hip flexors control"
     ],
     "cues": [
-      "Pause briefly in Chest Lift position (page 17)",
+      "Pause briefly in Chest Lift position",
       "Maintain C curve position when rolling up and rolling down",
       "Pause when shoulders are aligned above hip joints",
       "Keep head aligned with spine"
@@ -8503,7 +8503,7 @@
       "고관절 굴곡근 조절 능력 향상"
     ],
     "cues_ko": [
-      "체스트 리프트(Chest Lift) 자세(17페이지)에서 잠깐 멈춰 주세요.",
+      "체스트 리프트(Chest Lift) 자세에서 잠깐 멈춰 주세요.",
       "롤업과 롤다운 시 C커브 자세를 유지하세요.",
       "어깨가 고관절 바로 위에 정렬될 때 잠시 멈춰 주세요.",
       "머리가 척추의 연장선상에 오도록 정렬을 유지하세요."
@@ -8767,7 +8767,7 @@
     "block": "Abdominal Work",
     "series": "Short Box Series",
     "level": "Advanced",
-    "setup": "Starting in Flat Back position (page 31)",
+    "setup": "Starting in Flat Back position",
     "resistance": "all springs attached to hold carriage in place",
     "reps": null,
     "spring_setting": null,
@@ -8798,7 +8798,7 @@
     "block_ko": "복부 운동",
     "level_ko": "상급",
     "resistance_ko": "캐리지가 움직이지 않도록 모든 스프링 연결",
-    "setup_ko": "플랫 백 자세로 시작 (31페이지 참고)",
+    "setup_ko": "플랫 백 자세로 시작",
     "movement_ko": {
       "inhale": "몸통을 회전하며 대각선 방향으로 뒤쪽으로 내려갑니다",
       "exhale": "반대 방향으로 회전하며 몸통을 중앙으로 끌어올리고, 정면으로 회전하여 시작 자세로 돌아옵니다"
@@ -8906,7 +8906,7 @@
     "block": "Arm Work",
     "series": "Rowing Series",
     "level": "Intermediate",
-    "setup": "Starting in Rowing Back 1 position (page 26), palms facing up",
+    "setup": "Starting in Rowing Back 1 position, palms facing up",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -8936,7 +8936,7 @@
     "block_ko": "팔 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "Rowing Back 1 자세(26페이지)에서 시작하며, 손바닥이 위를 향하도록 합니다.",
+    "setup_ko": "Rowing Back 1 자세에서 시작하며, 손바닥이 위를 향하도록 합니다.",
     "movement_ko": {
       "inhale": "팔꿈치를 90도로 굽힙니다.",
       "exhale": "몸을 롤다운하며 팔을 옆으로 내려줍니다."
@@ -9041,7 +9041,7 @@
     "block": "Arm Work",
     "series": "Rowing Series",
     "level": "Intermediate",
-    "setup": "Starting in Rowing Front 1 position (page 30)",
+    "setup": "Starting in Rowing Front 1 position",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -9077,7 +9077,7 @@
     "block_ko": "팔 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "Rowing Front 1 시작 자세에서 시작합니다 (30페이지 참고)",
+    "setup_ko": "Rowing Front 1 시작 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "몸통을 앞으로 둥글게 굽히고, 팔꿈치를 옆구리 가까이 당기며, 전완은 캐리지와 평행하게, 손은 어깨 바로 아래에 위치시킵니다",
       "inhale": "몸통을 대각선 방향으로 펴고, 팔을 머리 위로 뻗으며, 어깨를 내회전시킵니다"
@@ -9114,7 +9114,7 @@
     "block": "Arm Work",
     "series": "Arms Sitting Series",
     "level": "Intermediate",
-    "setup": "Starting in Hug-a-Tree position (page 71), arms bent, hands in straps in line with eyes, fingers facing forward",
+    "setup": "Starting in Hug-a-Tree position, arms bent, hands in straps in line with eyes, fingers facing forward",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -9146,7 +9146,7 @@
     "block_ko": "팔 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "Hug-a-Tree 자세(71페이지)에서 시작합니다. 팔꿈치를 구부린 채 손은 스트랩을 잡고 눈높이에 위치시키며, 손가락은 정면을 향합니다.",
+    "setup_ko": "Hug-a-Tree 자세에서 시작합니다. 팔꿈치를 구부린 채 손은 스트랩을 잡고 눈높이에 위치시키며, 손가락은 정면을 향합니다.",
     "movement_ko": {
       "exhale": "팔을 앞 대각선 방향으로 쭉 뻗어 올립니다.",
       "inhale": "팔꿈치를 구부리며 시작 자세로 돌아옵니다."
@@ -9493,7 +9493,7 @@
     "block": "Spinal Articulation",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Semi-Circle position (page 22)",
+    "setup": "Starting in Semi-Circle position",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -9523,7 +9523,7 @@
     "block_ko": "척추 분절 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운~중간 저항",
-    "setup_ko": "세미서클 자세에서 시작합니다 (22페이지 참고)",
+    "setup_ko": "세미서클 자세에서 시작합니다",
     "movement_ko": {
       "inhale": "다리를 뻗습니다 (완전히 펴지 않도록 주의)",
       "exhale": "척추를 분절하며 롤다운합니다\n들숨: 무릎을 구부립니다\n날숨: 척추를 분절하며 롤업하여 시작 자세로 돌아옵니다"
@@ -9557,7 +9557,7 @@
     "block": "Spinal Articulation",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Frog Extended position (page 40), headrest down",
+    "setup": "Starting in Frog Extended position, headrest down",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -9587,7 +9587,7 @@
     "block_ko": "척추 분절 운동",
     "level_ko": "중급",
     "resistance_ko": "라이트~미디엄",
-    "setup_ko": "Frog Extended 자세(40페이지)에서 시작, 헤드레스트는 내린 상태",
+    "setup_ko": "Frog Extended 자세에서 시작, 헤드레스트는 내린 상태",
     "movement_ko": {
       "exhale": "다리를 펴고 발끝을 멀리 뻗습니다 (족저굴곡)",
       "inhale": "골반을 최대한 안정적으로 유지하면서 다리를 머리 위로 가져옵니다"
@@ -9738,7 +9738,7 @@
     "block": "Bridging",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in up phase of Pelvic Curl (page 15), one leg straight, foot plantarflexed, reaching toward ceiling",
+    "setup": "Starting in up phase of Pelvic Curl, one leg straight, foot plantarflexed, reaching toward ceiling",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -9769,7 +9769,7 @@
     ],
     "block_ko": "브리징",
     "level_ko": "중급",
-    "setup_ko": "골반 컬(15페이지)의 상단 자세에서 시작합니다. 한쪽 다리를 쭉 펴고, 발끝을 아래로 뻗어(족저굴곡) 천장 방향으로 뻗어 올립니다.",
+    "setup_ko": "골반 컬의 상단 자세에서 시작합니다. 한쪽 다리를 쭉 펴고, 발끝을 아래로 뻗어(족저굴곡) 천장 방향으로 뻗어 올립니다.",
     "movement_ko": {
       "exhale": "다리를 천천히 내립니다.",
       "inhale": "다리를 들어 올리며 발끝을 몸 쪽으로 당깁니다(배측굴곡)."
@@ -9803,7 +9803,7 @@
     "block": "Bridging",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in up phase of Pelvic Curl (page 15)",
+    "setup": "Starting in up phase of Pelvic Curl",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -9835,7 +9835,7 @@
     ],
     "block_ko": "브리징",
     "level_ko": "중급",
-    "setup_ko": "Pelvic Curl의 올라간 자세(15페이지)에서 시작합니다",
+    "setup_ko": "Pelvic Curl의 올라간 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "한쪽 다리를 가슴 쪽으로 들어 올리며 발목을 족저굴곡합니다",
       "inhale": "다리를 내려 발끝이 매트에 살짝 닿게 합니다"
@@ -9934,7 +9934,7 @@
     "block": "Arm Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Shoulder Push position (page 24), one hand placed on footbar in line with shoulder, arm straight, other hand placed on front edge of carriage, trunk on diagonal line, neutral spine position, lower trunk to thighs, pushing carriage out",
+    "setup": "Starting in Shoulder Push position, one hand placed on footbar in line with shoulder, arm straight, other hand placed on front edge of carriage, trunk on diagonal line, neutral spine position, lower trunk to thighs, pushing carriage out",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -9964,7 +9964,7 @@
     "block_ko": "팔 운동",
     "level_ko": "중급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "숄더 푸시 자세(24페이지 참고)에서 시작합니다. 한 손은 어깨 너비에 맞춰 풋바 위에 놓고 팔을 쭉 펴고, 다른 손은 캐리지 앞쪽 모서리에 올려놓습니다. 몸통은 대각선 방향으로 유지하고, 척추는 중립 자세를 취합니다. 하체부터 허벅지까지 낮추며 캐리지를 밖으로 밀어냅니다.",
+    "setup_ko": "숄더 푸시 자세에서 시작합니다. 한 손은 어깨 너비에 맞춰 풋바 위에 놓고 팔을 쭉 펴고, 다른 손은 캐리지 앞쪽 모서리에 올려놓습니다. 몸통은 대각선 방향으로 유지하고, 척추는 중립 자세를 취합니다. 하체부터 허벅지까지 낮추며 캐리지를 밖으로 밀어냅니다.",
     "movement_ko": {
       "inhale": "팔꿈치를 구부립니다",
       "exhale": "팔을 쭉 펴며 밀어냅니다"
@@ -10968,7 +10968,7 @@
     "block": "Full Body Integration",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Sitting Forward position (page 110)",
+    "setup": "Starting in Sitting Forward position",
     "resistance": "medium",
     "reps": null,
     "spring_setting": null,
@@ -10997,7 +10997,7 @@
     "block_ko": "전신 통합",
     "level_ko": "중급",
     "resistance_ko": "중간",
-    "setup_ko": "앉아서 앞을 향하는 자세(110페이지)에서 시작합니다",
+    "setup_ko": "앉아서 앞을 향하는 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "몸통을 C커브로 둥글게 말아 뒤로 기울이기 / 손을 PTBar로 되돌리기",
       "inhale": "한 손을 놓고 뒤쪽으로 뻗기, 손바닥은 위를 향하게 / 몸통을 세워 바르게 앉은 자세로 돌아오기"
@@ -11089,7 +11089,7 @@
     "block": "Arm Work",
     "series": "Arms Series",
     "level": "Fundamental",
-    "setup": "Starting in Single Arm Side Press position (page 88), hand holding Magic Circle in one hand, resting it on shoulder",
+    "setup": "Starting in Single Arm Side Press position, hand holding Magic Circle in one hand, resting it on shoulder",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -11116,7 +11116,7 @@
     ],
     "block_ko": "팔 운동",
     "level_ko": "기초",
-    "setup_ko": "한 팔 사이드 프레스 자세(88페이지)에서 시작하여, 한 손으로 매직 서클을 잡고 어깨 위에 올려놓습니다.",
+    "setup_ko": "한 팔 사이드 프레스 자세에서 시작하여, 한 손으로 매직 서클을 잡고 어깨 위에 올려놓습니다.",
     "movement_ko": {
       "exhale": "팔을 아래로 누릅니다.",
       "inhale": "팔을 위로 들어 올립니다."
@@ -11518,7 +11518,7 @@
     "block": "Abdominal Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Double Leg Stretch position (page 30)",
+    "setup": "Starting in Double Leg Stretch position",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -11547,7 +11547,7 @@
     ],
     "block_ko": "복부 운동",
     "level_ko": "중급",
-    "setup_ko": "더블 레그 스트레치 자세(30페이지)에서 시작합니다",
+    "setup_ko": "더블 레그 스트레치 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "한쪽 다리를 뻗으며, 양손은 구부린 무릎 위에 올립니다",
       "inhale": "다리를 교차합니다"
@@ -11768,7 +11768,7 @@
     "block": "Lateral Flexion / Rotation",
     "series": "Push Through Group",
     "level": "Intermediate",
-    "setup": "Starting in Scapular Glide position (page 74)",
+    "setup": "Starting in Scapular Glide position",
     "resistance": "medium",
     "reps": null,
     "spring_setting": null,
@@ -11799,7 +11799,7 @@
     "block_ko": "측면 굴곡 / 회전",
     "level_ko": "중급",
     "resistance_ko": "중간",
-    "setup_ko": "견갑골 글라이드 자세에서 시작합니다 (74페이지 참고)",
+    "setup_ko": "견갑골 글라이드 자세에서 시작합니다",
     "movement_ko": {
       "inhale": "견갑골을 내전합니다",
       "exhale": "어깨를 내전하고 견갑골을 외전하면서 몸통을 측면으로 굴곡합니다. 팔을 머리 위로 뻗으며 몸통을 내려주되, 지지하는 팔은 매트와 평행을 유지합니다"
@@ -12324,7 +12324,7 @@
     "block": "Full Body Integration",
     "series": "Stomach Massage Group",
     "level": "Intermediate",
-    "setup": "Starting in Stomach Massage position (page 57), arms bent, hands on shoulder rests, fingers facing away from body, back straight",
+    "setup": "Starting in Stomach Massage position, arms bent, hands on shoulder rests, fingers facing away from body, back straight",
     "resistance": "medium",
     "reps": null,
     "spring_setting": null,
@@ -12355,7 +12355,7 @@
     "block_ko": "전신 통합",
     "level_ko": "중급",
     "resistance_ko": "중간",
-    "setup_ko": "Stomach Massage 자세(57페이지 참고)에서 시작합니다. 팔꿈치를 구부린 상태로 양손을 숄더 레스트에 올리고, 손가락은 몸 바깥쪽을 향하게 합니다. 등은 곧게 펍니다.",
+    "setup_ko": "Stomach Massage 자세에서 시작합니다. 팔꿈치를 구부린 상태로 양손을 숄더 레스트에 올리고, 손가락은 몸 바깥쪽을 향하게 합니다. 등은 곧게 펍니다.",
     "movement_ko": {
       "exhale": "다리를 펴면서 발을 배굴(발등 굽힘)한 뒤, 이어서 발을 저굴(발바닥 굽힘)합니다.",
       "inhale": "무릎을 구부려 시작 자세로 돌아옵니다."
@@ -12388,7 +12388,7 @@
     "block": "Full Body Integration",
     "series": "Stomach Massage Group",
     "level": "Intermediate",
-    "setup": "Starting in Stomach Massage Flat Back position (page 58), back straight, arms staight, reaching up and forward, wide V position, palms facing down",
+    "setup": "Starting in Stomach Massage Flat Back position, back straight, arms staight, reaching up and forward, wide V position, palms facing down",
     "resistance": "medium",
     "reps": null,
     "spring_setting": null,
@@ -12419,7 +12419,7 @@
     "block_ko": "전신 통합",
     "level_ko": "중급",
     "resistance_ko": "중간 저항",
-    "setup_ko": "Stomach Massage Flat Back 자세(58페이지)에서 시작합니다. 등을 곧게 펴고, 양팔을 뻗어 앞 위쪽 대각선 방향으로 뻗습니다. 다리는 넓은 V자 포지션으로 놓고, 손바닥은 바닥을 향하게 합니다.",
+    "setup_ko": "Stomach Massage Flat Back 자세에서 시작합니다. 등을 곧게 펴고, 양팔을 뻗어 앞 위쪽 대각선 방향으로 뻗습니다. 다리는 넓은 V자 포지션으로 놓고, 손바닥은 바닥을 향하게 합니다.",
     "movement_ko": {
       "exhale": "다리를 펴면서 발을 발등 굴곡(dorsiflexion)한 후 발바닥 굴곡(plantarflexion)합니다.",
       "inhale": "무릎을 굽혀 시작 자세로 돌아옵니다."
@@ -12706,7 +12706,7 @@
     "block": "Back Extension",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in lifted position of Swan Dive Prep (page 60)",
+    "setup": "Starting in lifted position of Swan Dive Prep",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -12734,7 +12734,7 @@
     ],
     "block_ko": "등 신전",
     "level_ko": "고급",
-    "setup_ko": "Swan Dive Prep(60페이지)의 들어올린 자세에서 시작합니다",
+    "setup_ko": "Swan Dive Prep의 들어올린 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "상체를 앞으로 내려뜨리고, 손을 이마 아래에 놓으며, 다리를 천장 방향으로 들어올립니다",
       "inhale": "상체를 들어올리고, 다리를 내리면서 팔을 천장 방향으로 어깨 너비로 뻗습니다"
@@ -12826,7 +12826,7 @@
     "block": "Back Extension",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in lifted position of Swan Dive Prep (page 60)",
+    "setup": "Starting in lifted position of Swan Dive Prep",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -12854,7 +12854,7 @@
     ],
     "block_ko": "등 신전",
     "level_ko": "고급",
-    "setup_ko": "Swan Dive Prep의 들어올린 자세(60페이지)에서 시작합니다",
+    "setup_ko": "Swan Dive Prep의 들어올린 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "상체를 앞으로 내려뜨리고, 손을 이마 아래에 놓으며, 다리를 천장 쪽으로 들어올립니다",
       "inhale": "상체를 들어올리고 다리를 내리면서, 손을 매트에 짚고 시작 자세로 돌아옵니다"
@@ -13135,7 +13135,7 @@
     "block": "Full Body Integration II",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in Teaser Prep position (page 20), legs straight and together on diagonal line",
+    "setup": "Starting in Teaser Prep position, legs straight and together on diagonal line",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -13167,7 +13167,7 @@
     "block_ko": "전신 통합 II",
     "level_ko": "고급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "티저 프렙 자세(20페이지)에서 시작하여, 양 다리를 곧게 펴고 모은 상태로 대각선 방향으로 뻗습니다.",
+    "setup_ko": "티저 프렙 자세에서 시작하여, 양 다리를 곧게 펴고 모은 상태로 대각선 방향으로 뻗습니다.",
     "movement_ko": {
       "inhale": "V자 자세로 롤업하면서 양팔을 앞으로 들어 올려 몸통 옆으로 벌립니다. 팔은 어깨 높이와 나란히, 바닥과 평행하게 유지하며 손바닥은 천장을 향합니다.",
       "exhale": "척추를 한 마디씩 내려놓으며 롤다운하여 시작 자세로 돌아옵니다."
@@ -13269,7 +13269,7 @@
     "block": "Bridging / Full Body Integration",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in Teaser 1 position (page 61)",
+    "setup": "Starting in Teaser 1 position",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -13297,7 +13297,7 @@
     ],
     "block_ko": "브리징 / 전신 통합",
     "level_ko": "고급",
-    "setup_ko": "Teaser 1 자세에서 시작합니다 (61페이지 참고)",
+    "setup_ko": "Teaser 1 자세에서 시작합니다",
     "movement_ko": {
       "inhale": "다리를 내립니다",
       "exhale": "다리를 들어 올립니다"
@@ -13328,7 +13328,7 @@
     "block": "Bridging / Full Body Integration",
     "series": null,
     "level": "Advanced",
-    "setup": "Starting in Teaser 1 position (page 61)",
+    "setup": "Starting in Teaser 1 position",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
@@ -13356,7 +13356,7 @@
     ],
     "block_ko": "브리징 / 전신 통합",
     "level_ko": "고급",
-    "setup_ko": "Teaser 1 자세에서 시작합니다 (61페이지 참조)",
+    "setup_ko": "Teaser 1 자세에서 시작합니다",
     "movement_ko": {
       "exhale": "몸통과 다리를 동시에 내리며, 팔을 머리 위로 뻗어줍니다",
       "inhale": "팔과 몸통, 다리를 함께 들어 올려 시작 자세로 돌아옵니다"
@@ -13587,7 +13587,7 @@
     "block": "Abdominal Work",
     "series": "Short Box Series",
     "level": "Fundamental",
-    "setup": "Starting in Flat Back position (page 31)",
+    "setup": "Starting in Flat Back position",
     "resistance": "all springs attached to hold carriage in place",
     "reps": null,
     "spring_setting": null,
@@ -13618,7 +13618,7 @@
     "block_ko": "복부 운동",
     "level_ko": "기초",
     "resistance_ko": "캐리지를 고정하기 위해 모든 스프링 연결",
-    "setup_ko": "Flat Back 자세로 시작 (31페이지 참고)",
+    "setup_ko": "Flat Back 자세로 시작",
     "movement_ko": {
       "inhale": "몸통을 한쪽으로 옆으로 구부립니다",
       "exhale": "몸통을 중앙으로 끌어올려 시작 자세로 돌아옵니다"
@@ -13833,7 +13833,7 @@
     "block": "Arm Work",
     "series": null,
     "level": "Intermediate",
-    "setup": "Starting in Shrugs position (page 22)",
+    "setup": "Starting in Shrugs position",
     "resistance": "medium",
     "reps": null,
     "spring_setting": null,
@@ -13864,7 +13864,7 @@
     "block_ko": "팔 운동",
     "level_ko": "중급",
     "resistance_ko": "중간",
-    "setup_ko": "Shrugs 자세에서 시작합니다 (22페이지 참고)",
+    "setup_ko": "Shrugs 자세에서 시작합니다",
     "movement_ko": {
       "inhale": "팔꿈치를 구부리며 페달을 올립니다",
       "exhale": "팔꿈치를 펴며 페달을 내리고 시작 자세로 돌아옵니다"
@@ -14030,7 +14030,7 @@
     "block": "Abdominal Work",
     "series": "Short Box Series",
     "level": "Intermediate",
-    "setup": "Starting in Flat Back position (page 31)",
+    "setup": "Starting in Flat Back position",
     "resistance": "all springs attached to hold carriage in place",
     "reps": null,
     "spring_setting": null,
@@ -14062,7 +14062,7 @@
     "block_ko": "복부 운동",
     "level_ko": "중급",
     "resistance_ko": "캐리지가 움직이지 않도록 모든 스프링 연결",
-    "setup_ko": "플랫 백 자세로 시작 (31페이지 참고)",
+    "setup_ko": "플랫 백 자세로 시작",
     "movement_ko": {
       "inhale": "몸통을 회전하며 대각선 방향으로 뒤쪽 아래로 기울입니다",
       "exhale": "몸통을 중앙으로 끌어올리고 정면으로 회전하여 시작 자세로 돌아옵니다"
@@ -14161,12 +14161,12 @@
     "block": "Full Body Integration",
     "series": "Up Stretch Group",
     "level": "Intermediate",
-    "setup": "Starting in Up Stretch 1 position (page 53)",
+    "setup": "Starting in Up Stretch 1 position",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
     "movement": {
-      "inhale": "Lower pelvis into Front Support position (Mat page 38)",
+      "inhale": "Lower pelvis into Front Support position",
       "exhale": "Lift pelvis, return to start position"
     },
     "muscle_focus": [
@@ -14195,9 +14195,9 @@
     "block_ko": "전신 통합",
     "level_ko": "중급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "업 스트레치 1 자세에서 시작합니다 (53페이지 참고)",
+    "setup_ko": "업 스트레치 1 자세에서 시작합니다",
     "movement_ko": {
-      "inhale": "들숨: 골반을 낮추어 프론트 서포트 자세로 이동합니다 (매트 38페이지 참고)",
+      "inhale": "들숨: 골반을 낮추어 프론트 서포트 자세로 이동합니다",
       "exhale": "날숨: 골반을 들어 올려 시작 자세로 돌아옵니다"
     },
     "muscle_focus_ko": [
@@ -14231,12 +14231,12 @@
     "block": "Full Body Integration II",
     "series": "Up Stretch Group",
     "level": "Advanced",
-    "setup": "Starting in Up Stretch 1 position (page 53 Reformer MAWB)",
+    "setup": "Starting in Up Stretch 1 position",
     "resistance": null,
     "reps": null,
     "spring_setting": null,
     "movement": {
-      "inhale": "Lower pelvis into Front Support position (page 38 Mat MAWB), move carriage forward to stopper",
+      "inhale": "Lower pelvis into Front Support position, move carriage forward to stopper",
       "exhale": "Lift pelvis, return to start position"
     },
     "muscle_focus": [
@@ -14253,7 +14253,7 @@
     ],
     "cues": [
       "Maintain trunk stabilization",
-      "Hold carriage on stopper when transitioning from Long Stretch (page 61 Reformer MAWB) to Up Stretch 1,",
+      "Hold carriage on stopper when transitioning from Long Stretch to Up Stretch 1,",
       "Initate lifting pelvis from Long Stretch to Up Stretch with abdominals followed by back extensors"
     ],
     "source_pages": [
@@ -14261,9 +14261,9 @@
     ],
     "block_ko": "전신 통합 II",
     "level_ko": "고급",
-    "setup_ko": "Up Stretch 1 자세에서 시작합니다 (리포머 MAWB 53페이지 참조)",
+    "setup_ko": "Up Stretch 1 자세에서 시작합니다",
     "movement_ko": {
-      "inhale": "골반을 낮춰 프론트 서포트 자세로 전환하고 (매트 MAWB 38페이지 참조), 캐리지를 앞으로 밀어 스토퍼에 닿게 합니다",
+      "inhale": "골반을 낮춰 프론트 서포트 자세로 전환하고, 캐리지를 앞으로 밀어 스토퍼에 닿게 합니다",
       "exhale": "골반을 들어 올려 시작 자세로 돌아옵니다"
     },
     "muscle_focus_ko": [
@@ -14280,7 +14280,7 @@
     ],
     "cues_ko": [
       "몸통 안정성을 유지하세요",
-      "Long Stretch에서 Up Stretch 1으로 전환할 때 캐리지를 스토퍼에 고정한 상태를 유지하세요 (리포머 MAWB 61페이지 참조)",
+      "Long Stretch에서 Up Stretch 1으로 전환할 때 캐리지를 스토퍼에 고정한 상태를 유지하세요",
       "Long Stretch에서 Up Stretch로 골반을 들어 올릴 때, 복근이 먼저 작동한 후 척추 신전근이 순서대로 따라오도록 유도하세요"
     ]
   },
@@ -14294,7 +14294,7 @@
     "block": "Full Body Integration II",
     "series": "Up Stretch Group",
     "level": "Advanced",
-    "setup": "Starting in Up Stretch 1 position (page 53 Reformer MAWB)",
+    "setup": "Starting in Up Stretch 1 position",
     "resistance": "light",
     "reps": null,
     "spring_setting": null,
@@ -14324,7 +14324,7 @@
     "block_ko": "전신 통합 II",
     "level_ko": "고급",
     "resistance_ko": "가벼운 저항",
-    "setup_ko": "Up Stretch 1 자세에서 시작합니다 (리포머 MAWB 53페이지 참고)",
+    "setup_ko": "Up Stretch 1 자세에서 시작합니다",
     "movement_ko": {
       "inhale": "골반을 내려 Long Stretch 자세로 전환하며, 캐리지를 스토퍼에 고정합니다",
       "exhale": "몸을 뒤로 밀어 Front Support 자세로 돌아간 후, 골반을 들어 Up Stretch 1 자세로 올려 시작 자세로 돌아옵니다"
@@ -14494,7 +14494,7 @@
     "block": "Hip Work",
     "series": "Hip Supine Series",
     "level": "Fundamental",
-    "setup": "Starting in Circles Down position (page 99), legs parallel",
+    "setup": "Starting in Circles Down position, legs parallel",
     "resistance": "light to medium",
     "reps": null,
     "spring_setting": null,
@@ -14524,7 +14524,7 @@
     "block_ko": "고관절 운동",
     "level_ko": "기초",
     "resistance_ko": "약~중간 저항",
-    "setup_ko": "Circles Down 자세(99페이지 참고)에서 시작하며, 다리는 평행하게 유지합니다",
+    "setup_ko": "Circles Down 자세에서 시작하며, 다리는 평행하게 유지합니다",
     "movement_ko": {
       "exhale": "플러터 킥 동작으로 다리를 내립니다",
       "inhale": "플러터 킥 동작으로 다리를 들어 올려 시작 자세로 돌아옵니다"
