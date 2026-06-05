@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text, ScrollView, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
 import { Card, Chip, ChipRow, Label, Input, Button } from '../components/ui'
@@ -16,7 +16,7 @@ const COND = ['좋음', '보통', '안좋음']
 export function GenerateScreen() {
   const nav = useNav()
   const [members, setMembers] = useState<Member[]>([])
-  const [mid, setMid] = useState<string | undefined>(nav.ctx.memberId)
+  const mid = nav.ctx.memberId
   const [pain, setPain] = useState<string[]>([])
   const [customPain, setCustomPain] = useState('')
   const [goals, setGoals] = useState<string[]>([])
@@ -62,20 +62,12 @@ export function GenerateScreen() {
 
   return (
     <AppShell
-      title="시퀀스 생성"
+      title={selected ? `${selected.name}님 시퀀스` : '시퀀스 생성'}
       footer={
         <Button title="시퀀스 생성" icon={<Icon name="spark" size={18} color="#fff" />} disabled={apps.length === 0} onPress={onGenerate} />
       }
     >
-      <Label style={{ marginTop: 8 }}>회원</Label>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8, paddingBottom: 4 }} style={{ marginBottom: 18 }} keyboardShouldPersistTaps="handled">
-        {members.map((m) => (
-          <Chip key={m.id} label={m.name} on={mid === m.id} onPress={() => setMid(m.id)} />
-        ))}
-        <Chip label="+ 새 회원" variant="dash" onPress={() => nav.go('memberNew')} />
-      </ScrollView>
-
-      <Card>
+      <Card style={{ marginTop: 8 }}>
         <View style={{ marginBottom: 18 }}>
           <Label>통증 · 제약</Label>
           <ChipRow style={{ marginBottom: 10 }}>
