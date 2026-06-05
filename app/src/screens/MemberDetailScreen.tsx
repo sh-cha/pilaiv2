@@ -9,18 +9,37 @@ import { kv } from '../lib/kv'
 import { loadMembers, type Member } from '../lib/members'
 import { loadSessions, sessionsForMember, type CapturedSession } from '../lib/flywheel'
 import { splitTags } from '../lib/catalog'
-import { memberBalance, buildInsight } from '../lib/balance'
+import { memberBalance } from '../lib/balance'
+import { getInsight } from '../lib/insight'
 
 export function MemberDetailScreen() {
   const nav = useNav()
   const id: string | undefined = nav.route.params?.id ?? nav.ctx.memberId
   const [member, setMember] = useState<Member | null>(nav.ctx.member ?? null)
   const [sessions, setSessions] = useState<CapturedSession[]>([])
+  const [insight, setInsight] = useState('')
+  const [insightLoading, setInsightLoading] = useState(false)
 
   useEffect(() => {
     if (!member && id) loadMembers(kv).then((ms) => setMember(ms.find((x) => x.id === id) ?? null))
     if (id) loadSessions(kv).then((all) => setSessions(sessionsForMember(all, id)))
   }, [id])
+
+  // 인사이트: 입력(프로필·세션) 시그니처가 바뀔 때만 Claude 재생성, 같으면 캐시
+  useEffect(() => {
+    if (!member) return
+    let alive = true
+    setInsightLoading(true)
+    getInsight(kv, member, sessions).then((r) => {
+      if (alive) {
+        setInsight(r.text)
+        setInsightLoading(false)
+      }
+    })
+    return () => {
+      alive = false
+    }
+  }, [member, sessions])
 
   if (!member) return <AppShell title="회원" children={<View />} />
 
@@ -28,7 +47,6 @@ export function MemberDetailScreen() {
   const goals = splitTags(member.goals)
   const sub = [member.sex, member.age && `${member.age}세`].filter(Boolean).join(' · ')
   const balance = memberBalance(sessions)
-  const insight = buildInsight(member.name, balance, warns)
 
   return (
     <AppShell
@@ -73,7 +91,7 @@ export function MemberDetailScreen() {
       </Card>
 
       <SectionLabel>AI 인사이트</SectionLabel>
-      <Insight icon={<Icon name="spark" size={16} color={colors.primary} />}>{insight}</Insight>
+      <Insight icon={<Icon name="spark" size={16} color={colors.primary} />}>{insightLoading ? '분석 중…' : insight}</Insight>
 
       {balance ? (
         <Card style={{ marginTop: 14 }}>
