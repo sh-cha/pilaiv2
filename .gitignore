@@ -19,6 +19,9 @@ expo-env.d.ts
 data/basi/*.pdf
 data/basi/extracted_pages/
 
+# ── eval 실행 이력 (로컬 산출물, 유료 라이브 실행마다 append) ──
+app/eval/runs.jsonl
+
 # ── Claude Code 로컬 설정 ──
 .claude/settings.local.json
 

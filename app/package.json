@@ -28,7 +28,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "shots": "bash qa/screenshots.sh"
+    "shots": "bash qa/screenshots.sh",
+    "eval": "RUN_EVAL=1 vitest run eval/eval.live.test.ts"
   },
   "private": true
 }
