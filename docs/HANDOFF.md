@@ -22,6 +22,7 @@
 - ▶ **Phase 2 착수 (이번 세션, 로컬)**: **회원 레지스트리 + 이력 기반 변주(케어 사이클)**. 회원 등록/선택→프로필 자동채움→최근 이력 요약을 생성에 주입→세션을 회원에 연결. **전체 오프라인 테스트 33개** + 번들 빌드 확인. **로컬 우선**(웹/Supabase는 공개배포 전까지 보류 — 사용자 결정).
 - ▶ **Phase 2 확장 (이번 세션 후반)**: **운동량(reps)** 생성·표시 + **수업 모드(클래스)**(큰 글씨 동작·reps배지·카탈로그 큐, 큐는 탭하면 펼침) + **UI 리디자인**(운동 카드화·점진적 공개·**2탭(생성/기록)**, 카탈로그 탭 제거) + **회원 지난 수업 표시**(선택 시 과거 세션→탭하면 수업모드). **셀프 스크린샷 QA**로 직접 검증.
 - ▶ **디자인 전면 재구축 (이번 세션, 2026-06-05)**: Claude Design **"A·Studio"** 핸드오프(`Pilai Prototype.html`)를 RN으로 픽셀 재현 + 실기능 연결. **`App.tsx` 단일파일 → `src/{theme,components,nav,screens,data,lib}` 분해**(구버전 `App.legacy.tsx` 백업). **16화면** 클릭 플로우(스플래시·로그인·홈·회원·상세·생성·로딩·시퀀스·수업진행·완료·기록·세션상세·설정·체크인·새회원·빈상태), **자체 경량 라우터**(`src/nav/router.tsx`), **Pretendard+Spline Sans Mono**(expo-font), 아이콘·실루엣은 react-native-svg. **웹 E2E로 실제 LLM 생성 확인**(회원 prefill→generateSequence→타임라인). 플로우 개선: 저장↔수업 진행 분리, 수업 노트·태그 저장(`flywheel.updateSession`), 근육군 비중·AI 인사이트 실데이터화(`src/lib/balance.ts`), 홈 실데이터(일정 데모 제거), 수업 타이머 일시정지.
+- ▶ **후속 보강 (2026-06-05)**: 통증·목표 **직접 입력**(칩+커스텀; 새회원·생성폼, 커스텀값이 prefill 복원돼 생성 시 누락 방지). **회원 AI 인사이트 LLM화**(`src/lib/insight.ts`): Claude **haiku** 생성, **입력 시그니처(통증+목표+세션) 기반 캐싱**(바뀔 때만 재호출, 같으면 캐시 0호출), 실패 시 규칙(`balance.buildInsight`) fallback. 강사명 데모 한지은.
 
 ## 완료된 것
 - `data/basi/catalog/exercises.json`: 232동작, 영어 + 한글(`_ko`)
@@ -29,10 +30,13 @@
 - `app/` (Expo RN+TS):
   - `src/lib/generateSequence.ts` — 오케스트레이터 **gen→verify→repair(≤2)**. **프롬프트 캐싱**(system+카탈로그를 user 선두 cache_control 블록으로, 회원정보·이력은 후행 비캐시). **이력(케어사이클) 주입**(캐시 유지). `callModel` 주입 가능(테스트), `usage`(비용) 누적 반환. ⚠️ 앱 직접 호출 → 프로덕션 전 Edge Function 이동 필수
   - `src/lib/validateSequence.ts` — verifier(카탈로그 내 동작/전환≤3/빈블록)
-  - `src/lib/flywheel.ts` — **diff 캡처·영속 + 이력**: `computeDiff`(생성본↔최종본), `buildCapturedSession`(memberId 연결), `appendSession`/`loadSessions`, `sessionsForMember`/`summarizeHistory`(최근 최종본 요약)
+  - `src/lib/flywheel.ts` — **diff 캡처·영속 + 이력**: `computeDiff`(생성본↔최종본), `buildCapturedSession`(memberId 연결), `appendSession`/`loadSessions`, `sessionsForMember`/`summarizeHistory`(최근 최종본 요약), **`updateSession`**(수업 노트·태그 덧붙이기). `CapturedSession`에 `note`·`nextTags` 추가됨
   - `src/lib/storage.ts` — `KV` 공유 계약(앱=AsyncStorage, 테스트=in-memory). **Supabase로 가면 이 구현만 교체**
   - `src/lib/members.ts` — **회원 레지스트리**(로컬 CRUD): `loadMembers`/`upsertMember`/`deleteMember`
   - `src/lib/types.ts`
+  - `src/lib/balance.ts` — 세션→근육(`muscle_focus_ko`)→부위(코어/하체/상체) **근육군 비중** 집계 + 규칙 인사이트(`buildInsight`)
+  - `src/lib/insight.ts` — **회원 AI 인사이트**: Claude haiku 생성 + **입력 시그니처 캐싱**(KV `pilaiv2.insights.v1`) + 규칙 fallback
+  - `src/lib/catalog.ts`(카탈로그 헬퍼: `exByName`·`splitTags`·`levelToDiff`) · `src/lib/kv.ts`(AsyncStorage 공유 KV 인스턴스)
   - `App.tsx` — 탭(생성 / 카탈로그 / **기록**). **회원 선택/등록**(프로필 자동채움)→생성(**이력 반영 변주**)→**편집(삭제·추가)**→**최종본 저장**(diff+memberId 캡처). 기록=캡처 목록(회원명·diff)+JSON 내보내기
   - 테스트: `npm test`(오프라인 33개, 라이브는 스킵). 라이브(실 API·**유료**): `RUN_LIVE=1 EXPO_PUBLIC_ANTHROPIC_API_KEY=… npx vitest run src/lib/generateSequence.live.test.ts`
   - **셀프 시각 QA**: `cd app && npm run shots` → expo 웹 빌드 + headless Chrome으로 4화면 스샷 → `/tmp/pilai-*.png`. **Claude가 Read로 직접 봄 → 사용자 수동 스샷 불필요.** (웹 의존성 react-dom·react-native-web·playwright-core는 이 용도. RN-웹이라 iOS와 픽셀 동일친 않지만 레이아웃·여백·위계 검증엔 충분)
