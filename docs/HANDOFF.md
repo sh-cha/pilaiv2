@@ -24,6 +24,7 @@
 - ▶ **디자인 전면 재구축 (이번 세션, 2026-06-05)**: Claude Design **"A·Studio"** 핸드오프(`Pilai Prototype.html`)를 RN으로 픽셀 재현 + 실기능 연결. **`App.tsx` 단일파일 → `src/{theme,components,nav,screens,data,lib}` 분해**(구버전 `App.legacy.tsx` 백업). **16화면** 클릭 플로우(스플래시·로그인·홈·회원·상세·생성·로딩·시퀀스·수업진행·완료·기록·세션상세·설정·체크인·새회원·빈상태), **자체 경량 라우터**(`src/nav/router.tsx`), **Pretendard+Spline Sans Mono**(expo-font), 아이콘·실루엣은 react-native-svg. **웹 E2E로 실제 LLM 생성 확인**(회원 prefill→generateSequence→타임라인). 플로우 개선: 저장↔수업 진행 분리, 수업 노트·태그 저장(`flywheel.updateSession`), 근육군 비중·AI 인사이트 실데이터화(`src/lib/balance.ts`), 홈 실데이터(일정 데모 제거), 수업 타이머 일시정지.
 - ▶ **후속 보강 (2026-06-05)**: 통증·목표 **직접 입력**(칩+커스텀; 새회원·생성폼, 커스텀값이 prefill 복원돼 생성 시 누락 방지). **회원 AI 인사이트 LLM화**(`src/lib/insight.ts`): Claude **haiku** 생성, **입력 시그니처(통증+목표+세션) 기반 캐싱**(바뀔 때만 재호출, 같으면 캐시 0호출), 실패 시 규칙(`balance.buildInsight`) fallback. 강사명 데모 한지은.
 - ▶ **생성 UX 정교화 + 앱 아이콘 (2026-06-05)**: ① 생성 폼 **progressive disclosure** 재설계 — 회원 컨텍스트(통증·목표) **요약+조정** 토글, **오늘 컨디션 세그먼트** 전면, 기구·길이·강도는 **"수업 옵션" 접기**. 중복 회원칩 제거(회원 상세 거쳐 진입 → 제목에 회원명). ② 시퀀스 결과 — **"수업 시작"(메인)/"저장만" 분리**, 진단 **불릿(`Sequence.summary_points`)+"자세히"**, **재생성 방향 지시**(`MemberInput.adjust`: 더쉽게/하체강화 등 빠른옵션+자유입력 → 프롬프트 "재조정 요청"으로 반영, 안전규칙 유지). ③ **앱 아이콘 "우아한 S"**(딥 포레스트+크림, Claude Design 핸드오프) → `icon.png`·favicon·adaptiveIcon, **스플래시·로딩 동일 톤 통일**. ④ UI **AI 강조 순화**("AI 인사이트"→"인사이트", "시퀀스 최적화 (AI)"→"시퀀스 최적화" 등 — 이름 Pilai에 AI 내재라 화면선 절제). 새 공유 컴포넌트 `Segmented`(세그먼트 컨트롤).
+- ▶ **편집 깊이 [#13] (이번 세션, 2026-06-05)**: 시퀀스 결과 화면 편집을 삭제·추가에서 **순서 변경(▲▼)·reps 인라인 수정**까지 확장. 편집 diff(`flywheel.computeDiff`)가 이제 **reps 변경·순서 변경**도 학습 신호로 캡처(`DiffOp`에 `reps`/`reorder` 추가). `Icon`에 up/down, `SessionDetailScreen` diff 라벨 분기 추가. 미사용 백업 `App.legacy.tsx`는 새 `DiffOp` 타입과 충돌해 **tsconfig `exclude`** 처리(기본 제외 사라지므로 `node_modules`도 함께 명시). `qa/shot.mjs` `SHOT_GENERATE` 경로를 **로그인→회원(localStorage 주입)→생성** 플로우로 보강.
 
 ## 완료된 것
 - `data/basi/catalog/exercises.json`: 232동작, 영어 + 한글(`_ko`)
@@ -51,7 +52,7 @@
 ## 다음 할 것
 - ✅ 캐싱 / repair / diff 캡처 / 회원 이력 변주 (로컬)
 - ✅ **운동량(reps)** · **수업 모드(클래스)** · **UI 리디자인(운동 카드·2탭)** · **회원 지난 수업 표시** (이번 세션 후반)
-- 🔜 **편집 깊이 [#13]** — 동작 순서 변경, reps 인라인 수정 (diff에 반영)
+- ✅ **편집 깊이 [#13]** — 동작 **순서 변경(▲▼ 인접 스왑)** + **reps 인라인 수정**(배지 탭→입력칸). 편집 신호 캡처 확장: `flywheel.computeDiff`가 add/remove에 더해 **reps(from→to)·reorder** op 산출(`DiffOp` 확장), `SessionDetailScreen` diff 표시에 분기 추가. 단위테스트 6개 추가(총 21), 라이브 생성 E2E 셀프 QA로 UI 확인(▲▼ disabled 경계 포함). 남음: 동작 상세 시트 내 reps 편집(현재는 인라인만), reps 입력칸 자체 스샷(생성 결과가 전부 reps 보유라 "+회수" 케이스 미발생)
 - ✅ **앱 아이덴티티 [#14]** — 앱 아이콘("우아한 S", 딥 포레스트), 스플래시·로딩 통일, SafeArea(insets) 완료. 남음: 오프라인·에러 처리
 - 🔜 **회원 인사이트 LLM 품질 / 재생성 eval** — haiku 인사이트·`adjust` 재생성 결과를 아내가 실사용 판정 → 골든 eval
 - 🔜 **보류 (백엔드 필요)** — 로그인 OAuth(카카오/구글/애플, 현재 탭→홈 진입), 예약·알림 시스템(홈 오늘일정 — 그래서 홈을 회원·세션 요약으로 재구성), 회원 피드백·만족도(Phase 3 회원앱)
