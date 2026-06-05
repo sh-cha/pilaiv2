@@ -87,5 +87,28 @@ if (process.env.SHOT_GENERATE) {
   } catch (e) { console.log('FAIL result', e.message.slice(0, 160)) }
 }
 
+// SHOT_ERROR=1: anthropic API를 차단(네트워크 끊김 시뮬) → 생성 실패 → 오프라인 에러 화면 캡처 (비용 0)
+if (process.env.SHOT_ERROR) {
+  try {
+    await page.goto(url, { waitUntil: 'load', timeout: 30000 })
+    await page.waitForTimeout(2500)
+    await page.route('**/api.anthropic.com/**', (r) => r.abort())
+    await page.click('text="카카오로 시작하기"', { timeout: 8000 })
+    await page.waitForTimeout(800)
+    await page.click('text="회원 선택해 시퀀스 만들기"', { timeout: 8000 })
+    await page.waitForTimeout(800)
+    await page.click('text="김민지"', { timeout: 8000 })
+    await page.waitForTimeout(800)
+    await page.click('text="김민지님 시퀀스 생성"', { timeout: 8000 })
+    await page.waitForTimeout(800)
+    await page.getByText('시퀀스 생성', { exact: true }).last().click({ timeout: 8000 })
+    await page.waitForSelector('text="다시 시도"', { timeout: 20000 })
+    await page.setViewportSize({ width: 390, height: 900 })
+    await page.waitForTimeout(400)
+    await page.screenshot({ path: '/tmp/pilai-error.png' })
+    console.log('shot: error')
+  } catch (e) { console.log('FAIL error', e.message.slice(0, 160)) }
+}
+
 await browser.close()
 console.log('DONE — /tmp/pilai-*.png')

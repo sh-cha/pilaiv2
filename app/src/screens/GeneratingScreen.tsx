@@ -6,6 +6,7 @@ import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { generateSequence } from '../lib/generateSequence'
 import { loadSessions, sessionsForMember, summarizeHistory } from '../lib/flywheel'
+import { classifyError, type ErrInfo } from '../lib/errors'
 
 const STEPS = ['회원 컨텍스트 수집', '금기사항 기반 동작 필터링', '시퀀스 최적화', '안전 규칙 검증']
 
@@ -23,15 +24,20 @@ function Spinner() {
 export function GeneratingScreen() {
   const nav = useNav()
   const [step, setStep] = useState(0)
-  const [err, setErr] = useState<string | null>(null)
+  const [err, setErr] = useState<ErrInfo | null>(null)
+  const [retryKey, setRetryKey] = useState(0)
+  const hasInput = !!nav.ctx.genInput
 
+  // retryKey가 바뀌면(재시도) 처음부터 다시 실행
   useEffect(() => {
     let alive = true
+    setStep(0)
+    setErr(null)
     const timers = [700, 1500, 2400].map((ms, i) => setTimeout(() => alive && setStep((s) => Math.max(s, i + 1)), ms))
     ;(async () => {
       const input = nav.ctx.genInput
       if (!input) {
-        setErr('생성 입력이 없습니다. 폼으로 돌아가 주세요.')
+        setErr({ kind: 'unknown', title: '생성 정보가 없어요', message: '생성 폼으로 돌아가 다시 시작해 주세요.' })
         return
       }
       try {
@@ -44,23 +50,28 @@ export function GeneratingScreen() {
         nav.setCtx({ genResult: result, genInput: fullInput, finalSeq: result.sequence })
         setTimeout(() => alive && nav.reset('sequence'), 450)
       } catch (e) {
-        if (alive) setErr((e as Error).message)
+        if (alive) setErr(classifyError(e))
       }
     })()
     return () => {
       alive = false
       timers.forEach(clearTimeout)
     }
-  }, [])
+  }, [retryKey])
 
   if (err) {
     return (
       <View style={st.gen}>
         <View style={[st.ring, { borderTopColor: colors.warnInk, borderColor: colors.warnBg }]} />
-        <Text style={st.title}>생성에 실패했어요</Text>
-        <Text style={st.errText}>{err}</Text>
-        <Pressable style={st.retry} onPress={() => nav.back()}>
-          <Text style={st.retryText}>폼으로 돌아가기</Text>
+        <Text style={st.title}>{err.title}</Text>
+        <Text style={st.errText}>{err.message}</Text>
+        {hasInput ? (
+          <Pressable style={st.retry} onPress={() => setRetryKey((k) => k + 1)}>
+            <Text style={st.retryText}>다시 시도</Text>
+          </Pressable>
+        ) : null}
+        <Pressable hitSlop={8} style={st.back} onPress={() => nav.back()}>
+          <Text style={st.backText}>생성 폼으로 돌아가기</Text>
         </Pressable>
       </View>
     )
@@ -97,6 +108,8 @@ const st = StyleSheet.create({
   errText: { fontFamily: font.regular, fontSize: 13, color: colors.warnInk, textAlign: 'center', marginTop: 8, lineHeight: 19 },
   retry: { marginTop: 18, borderWidth: 1.5, borderColor: colors.primary, borderRadius: 14, paddingVertical: 13, paddingHorizontal: 22 },
   retryText: { fontFamily: font.bold, fontSize: 15, color: colors.primary },
+  back: { marginTop: 14, paddingVertical: 6 },
+  backText: { fontFamily: font.semibold, fontSize: 14, color: colors.muted },
   steps: { marginTop: 24, width: '100%', maxWidth: 300, gap: 12 },
   step: { flexDirection: 'row', alignItems: 'center', gap: 11 },
   dot: { width: 20, height: 20, borderRadius: 10, borderWidth: 2, borderColor: colors.line, alignItems: 'center', justifyContent: 'center' },
