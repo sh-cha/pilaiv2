@@ -56,3 +56,28 @@ export const SEQUENCE_CASES: SequenceCase[] = [
   },
 ]
 
+// 재생성(adjust) 평가 케이스 — 원본 생성 후 선생님 방향 지시로 재생성, "지시 반영 + 안전 유지 + 과교정 아님" 채점.
+export type RegenCase = { id: string; desc: string; input: MemberInput; adjust: string }
+
+export const REGEN_CASES: RegenCase[] = [
+  {
+    id: 'easier',
+    desc: '더 쉽게 — 강도 하향이 반영되되 안전 유지',
+    input: { conditions: '목디스크, 거북목', goals: '자세교정, 코어', apparatus: ['reformer', 'cadillac'], minutes: 50 },
+    adjust: '전반적으로 더 쉽게, 강도를 낮춰주세요',
+  },
+  {
+    id: 'lowerbody',
+    desc: '하체 강화 — 방향 전환이 반영되되 목 보호 유지',
+    input: { conditions: '거북목', goals: '근력, 체형', apparatus: ['reformer', 'chair'], minutes: 50 },
+    adjust: '하체 강화 위주로 바꿔주세요',
+  },
+  {
+    id: 'relax',
+    desc: '이완 위주 — 컨디션 저하 시 릴렉스로 전환',
+    input: { conditions: '허리디스크', goals: '코어 강화', apparatus: ['reformer'], minutes: 50 },
+    adjust: '오늘 컨디션이 안 좋으니 스트레칭·이완 위주로 부드럽게',
+  },
+]
+
+

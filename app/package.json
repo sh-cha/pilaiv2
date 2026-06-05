@@ -30,7 +30,8 @@
     "typecheck": "tsc --noEmit",
     "shots": "bash qa/screenshots.sh",
     "eval": "RUN_EVAL=1 vitest run eval/eval.live.test.ts",
-    "eval:seq": "RUN_EVAL=1 vitest run eval/sequence.live.test.ts"
+    "eval:seq": "RUN_EVAL=1 vitest run eval/sequence.live.test.ts",
+    "eval:regen": "RUN_EVAL=1 vitest run eval/regen.live.test.ts"
   },
   "private": true
 }
