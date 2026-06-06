@@ -8,9 +8,11 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shcha.pilai"
     },
     "android": {
+      "package": "com.shcha.pilai",
       "adaptiveIcon": {
         "backgroundColor": "#2F4636",
         "foregroundImage": "./assets/icon.png"
