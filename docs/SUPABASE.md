@@ -50,12 +50,12 @@
 - Supabase → **Authentication → URL Configuration → Redirect URLs** 에 `pilai://auth-callback` 추가 (Expo Go 테스트는 `expo start` 로그에 뜨는 `exp://…/--/auth-callback`도).
 - 제공자 콘솔에 넣는 콜백은 **항상** `https://olmwynehfhndnbwkfoal.supabase.co/auth/v1/callback` (Supabase가 받아서 앱으로 되돌림).
 
-### 카카오 (주력)
+### 카카오 (주력 — 다음 차례)
 1. [developers.kakao.com](https://developers.kakao.com) → 애플리케이션 추가 → **REST API 키** 복사.
 2. 카카오 로그인 **활성화 ON** → Redirect URI에 위 Supabase 콜백 추가. 동의항목(닉네임/이메일 등) ON.
 3. Supabase → Authentication → Providers → **Kakao** → REST API 키 = Client ID(필요시 Client Secret) 입력 → **Enable**.
 
-### 구글 (테스트 제일 쉬움)
+### 구글 — ✅ 설정 완료·실기기 로그인 검증됨 (2026-06-06)
 1. [console.cloud.google.com](https://console.cloud.google.com) → OAuth 동의 화면 → 사용자 인증 정보 → **OAuth 클라이언트 ID(웹)**.
 2. 승인된 리디렉션 URI에 위 Supabase 콜백 추가.
 3. Client ID/Secret → Supabase → Providers → **Google** → 입력 → Enable.
