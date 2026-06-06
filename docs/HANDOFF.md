@@ -47,6 +47,7 @@
 ## 다음 할 것
 - 🔜 **데이터 초기화 기능** (사용자 요청, 미완) — `SettingsScreen`에 "데이터 초기화" 버튼 추가(`AsyncStorage.clear()` 또는 members/sessions/insights 키 삭제 → 빈 상태로 처음부터 테스트). 실기기 AsyncStorage는 Claude가 직접 못 지움 → 앱 내 기능 필요. (`kv.ts`에 clear 추가 검토)
 - 🔜 **eval 골든 라벨 + baseline 추세** — 아내가 실사용 판정(인사이트/시퀀스/재생성 품질)을 골든 라벨로 축적. 현재 각 첫 baseline만(인사이트 88%·시퀀스 sonnet 96%·재생성 100%). 같은 RUBRIC_VERSION으로 추세 쌓기.
+- 🔜 **플라이휠 회전** — 캡처(편집 diff)는 완비됐으나 학습 루프 미연결. 플라이휠 diff(선생님 편집=정답)를 eval 골든셋에 잇는 게 다음 핵심. 현황·As-Is/To-Do: **`docs/FLYWHEEL.md`**.
 - 🔜 **디바이스 QA** — 아내 실사용. 특히 셀프 스샷이 안 닿는 흐름: 편집 핸들 드래그(web PanResponder 제한), 저장→기록→SessionDetail 실시간/완료, 완료화면 이름. + 진단 요약의 영어 약어(ROM)·괄호 더 줄일지 판단.
 - 🔜 **보류 (백엔드 필요)** — 로그인 OAuth(현재 탭→홈), 예약·알림(그래서 홈은 회원·세션 요약), 회원 피드백·만족도(Phase 3 회원앱).
 - ⏸ **Supabase 이동** — 공개배포 전 보류. KV 추상화로 저장만 교체.
