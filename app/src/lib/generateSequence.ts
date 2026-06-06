@@ -47,7 +47,8 @@ const SYSTEM = `당신은 BASI 필라테스 시퀀스 생성 전문가입니다.
 - 반드시 emit_sequence 도구를 1회 호출한다.
 - **blocks(시퀀스 본체)를 반드시 채운다 — 절대 비우지 않는다.** 진단이 복잡한 회원(임신·다중 통증 등)이라도 blocks 생성이 최우선이며, 안전이 걱정되면 더 보수적인 동작으로 채우되 시퀀스는 항상 만든다.
 - summary_points는 강사에게 **오늘 이 시퀀스를 왜 이렇게 짰는지** 친근한 존댓말 2문장으로 알려준다: (1) 이력·목표에 따른 오늘의 변주 의도, (2) 통증·금기에 따른 제외·주의. 예: "최근 3회 코어 집중이 많아 오늘은 하체·후면체인 비중을 높였어요. 목디스크를 고려해 척추 굴곡·경추 부하 동작은 뺐습니다." 이력(최근 수업)이 있으면 그 변화를 짚고, 없으면 목표 중심으로. 길게 늘이지 말 것.
-- member_summary는 그보다 **자세한 진단 설명**(증상 → 원인 근육 → 처방 방향)을 쓴다 — 강사가 '자세히'로 펼쳐 읽는다. 한국어로 풀어서, 영어 동작·근육명 나열이나 대시(-)·괄호 남발 없이 매끄럽게. 단 과하게 길게 늘이지 말 것(blocks가 본체).
+- member_summary는 핵심 진단을 **1~2문장으로 짧게** 요약한다(접힌 카드/폴백용). 상세 설명은 여기 길게 쓰지 말고 diagnosis_sections에 섹션으로 나눠 쓴다.
+- diagnosis_sections는 강사가 '자세히'로 펼쳐 읽는 상세 진단을 **제목 붙은 2~4개 섹션**으로 나눈다. 각 섹션 = title(짧은 제목) + body(2~3줄). 제목 예: "증상과 원인", "오늘 처방 방향", "주의·금기", "이력 반영". ⚠️ **한 덩어리 줄글로 몰아쓰지 말 것 — 반드시 섹션으로.** 이력(최근 수업)이 있으면 "이력 반영" 섹션을 포함한다. 한국어로 매끄럽게, 영어 나열·대시·괄호 남발 없이.
 - 카탈로그에 실제로 있는 동작 이름만 사용한다 (지어내지 않는다).
 - 각 동작에 reps(반복수 또는 시간)를 반드시 채운다 — 선생님이 수업 중 그대로 보고 진행한다.
 - 각 동작에 reason을 **반드시** 짧은 한 구절로 채운다 — 이 회원에게 왜 이 동작인지(증상·목표·이력과 연결). 명사구로 간결하게, 동작 이름 반복 없이. 예: "후면체인 보강", "거북목 완화 흉추 신전", "지난주 코어 과다로 변주", "고관절 가동성 회복". 일반론("전신 강화") 말고 이 회원 맥락으로.`
@@ -60,12 +61,24 @@ const SEQUENCE_TOOL = {
     properties: {
       member_summary: {
         type: 'string',
-        description: '상세 진단 (증상 → 원인 근육 → 처방 방향). 강사가 "자세히"로 펼쳐 읽는 전체 설명.',
+        description: '핵심 진단 요약 1~2문장 (접힌 카드/폴백용). 상세는 diagnosis_sections에 섹션으로 — 여긴 짧게.',
       },
       summary_points: {
         type: 'array',
         items: { type: 'string' },
         description: '위 진단의 핵심을 강사가 한눈에 보는 2~3개 불릿. 각 한 문장, 간결하게. 예: "목디스크 고려해 경추 부하 동작 제외", "흉추 신전·견갑 안정화 우선".',
+      },
+      diagnosis_sections: {
+        type: 'array',
+        description: "강사가 '자세히'로 펼쳐 읽는 상세 진단. 제목 붙은 2~4개 섹션으로 — 한 덩어리 줄글 금지.",
+        items: {
+          type: 'object',
+          properties: {
+            title: { type: 'string', description: '짧은 제목 (예: 증상과 원인 / 오늘 처방 방향 / 주의·금기 / 이력 반영)' },
+            body: { type: 'string', description: '2~3줄 설명' },
+          },
+          required: ['title', 'body'],
+        },
       },
       mode: { type: 'string', enum: ['treatment', 'relax'] },
       blocks: {
@@ -93,7 +106,7 @@ const SEQUENCE_TOOL = {
         },
       },
     },
-    required: ['member_summary', 'summary_points', 'mode', 'blocks'],
+    required: ['member_summary', 'summary_points', 'diagnosis_sections', 'mode', 'blocks'],
   },
 }
 

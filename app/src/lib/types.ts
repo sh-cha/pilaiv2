@@ -13,9 +13,11 @@ export type MemberInput = {
 
 export type SeqExercise = { name: string; reps?: string; reason?: string; caution?: string }
 export type SeqBlock = { block: string; apparatus: string; exercises: SeqExercise[] }
+export type DiagnosisSection = { title: string; body: string } // 제목 붙은 상세 진단 섹션 (줄글 대신)
 export type Sequence = {
-  member_summary: string // 상세 진단 (전체 설명)
+  member_summary: string // 핵심 진단 요약 1~2문장 (collapsed 폴백). 상세는 diagnosis_sections에 섹션으로.
   summary_points?: string[] // 핵심 요약 불릿 2~3개 (강사 한눈 파악용). 구 세션은 없을 수 있어 optional
+  diagnosis_sections?: { title: string; body: string }[] // '자세히' 상세 진단 — 제목+2~3줄 섹션. 구 세션은 없어 optional
   mode: 'treatment' | 'relax'
   blocks: SeqBlock[]
 }

@@ -9,6 +9,11 @@ const MEMBER = { id: 'qa-1', name: '김민지', age: '32', sex: '여', condition
 const SEQ = {
   member_summary: '거북목·목디스크를 고려해 경추 부하를 피하고 흉추 신전·코어 안정화 중심으로 구성했어요.',
   summary_points: ['최근 코어 집중이 많아 하체·후면체인 비중을 높였어요.', '목디스크 고려해 경추 부하 동작은 제외했어요.'],
+  diagnosis_sections: [
+    { title: '증상과 원인', body: '거북목·목디스크로 상부 승모근이 과활성되고 깊은 목 굴곡근이 약해진 상태예요. 흉추 가동성이 떨어져 어깨에 부하가 쏠립니다.' },
+    { title: '오늘 처방 방향', body: '흉추 신전과 견갑 안정화를 우선해 상부 승모근 의존을 낮춥니다. 코어 안정화로 골반·요추 정렬을 잡아줘요.' },
+    { title: '주의·금기', body: '경추에 부하가 가는 굴곡·역위 동작은 제외했어요. 머리 무게가 목에 실리지 않게 큐잉해 주세요.' },
+  ],
   mode: 'treatment',
   blocks: [
     { block: '풋워크', apparatus: 'reformer', exercises: [
@@ -39,5 +44,7 @@ await click('text="카카오로 시작하기"')   // → home
 await shot('2-home')                        // 김민지 "시퀀스 준비"
 await click('text="김민지"')               // ready → 저장 시퀀스 재오픈
 await shot('6-coverage-reason')             // 커버리지 막대 + 동작별 근거(스파크)
+await click('text="자세히"')                // 상세 진단 펼치기
+await shot('7-diagnosis-sections')          // 제목 붙은 섹션(줄글 X)
 await browser.close()
 console.log('DONE')

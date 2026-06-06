@@ -42,11 +42,13 @@ function RegenSheet({ onClose, onRegen }: { onClose: () => void; onRegen: (adjus
   )
 }
 
-// 진단 — 짧은 요약(summary_points를 문장으로) 기본, "자세히"로 상세(member_summary) 펼침.
-function DiagnosisCard({ points, detail }: { points?: string[]; detail: string }) {
+// 진단 — 짧은 요약(summary_points) 기본, "자세히"로 상세 펼침.
+// 상세는 제목 붙은 섹션(diagnosis_sections)으로 렌더 — 줄글 폭탄 방지. 구 세션은 member_summary 줄글 폴백.
+function DiagnosisCard({ points, detail, sections }: { points?: string[]; detail: string; sections?: { title: string; body: string }[] }) {
   const [open, setOpen] = useState(false)
   const summary = points && points.length ? points.join(' ') : detail
-  const hasDetail = !!detail && detail.trim() !== summary.trim()
+  const hasSections = !!sections && sections.length > 0
+  const hasDetail = hasSections || (!!detail && detail.trim() !== summary.trim())
   return (
     <View style={st.diagCard}>
       <Icon name="spark" size={16} color={colors.primary} />
@@ -57,7 +59,20 @@ function DiagnosisCard({ points, detail }: { points?: string[]; detail: string }
             <Pressable hitSlop={6} onPress={() => setOpen((o) => !o)}>
               <Text style={st.diagMore}>{open ? '접기' : '자세히'}</Text>
             </Pressable>
-            {open ? <Text style={st.diagDetail}>{detail}</Text> : null}
+            {open ? (
+              hasSections ? (
+                <View style={st.diagSections}>
+                  {sections!.map((s, i) => (
+                    <View key={i}>
+                      <Text style={st.diagSecTitle}>{s.title}</Text>
+                      <Text style={st.diagSecBody}>{s.body}</Text>
+                    </View>
+                  ))}
+                </View>
+              ) : (
+                <Text style={st.diagDetail}>{detail}</Text>
+              )
+            ) : null}
           </>
         ) : null}
       </View>
@@ -218,7 +233,7 @@ export function SequenceScreen() {
 
       {!editMode ? (
         <>
-          <DiagnosisCard points={seq.summary_points} detail={seq.member_summary} />
+          <DiagnosisCard points={seq.summary_points} detail={seq.member_summary} sections={seq.diagnosis_sections} />
           {coverage ? (
             <Card style={st.coverCard}>
               <Text style={st.coverTitle}>근육군 커버리지</Text>
@@ -362,6 +377,9 @@ const st = StyleSheet.create({
   diagText: { fontFamily: font.regular, fontSize: 15, lineHeight: 23, color: colors.tintInk },
   diagMore: { fontFamily: font.bold, fontSize: 13, color: colors.tintInk, marginTop: 8, opacity: 0.8 },
   diagDetail: { fontFamily: font.regular, fontSize: 14.5, lineHeight: 23, color: colors.tintInk, marginTop: 8, opacity: 0.92 },
+  diagSections: { marginTop: 10, gap: 13 },
+  diagSecTitle: { fontFamily: font.bold, fontSize: 13.5, color: colors.tintInk, letterSpacing: -0.1 },
+  diagSecBody: { fontFamily: font.regular, fontSize: 14, lineHeight: 21, color: colors.tintInk, marginTop: 3, opacity: 0.92 },
   regenBackdrop: { flex: 1, justifyContent: 'flex-end', backgroundColor: 'rgba(20,22,18,0.4)' },
   regenSheet: { backgroundColor: colors.surface, borderTopLeftRadius: 24, borderTopRightRadius: 24, paddingHorizontal: 20, paddingBottom: 28, paddingTop: 8 },
   grab: { width: 40, height: 5, borderRadius: 3, backgroundColor: colors.line, alignSelf: 'center', marginTop: 8, marginBottom: 12 },
