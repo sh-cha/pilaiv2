@@ -38,7 +38,7 @@ export function ClassCompleteScreen() {
       </View>
 
       <SectionLabel>강사 노트</SectionLabel>
-      <Input value={note} onChangeText={setNote} placeholder="오늘 어깨 가동범위 좋아짐, 다음엔 후면체인 강화…" multiline style={{ minHeight: 92, textAlignVertical: 'top' }} />
+      <Input value={note} onChangeText={setNote} placeholder="오늘 어깨 가동범위 좋아짐, 다음엔 후면체인 강화…" maxLength={500} multiline style={{ minHeight: 92, textAlignVertical: 'top' }} />
     </AppShell>
   )
 }

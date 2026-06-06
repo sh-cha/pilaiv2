@@ -117,14 +117,14 @@ export function GenerateScreen() {
               <ChipRow style={{ marginBottom: 10 }}>
                 {PAIN_CHIPS.map((c) => <Chip key={c} label={c} on={pain.includes(c)} onPress={() => tog(pain, setPain, c)} />)}
               </ChipRow>
-              <Input value={customPain} onChangeText={setCustomPain} placeholder="직접 입력…" multiline />
+              <Input value={customPain} onChangeText={setCustomPain} placeholder="직접 입력…" maxLength={300} multiline />
             </View>
             <View>
               <Label>목표</Label>
               <ChipRow style={{ marginBottom: 10 }}>
                 {GOAL_CHIPS.map((c) => <Chip key={c} label={c} on={goals.includes(c)} onPress={() => tog(goals, setGoals, c)} />)}
               </ChipRow>
-              <Input value={customGoal} onChangeText={setCustomGoal} placeholder="직접 입력…" />
+              <Input value={customGoal} onChangeText={setCustomGoal} placeholder="직접 입력…" maxLength={300} />
             </View>
           </View>
         )}

@@ -34,7 +34,7 @@ function RegenSheet({ onClose, onRegen }: { onClose: () => void; onRegen: (adjus
           <ChipRow style={{ marginTop: 16, marginBottom: 14 }}>
             {REGEN_QUICK.map((c) => <Chip key={c} label={c} on={sel.includes(c)} onPress={() => tog(c)} />)}
           </ChipRow>
-          <Input value={custom} onChangeText={setCustom} placeholder="직접 입력 (예: 어깨 무리 안 가게, 후면체인 위주)" multiline style={{ minHeight: 60, textAlignVertical: 'top' }} />
+          <Input value={custom} onChangeText={setCustom} placeholder="직접 입력 (예: 어깨 무리 안 가게, 후면체인 위주)" maxLength={200} multiline style={{ minHeight: 60, textAlignVertical: 'top' }} />
           <Button title="이 방향으로 다시 생성" disabled={!adjust} onPress={() => onRegen(adjust)} style={{ marginTop: 16 }} />
         </View>
       </View>

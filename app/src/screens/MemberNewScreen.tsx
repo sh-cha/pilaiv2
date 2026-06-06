@@ -63,7 +63,7 @@ export function MemberNewScreen() {
       {step === 0 && (
         <>
           <Label>이름</Label>
-          <Input value={name} onChangeText={setName} placeholder="회원 이름" style={{ marginBottom: 18 }} />
+          <Input value={name} onChangeText={setName} placeholder="회원 이름" maxLength={40} style={{ marginBottom: 18 }} />
           <Label>성별</Label>
           <View style={st.seg2}>
             {['여', '남'].map((g) => (
@@ -73,7 +73,7 @@ export function MemberNewScreen() {
             ))}
           </View>
           <Label style={{ marginTop: 20 }}>나이</Label>
-          <Input value={age} onChangeText={setAge} placeholder="34" keyboardType="number-pad" />
+          <Input value={age} onChangeText={setAge} placeholder="34" keyboardType="number-pad" maxLength={3} />
         </>
       )}
 
@@ -85,7 +85,7 @@ export function MemberNewScreen() {
               <Chip key={c} label={c} on={pain.includes(c)} onPress={() => tog(pain, setPain, c)} />
             ))}
           </ChipRow>
-          <Input value={customPain} onChangeText={setCustomPain} placeholder="직접 입력 (예: 어깨충돌증후군, 족저근막염)" multiline />
+          <Input value={customPain} onChangeText={setCustomPain} placeholder="직접 입력 (예: 어깨충돌증후군, 족저근막염)" maxLength={300} multiline />
         </>
       )}
 
@@ -97,7 +97,7 @@ export function MemberNewScreen() {
               <Chip key={c} label={c} on={goals.includes(c)} onPress={() => tog(goals, setGoals, c)} />
             ))}
           </ChipRow>
-          <Input value={customGoal} onChangeText={setCustomGoal} placeholder="직접 입력 (예: 출산 후 회복, 마라톤 대비)" style={{ marginBottom: 20 }} />
+          <Input value={customGoal} onChangeText={setCustomGoal} placeholder="직접 입력 (예: 출산 후 회복, 마라톤 대비)" maxLength={300} style={{ marginBottom: 20 }} />
           <Label>필라테스 경력</Label>
           <ChipRow>
             {EXP_CHIPS.map((e) => (

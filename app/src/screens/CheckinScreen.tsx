@@ -51,7 +51,7 @@ export function CheckinScreen() {
       </ChipRow>
 
       <Label style={{ marginTop: 20 }}>메모</Label>
-      <Input value={memo} onChangeText={setMemo} placeholder="오늘 목이 좀 뻣뻣해요…" multiline style={{ minHeight: 70, textAlignVertical: 'top' }} />
+      <Input value={memo} onChangeText={setMemo} placeholder="오늘 목이 좀 뻣뻣해요…" maxLength={300} multiline style={{ minHeight: 70, textAlignVertical: 'top' }} />
     </AppShell>
   )
 }
