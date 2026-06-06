@@ -1,7 +1,7 @@
 # 핸드오프 — pilaiv2 (필라테스 시퀀스 생성 앱)
 
 > context clear 후 이 문서 → DEVELOPMENT_FLOW.md → PRD.md → ARCHITECTURE.md 순으로 읽으면 그대로 이어갈 수 있음. (도메인 핵심은 아래 "핵심 도메인" 절에 요약 — 별도 SEQUENCE_DESIGN.md는 존재하지 않음)
-> 갱신: 2026-06-05
+> 갱신: 2026-06-06
 
 ## 한 줄
 필라테스 선생님용 **시퀀스 생성 앱**. LLM(Claude) 기반. 아내(현직 BASI 선생님)가 도메인 검증자.
@@ -10,72 +10,56 @@
 - 사용자는 Claude **구독 모델**. 이 대화 안의 작업(텍스트·판단·번역·코드)은 추가 비용 0.
 - **텍스트/번역/판단/코드는 대화에서 직접 하라.** API 스크립트는 대화로 불가능한 것만 — 대량 이미지 비전 추출(책 PDF 수백 장)뿐. (텍스트 번역을 API로 돌린 건 실수였음)
 - 사용자는 코드 직접 안 봄 → Claude가 구현·검증 주도. 설명은 "무엇을/왜". 빠른 컨펌("ㄱㄱ"), **멈추지 말고 쭉**. TDD 선호.
-- 큰 단계 전 docs 업데이트. gstack 스킬 안 씀.
-- **기능 단위로 커밋** (작은 단위 = 롤백 지점, 플라이휠/핸드오프와 정합). genesis는 4커밋으로 정리됨.
-- ⚠️ **키 커밋 금지.** `.env`(app·scripts, 실제 키)·node_modules·BASI 원본(PDF/스캔 ~1GB)은 루트 `.gitignore`로 제외. (이전엔 루트 gitignore가 없어 `git add -A` 시 키 노출 위험이었음 — 이번에 추가해 차단. 커밋이 0개였어서 실제 유출은 없었음.)
-- ⚠️ 알려진 버그: 도구 호출이 가끔 `call` 텍스트로 새며 malformed됨 → 호출 형식 정확히 쓸 것.
+- 큰 단계 전 docs 업데이트. **기능 단위로 커밋**(기능 + docs 분리 2커밋이 이 repo 관습). main에 직접 커밋(PR 없음). gstack 스킬 안 씀.
+- 유료 라이브(생성·eval 등) 돌리기 전 비용 한 줄 고지하고 컨펌받기.
+- ⚠️ **키 커밋 금지.** `.env`(app·scripts, 실제 키)·node_modules·BASI 원본(PDF/스캔 ~1GB)·`app/eval/runs.jsonl`은 루트 `.gitignore`로 제외.
 
 ## 지금 어디
-- ✅ **Phase 0**: 데이터 파이프라인 (232동작 카탈로그, 한글 번역까지)
-- ✅ **Phase 1 핵심**: 시퀀스 생성 **실제 동작 확인됨** (진단→처방, 기구 전환 최소, 안전 큐, verifier 통과). 앱 UI(생성/카탈로그/동작 상세 모달) + 세이지 톤 디자인.
-- ✅ **Phase 1 보강 (이번 세션)**: 프롬프트 캐싱(실측) + repair 루프 + **플라이휠(편집·저장·diff 캡처, 로컬)**.
-- ▶ **Phase 2 착수 (이번 세션, 로컬)**: **회원 레지스트리 + 이력 기반 변주(케어 사이클)**. 회원 등록/선택→프로필 자동채움→최근 이력 요약을 생성에 주입→세션을 회원에 연결. **전체 오프라인 테스트 33개** + 번들 빌드 확인. **로컬 우선**(웹/Supabase는 공개배포 전까지 보류 — 사용자 결정).
-- ▶ **Phase 2 확장 (이번 세션 후반)**: **운동량(reps)** 생성·표시 + **수업 모드(클래스)**(큰 글씨 동작·reps배지·카탈로그 큐, 큐는 탭하면 펼침) + **UI 리디자인**(운동 카드화·점진적 공개·**2탭(생성/기록)**, 카탈로그 탭 제거) + **회원 지난 수업 표시**(선택 시 과거 세션→탭하면 수업모드). **셀프 스크린샷 QA**로 직접 검증.
-- ▶ **디자인 전면 재구축 (이번 세션, 2026-06-05)**: Claude Design **"A·Studio"** 핸드오프(`Pilai Prototype.html`)를 RN으로 픽셀 재현 + 실기능 연결. **`App.tsx` 단일파일 → `src/{theme,components,nav,screens,data,lib}` 분해**(구버전 `App.legacy.tsx` 백업). **16화면** 클릭 플로우(스플래시·로그인·홈·회원·상세·생성·로딩·시퀀스·수업진행·완료·기록·세션상세·설정·체크인·새회원·빈상태), **자체 경량 라우터**(`src/nav/router.tsx`), **Pretendard+Spline Sans Mono**(expo-font), 아이콘·실루엣은 react-native-svg. **웹 E2E로 실제 LLM 생성 확인**(회원 prefill→generateSequence→타임라인). 플로우 개선: 저장↔수업 진행 분리, 수업 노트·태그 저장(`flywheel.updateSession`), 근육군 비중·AI 인사이트 실데이터화(`src/lib/balance.ts`), 홈 실데이터(일정 데모 제거), 수업 타이머 일시정지.
-- ▶ **후속 보강 (2026-06-05)**: 통증·목표 **직접 입력**(칩+커스텀; 새회원·생성폼, 커스텀값이 prefill 복원돼 생성 시 누락 방지). **회원 AI 인사이트 LLM화**(`src/lib/insight.ts`): Claude **haiku** 생성, **입력 시그니처(통증+목표+세션) 기반 캐싱**(바뀔 때만 재호출, 같으면 캐시 0호출), 실패 시 규칙(`balance.buildInsight`) fallback. 강사명 데모 한지은.
-- ▶ **생성 UX 정교화 + 앱 아이콘 (2026-06-05)**: ① 생성 폼 **progressive disclosure** 재설계 — 회원 컨텍스트(통증·목표) **요약+조정** 토글, **오늘 컨디션 세그먼트** 전면, 기구·길이·강도는 **"수업 옵션" 접기**. 중복 회원칩 제거(회원 상세 거쳐 진입 → 제목에 회원명). ② 시퀀스 결과 — **"수업 시작"(메인)/"저장만" 분리**, 진단 **불릿(`Sequence.summary_points`)+"자세히"**, **재생성 방향 지시**(`MemberInput.adjust`: 더쉽게/하체강화 등 빠른옵션+자유입력 → 프롬프트 "재조정 요청"으로 반영, 안전규칙 유지). ③ **앱 아이콘 "우아한 S"**(딥 포레스트+크림, Claude Design 핸드오프) → `icon.png`·favicon·adaptiveIcon, **스플래시·로딩 동일 톤 통일**. ④ UI **AI 강조 순화**("AI 인사이트"→"인사이트", "시퀀스 최적화 (AI)"→"시퀀스 최적화" 등 — 이름 Pilai에 AI 내재라 화면선 절제). 새 공유 컴포넌트 `Segmented`(세그먼트 컨트롤).
-- ▶ **편집 깊이 [#13] (이번 세션, 2026-06-05)**: 시퀀스 결과 화면 편집을 삭제·추가에서 **순서 변경(▲▼)·reps 인라인 수정**까지 확장. 편집 diff(`flywheel.computeDiff`)가 이제 **reps 변경·순서 변경**도 학습 신호로 캡처(`DiffOp`에 `reps`/`reorder` 추가). `Icon`에 up/down, `SessionDetailScreen` diff 라벨 분기 추가. 미사용 백업 `App.legacy.tsx`는 새 `DiffOp` 타입과 충돌해 **tsconfig `exclude`** 처리(기본 제외 사라지므로 `node_modules`도 함께 명시). `qa/shot.mjs` `SHOT_GENERATE` 경로를 **로그인→회원(localStorage 주입)→생성** 플로우로 보강.
-- ▶ **인사이트/재생성 eval 골든셋 틀 (이번 세션, 2026-06-05)**: 생성물 품질을 rubric으로 채점하는 평가 harness `app/eval/` 신설 — `rubric.ts`(채점기준 + `RUBRIC_VERSION`; 시스템(프롬프트·모델) 진화 시 **함께 버전업하는 살아있는 자산**), `judge.ts`(LLM-as-judge, sonnet, `call` 주입 가능), `score.ts`(집계 + **rubric 버전 인지 추세비교** `compareToPrev`), `cases.ts`(인사이트 케이스 3). 순수 로직 단위테스트 7개(`npm test` 포함), 라이브 채점은 `RUN_EVAL` 가드(`npm run eval`, **유료**) → `runs.jsonl`에 (rubricVersion+model+date+점수) append. **핵심 설계**: 채점 "자"가 흔들리면 비교가 무의미 → rubric은 의도적으로만 버전업하고 결과는 항상 버전과 묶어 같은 버전끼리만 비교. `runs.jsonl`은 gitignore(로컬 산출물).
-- ▶ **시퀀스 eval(모델 비교) + 임신 케이스 fix (이번 세션, 2026-06-05)**: 시퀀스 품질 rubric(안전·기능해부·기구흐름·블록균형·reps) + **sonnet↔opus 비교** eval(`npm run eval:seq`). `generateSequence`를 모델 파라미터화(`makeClaudeCall(model)`·`MODEL` export), `score.compareToPrev`는 모델까지 구분(sonnet/opus 안 섞임). **비교 결과**(5/6케이스): 품질은 둘 다 96~100%(judge), opus만 1-shot 통과·~2.3배 비용 → **opus 전환보다 프롬프트 개선이 우선**. ⚠️ **eval이 sonnet 임신 케이스 검증실패를 발견** → 원인은 진단(member_summary)을 길게 쓰다 `blocks` 필드 누락(프롬프트가 "상세 진단" 유도 + max_tokens 4000). 수정: SYSTEM에 blocks 필수·member_summary 간결화, **max_tokens 4000→8000** → 임신 첫 시도 `ok=true`, blocks 10개 확인. opus 단가는 `eval/seq.ts` PRICING(추정치).
-- ▶ **재생성(adjust) eval (이번 세션, 2026-06-05)**: `REGEN_RUBRIC`(지시반영·안전유지·과교정아님) + `REGEN_CASES` + `npm run eval:regen`. 원본→adjust 재생성→채점, `computeDiff`(flywheel) 변경 요약을 judge에 제공해 "지시 반영"을 정확히 봄. 첫 baseline 72%: follow 1.67·safe 1.67·**preserve 1.0(약점)**. ⚠️ **발견: 재생성이 과교정** — adjust는 따르나 원본 핵심 처방(통증 타깃 동작)을 과하게 삭제/재구성. **원인: 재생성이 원본 시퀀스를 프롬프트에 안 받음**(`memberBlock`이 "직전 생성본을 본…"이라 말만 하고 실제 원본 미주입) → 처음부터 재생성. **수정함**: `MemberInput.baseSequence`로 직전 생성본을 프롬프트에 주입 + `memberBlock`에 "원본 기반 편집·핵심 보존·전면 재작성 금지" 지시, `SequenceScreen`은 재생성 시 현재 seq 전달. **재생성 eval 72%→100%(+28)**, preserve 1.0→2.0(같은 rubric이라 사과-사과). opus 비교는 `EVAL_OPUS=1` opt-in으로 강등 — 임신·과교정 fix로 sonnet이 프롬프트만으로 충분함을 확인(프로덕션은 sonnet 유지).
-- ▶ **시퀀스 화면 UX 다듬기 + 데이터 정제 (이번 세션, 2026-06-05)**: 사용자 피드백 반영 — ① "자동 수정 N회 후 통과" 문구 제거 ② 진단을 불릿→**풀어쓴 문장**(`DiagnosisCard`, member_summary만 표시·길면 더보기) ③ 생성 SYSTEM에 member_summary "한국어로 풀어서·영어/대시 자제" 지시 ④ **편집 모드 분리**(`SequenceScreen`: 평소 보기 모드는 reps 배지만, "편집" 버튼으로 ▲▼·삭제·추가 토글; 편집/재생성 버튼 분리) ⑤ `ExerciseSheet` 셋업 탭 카드 디자인(목표는 점 리스트). **데이터: `app/src/data/exercises.json`의 교재 페이지 참조 174건 제거**(setup/setup_ko/cues — "(Foundation Reformer MAWB 27페이지 참조)" 등 괄호 제거, 텍스트 레벨 정규식). ⚠️ 데이터 파이프라인(`scripts/`) 재추출 시 다시 들어올 수 있음 — transform 단계 정제 반영은 후속. 셀프 스샷(보기/편집/셋업) 검증 완료.
-- ▶ **편집 드래그 핸들 + 진단/caution 다듬기 (이번 세션, 2026-06-05)**: 추가 피드백 — ① 편집 순서변경을 ▲▼ → **드래그 핸들(⋮)**로(`DraggableExercises`, PanResponder, **의존성 0**). 디자인 `Pilai Prototype.html`(`proto-edit.jsx`)를 받아 참고하되, 거기 액션시트 방식이 아니라 사용자가 원한 **핸들 드래그**로 구현. 편집 모드 행 = 핸들+이름+reps+삭제(**reps 인라인 편집 제거** — 횟수 수정 불필요), 보기 모드 = 번호 타임라인; 편집 시 진단 숨기고 안내 문구. ② 생성 SYSTEM: member_summary에 **처방 의도**("이번 시퀀스를 왜 이렇게 구성했는지") 2줄 포함 ③ caution 구두점 **쉼표 통일**(대시·괄호 금지). 셀프 스샷 검증. ⚠️ 드래그는 ROW=70 고정 근사 + web PanResponder 제한 — 정밀 드래그는 실기기 확인 권장.
-- ▶ **진단 요약/자세히 복원 (이번 세션, 2026-06-05)**: 직전에 불릿을 없애며 '자세히' 상세까지 같이 사라진 걸 보정 — `DiagnosisCard`를 **요약(summary_points 문장 join) 기본 + '자세히'로 상세(member_summary)** 구조로 복원. 생성 SYSTEM 재정의: **summary_points = 처방 의도 담은 2문장 요약**(화면 기본), **member_summary = 상세 진단**('자세히'용, 증상→원인근육→처방). 셀프 스샷(요약+자세히 펼침) 확인.
-- ▶ **저장/수업 흐름 + 진단 톤 다듬기 (이번 세션, 2026-06-05)**: 피드백 — ① summary_points를 **이력 변주 + 안전 이유의 친근한 2문장**으로(예시 프롬프트, "최근 N회 ~해서 오늘은 ~", "통증 고려해 ~ 제외") ② SessionDetail **'편집 diff(학습 신호)' 표시 제거**(데이터는 그대로 캡처, 강사에겐 안 보임) ③ 동작 추가 시 reps **'10회' 기본**(재추가해도 횟수 유지) ④ 저장된 수업 동작 **탭→ExerciseSheet** ⑤ **nextTags 제거**(생성에 미연결·노트와 중복 → 노트만; SessionDetail·ClassComplete) ⑥ **저장↔수업진행 분리**: `SequenceScreen`은 '시퀀스 저장'만, **실시간 진행/완료 처리는 `SessionDetail`에서** 선택(실수로 실시간 진입 방지). 셀프 스샷 검증. **후속 fix**: SessionDetail이 회원을 로드해 실시간 진행/완료 시 `member` 전달(ClassComplete "○○님 수업 완료" 이름 표시). ClassComplete의 미동작 '수업 1시간 후 알림 발송' 토글 제거(예약·알림은 백엔드 보류라 UI 데모였음).
-- ▶ **오프라인·에러 처리 (이번 세션, 2026-06-05)**: 생성 실패가 raw 기술 메시지(`API 500: …`, `Network request failed`)를 그대로 노출하던 것을 **친화 메시지 + 재시도**로 개선. `src/lib/errors.ts` `classifyError`(offline/auth/rate/server/unknown 분류 — 의존성 0, fetch 실패 메시지를 분류해 NetInfo 없이 오프라인 감지: onLine=true여도 실제 끊김까지 잡음). `GeneratingScreen`이 분류 결과로 제목·안내를 보여주고 **다시 시도**(`retryKey`로 effect 재실행)·"생성 폼으로". 인사이트(`getInsight`)는 기존 규칙 fallback 유지(오프라인이어도 규칙 인사이트 표시). 단위테스트 6개 + `SHOT_ERROR`(API 차단) 셀프 QA로 오프라인 화면 확인(비용 0).
+**기반 (이전 세션들, 완료)**
+- ✅ **Phase 0**: 데이터 파이프라인 (232동작 카탈로그, 한글 번역). `scripts/` extract(비전)·transform·translate.
+- ✅ **Phase 1**: 시퀀스 생성 실동작 — 진단→처방, 기구 전환 최소, 안전 큐, verifier 통과. **프롬프트 캐싱**(입력 90%↓) + **repair 루프(≤2)** + **플라이휠**(편집 diff 캡처·영속, 로컬).
+- ✅ **Phase 2**: **회원 레지스트리 + 이력 기반 변주(케어 사이클)** — 회원 선택→프로필 prefill→최근 이력 요약을 생성에 주입→세션을 회원에 연결. reps·수업모드. **로컬 우선**(Supabase는 공개배포 전 보류 — KV 추상화로 저장만 교체).
+- ✅ **디자인 전면 재구축**: Claude Design "A·Studio" 핸드오프(`Pilai Prototype.html`)를 RN으로 재현. **`App.tsx` 단일 → `src/{theme,components,nav,screens,data,lib}` 분해**(구버전 `App.legacy.tsx` 백업, tsconfig `exclude`). **16화면 + 자체 경량 라우터**(`src/nav/router.tsx`), Pretendard+Spline Sans Mono, 앱 아이콘("우아한 S", 딥 포레스트). 회원 AI 인사이트(haiku + 입력 시그니처 캐싱 + 규칙 fallback `src/lib/insight.ts`), 생성폼 progressive disclosure, 재생성 방향 지시(`MemberInput.adjust`).
 
-## 완료된 것
-- `data/basi/catalog/exercises.json`: 232동작, 영어 + 한글(`_ko`)
-- `scripts/`: extract(비전추출), transform(정제), translate(한글)
-- `app/` (Expo RN+TS):
-  - `src/lib/generateSequence.ts` — 오케스트레이터 **gen→verify→repair(≤2)**. **프롬프트 캐싱**(system+카탈로그를 user 선두 cache_control 블록으로, 회원정보·이력은 후행 비캐시). **이력(케어사이클) 주입**(캐시 유지). `callModel` 주입 가능(테스트), `usage`(비용) 누적 반환. ⚠️ 앱 직접 호출 → 프로덕션 전 Edge Function 이동 필수
-  - `src/lib/validateSequence.ts` — verifier(카탈로그 내 동작/전환≤3/빈블록)
-  - `src/lib/flywheel.ts` — **diff 캡처·영속 + 이력**: `computeDiff`(생성본↔최종본), `buildCapturedSession`(memberId 연결), `appendSession`/`loadSessions`, `sessionsForMember`/`summarizeHistory`(최근 최종본 요약), **`updateSession`**(수업 노트·태그 덧붙이기). `CapturedSession`에 `note`·`nextTags` 추가됨
-  - `src/lib/storage.ts` — `KV` 공유 계약(앱=AsyncStorage, 테스트=in-memory). **Supabase로 가면 이 구현만 교체**
-  - `src/lib/members.ts` — **회원 레지스트리**(로컬 CRUD): `loadMembers`/`upsertMember`/`deleteMember`
-  - `src/lib/types.ts`
-  - `src/lib/balance.ts` — 세션→근육(`muscle_focus_ko`)→부위(코어/하체/상체) **근육군 비중** 집계 + 규칙 인사이트(`buildInsight`)
-  - `src/lib/insight.ts` — **회원 AI 인사이트**: Claude haiku 생성 + **입력 시그니처 캐싱**(KV `pilaiv2.insights.v1`) + 규칙 fallback
-  - `src/lib/catalog.ts`(카탈로그 헬퍼: `exByName`·`splitTags`·`levelToDiff`) · `src/lib/kv.ts`(AsyncStorage 공유 KV 인스턴스)
-  - `App.tsx` — 탭(생성 / 카탈로그 / **기록**). **회원 선택/등록**(프로필 자동채움)→생성(**이력 반영 변주**)→**편집(삭제·추가)**→**최종본 저장**(diff+memberId 캡처). 기록=캡처 목록(회원명·diff)+JSON 내보내기
-  - 테스트: `npm test`(오프라인 33개, 라이브는 스킵). 라이브(실 API·**유료**): `RUN_LIVE=1 EXPO_PUBLIC_ANTHROPIC_API_KEY=… npx vitest run src/lib/generateSequence.live.test.ts`
-  - **셀프 시각 QA**: `cd app && npm run shots` → expo 웹 빌드 + headless Chrome으로 4화면 스샷 → `/tmp/pilai-*.png`. **Claude가 Read로 직접 봄 → 사용자 수동 스샷 불필요.** (웹 의존성 react-dom·react-native-web·playwright-core는 이 용도. RN-웹이라 iOS와 픽셀 동일친 않지만 레이아웃·여백·위계 검증엔 충분)
-  - `app/.env` — `EXPO_PUBLIC_ANTHROPIC_API_KEY` (gitignore됨)
+**이번 세션 (2026-06-05~06)**
+- ✅ **편집·UX 다듬기** (사용자 피드백 여러 라운드): 시퀀스 결과 화면 편집을 **드래그 핸들(⋮) 순서변경 + 삭제·추가**로(`src/components/DraggableExercises.tsx`, PanResponder **의존성 0**; 디자인 `proto-edit.jsx` 참고하되 액션시트 아닌 핸들 드래그). "편집" 버튼 토글 — 보기 모드는 깔끔(reps 배지만), 편집 모드만 핸들·삭제·추가. 진단은 **요약(`summary_points` 2문장: 이력 변주+안전 이유, 친근체) + '자세히'로 상세(`member_summary`)**. `ExerciseSheet` 셋업 카드화. caution 쉼표 통일. **저장↔수업진행 분리**: `SequenceScreen`=저장만, **실시간 진행/완료는 `SessionDetailScreen`에서**(회원 로드해 `member` 전달→완료화면 이름 표시). 강사 화면서 **편집 diff 표시 제거**(데이터는 학습용 유지), **nextTags 제거**(노트만), 미동작 **알림 토글 제거**. 동작 추가 시 reps '10회' 기본. 편집 신호 캡처: `computeDiff`가 add/remove + **reps(from→to)·reorder**(`DiffOp` 확장).
+- ✅ **eval 인프라 + 모델 결정**: 생성물 품질 rubric 채점 harness `app/eval/` 3종 — `npm run eval`(인사이트)/`eval:seq`(시퀀스 sonnet↔opus)/`eval:regen`(재생성). `rubric.ts`(**`RUBRIC_VERSION`** — 시스템 진화 시 버전업하는 살아있는 자산), `judge.ts`(LLM-as-judge sonnet, `call` 주입 가능), `score.ts`(**버전·모델 인지 추세비교** `compareToPrev`), `seq.ts`(직렬화·비용추정). 순수 로직 테스트 11개(`npm test`), 라이브는 `RUN_EVAL` 가드(**유료**) → `runs.jsonl` 이력(gitignore). **eval이 버그 2개를 잡아 수정**: ① sonnet이 임신 등 진단 복잡 케이스에서 `blocks` 누락(긴 진단으로 — 프롬프트가 "상세 진단" 유도 + max_tokens 4000) → SYSTEM에 blocks 필수·진단 간결화 + **max_tokens 8000** ② 재생성이 과교정(원본 미주입) → **`MemberInput.baseSequence`로 직전 생성본 주입** + "원본 기반 편집·핵심 보존" 지시(재생성 eval 72%→100%). **결론: 프롬프트 개선이 opus보다 우선** — opus 비교는 `EVAL_OPUS=1` opt-in, **프로덕션은 sonnet**.
+- ✅ **오프라인·에러 처리**: 생성 실패의 raw 기술 메시지(`API 500`, `Network request failed`)를 **친화 메시지 + 재시도**로(`src/lib/errors.ts classifyError`, offline/auth/rate/server/unknown 분류, **의존성 0**). `GeneratingScreen` 재시도(`retryKey`). 인사이트는 규칙 fallback 유지. 테스트 6개 + `SHOT_ERROR` 셀프 QA.
+
+## 완료된 것 (`app/`, Expo RN+TS)
+- `src/lib/generateSequence.ts` — 오케스트레이터 **gen→verify→repair(≤2)**. **프롬프트 캐싱**(system+카탈로그 cache_control, 회원·이력은 후행 비캐시). **이력 주입**. **모델 파라미터화** `makeClaudeCall(model)`·`MODEL` export(eval에서 opus 주입). **재생성 시 `MemberInput.baseSequence` 주입**. max_tokens 8000. `callModel` 주입 가능, `usage` 누적. ⚠️ 앱 직접 호출 → 프로덕션 전 Edge Function 이동 필수
+- `src/lib/validateSequence.ts` — verifier(카탈로그 내 동작/전환≤3/빈블록)
+- `src/lib/flywheel.ts` — diff 캡처·영속 + 이력. `computeDiff`(add/remove/**reps/reorder**), `buildCapturedSession`, `appendSession`/`loadSessions`, `summarizeHistory`, `updateSession`(노트). `CapturedSession.nextTags`는 타입에 남았으나 UI 미사용.
+- `src/lib/storage.ts`(KV 공유 계약, Supabase 가면 이것만 교체) · `members.ts` · `types.ts`(`MemberInput.baseSequence` 포함) · `balance.ts`(근육군 비중+규칙 인사이트) · `insight.ts`(haiku+캐싱) · `catalog.ts` · `kv.ts`
+- `src/lib/errors.ts` — `classifyError`(네트워크/API 에러 분류, 의존성 0)
+- `src/components/DraggableExercises.tsx` — 핸들 드래그 reorder(PanResponder, ROW=70 근사)
+- `app/eval/` — rubric·judge·score·seq·cases + 순수 테스트(`eval.test.ts`) + 라이브(`eval.live`/`sequence.live`/`regen.live`, RUN_EVAL 가드)
+- `src/screens/` (16화면, `App.tsx`는 라우터 진입점) · `src/nav/router.tsx`
+- 테스트: `npm test`(오프라인 56개, 라이브 4개 스킵). 라이브 생성: `RUN_LIVE=1 EXPO_PUBLIC_ANTHROPIC_API_KEY=… npx vitest run src/lib/generateSequence.live.test.ts`
+- **셀프 시각 QA**: `cd app && set -a && . ./.env && set +a && SHOT_GENERATE=1 npm run shots` → expo 웹 빌드 + headless Chrome 스샷(`/tmp/pilai-*.png`, 보기/자세히/편집/셋업). Claude가 Read로 직접 봄. `SHOT_GENERATE`는 라이브 생성(유료), 빼면 무료(로그인 화면까지). `SHOT_ERROR`=오프라인 에러 화면(API 차단, 무료).
+- `app/.env` — `EXPO_PUBLIC_ANTHROPIC_API_KEY` (gitignore됨)
+- 데이터: `data/basi/catalog/exercises.json`(232동작, 영어+`_ko`) → `app/src/data/exercises.json`. **교재 페이지 참조 174건 제거됨**(텍스트 정규식). ⚠️ `scripts/` 재추출 시 재유입 — transform 정제 반영은 후속.
 
 ## 실제 생성 결과 (검증됨)
-- 입력: 30대 목디스크/거북목/말린어깨, 자세교정+코어, reformer+cadillac, 50분
-- 출력: 기능해부학 진단 + reformer→cadillac **1회 전환** 시퀀스 + 목디스크 주의 큐. verifier `ok: true`
-- 비용(실측, Sonnet 4.6 `claude-sonnet-4-6`): 입력 캐시 가능분 **10,088토큰** — 1차 cache write, 2차 이후 cache **read 10,088** 확인 → 입력비용 90%↓(정가분 21토큰만). 생성 1개 ~$0.05 (출력 ~2.7~3.2K토큰이 비용 지배). repair 호출도 같은 카탈로그 프리픽스라 캐시 히트.
+- 입력: 30대 목디스크/거북목/말린어깨, 자세교정+코어, reformer+cadillac, 50분 → 기능해부 진단 + reformer→cadillac 1회 전환 + 목디스크 주의 큐. verifier `ok:true`.
+- 비용(Sonnet 4.6): 입력 캐시분 10,088토큰 → 2차부터 cache read(입력비 90%↓). 생성 1개 ~$0.05(출력 ~3K토큰이 지배). eval 라이브: 인사이트 ~$0.1, 재생성 ~$0.4, 시퀀스 sonnet↔opus 비교 ~$1.5.
 
 ## 다음 할 것
-- ✅ 캐싱 / repair / diff 캡처 / 회원 이력 변주 (로컬)
-- ✅ **운동량(reps)** · **수업 모드(클래스)** · **UI 리디자인(운동 카드·2탭)** · **회원 지난 수업 표시** (이번 세션 후반)
-- ✅ **편집 깊이 [#13]** — 동작 **순서 변경(▲▼ 인접 스왑)** + **reps 인라인 수정**(배지 탭→입력칸). 편집 신호 캡처 확장: `flywheel.computeDiff`가 add/remove에 더해 **reps(from→to)·reorder** op 산출(`DiffOp` 확장), `SessionDetailScreen` diff 표시에 분기 추가. 단위테스트 6개 추가(총 21), 라이브 생성 E2E 셀프 QA로 UI 확인(▲▼ disabled 경계 포함). 남음: 동작 상세 시트 내 reps 편집(현재는 인라인만), reps 입력칸 자체 스샷(생성 결과가 전부 reps 보유라 "+회수" 케이스 미발생)
-- ✅ **앱 아이덴티티 [#14]** — 앱 아이콘("우아한 S", 딥 포레스트), 스플래시·로딩 통일, SafeArea(insets), **오프라인·에러 처리** 완료
-- ▶ **인사이트/시퀀스/재생성 eval** — harness 3종(`npm run eval`/`eval:seq`/`eval:regen`). eval이 **임신 blocks 누락**·**재생성 과교정**을 발견·**수정**(둘 다 sonnet 프롬프트로, opus 불필요). opus 비교는 `EVAL_OPUS=1` opt-in으로 강등(프로덕션은 sonnet). 남음: 아내 실사용 골든 라벨, baseline 추세 쌓기
-- 🔜 **보류 (백엔드 필요)** — 로그인 OAuth(카카오/구글/애플, 현재 탭→홈 진입), 예약·알림 시스템(홈 오늘일정 — 그래서 홈을 회원·세션 요약으로 재구성), 회원 피드백·만족도(Phase 3 회원앱)
-- 🔜 **디바이스 QA + 변주 품질 eval** — 아내가 실사용 → 수업모드/reps/변주 품질 판정 → §7 골든 eval. (UI 피드백: "글 덩어리 싫다 → 카드화" 반영했고, 추가 비주얼 취향은 디바이스 보고 조정)
-- ⏸ **Supabase 이동** — 로컬 우선이라 공개배포 전 보류. KV 추상화 덕에 저장 구현만 교체.
-- 보류: 금기/부하태그 verifier(Phase 1.5). 정리거리: 구 UI 전체가 `App.legacy.tsx`로 백업됨(미사용, 참고용). `src/components/BodyRegionPicker.tsx`는 회원앱(Phase 3) 부위입력 대비 보존(현재 미사용).
-- ⚠️ 웹 자동화 주의: `expo --web`에서 RN controlled `TextInput` 입력이 `onChangeText`로 안 잡힘(검증 시 localStorage 주입으로 우회). 실기기는 정상.
+- 🔜 **데이터 초기화 기능** (사용자 요청, 미완) — `SettingsScreen`에 "데이터 초기화" 버튼 추가(`AsyncStorage.clear()` 또는 members/sessions/insights 키 삭제 → 빈 상태로 처음부터 테스트). 실기기 AsyncStorage는 Claude가 직접 못 지움 → 앱 내 기능 필요. (`kv.ts`에 clear 추가 검토)
+- 🔜 **eval 골든 라벨 + baseline 추세** — 아내가 실사용 판정(인사이트/시퀀스/재생성 품질)을 골든 라벨로 축적. 현재 각 첫 baseline만(인사이트 88%·시퀀스 sonnet 96%·재생성 100%). 같은 RUBRIC_VERSION으로 추세 쌓기.
+- 🔜 **디바이스 QA** — 아내 실사용. 특히 셀프 스샷이 안 닿는 흐름: 편집 핸들 드래그(web PanResponder 제한), 저장→기록→SessionDetail 실시간/완료, 완료화면 이름. + 진단 요약의 영어 약어(ROM)·괄호 더 줄일지 판단.
+- 🔜 **보류 (백엔드 필요)** — 로그인 OAuth(현재 탭→홈), 예약·알림(그래서 홈은 회원·세션 요약), 회원 피드백·만족도(Phase 3 회원앱).
+- ⏸ **Supabase 이동** — 공개배포 전 보류. KV 추상화로 저장만 교체.
+- 정리거리: `App.legacy.tsx`(미사용 백업) · `src/components/BodyRegionPicker.tsx`(Phase 3 대비 보존) · 미사용 스타일(ClassComplete toggle 등). `scripts/` transform에 페이지 참조 정제 반영. 금기/부하태그 verifier(Phase 1.5).
 
-## 핵심 도메인 (SEQUENCE_DESIGN.md 참고)
+## 핵심 도메인
 - 시퀀스 = 진단(문진+움직임) → 원인 근육(기능해부) → 타깃 처방 → BASI 블록 교체
 - 케어 사이클: 2~5회 반복, 문제 부위 유지 + 나머지 변주(이력 필요)
 - 그날 컨디션 나쁨 → 릴렉스 모드 / 기구: 전환 ≤2~3, 블록화, 양쪽 가능 동작은 현재 기구로 흡수
 
 ## 환경/주의
 - `ANTHROPIC_API_KEY`: `scripts/.env` / `app/.env`(EXPO_PUBLIC_)
-- 셸: `cp`는 `-i` alias + zsh `noclobber` → 덮어쓰기는 `command cp -f`
+- 셸: `cp`·`rm`은 `-i` alias + zsh `noclobber` → 강제는 `command cp -f` / `command rm -f`. cwd가 루트로 리셋되곤 함 — `cd app` 명시.
 - node 23, app=Expo~56(RN 0.85), `scripts/`와 `app/`은 별도 node 프로젝트
+- ⚠️ 웹 자동화 주의: `expo --web`에서 RN controlled `TextInput` 입력이 `onChangeText`로 안 잡힘(검증 시 localStorage 주입으로 우회). 드래그(PanResponder)도 web 제한 — 실기기는 정상.
 - apparatus `inferred` 12개 동작 있음 (Phase 1.5에서 확인)
