@@ -1,6 +1,6 @@
 # 핸드오프 — pilaiv2 (필라테스 시퀀스 생성 앱)
 
-> context clear 후 이 문서 → DEVELOPMENT_FLOW.md → PRD.md → ARCHITECTURE.md 순으로 읽으면 그대로 이어갈 수 있음. (도메인 핵심은 아래 "핵심 도메인" 절에 요약 — 별도 SEQUENCE_DESIGN.md는 존재하지 않음)
+> context clear 후 이 문서 → DEVELOPMENT_FLOW.md → PRD.md → ARCHITECTURE.md (백엔드는 SUPABASE.md) 순으로 읽으면 그대로 이어갈 수 있음. (도메인 핵심은 아래 "핵심 도메인" 절에 요약 — 별도 SEQUENCE_DESIGN.md는 존재하지 않음)
 > 갱신: 2026-06-06
 
 ## 한 줄
@@ -26,13 +26,19 @@
 - ✅ **eval 인프라 + 모델 결정**: 생성물 품질 rubric 채점 harness `app/eval/` 3종 — `npm run eval`(인사이트)/`eval:seq`(시퀀스 sonnet↔opus)/`eval:regen`(재생성). `rubric.ts`(**`RUBRIC_VERSION`** — 시스템 진화 시 버전업하는 살아있는 자산), `judge.ts`(LLM-as-judge sonnet, `call` 주입 가능), `score.ts`(**버전·모델 인지 추세비교** `compareToPrev`), `seq.ts`(직렬화·비용추정). 순수 로직 테스트 11개(`npm test`), 라이브는 `RUN_EVAL` 가드(**유료**) → `runs.jsonl` 이력(gitignore). **eval이 버그 2개를 잡아 수정**: ① sonnet이 임신 등 진단 복잡 케이스에서 `blocks` 누락(긴 진단으로 — 프롬프트가 "상세 진단" 유도 + max_tokens 4000) → SYSTEM에 blocks 필수·진단 간결화 + **max_tokens 8000** ② 재생성이 과교정(원본 미주입) → **`MemberInput.baseSequence`로 직전 생성본 주입** + "원본 기반 편집·핵심 보존" 지시(재생성 eval 72%→100%). **결론: 프롬프트 개선이 opus보다 우선** — opus 비교는 `EVAL_OPUS=1` opt-in, **프로덕션은 sonnet**.
 - ✅ **오프라인·에러 처리**: 생성 실패의 raw 기술 메시지(`API 500`, `Network request failed`)를 **친화 메시지 + 재시도**로(`src/lib/errors.ts classifyError`, offline/auth/rate/server/unknown 분류, **의존성 0**). `GeneratingScreen` 재시도(`retryKey`). 인사이트는 규칙 fallback 유지. 테스트 6개 + `SHOT_ERROR` 셀프 QA.
 
+**이번 세션 (2026-06-06): 디자인 리뷰 반영 + 홈 실데이터 + Supabase 준비**
+- ✅ **디자인 리뷰 14건 반영** — Claude Design 새 핸드오프(`Pilai Prototype.html`: `balInsight`/`seqInsight`·`today` status·구간합 50 등)를 RN에 맞춰 적용. 시퀀스 **편집모드 개편**(가짜 드래그핸들·중복 × 제거 → 번호+케밥(⋮) **단일 액션시트** `src/components/SequenceEditSheets.tsx`: 상세·교체·횟수·순서·삭제, 교체는 `AddExercisePicker` 재사용 → `DraggableExercises` 미사용화). **액션 위계**: 편집=헤더 우측(`AppShell.headerRight` 신설), 재생성=인사이트 아래 보조 ghost, 푸터=수업 시작(ghost)/저장(dark). 클래스플레이 **"총 경과" 누적 타이머**(+일시정지 유지). 세션상세 동작명 1줄(`numberOfLines`). 시스템 이모지(🙂😐😣⚠🎉)→**컬러 도트/제거**. **'편집 N' 지표 제거**(→'편집됨' 배지). [#3 인사이트는 이미 `getInsight`(balance 파생)라 OK, #4 구간합·#11 회원칩페이드는 RN 구조상 무관, #9 홈 CTA는 생성이 회원종속이라 회원탭 유지=채팅 최종결정.]
+- ✅ **홈 실데이터 전환** (사용자 피드백: "회원은 차승훈 하나인데 김서연 등 가짜가 왜?") — `DEMO_TODAY/DEMO_TODOS`·가짜 인사말 제거. 홈은 **실제 회원**을 상태별(노트=수업완료 / 저장만=시퀀스준비 / 세션무=준비전)로 표시, 행 탭 → 분기(기록 / 저장시퀀스 재오픈 / 생성). **회원 검색 실동작화**(`FieldGhost`→controlled `Input`, 이름·통증·목표 필터 — 디자인 프로토의 죽은 placeholder였음). 체크인 진입점은 `MemberDetailScreen`으로(데모 할일 제거로 고아 방지, #5 프리필 유지). `demo.ts`는 `INSTRUCTOR`(설정 프로필)만 남김.
+- ✅ **Supabase 백엔드 준비** (보류 해제, 스캐폴딩 완료) — **KV 스왑** 방식(`storage.ts` 의도 그대로): `kv.ts`가 Supabase 설정+세션 시 `kv_store`(사용자별 JSON blob, RLS), 아니면 AsyncStorage. 신규 `src/lib/supabase.ts`(env로 client|null), `src/lib/auth.ts`(`initAuth`/`signIn`(익명)/`signOut`/`getUserId`), `supabase/migrations/0001_init.sql`(profiles·kv_store·RLS·신규유저 트리거). `App.tsx`(initAuth)/`LoginScreen`(signIn)/`SettingsScreen`(signOut) 배선. **화면·도메인 로직 무변경**, 미설정이면 로컬 그대로 동작. 켜는 법·로드맵(OAuth/정규화/Edge Function): **`docs/SUPABASE.md`**.
+
 ## 완료된 것 (`app/`, Expo RN+TS)
 - `src/lib/generateSequence.ts` — 오케스트레이터 **gen→verify→repair(≤2)**. **프롬프트 캐싱**(system+카탈로그 cache_control, 회원·이력은 후행 비캐시). **이력 주입**. **모델 파라미터화** `makeClaudeCall(model)`·`MODEL` export(eval에서 opus 주입). **재생성 시 `MemberInput.baseSequence` 주입**. max_tokens 8000. `callModel` 주입 가능, `usage` 누적. ⚠️ 앱 직접 호출 → 프로덕션 전 Edge Function 이동 필수
 - `src/lib/validateSequence.ts` — verifier(카탈로그 내 동작/전환≤3/빈블록)
 - `src/lib/flywheel.ts` — diff 캡처·영속 + 이력. `computeDiff`(add/remove/**reps/reorder**), `buildCapturedSession`, `appendSession`/`loadSessions`, `summarizeHistory`, `updateSession`(노트). `CapturedSession.nextTags`는 타입에 남았으나 UI 미사용.
-- `src/lib/storage.ts`(KV 공유 계약, Supabase 가면 이것만 교체) · `members.ts` · `types.ts`(`MemberInput.baseSequence` 포함) · `balance.ts`(근육군 비중+규칙 인사이트) · `insight.ts`(haiku+캐싱) · `catalog.ts` · `kv.ts`
+- `src/lib/storage.ts`(KV 공유 계약) · `members.ts` · `types.ts`(`MemberInput.baseSequence` 포함) · `balance.ts`(근육군 비중+규칙 인사이트) · `insight.ts`(haiku+캐싱) · `catalog.ts`
+- `src/lib/kv.ts` — KV 구현. **Supabase 설정+세션 시 `kv_store`(클라우드), 아니면 AsyncStorage**. + `supabase.ts`(client|null) · `auth.ts`(세션/익명 로그인) — `docs/SUPABASE.md`
 - `src/lib/errors.ts` — `classifyError`(네트워크/API 에러 분류, 의존성 0)
-- `src/components/DraggableExercises.tsx` — 핸들 드래그 reorder(PanResponder, ROW=70 근사)
+- `src/components/SequenceEditSheets.tsx` — 편집모드 행 액션시트(상세·교체·횟수·순서·삭제) + 횟수 시트. `DraggableExercises.tsx`는 이 개편으로 **미사용**(정리 대상)
 - `app/eval/` — rubric·judge·score·seq·cases + 순수 테스트(`eval.test.ts`) + 라이브(`eval.live`/`sequence.live`/`regen.live`, RUN_EVAL 가드)
 - `src/screens/` (16화면, `App.tsx`는 라우터 진입점) · `src/nav/router.tsx`
 - 테스트: `npm test`(오프라인 56개, 라이브 4개 스킵). 라이브 생성: `RUN_LIVE=1 EXPO_PUBLIC_ANTHROPIC_API_KEY=… npx vitest run src/lib/generateSequence.live.test.ts`
@@ -49,9 +55,9 @@
 - 🔜 **eval 골든 라벨 + baseline 추세** — 아내가 실사용 판정(인사이트/시퀀스/재생성 품질)을 골든 라벨로 축적. 현재 각 첫 baseline만(인사이트 88%·시퀀스 sonnet 96%·재생성 100%). 같은 RUBRIC_VERSION으로 추세 쌓기.
 - 🔜 **플라이휠 회전** — 캡처(편집 diff)는 완비됐으나 학습 루프 미연결. 플라이휠 diff(선생님 편집=정답)를 eval 골든셋에 잇는 게 다음 핵심. 현황·As-Is/To-Do: **`docs/FLYWHEEL.md`**.
 - 🔜 **디바이스 QA** — 아내 실사용. 특히 셀프 스샷이 안 닿는 흐름: 편집 핸들 드래그(web PanResponder 제한), 저장→기록→SessionDetail 실시간/완료, 완료화면 이름. + 진단 요약의 영어 약어(ROM)·괄호 더 줄일지 판단.
-- 🔜 **보류 (백엔드 필요)** — 로그인 OAuth(현재 탭→홈), 예약·알림(그래서 홈은 회원·세션 요약), 회원 피드백·만족도(Phase 3 회원앱).
-- ⏸ **Supabase 이동** — 공개배포 전 보류. KV 추상화로 저장만 교체.
-- 정리거리: `App.legacy.tsx`(미사용 백업) · `src/components/BodyRegionPicker.tsx`(Phase 3 대비 보존) · 미사용 스타일(ClassComplete toggle 등). `scripts/` transform에 페이지 참조 정제 반영. 금기/부하태그 verifier(Phase 1.5).
+- 🟡 **Supabase — 스캐폴딩 완료, 라이브 연결 대기** (`docs/SUPABASE.md`). 사용자가 ① 프로젝트 생성 ② `app/.env`에 `EXPO_PUBLIC_SUPABASE_URL/ANON_KEY` ③ `0001_init.sql` 적용 ④ Anonymous 로그인 활성화 하면 켜짐. **다음**: 실제 OAuth(카카오/구글/애플 — Supabase 기본 지원, RN은 `expo-web-browser`+딥링크 필요, `auth.ts signInWithProvider` 자리만 있음), 관계형 정규화(필요 시), Anthropic 키 Edge Function 이전.
+- 🔜 **보류 (백엔드 필요)** — 예약·알림(홈은 실회원·세션 기반으로 재구성됨), 회원 피드백·만족도(Phase 3 회원앱). 로그인은 익명 세션으로 임시 동작 → 실 OAuth가 다음.
+- 정리거리: `App.legacy.tsx`(미사용 백업) · `DraggableExercises.tsx`(편집모드 개편으로 미사용) · `BodyRegionPicker.tsx`(Phase 3 보존) · 미사용 스타일. `scripts/` transform 페이지참조 정제. 금기/부하태그 verifier(Phase 1.5).
 
 ## 핵심 도메인
 - 시퀀스 = 진단(문진+움직임) → 원인 근육(기능해부) → 타깃 처방 → BASI 블록 교체
