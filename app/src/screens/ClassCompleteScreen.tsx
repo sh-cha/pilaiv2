@@ -22,8 +22,9 @@ export function ClassCompleteScreen() {
           title="수업 종료"
           onPress={async () => {
             const sid = nav.ctx.savedSessionId
-            if (sid && note.trim()) {
-              await updateSession(kv, sid, { note: note.trim() })
+            if (sid) {
+              // 노트가 없어도 완료 시각은 기록 — 기록 탭의 수업 전/완료 구분 기준
+              await updateSession(kv, sid, { completedAt: new Date().toISOString(), ...(note.trim() ? { note: note.trim() } : {}) })
             }
             nav.toast('수업을 마쳤어요')
             nav.tab('home')

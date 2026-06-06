@@ -7,7 +7,7 @@ import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { loadMembers } from '../lib/members'
-import { loadSessions, type CapturedSession } from '../lib/flywheel'
+import { loadSessions, sessionStatus, type CapturedSession } from '../lib/flywheel'
 import { splitTags } from '../lib/catalog'
 
 export function HistoryScreen() {
@@ -30,6 +30,7 @@ export function HistoryScreen() {
           {sessions.map((s, idx) => {
             const name = s.memberId ? names[s.memberId] : undefined
             const focus = splitTags(s.input.goals)
+            const done = sessionStatus(s) === 'done'
             return (
               <Pressable key={s.id} style={[st.row, idx > 0 && st.rowBorder]} onPress={() => nav.go('sessionDetail', { id: s.id, name })}>
                 <View style={st.date}>
@@ -46,6 +47,10 @@ export function HistoryScreen() {
                       <Chip key={f} label={f} variant="tint" style={st.mini} textStyle={{ fontSize: 12 }} />
                     ))}
                   </ChipRow>
+                </View>
+                <View style={[st.badge, done ? st.badgeDone : st.badgeReady]}>
+                  {!done ? <View style={st.badgeDot} /> : null}
+                  <Text style={[st.badgeText, done ? st.badgeTextDone : st.badgeTextReady]}>{done ? '수업 완료' : '수업 전'}</Text>
                 </View>
                 <Icon name="chev" size={13} color={colors.faint} />
               </Pressable>
@@ -69,4 +74,11 @@ const st = StyleSheet.create({
   name: { fontFamily: font.bold, fontSize: 16, color: colors.ink },
   min: { fontFamily: font.regular, fontSize: 13, color: colors.faint },
   mini: { paddingVertical: 3, paddingHorizontal: 9 },
+  badge: { flexDirection: 'row', alignItems: 'center', gap: 5, paddingVertical: 4, paddingHorizontal: 10, borderRadius: 999 },
+  badgeDot: { width: 6, height: 6, borderRadius: 3, backgroundColor: colors.primary },
+  badgeText: { fontFamily: font.bold, fontSize: 12 },
+  badgeDone: { backgroundColor: colors.surface2 },
+  badgeTextDone: { color: colors.muted },
+  badgeReady: { backgroundColor: colors.tint },
+  badgeTextReady: { color: colors.primary },
 })

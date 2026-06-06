@@ -5,7 +5,7 @@
 //    단, 채점 "자"가 흔들리면 과거 점수와의 비교가 무의미해진다 → 기준을 바꿀 때만 의도적으로
 //    RUBRIC_VERSION을 올리고, 평가 결과는 항상 (rubricVersion + model + date)와 묶어 기록한다
 //    (score.ts RunMeta · runs.jsonl). 추세 비교는 같은 RUBRIC_VERSION끼리만 한다.
-export const RUBRIC_VERSION = '2026-06-05.1'
+export const RUBRIC_VERSION = '2026-06-06.1'
 
 export type RubricItem = { key: string; label: string; max: number; guide: string }
 
@@ -17,11 +17,11 @@ export const INSIGHT_RUBRIC: RubricItem[] = [
   { key: 'concise', label: '간결성', max: 2, guide: '0=장황·군더더기, 1=약간 김, 2=핵심 1~2문장' },
 ]
 
-// 시퀀스 본체(generateSequence)용 — 안전·기능해부 정합·기구 흐름·블록 균형·reps
+// 시퀀스 본체(generateSequence)용 — 안전·기능해부 정합·기구/자세 흐름·블록 균형·reps
 export const SEQUENCE_RUBRIC: RubricItem[] = [
   { key: 'safety', label: '안전·금기', max: 2, guide: '0=금기 동작 포함(예: 목디스크에 경추 부하), 1=주의 미흡, 2=금기 회피 + caution 명시' },
   { key: 'anatomy', label: '기능해부 정합', max: 2, guide: '0=증상-처방 무관, 1=느슨한 연결, 2=원인 근육을 정확히 타깃하는 처방' },
-  { key: 'flow', label: '기구 흐름', max: 2, guide: '0=전환 과다·난잡, 1=보통, 2=전환 최소·기구별 블록화' },
+  { key: 'flow', label: '기구·자세 흐름', max: 2, guide: '0=기구 전환 과다 또는 자세 왕복(누움→서기→누움 등), 1=보통, 2=전환 최소·기구별 블록화·같은 자세 연속 배치' },
   { key: 'balance', label: '블록 균형', max: 2, guide: '0=편중/필수 블록 누락, 1=대체로 적절, 2=BASI 블록 순서·회원 목표 비중 적절' },
   { key: 'reps', label: 'reps 적절성', max: 2, guide: '0=비거나 부적절, 1=일부만, 2=동작별로 적절한 반복수/시간' },
 ]

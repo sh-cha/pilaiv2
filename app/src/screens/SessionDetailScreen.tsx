@@ -6,7 +6,7 @@ import { Card, SectionLabel, Divider, Button } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
-import { loadSessions, type CapturedSession } from '../lib/flywheel'
+import { loadSessions, sessionStatus, type CapturedSession } from '../lib/flywheel'
 import { loadMembers, type Member } from '../lib/members'
 import { ExerciseSheet } from '../components/ExerciseSheet'
 
@@ -28,12 +28,13 @@ export function SessionDetailScreen() {
 
   const date = session?.createdAt ? `${Number(session.createdAt.slice(5, 7))}/${session.createdAt.slice(8, 10)}` : ''
   const count = session ? session.final.blocks.reduce((n, b) => n + b.exercises.length, 0) : 0
+  const done = !!session && sessionStatus(session) === 'done'
 
   return (
     <AppShell
       title={`${name ?? '수업'}${date ? ` · ${date}` : ''}`}
       footer={
-        session ? (
+        session && !done ? ( // 완료된 수업은 열람 전용 — 진행/완료 버튼 숨김
           <>
             <Button
               title="실시간으로 진행하기"
@@ -50,7 +51,7 @@ export function SessionDetailScreen() {
       {!session ? null : (
         <>
           <Card style={{ marginTop: 10 }}>
-            <Text style={st.cardTitle}>완료된 수업</Text>
+            <Text style={st.cardTitle}>{done ? '완료된 수업' : '수업 전 · 시퀀스 준비됨'}</Text>
             <Text style={st.cardMeta}>{session.input.apparatus.join(', ')} · {session.input.minutes}분 · {count}개 동작</Text>
             {!session.finalValidation.ok ? (
               <View style={st.warnRow}>
@@ -66,7 +67,7 @@ export function SessionDetailScreen() {
               <Card><Text style={st.noteText}>{session.note}</Text></Card>
             </>
           ) : null}
-          <SectionLabel>수행한 시퀀스</SectionLabel>
+          <SectionLabel>{done ? '수행한 시퀀스' : '준비된 시퀀스'}</SectionLabel>
           {session.final.blocks.map((b, bi) => (
             <Card key={bi} style={{ marginBottom: 12 }}>
               <View style={st.phaseHead}>

@@ -28,6 +28,7 @@ export type CapturedSession = {
   usage: Usage // 비용 (PRD §7)
   note?: string // 수업 후 강사 노트 (수업 완료 시 추가)
   nextTags?: string[] // 다음 수업 태그
+  completedAt?: string // 수업 완료 시각 (ISO). 없으면 시퀀스만 저장된 '수업 전' 상태
 }
 
 function multiset(names: string[]): Map<string, number> {
@@ -140,13 +141,31 @@ export async function appendSession(kv: KV, s: CapturedSession): Promise<Capture
   return next
 }
 
-// 저장된 세션에 수업 후 정보(노트·다음 태그)를 덧붙인다.
-export async function updateSession(kv: KV, id: string, patch: Partial<Pick<CapturedSession, 'note' | 'nextTags'>>): Promise<CapturedSession[]> {
+// 저장된 세션에 수업 후 정보(노트·완료 시각·다음 태그)를 덧붙인다.
+export async function updateSession(kv: KV, id: string, patch: Partial<Pick<CapturedSession, 'note' | 'nextTags' | 'completedAt'>>): Promise<CapturedSession[]> {
   const all = await loadSessions(kv)
   const next = all.map((s) => (s.id === id ? { ...s, ...patch } : s))
   await kv.setItem(SESSIONS_KEY, JSON.stringify(next))
   return next
 }
+
+// 저장된 세션의 최종본 교체(수업 시작 전 재편집) — diff·검증을 재계산해 편집 신호를 잃지 않는다.
+export async function updateSessionFinal(kv: KV, id: string, final: Sequence): Promise<CapturedSession[]> {
+  const all = await loadSessions(kv)
+  const next = all.map((s) => {
+    if (s.id !== id) return s
+    const diff = computeDiff(s.generated, final)
+    const v = validateSequence(final)
+    return { ...s, final, diff, edited: diff.length > 0, finalValidation: { ok: v.ok, errors: v.errors } }
+  })
+  await kv.setItem(SESSIONS_KEY, JSON.stringify(next))
+  return next
+}
+
+// 세션 상태 — 완료 처리됐으면 done, 아니면 시퀀스만 저장된 수업 전(ready).
+// note 체크는 completedAt 도입 전 구 세션 호환용.
+export type SessionStatus = 'done' | 'ready'
+export const sessionStatus = (s: CapturedSession): SessionStatus => (s.completedAt || s.note ? 'done' : 'ready')
 
 // ── 이력 (Phase 2: 케어 사이클 변주) ──────────────────────────────────────
 export function sessionsForMember(sessions: CapturedSession[], memberId: string): CapturedSession[] {

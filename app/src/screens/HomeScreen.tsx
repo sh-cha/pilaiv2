@@ -6,16 +6,16 @@ import { Card, SectionLabel, Button, Avatar } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
+import { getProfile } from '../lib/auth'
 import { loadMembers, type Member } from '../lib/members'
-import { loadSessions, sessionsForMember, type CapturedSession } from '../lib/flywheel'
+import { loadSessions, sessionsForMember, sessionStatus, type CapturedSession } from '../lib/flywheel'
 
 type MStatus = 'done' | 'ready' | 'planned'
 const STATUS_LABEL: Record<MStatus, string> = { done: '수업 완료', ready: '시퀀스 준비', planned: '준비 전' }
 
-// 회원의 최근 세션으로 상태 도출: 노트 있음=수업 완료 / 저장만=시퀀스 준비 / 세션 없음=준비 전
+// 회원의 최근 세션으로 상태 도출: 완료 처리=수업 완료 / 저장만=시퀀스 준비 / 세션 없음=준비 전
 function statusOf(latest?: CapturedSession): MStatus {
-  if (!latest) return 'planned'
-  return latest.note ? 'done' : 'ready'
+  return latest ? sessionStatus(latest) : 'planned'
 }
 function dateKo(iso?: string): string | null {
   if (!iso) return null
@@ -61,11 +61,12 @@ export function HomeScreen() {
 
   const list = members ?? []
   const empty = members !== null && list.length === 0
+  const userName = getProfile()?.name // OAuth 프로필 이름 (없으면 호칭만)
 
   return (
     <AppShell tab="home" gear headerBorder>
       <View style={{ paddingTop: 14, paddingBottom: 4 }}>
-        <Text style={st.greet}>안녕하세요, 강사님</Text>
+        <Text style={st.greet}>{userName ? `안녕하세요, ${userName} 강사님` : '안녕하세요, 강사님'}</Text>
         <Text style={st.summary}>
           회원 <Text style={st.num}>{list.length}</Text>명 · 저장된 수업 <Text style={st.num}>{sessions.length}</Text>회
         </Text>

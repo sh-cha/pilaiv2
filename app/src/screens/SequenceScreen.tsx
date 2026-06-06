@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { View, Text, Pressable, StyleSheet, Modal } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import { View, Text, Pressable, StyleSheet, Modal, BackHandler } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
 import { Card, Button, Chip, ChipRow, Input, Rep } from '../components/ui'
@@ -7,12 +7,15 @@ import { Icon } from '../components/Icon'
 import { ExerciseSheet } from '../components/ExerciseSheet'
 import { AddExercisePicker } from '../components/AddExercisePicker'
 import { RowActionSheet, RepsSheet } from '../components/SequenceEditSheets'
+import { DraggableExercises } from '../components/DraggableExercises'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { exByName, tArr } from '../lib/catalog'
-import { computeDiff, buildCapturedSession, appendSession } from '../lib/flywheel'
+import { computeDiff, buildCapturedSession, appendSession, updateSessionFinal } from '../lib/flywheel'
 import { sequenceCoverage } from '../lib/balance'
 import type { Sequence } from '../lib/types'
+
+const EDIT_ROW = 64 // 편집 행 고정 높이 — DraggableExercises의 드래그 거리→인덱스 환산 기준
 
 const clone = (s: Sequence): Sequence => JSON.parse(JSON.stringify(s))
 
@@ -97,6 +100,22 @@ export function SequenceScreen() {
   const [regenOpen, setRegenOpen] = useState(false)
   const [editMode, setEditMode] = useState(false)
 
+  // 뒤로가기: 편집 중엔 편집만 종료(보기 모드로), 아니면 스택 pop — 생성 직후(reset된 스택)엔 홈으로.
+  const goBack = () => {
+    if (editMode) setEditMode(false)
+    else if (nav.depth > 1) nav.back()
+    else nav.tab('home')
+  }
+  // 안드로이드 하드웨어 백도 동일하게 — 편집 중이면 라우터 pop보다 먼저 가로채 편집 종료
+  useEffect(() => {
+    if (!editMode) return
+    const sub = BackHandler.addEventListener('hardwareBackPress', () => {
+      setEditMode(false)
+      return true
+    })
+    return () => sub.remove()
+  }, [editMode])
+
   if (!seq || !gen) {
     return (
       <AppShell title="생성된 시퀀스">
@@ -149,23 +168,7 @@ export function SequenceScreen() {
   const dirty = computeDiff(gen.sequence, seq).length > 0
   const coverage = sequenceCoverage(seq) // 근육군 커버리지 (검증 미리보기)
 
-  const save = async () => {
-    const session = buildCapturedSession({
-      id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
-      memberId: member?.id,
-      createdAt: new Date().toISOString(),
-      input: input!,
-      generated: gen.sequence,
-      final: seq,
-      attempts: gen.attempts,
-      usage: gen.usage,
-    })
-    await appendSession(kv, session)
-    nav.toast('시퀀스를 저장했어요')
-    nav.tab('home')
-  }
-
-  // 수업 시작 — 아직 캡처 전이면 세션으로 저장(노트·기록 연결), 이미 저장본이면 재사용.
+  // 수업 시작 — 별도 저장 버튼 없이 여기서 캡처. 첫 시작이면 세션 생성, 저장본이면 재편집분을 반영.
   const startClass = async () => {
     let sid = nav.ctx.savedSessionId
     if (!sid) {
@@ -181,6 +184,8 @@ export function SequenceScreen() {
         usage: gen.usage,
       })
       await appendSession(kv, session)
+    } else {
+      await updateSessionFinal(kv, sid, seq) // 편집 없이도 멱등 — diff·검증 재계산
     }
     nav.setCtx({ classSeq: seq, member, savedSessionId: sid })
     nav.go('classPlay')
@@ -205,6 +210,7 @@ export function SequenceScreen() {
   return (
     <AppShell
       title="생성된 시퀀스"
+      onBack={goBack}
       headerRight={
         <Pressable hitSlop={8} onPress={() => setEditMode((e) => !e)} style={st.editBtn}>
           <Text style={st.editBtnText}>{editMode ? '완료' : '편집'}</Text>
@@ -214,10 +220,7 @@ export function SequenceScreen() {
         editMode ? (
           <Button title="편집 완료" onPress={() => setEditMode(false)} />
         ) : (
-          <View style={{ flexDirection: 'row', gap: 10 }}>
-            <Button variant="ghost" title="수업 시작" onPress={startClass} style={{ flex: 1 }} />
-            <Button variant="dark" title="저장" onPress={save} style={{ flex: 1 }} />
-          </View>
+          <Button title="수업 시작" onPress={startClass} />
         )
       }
     >
@@ -249,7 +252,7 @@ export function SequenceScreen() {
           <Button variant="ghost" title="다시 생성" icon={<Icon name="spark" size={16} color={colors.primary} />} onPress={() => setRegenOpen(true)} style={st.regenBtn} />
         </>
       ) : (
-        <Text style={st.editHint}>동작을 탭하면 교체·횟수·순서·삭제를 바꿀 수 있어요.</Text>
+        <Text style={st.editHint}>⋮ 손잡이를 끌어 순서를 바꾸고, 동작을 탭해 교체·횟수·삭제할 수 있어요.</Text>
       )}
 
       {seq.blocks.map((b, bi) => (
@@ -258,41 +261,65 @@ export function SequenceScreen() {
             <Text style={st.phaseTitle}>{b.block}</Text>
             <Text style={st.appTag}>{b.apparatus.toUpperCase()}</Text>
           </View>
-          {b.exercises.map((it, ei) => {
-            const ex = exByName.get(it.name)
-            const muscle = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])[0]
-            const lastItem = ei === b.exercises.length - 1
-            const openRow = () => (editMode ? setAction({ bi, ei }) : setSheet({ name: it.name, reps: it.reps, block: b.block }))
-            return (
-              <View key={ei} style={st.exRow}>
-                <View style={st.timeline}>
-                  <View style={st.node}><Text style={st.nodeText}>{ei + 1}</Text></View>
-                  {!lastItem ? <View style={st.line} /> : null}
-                </View>
-                <View style={{ flex: 1, paddingBottom: lastItem ? 0 : 14 }}>
-                  <View style={st.exTop}>
-                    <Pressable style={{ flex: 1 }} hitSlop={4} onPress={openRow}>
-                      <Text style={st.exName} numberOfLines={1}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
-                    </Pressable>
-                    <View style={st.exCtrl}>
-                      {it.reps ? <Rep>{it.reps}</Rep> : null}
-                      {editMode ? (
-                        <Pressable hitSlop={8} onPress={() => setAction({ bi, ei })}><Icon name="kebab" size={18} color={colors.faint} /></Pressable>
-                      ) : null}
-                    </View>
+          {!editMode ? (
+            b.exercises.map((it, ei) => {
+              const ex = exByName.get(it.name)
+              const muscle = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])[0]
+              const lastItem = ei === b.exercises.length - 1
+              return (
+                <View key={ei} style={st.exRow}>
+                  <View style={st.timeline}>
+                    <View style={st.node}><Text style={st.nodeText}>{ei + 1}</Text></View>
+                    {!lastItem ? <View style={st.line} /> : null}
                   </View>
-                  {muscle ? <Chip label={muscle} variant="tint" style={st.muscleChip} textStyle={{ fontSize: 11.5 }} /> : null}
-                  {it.reason ? (
-                    <View style={st.reasonRow}>
-                      <Icon name="spark" size={11} color={colors.primary} />
-                      <Text style={st.reason}>{it.reason}</Text>
+                  <View style={{ flex: 1, paddingBottom: lastItem ? 0 : 14 }}>
+                    <View style={st.exTop}>
+                      <Pressable style={{ flex: 1 }} hitSlop={4} onPress={() => setSheet({ name: it.name, reps: it.reps, block: b.block })}>
+                        <Text style={st.exName} numberOfLines={1}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
+                      </Pressable>
+                      {it.reps ? <Rep>{it.reps}</Rep> : null}
                     </View>
-                  ) : null}
-                  {it.caution ? <Text style={st.caution}>{it.caution}</Text> : null}
+                    {muscle ? <Chip label={muscle} variant="tint" style={st.muscleChip} textStyle={{ fontSize: 11.5 }} /> : null}
+                    {it.reason ? (
+                      <View style={st.reasonRow}>
+                        <Icon name="spark" size={11} color={colors.primary} />
+                        <Text style={st.reason}>{it.reason}</Text>
+                      </View>
+                    ) : null}
+                    {it.caution ? <Text style={st.caution}>{it.caution}</Text> : null}
+                  </View>
                 </View>
-              </View>
-            )
-          })}
+              )
+            })
+          ) : (
+            // 편집 모드 — 핸들 드래그로 순서 변경, 행 탭으로 교체·횟수·삭제 시트.
+            // 행은 EDIT_ROW 고정 높이 (드래그 인덱스 환산 정확도).
+            <DraggableExercises
+              count={b.exercises.length}
+              rowHeight={EDIT_ROW}
+              onReorder={(from, to) => reorder(bi, from, to)}
+              renderRow={(ei, handle, dragging) => {
+                const it = b.exercises[ei]
+                if (!it) return null
+                const ex = exByName.get(it.name)
+                const muscle = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])[0]
+                return (
+                  <View style={[st.dragRow, dragging && { opacity: 0.97 }]}>
+                    <View style={st.handle} {...handle}>
+                      <View style={st.handleBar} />
+                      <View style={st.handleBar} />
+                      <View style={st.handleBar} />
+                    </View>
+                    <Pressable style={{ flex: 1 }} hitSlop={4} onPress={() => setAction({ bi, ei })}>
+                      <Text style={st.dragName} numberOfLines={1}>{it.name}</Text>
+                      {muscle ? <Text style={st.dragMeta} numberOfLines={1}>{muscle}</Text> : null}
+                    </Pressable>
+                    {it.reps ? <Rep>{it.reps}</Rep> : null}
+                  </View>
+                )
+              }}
+            />
+          )}
           {editMode ? (
             <Pressable style={st.addBtn} onPress={() => setPickerBlock(bi)}>
               <Text style={st.addText}>+ 동작 추가</Text>
@@ -306,13 +333,10 @@ export function SequenceScreen() {
         <RowActionSheet
           name={actItem.name}
           sub={[actMuscle, actItem.reps].filter(Boolean).join(' · ')}
-          pos={action.ei}
-          count={seq.blocks[action.bi].exercises.length}
           onClose={() => setAction(null)}
           onDetail={() => { setSheet({ name: actItem.name, reps: actItem.reps, block: seq.blocks[action.bi].block }); setAction(null) }}
           onReplace={() => { setReplaceAt(action); setAction(null) }}
           onReps={() => { setRepsAt(action); setAction(null) }}
-          onMove={(dir) => { reorder(action.bi, action.ei, action.ei + dir); setAction(null) }}
           onDelete={() => { del(action.bi, action.ei); setAction(null) }}
         />
       ) : null}
@@ -358,8 +382,12 @@ const st = StyleSheet.create({
   line: { width: 2, flex: 1, backgroundColor: colors.line, marginTop: 4 },
   exTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 },
   exName: { flex: 1, fontFamily: font.bold, fontSize: 15.5, color: colors.ink, paddingTop: 2 },
-  exCtrl: { flexDirection: 'row', alignItems: 'center', gap: 9 },
   editHint: { fontFamily: font.regular, fontSize: 13.5, color: colors.muted, marginBottom: 14, marginHorizontal: 2, lineHeight: 20 },
+  dragRow: { height: EDIT_ROW, flexDirection: 'row', alignItems: 'center', gap: 10 },
+  handle: { width: 32, alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center', gap: 3 },
+  handleBar: { width: 16, height: 2, borderRadius: 1, backgroundColor: colors.faint },
+  dragName: { fontFamily: font.bold, fontSize: 15.5, color: colors.ink },
+  dragMeta: { fontFamily: font.regular, fontSize: 12, color: colors.faint, marginTop: 2 },
   muscleChip: { paddingVertical: 2, paddingHorizontal: 9, marginTop: 5, alignSelf: 'flex-start' },
   reasonRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 5, marginTop: 5 },
   reason: { flex: 1, fontFamily: font.regular, fontSize: 12.5, color: colors.muted, lineHeight: 17 },

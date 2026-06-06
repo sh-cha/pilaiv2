@@ -2,10 +2,35 @@
 // 실 로그인 = 카카오/구글/애플 OAuth(signInWithProvider). 익명(signIn)은 임시/게스트용으로 남겨둠.
 import * as WebBrowser from 'expo-web-browser'
 import * as Linking from 'expo-linking'
+import type { User } from '@supabase/supabase-js'
 import { supabase } from './supabase'
 
-let currentUserId: string | null = null
-export const getUserId = (): string | null => currentUserId
+let currentUser: User | null = null
+export const getUserId = (): string | null => currentUser?.id ?? null
+
+// 표시용 프로필 — 이름은 OAuth user_metadata에서(제공자마다 키가 달라 후보 순회), 로그인 수단은 app_metadata.provider.
+export type Profile = { name: string | null; loginLabel: string }
+
+const PROVIDER_LABEL: Record<string, string> = {
+  kakao: '카카오 로그인',
+  google: 'Google 로그인',
+  apple: 'Apple 로그인',
+  email: '이메일 로그인',
+  anonymous: '게스트',
+}
+
+export function getProfile(): Profile | null {
+  if (!currentUser) return null
+  const m = (currentUser.user_metadata ?? {}) as Record<string, unknown>
+  const email = currentUser.email ?? (typeof m.email === 'string' ? m.email : undefined)
+  const name =
+    [m.full_name, m.name, m.user_name, m.preferred_username, email?.split('@')[0]].find(
+      (v): v is string => typeof v === 'string' && v.trim() !== '',
+    )?.trim() ?? null
+  const provider = currentUser.app_metadata?.provider
+  const loginLabel = (provider && PROVIDER_LABEL[provider]) ?? email ?? '로그인됨'
+  return { name, loginLabel }
+}
 
 // 앱 시작 시 1회 호출 — 기존 세션 복원 + 변경 구독. onChange로 라우터가 초기 화면을 정할 수 있다.
 export function initAuth(onChange?: (userId: string | null) => void): void {
@@ -14,12 +39,12 @@ export function initAuth(onChange?: (userId: string | null) => void): void {
     return
   }
   supabase.auth.getSession().then(({ data }) => {
-    currentUserId = data.session?.user.id ?? null
-    onChange?.(currentUserId)
+    currentUser = data.session?.user ?? null
+    onChange?.(getUserId())
   })
   supabase.auth.onAuthStateChange((_event, session) => {
-    currentUserId = session?.user.id ?? null
-    onChange?.(currentUserId)
+    currentUser = session?.user ?? null
+    onChange?.(getUserId())
   })
 }
 
@@ -32,11 +57,11 @@ export async function signIn(): Promise<void> {
     if (error) throw error
   }
   const { data: after } = await supabase.auth.getSession()
-  currentUserId = after.session?.user.id ?? null
+  currentUser = after.session?.user ?? null
 }
 
 export async function signOut(): Promise<void> {
-  currentUserId = null
+  currentUser = null
   if (supabase) await supabase.auth.signOut()
 }
 
@@ -65,5 +90,5 @@ export async function signInWithProvider(provider: 'google' | 'apple' | 'kakao')
   const { error: exErr } = await supabase.auth.exchangeCodeForSession(code)
   if (exErr) throw exErr
   const { data: after } = await supabase.auth.getSession()
-  currentUserId = after.session?.user.id ?? null
+  currentUser = after.session?.user ?? null
 }

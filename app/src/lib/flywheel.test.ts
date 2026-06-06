@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { computeDiff, buildCapturedSession, loadSessions, appendSession, sessionsForMember, summarizeHistory, SESSIONS_KEY, type KV } from './flywheel'
+import { computeDiff, buildCapturedSession, loadSessions, appendSession, updateSession, updateSessionFinal, sessionStatus, sessionsForMember, summarizeHistory, SESSIONS_KEY, type KV } from './flywheel'
 import type { MemberInput, Sequence } from './types'
 import type { Usage } from './generateSequence'
 
@@ -154,6 +154,49 @@ describe('영속 (appendSession/loadSessions)', () => {
     const { kv, store } = fakeKV()
     store[SESSIONS_KEY] = '{깨진 json'
     expect(await loadSessions(kv)).toEqual([])
+  })
+
+  it('updateSessionFinal: final 교체 + diff·검증 재계산 (수업 시작 전 재편집)', async () => {
+    const { kv } = fakeKV()
+    const s = buildCapturedSession({
+      id: 'a',
+      createdAt: 't',
+      input,
+      generated: seq(['Pelvic Curl', 'Parallel Heels']),
+      final: seq(['Pelvic Curl', 'Parallel Heels']),
+      attempts: 1,
+      usage,
+    })
+    await appendSession(kv, s)
+    const after = await updateSessionFinal(kv, 'a', seq(['Pelvic Curl']))
+    expect(after[0].final.blocks[0].exercises.map((e) => e.name)).toEqual(['Pelvic Curl'])
+    expect(after[0].edited).toBe(true)
+    expect(after[0].diff).toEqual([{ type: 'remove', block: '웜업', name: 'Parallel Heels' }])
+    expect(after[0].generated.blocks[0].exercises.length).toBe(2) // 원본은 보존
+  })
+})
+
+describe('세션 상태 (수업 전/완료)', () => {
+  const mk = (id: string) =>
+    buildCapturedSession({ id, createdAt: 't', input, generated: seq(['Pelvic Curl']), final: seq(['Pelvic Curl']), attempts: 1, usage })
+
+  it('저장만 된 세션 = ready (기록에 완료로 뜨지 않음)', () => {
+    expect(sessionStatus(mk('a'))).toBe('ready')
+  })
+
+  it('completedAt 찍히면 done — 노트 없어도', () => {
+    expect(sessionStatus({ ...mk('a'), completedAt: '2026-06-06T10:00:00Z' })).toBe('done')
+  })
+
+  it('구 세션 호환: note만 있어도 done', () => {
+    expect(sessionStatus({ ...mk('a'), note: '좋았음' })).toBe('done')
+  })
+
+  it('updateSession으로 completedAt 패치 → done', async () => {
+    const { kv } = fakeKV()
+    await appendSession(kv, mk('a'))
+    const after = await updateSession(kv, 'a', { completedAt: '2026-06-06T10:00:00Z' })
+    expect(sessionStatus(after[0])).toBe('done')
   })
 })
 

@@ -1,5 +1,5 @@
-// 시퀀스 편집 시트 — 행을 탭하면 뜨는 단일 액션시트(교체·횟수·순서·삭제)와 횟수 시트.
-// 가짜 드래그 핸들/중복 × 삭제 대신, 번호+케밥(⋮) → 액션시트 한 경로로 일원화. [#6]
+// 시퀀스 편집 시트 — 행을 탭하면 뜨는 단일 액션시트(교체·횟수·삭제)와 횟수 시트.
+// 순서 변경은 시트가 아니라 행의 핸들 드래그(DraggableExercises)로 — 시트엔 위치 이동 항목을 두지 않는다.
 import React from 'react'
 import { View, Text, Pressable, Modal, StyleSheet } from 'react-native'
 import { colors, font, radius } from '../theme/tokens'
@@ -37,17 +37,15 @@ function ActRow({ icon, label, danger, disabled, onPress }: { icon: IconName; la
 }
 
 // 한 동작 행의 액션시트
-export function RowActionSheet({ name, sub, pos, count, onDetail, onReplace, onReps, onMove, onDelete, onClose }: {
-  name: string; sub?: string; pos: number; count: number
-  onDetail: () => void; onReplace: () => void; onReps: () => void; onMove: (dir: -1 | 1) => void; onDelete: () => void; onClose: () => void
+export function RowActionSheet({ name, sub, onDetail, onReplace, onReps, onDelete, onClose }: {
+  name: string; sub?: string
+  onDetail: () => void; onReplace: () => void; onReps: () => void; onDelete: () => void; onClose: () => void
 }) {
   return (
     <Sheet title={name} sub={sub} onClose={onClose}>
       <ActRow icon="chev" label="동작 상세 보기" onPress={onDetail} />
       <ActRow icon="swap" label="다른 동작으로 교체" onPress={onReplace} />
       <ActRow icon="reps" label="횟수 · 세트 수정" onPress={onReps} />
-      <ActRow icon="up" label="위로 이동" disabled={pos === 0} onPress={() => onMove(-1)} />
-      <ActRow icon="down" label="아래로 이동" disabled={pos === count - 1} onPress={() => onMove(1)} />
       <ActRow icon="trash" label="동작 삭제" danger onPress={onDelete} />
     </Sheet>
   )
