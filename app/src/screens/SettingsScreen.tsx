@@ -6,6 +6,7 @@ import { Card, Avatar, SectionLabel } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { INSTRUCTOR } from '../data/demo'
+import { signOut } from '../lib/auth'
 
 export function SettingsScreen() {
   const nav = useNav()
@@ -30,7 +31,7 @@ export function SettingsScreen() {
           <Text style={st.k}>화면 미리보기 · 빈 상태</Text>
           <Icon name="chev" size={13} color={colors.faint} />
         </Pressable>
-        <Pressable style={[st.row, st.rowBorder]} onPress={() => nav.reset('login')}>
+        <Pressable style={[st.row, st.rowBorder]} onPress={async () => { await signOut(); nav.reset('login') }}>
           <Text style={[st.k, { color: colors.accent }]}>로그아웃</Text>
         </Pressable>
       </Card>

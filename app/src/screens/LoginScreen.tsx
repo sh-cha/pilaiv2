@@ -3,12 +3,21 @@ import { View, Text, Pressable, StyleSheet } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { colors, font } from '../theme/tokens'
 import { useNav } from '../nav/router'
+import { signIn } from '../lib/auth'
 
-// 실제 OAuth 백엔드는 아직 없음 — 버튼 탭 시 홈으로 진입(데모). 추후 카카오/구글/애플 SDK 연결.
+// Supabase 설정 시: 버튼 탭 → 익명 세션 확보(RLS용 uid) → 홈. 미설정/실패 시 로컬 데모로 진입.
+// 카카오/구글/애플 OAuth 실연결은 docs/SUPABASE.md 참고(미배선).
 export function LoginScreen() {
   const nav = useNav()
   const insets = useSafeAreaInsets()
-  const enter = () => nav.reset('home')
+  const enter = async () => {
+    try {
+      await signIn()
+    } catch {
+      // 익명 로그인 실패(예: 비활성) → 로컬 모드로 진입
+    }
+    nav.reset('home')
+  }
   return (
     <View style={[st.login, { paddingTop: insets.top, paddingBottom: insets.bottom + 24 }]}>
       <View style={st.top}>
