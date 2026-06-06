@@ -7,6 +7,7 @@ import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { loadMembers, type Member } from '../lib/members'
+import { loadSessions, sessionsForMember } from '../lib/flywheel'
 import { splitTags } from '../lib/catalog'
 import { PAIN_CHIPS, GOAL_CHIPS, APPARATUS, INTENSITY, DURATION } from '../data/constants'
 import type { MemberInput } from '../lib/types'
@@ -25,16 +26,26 @@ export function GenerateScreen() {
   const [goals, setGoals] = useState<string[]>([])
   const [customGoal, setCustomGoal] = useState('')
   const [editCtx, setEditCtx] = useState(false)
-  // 오늘 세션
-  const [cond, setCond] = useState('좋음')
+  // 오늘 세션 — 회원 체크인에서 보낸 컨디션이 있으면 프리필(없으면 '좋음')
+  const fromCheckin = !!nav.ctx.checkinCond
+  const [cond, setCond] = useState(nav.ctx.checkinCond ?? '좋음')
   const [showOpt, setShowOpt] = useState(false)
   const [apps, setApps] = useState<string[]>(['reformer'])
   const [inten, setInten] = useState('보통')
   const [dur, setDur] = useState('50')
+  const [lastNote, setLastNote] = useState<string | null>(null) // 지난 강사 노트 → 생성 반영 가시화
 
   useEffect(() => {
     loadMembers(kv).then(setMembers)
   }, [])
+  // 회원의 최근 노트(있으면) — summarizeHistory로 생성 컨텍스트에 들어가므로 강사에게 보여준다
+  useEffect(() => {
+    if (!mid) return setLastNote(null)
+    loadSessions(kv).then((all) => {
+      const noted = sessionsForMember(all, mid).find((s) => s.note?.trim())
+      setLastNote(noted?.note?.trim() ?? null)
+    })
+  }, [mid])
   useEffect(() => {
     const m = members.find((x) => x.id === mid) ?? nav.ctx.member
     if (!m) return
@@ -89,7 +100,7 @@ export function GenerateScreen() {
             <View>
               <Text style={st.capFaint}>통증 · 제약</Text>
               <ChipRow>
-                {allPain.length ? allPain.map((c) => <WarnTag key={c}>⚠ {c}</WarnTag>) : <Text style={st.cap}>특이사항 없음</Text>}
+                {allPain.length ? allPain.map((c) => <WarnTag key={c}>{c}</WarnTag>) : <Text style={st.cap}>특이사항 없음</Text>}
               </ChipRow>
             </View>
             <View>
@@ -119,9 +130,23 @@ export function GenerateScreen() {
         )}
       </Card>
 
+      {/* 지난 강사 노트 — 생성 컨텍스트에 반영됨을 가시화 [#7] */}
+      {lastNote ? (
+        <View style={st.noteCard}>
+          <Icon name="spark" size={15} color={colors.primary} />
+          <View style={{ flex: 1 }}>
+            <Text style={st.noteLabel}>지난 노트 반영</Text>
+            <Text style={st.noteText} numberOfLines={2}>{lastNote}</Text>
+          </View>
+        </View>
+      ) : null}
+
       {/* 오늘 세션 — 매번 바뀌는 컨디션만 전면, 옵션은 접기 */}
       <Card style={{ marginTop: 14 }}>
-        <Label>오늘 컨디션</Label>
+        <View style={st.condHead}>
+          <Label style={{ marginBottom: 0 }}>오늘 컨디션</Label>
+          {fromCheckin ? <Text style={st.checkinTag}>체크인 반영됨</Text> : null}
+        </View>
         <Segmented options={['좋음', '보통', '안좋음']} value={cond} onChange={setCond} />
 
         <Divider style={{ marginTop: 16, marginBottom: 10 }} />
@@ -166,6 +191,11 @@ const st = StyleSheet.create({
   edit: { fontFamily: font.bold, fontSize: 13.5, color: colors.primary },
   capFaint: { fontFamily: font.regular, fontSize: 13, color: colors.faint, marginBottom: 6 },
   cap: { fontFamily: font.regular, fontSize: 13, color: colors.muted },
+  noteCard: { flexDirection: 'row', gap: 10, alignItems: 'flex-start', backgroundColor: colors.tint, borderRadius: 16, paddingVertical: 13, paddingHorizontal: 15, marginTop: 14 },
+  noteLabel: { fontFamily: font.bold, fontSize: 12.5, color: colors.primary },
+  noteText: { fontFamily: font.regular, fontSize: 14, color: colors.tintInk, marginTop: 3, lineHeight: 20 },
+  condHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 },
+  checkinTag: { fontFamily: font.bold, fontSize: 11.5, color: colors.primary, backgroundColor: colors.tint, paddingVertical: 3, paddingHorizontal: 9, borderRadius: 999, overflow: 'hidden' },
   disc: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingVertical: 4, paddingHorizontal: 2 },
   dl: { fontFamily: font.bold, fontSize: 14.5, color: colors.ink },
   dr: { flexDirection: 'row', alignItems: 'center', gap: 7 },

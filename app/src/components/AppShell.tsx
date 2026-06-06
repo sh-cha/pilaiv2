@@ -24,6 +24,7 @@ type Props = {
   children: React.ReactNode
   title?: string // 있으면 뒤로가기+제목 헤더
   onBack?: () => void // 뒤로 동작 커스텀 (기본 nav.back) — 스테퍼 등에서 사용
+  headerRight?: React.ReactNode // 제목 헤더 우측 액션 (예: 편집/완료)
   gear?: boolean // 로고 헤더의 설정 아이콘
   tab?: string // 있으면 하단 탭바 표시 (현재 탭 id)
   footer?: React.ReactNode
@@ -32,7 +33,7 @@ type Props = {
   bodyStyle?: StyleProp<ViewStyle>
 }
 
-export function AppShell({ children, title, onBack, gear, tab, footer, scroll = true, headerBorder, bodyStyle }: Props) {
+export function AppShell({ children, title, onBack, headerRight, gear, tab, footer, scroll = true, headerBorder, bodyStyle }: Props) {
   const insets = useSafeAreaInsets()
   const nav = useNav()
   return (
@@ -41,6 +42,7 @@ export function AppShell({ children, title, onBack, gear, tab, footer, scroll = 
         <View style={[st.head, st.headBorder, { paddingTop: insets.top + 8 }]}>
           <Pressable onPress={onBack ?? nav.back} style={st.iconBtn} hitSlop={8}><Icon name="back" size={17} color={colors.ink} /></Pressable>
           <Text style={st.title} numberOfLines={1}>{title}</Text>
+          {headerRight}
         </View>
       ) : (
         <View style={[st.head, headerBorder && st.headBorder, { paddingTop: insets.top + 8 }]}>

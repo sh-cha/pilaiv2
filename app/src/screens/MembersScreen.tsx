@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from 'react'
 import { View, Text, Pressable, StyleSheet } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
-import { Card, Avatar, WarnTag, ChipRow, FieldGhost } from '../components/ui'
+import { Card, Avatar, WarnTag, ChipRow, Input } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
@@ -15,6 +15,7 @@ export function MembersScreen() {
   const nav = useNav()
   const [members, setMembers] = useState<Member[] | null>(null)
   const [sessions, setSessions] = useState<CapturedSession[]>([])
+  const [query, setQuery] = useState('')
 
   const refresh = useCallback(() => {
     loadMembers(kv).then(setMembers)
@@ -32,11 +33,18 @@ export function MembersScreen() {
 
   if (members && members.length === 0) return <EmptyMembers />
 
+  // 이름·통증·목표로 검색 (대소문자 무시)
+  const q = query.trim().toLowerCase()
+  const filtered = (members ?? []).filter(
+    (m) => !q || m.name.toLowerCase().includes(q) || (m.conditions ?? '').toLowerCase().includes(q) || (m.goals ?? '').toLowerCase().includes(q),
+  )
+
   return (
     <AppShell tab="members" gear headerBorder>
       <Text style={st.h1}>회원</Text>
-      <FieldGhost text="회원 검색…" style={{ marginBottom: 16 }} />
-      {(members ?? []).map((m) => {
+      <Input value={query} onChangeText={setQuery} placeholder="회원 검색…" autoCorrect={false} style={{ marginBottom: 16 }} />
+      {members && filtered.length === 0 ? <Text style={st.noResult}>'{query}'에 맞는 회원이 없어요</Text> : null}
+      {filtered.map((m) => {
         const ms = sessionsForMember(sessions, m.id)
         const warns = splitTags(m.conditions)
         return (
@@ -56,7 +64,7 @@ export function MembersScreen() {
               {warns.length > 0 && (
                 <ChipRow style={{ marginTop: 10 }}>
                   {warns.map((w) => (
-                    <WarnTag key={w}>⚠ {w}</WarnTag>
+                    <WarnTag key={w}>{w}</WarnTag>
                   ))}
                 </ChipRow>
               )}
@@ -73,6 +81,7 @@ export function MembersScreen() {
 
 const st = StyleSheet.create({
   h1: { fontFamily: font.extrabold, fontSize: 27, color: colors.ink, letterSpacing: -0.7, marginBottom: 16, marginTop: 2 },
+  noResult: { fontFamily: font.regular, fontSize: 14, color: colors.muted, paddingVertical: 24, textAlign: 'center' },
   top: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   name: { fontFamily: font.extrabold, fontSize: 18, color: colors.ink },
   meta: { fontFamily: font.regular, fontSize: 13, color: colors.muted, marginTop: 2 },

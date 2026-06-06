@@ -45,7 +45,6 @@ export function HistoryScreen() {
                     {focus.slice(0, 3).map((f) => (
                       <Chip key={f} label={f} variant="tint" style={st.mini} textStyle={{ fontSize: 12 }} />
                     ))}
-                    <Text style={st.edit}>· {s.edited ? `편집 ${s.diff.length}` : '편집 없음'}</Text>
                   </ChipRow>
                 </View>
                 <Icon name="chev" size={13} color={colors.faint} />
@@ -70,5 +69,4 @@ const st = StyleSheet.create({
   name: { fontFamily: font.bold, fontSize: 16, color: colors.ink },
   min: { fontFamily: font.regular, fontSize: 13, color: colors.faint },
   mini: { paddingVertical: 3, paddingHorizontal: 9 },
-  edit: { fontFamily: font.regular, fontSize: 13, color: colors.faint },
 })

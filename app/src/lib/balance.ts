@@ -2,6 +2,7 @@
 // 부위 키워드는 exercises.json의 37개 근육명에서 확인된 패턴.
 import { exByName } from './catalog'
 import type { CapturedSession } from './flywheel'
+import type { Sequence } from './types'
 
 export type Region = '코어' | '하체' | '상체'
 
@@ -25,6 +26,24 @@ export function memberBalance(sessions: CapturedSession[], maxSessions = 5): { r
         counts[regionOf(m)]++
         total++
       }
+    }
+  }
+  if (total === 0) return null
+  return (['코어', '하체', '상체'] as Region[]).map((region) => ({ region, pct: Math.round((counts[region] / total) * 100) }))
+}
+
+// 한 시퀀스의 근육군 커버리지 — 동작들의 대표 근육 → 부위 집계 → %. 생성 결과 위 "검증 미리보기"용.
+// memberBalance와 같은 분류(regionOf)를 단일 시퀀스에 적용. 매칭 근육 없으면 null.
+export function sequenceCoverage(seq: Sequence): { region: Region; pct: number }[] | null {
+  const counts: Record<Region, number> = { 코어: 0, 하체: 0, 상체: 0 }
+  let total = 0
+  for (const b of seq.blocks ?? []) {
+    for (const ex of b.exercises ?? []) {
+      const cat = exByName.get(ex.name)
+      const m = cat?.muscle_focus_ko?.[0] ?? cat?.muscle_focus?.[0]
+      if (!m) continue
+      counts[regionOf(m)]++
+      total++
     }
   }
   if (total === 0) return null

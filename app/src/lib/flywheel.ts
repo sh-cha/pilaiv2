@@ -160,7 +160,9 @@ export function summarizeHistory(sessions: CapturedSession[], max = 3): string {
   if (!recent.length) return ''
   const lines = recent.map((s, i) => {
     const names = (s.final.blocks ?? []).flatMap((b) => (b.exercises ?? []).map((e) => e.name))
-    return `${i + 1}. ${s.createdAt.slice(0, 10)} · ${names.join(', ')}`
+    // 강사 노트(수업 후 관찰)는 다음 처방의 핵심 신호 — 이력에 함께 주입한다 [#7]
+    const note = s.note?.trim() ? ` · 강사 노트: ${s.note.trim()}` : ''
+    return `${i + 1}. ${s.createdAt.slice(0, 10)} · ${names.join(', ')}${note}`
   })
-  return `최근 수업 이력 (최신순, 변주 참고):\n${lines.join('\n')}`
+  return `최근 수업 이력 (최신순, 변주·노트 참고):\n${lines.join('\n')}`
 }

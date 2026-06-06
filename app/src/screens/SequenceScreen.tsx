@@ -6,11 +6,12 @@ import { Card, Button, Chip, ChipRow, Input, Rep } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { ExerciseSheet } from '../components/ExerciseSheet'
 import { AddExercisePicker } from '../components/AddExercisePicker'
-import { DraggableExercises } from '../components/DraggableExercises'
+import { RowActionSheet, RepsSheet } from '../components/SequenceEditSheets'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { exByName, tArr } from '../lib/catalog'
 import { computeDiff, buildCapturedSession, appendSession } from '../lib/flywheel'
+import { sequenceCoverage } from '../lib/balance'
 import type { Sequence } from '../lib/types'
 
 const clone = (s: Sequence): Sequence => JSON.parse(JSON.stringify(s))
@@ -74,7 +75,10 @@ export function SequenceScreen() {
     return base ? clone(base) : null
   })
   const [sheet, setSheet] = useState<{ name: string; reps?: string; block: string } | null>(null)
-  const [pickerBlock, setPickerBlock] = useState<number | null>(null)
+  const [pickerBlock, setPickerBlock] = useState<number | null>(null) // 동작 추가 대상 블록
+  const [replaceAt, setReplaceAt] = useState<{ bi: number; ei: number } | null>(null) // 교체 대상
+  const [action, setAction] = useState<{ bi: number; ei: number } | null>(null) // 행 액션시트
+  const [repsAt, setRepsAt] = useState<{ bi: number; ei: number } | null>(null) // 횟수 시트
   const [regenOpen, setRegenOpen] = useState(false)
   const [editMode, setEditMode] = useState(false)
 
@@ -100,18 +104,35 @@ export function SequenceScreen() {
       next.blocks[bi].exercises.push({ name, reps: '10회' })
       return next
     })
-  // 동작 순서 변경 — 핸들 드래그로 from→to 이동
+  // 동작 교체 — 이름만 바꾸고 reps는 유지(이전 동작의 reason·caution은 버림)
+  const replaceExercise = (bi: number, ei: number, name: string) =>
+    setSeq((prev) => {
+      if (!prev) return prev
+      const next = clone(prev)
+      next.blocks[bi].exercises[ei] = { name, reps: next.blocks[bi].exercises[ei].reps }
+      return next
+    })
+  const setRep = (bi: number, ei: number, reps: string) =>
+    setSeq((prev) => {
+      if (!prev) return prev
+      const next = clone(prev)
+      next.blocks[bi].exercises[ei] = { ...next.blocks[bi].exercises[ei], reps }
+      return next
+    })
+  // 순서 변경 — from→to 이동
   const reorder = (bi: number, from: number, to: number) =>
     setSeq((prev) => {
       if (!prev) return prev
       const next = clone(prev)
       const arr = next.blocks[bi].exercises
+      if (to < 0 || to >= arr.length) return prev
       const [item] = arr.splice(from, 1)
       arr.splice(to, 0, item)
       return next
     })
 
-  const editCount = computeDiff(gen.sequence, seq).length
+  const dirty = computeDiff(gen.sequence, seq).length > 0
+  const coverage = sequenceCoverage(seq) // 근육군 커버리지 (검증 미리보기)
 
   const save = async () => {
     const session = buildCapturedSession({
@@ -129,32 +150,91 @@ export function SequenceScreen() {
     nav.tab('home')
   }
 
+  // 수업 시작 — 아직 캡처 전이면 세션으로 저장(노트·기록 연결), 이미 저장본이면 재사용.
+  const startClass = async () => {
+    let sid = nav.ctx.savedSessionId
+    if (!sid) {
+      sid = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`
+      const session = buildCapturedSession({
+        id: sid,
+        memberId: member?.id,
+        createdAt: new Date().toISOString(),
+        input: input!,
+        generated: gen.sequence,
+        final: seq,
+        attempts: gen.attempts,
+        usage: gen.usage,
+      })
+      await appendSession(kv, session)
+    }
+    nav.setCtx({ classSeq: seq, member, savedSessionId: sid })
+    nav.go('classPlay')
+  }
+
   const setupLine = input ? `${input.apparatus.join(', ')} · ${input.minutes}분${input.goals ? ' · ' + input.goals : ''}` : ''
+
+  // 액션시트 대상 동작 정보
+  const actItem = action ? seq.blocks[action.bi]?.exercises[action.ei] : null
+  const actEx = actItem ? exByName.get(actItem.name) : undefined
+  const actMuscle = actItem ? tArr(actEx?.muscle_focus_ko, actEx?.muscle_focus ?? [])[0] : undefined
+
+  // 추가/교체 공용 picker
+  const pickerApparatus =
+    replaceAt != null ? seq.blocks[replaceAt.bi].apparatus : pickerBlock != null ? seq.blocks[pickerBlock].apparatus : null
+  const onPickEx = (name: string) => {
+    if (replaceAt != null) { replaceExercise(replaceAt.bi, replaceAt.ei, name); setReplaceAt(null); nav.toast('동작을 교체했어요') }
+    else if (pickerBlock != null) { add(pickerBlock, name); setPickerBlock(null) }
+  }
+  const onPickerClose = () => { setReplaceAt(null); setPickerBlock(null) }
 
   return (
     <AppShell
       title="생성된 시퀀스"
-      footer={<Button variant="dark" title="시퀀스 저장" onPress={save} />}
+      headerRight={
+        <Pressable hitSlop={8} onPress={() => setEditMode((e) => !e)} style={st.editBtn}>
+          <Text style={st.editBtnText}>{editMode ? '완료' : '편집'}</Text>
+        </Pressable>
+      }
+      footer={
+        editMode ? (
+          <Button title="편집 완료" onPress={() => setEditMode(false)} />
+        ) : (
+          <View style={{ flexDirection: 'row', gap: 10 }}>
+            <Button variant="ghost" title="수업 시작" onPress={startClass} style={{ flex: 1 }} />
+            <Button variant="dark" title="저장" onPress={save} style={{ flex: 1 }} />
+          </View>
+        )
+      }
     >
       <View style={st.titleRow}>
         <View style={{ flex: 1 }}>
-          <Text style={st.title}>{member?.name ? `${member.name}님 시퀀스` : '시퀀스'}</Text>
+          <View style={st.titleLine}>
+            <Text style={st.title}>{member?.name ? `${member.name}님 시퀀스` : '시퀀스'}</Text>
+            {dirty ? <Chip label="편집됨" variant="tint" style={st.dirtyChip} textStyle={{ fontSize: 11 }} /> : null}
+          </View>
           {setupLine ? <Text style={st.setup}>{setupLine}</Text> : null}
         </View>
-        {editMode ? (
-          <Chip label="완료" on onPress={() => setEditMode(false)} />
-        ) : (
-          <View style={{ flexDirection: 'row', gap: 8 }}>
-            <Chip label="편집" onPress={() => setEditMode(true)} />
-            <Chip label="재생성" onPress={() => setRegenOpen(true)} />
-          </View>
-        )}
       </View>
 
       {!editMode ? (
-        <DiagnosisCard points={seq.summary_points} detail={seq.member_summary} />
+        <>
+          <DiagnosisCard points={seq.summary_points} detail={seq.member_summary} />
+          {coverage ? (
+            <Card style={st.coverCard}>
+              <Text style={st.coverTitle}>근육군 커버리지</Text>
+              {coverage.map(({ region, pct }) => (
+                <View key={region} style={st.coverRow}>
+                  <Text style={st.coverLabel}>{region}</Text>
+                  <View style={st.coverTrack}><View style={[st.coverFill, { width: `${pct}%` }]} /></View>
+                  <Text style={st.coverVal}>{pct}%</Text>
+                </View>
+              ))}
+            </Card>
+          ) : null}
+          <Button variant="ghost" title="다시 생성" icon={<Icon name="spark" size={16} color={colors.primary} />} onPress={() => setRegenOpen(true)} style={st.regenBtn} />
+        </>
       ) : (
-        <Text style={st.editHint}>손잡이(⋮)를 끌어 순서를 바꾸고, 동작을 탭해 상세를 봐요.</Text>
+        <Text style={st.editHint}>동작을 탭하면 교체·횟수·순서·삭제를 바꿀 수 있어요.</Text>
       )}
 
       {seq.blocks.map((b, bi) => (
@@ -163,64 +243,41 @@ export function SequenceScreen() {
             <Text style={st.phaseTitle}>{b.block}</Text>
             <Text style={st.appTag}>{b.apparatus.toUpperCase()}</Text>
           </View>
-          {!editMode
-            ? b.exercises.map((it, ei) => {
-                const ex = exByName.get(it.name)
-                const muscle = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])[0]
-                const lastItem = ei === b.exercises.length - 1
-                return (
-                  <View key={ei} style={st.exRow}>
-                    <View style={st.timeline}>
-                      <View style={st.node}><Text style={st.nodeText}>{ei + 1}</Text></View>
-                      {!lastItem ? <View style={st.line} /> : null}
-                    </View>
-                    <View style={{ flex: 1, paddingBottom: lastItem ? 0 : 14 }}>
-                      <View style={st.exTop}>
-                        <Pressable style={{ flex: 1 }} hitSlop={4} onPress={() => setSheet({ name: it.name, reps: it.reps, block: b.block })}>
-                          <Text style={st.exName} numberOfLines={2}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
-                        </Pressable>
-                        {it.reps ? <Rep>{it.reps}</Rep> : null}
-                      </View>
-                      {muscle ? <Chip label={muscle} variant="tint" style={st.muscleChip} textStyle={{ fontSize: 11.5 }} /> : null}
-                      {it.caution ? <Text style={st.caution}>⚠ {it.caution}</Text> : null}
+          {b.exercises.map((it, ei) => {
+            const ex = exByName.get(it.name)
+            const muscle = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])[0]
+            const lastItem = ei === b.exercises.length - 1
+            const openRow = () => (editMode ? setAction({ bi, ei }) : setSheet({ name: it.name, reps: it.reps, block: b.block }))
+            return (
+              <View key={ei} style={st.exRow}>
+                <View style={st.timeline}>
+                  <View style={st.node}><Text style={st.nodeText}>{ei + 1}</Text></View>
+                  {!lastItem ? <View style={st.line} /> : null}
+                </View>
+                <View style={{ flex: 1, paddingBottom: lastItem ? 0 : 14 }}>
+                  <View style={st.exTop}>
+                    <Pressable style={{ flex: 1 }} hitSlop={4} onPress={openRow}>
+                      <Text style={st.exName} numberOfLines={1}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
+                    </Pressable>
+                    <View style={st.exCtrl}>
+                      {it.reps ? <Rep>{it.reps}</Rep> : null}
+                      {editMode ? (
+                        <Pressable hitSlop={8} onPress={() => setAction({ bi, ei })}><Icon name="kebab" size={18} color={colors.faint} /></Pressable>
+                      ) : null}
                     </View>
                   </View>
-                )
-              })
-            : (
-                <DraggableExercises
-                  count={b.exercises.length}
-                  onReorder={(from, to) => reorder(bi, from, to)}
-                  renderRow={(ei, handle, dragging) => {
-                    const it = b.exercises[ei]
-                    if (!it) return null
-                    const ex = exByName.get(it.name)
-                    const muscle = tArr(ex?.muscle_focus_ko, ex?.muscle_focus ?? [])[0]
-                    return (
-                      <View style={[st.exRow, { paddingVertical: 6, opacity: dragging ? 0.97 : 1 }]}>
-                        <View style={st.handle} {...handle}>
-                          <View style={st.handleBar} />
-                          <View style={st.handleBar} />
-                          <View style={st.handleBar} />
-                        </View>
-                        <View style={{ flex: 1 }}>
-                          <View style={st.exTop}>
-                            <Pressable style={{ flex: 1 }} hitSlop={4} onPress={() => setSheet({ name: it.name, reps: it.reps, block: b.block })}>
-                              <Text style={st.exName} numberOfLines={2}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
-                            </Pressable>
-                            <View style={st.exCtrl}>
-                              {it.reps ? <Rep>{it.reps}</Rep> : null}
-                              <Pressable hitSlop={6} onPress={() => del(bi, ei)}><Icon name="x" size={15} color={colors.faint} /></Pressable>
-                            </View>
-                          </View>
-                          {muscle ? <Chip label={muscle} variant="tint" style={st.muscleChip} textStyle={{ fontSize: 11.5 }} /> : null}
-                          {it.caution ? <Text style={st.caution}>⚠ {it.caution}</Text> : null}
-                        </View>
-                      </View>
-                    )
-                  }}
-                />
-              )}
+                  {muscle ? <Chip label={muscle} variant="tint" style={st.muscleChip} textStyle={{ fontSize: 11.5 }} /> : null}
+                  {it.reason ? (
+                    <View style={st.reasonRow}>
+                      <Icon name="spark" size={11} color={colors.primary} />
+                      <Text style={st.reason}>{it.reason}</Text>
+                    </View>
+                  ) : null}
+                  {it.caution ? <Text style={st.caution}>{it.caution}</Text> : null}
+                </View>
+              </View>
+            )
+          })}
           {editMode ? (
             <Pressable style={st.addBtn} onPress={() => setPickerBlock(bi)}>
               <Text style={st.addText}>+ 동작 추가</Text>
@@ -229,9 +286,29 @@ export function SequenceScreen() {
         </Card>
       ))}
 
-      {editCount > 0 ? <Text style={st.editNote}>생성본 대비 편집 {editCount}건 · 저장 시 학습 데이터로 캡처돼요</Text> : null}
-
       {sheet ? <ExerciseSheet name={sheet.name} reps={sheet.reps} block={sheet.block} onClose={() => setSheet(null)} /> : null}
+      {action && actItem ? (
+        <RowActionSheet
+          name={actItem.name}
+          sub={[actMuscle, actItem.reps].filter(Boolean).join(' · ')}
+          pos={action.ei}
+          count={seq.blocks[action.bi].exercises.length}
+          onClose={() => setAction(null)}
+          onDetail={() => { setSheet({ name: actItem.name, reps: actItem.reps, block: seq.blocks[action.bi].block }); setAction(null) }}
+          onReplace={() => { setReplaceAt(action); setAction(null) }}
+          onReps={() => { setRepsAt(action); setAction(null) }}
+          onMove={(dir) => { reorder(action.bi, action.ei, action.ei + dir); setAction(null) }}
+          onDelete={() => { del(action.bi, action.ei); setAction(null) }}
+        />
+      ) : null}
+      {repsAt ? (
+        <RepsSheet
+          name={seq.blocks[repsAt.bi].exercises[repsAt.ei].name}
+          current={seq.blocks[repsAt.bi].exercises[repsAt.ei].reps}
+          onPick={(r) => { setRep(repsAt.bi, repsAt.ei, r); setRepsAt(null) }}
+          onClose={() => setRepsAt(null)}
+        />
+      ) : null}
       {regenOpen ? (
         <RegenSheet
           onClose={() => setRegenOpen(false)}
@@ -242,19 +319,20 @@ export function SequenceScreen() {
           }}
         />
       ) : null}
-      <AddExercisePicker
-        apparatus={pickerBlock != null ? seq.blocks[pickerBlock].apparatus : null}
-        onPick={(name) => { if (pickerBlock != null) add(pickerBlock, name); setPickerBlock(null) }}
-        onClose={() => setPickerBlock(null)}
-      />
+      <AddExercisePicker apparatus={pickerApparatus} onPick={onPickEx} onClose={onPickerClose} />
     </AppShell>
   )
 }
 
 const st = StyleSheet.create({
   titleRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10, marginTop: 8, marginBottom: 14 },
+  titleLine: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   title: { fontFamily: font.extrabold, fontSize: 21, color: colors.ink, letterSpacing: -0.4 },
+  dirtyChip: { paddingVertical: 2, paddingHorizontal: 9 },
   setup: { fontFamily: font.regular, fontSize: 13, color: colors.muted, marginTop: 3 },
+  editBtn: { paddingVertical: 6, paddingHorizontal: 13, borderRadius: 999, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.line },
+  editBtnText: { fontFamily: font.bold, fontSize: 14, color: colors.primary },
+  regenBtn: { paddingVertical: 12, marginBottom: 16 },
   phaseHead: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 12 },
   phaseTitle: { fontFamily: font.extrabold, fontSize: 19, color: colors.ink, letterSpacing: -0.4 },
   appTag: { fontFamily: font.bold, fontSize: 11.5, color: colors.primary, letterSpacing: 0.8 },
@@ -265,18 +343,22 @@ const st = StyleSheet.create({
   line: { width: 2, flex: 1, backgroundColor: colors.line, marginTop: 4 },
   exTop: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 },
   exName: { flex: 1, fontFamily: font.bold, fontSize: 15.5, color: colors.ink, paddingTop: 2 },
-  exCtrl: { flexDirection: 'row', alignItems: 'center', gap: 7 },
-  handle: { width: 30, paddingVertical: 8, paddingRight: 8, gap: 3, alignItems: 'center', justifyContent: 'center' },
-  handleBar: { width: 16, height: 2, borderRadius: 1, backgroundColor: colors.faint },
+  exCtrl: { flexDirection: 'row', alignItems: 'center', gap: 9 },
   editHint: { fontFamily: font.regular, fontSize: 13.5, color: colors.muted, marginBottom: 14, marginHorizontal: 2, lineHeight: 20 },
   muscleChip: { paddingVertical: 2, paddingHorizontal: 9, marginTop: 5, alignSelf: 'flex-start' },
+  reasonRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 5, marginTop: 5 },
+  reason: { flex: 1, fontFamily: font.regular, fontSize: 12.5, color: colors.muted, lineHeight: 17 },
   caution: { fontFamily: font.semibold, fontSize: 12.5, color: colors.warnInk, marginTop: 5 },
+  coverCard: { marginBottom: 12, paddingVertical: 15 },
+  coverTitle: { fontFamily: font.bold, fontSize: 13, color: colors.muted, marginBottom: 10 },
+  coverRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 7 },
+  coverLabel: { width: 34, fontFamily: font.semibold, fontSize: 13, color: colors.muted },
+  coverTrack: { flex: 1, height: 9, borderRadius: 5, backgroundColor: colors.surface2, overflow: 'hidden' },
+  coverFill: { height: '100%', backgroundColor: colors.primary, borderRadius: 5 },
+  coverVal: { width: 36, textAlign: 'right', fontFamily: font.monoSemibold, fontSize: 13, color: colors.ink },
   addBtn: { borderWidth: 1.5, borderColor: colors.line, borderStyle: 'dashed', borderRadius: 999, paddingVertical: 13, alignItems: 'center', marginTop: 8 },
   addText: { fontFamily: font.bold, fontSize: 13.5, color: colors.primary },
-  editNote: { fontFamily: font.regular, fontSize: 13, color: colors.muted, lineHeight: 19, marginTop: 2, marginBottom: 8 },
-  saveOnly: { alignItems: 'center', paddingVertical: 4 },
-  saveOnlyText: { fontFamily: font.semibold, fontSize: 14, color: colors.muted },
-  diagCard: { flexDirection: 'row', gap: 10, backgroundColor: colors.tint, borderRadius: 20, paddingVertical: 16, paddingHorizontal: 17, marginBottom: 16 },
+  diagCard: { flexDirection: 'row', gap: 10, backgroundColor: colors.tint, borderRadius: 20, paddingVertical: 16, paddingHorizontal: 17, marginBottom: 12 },
   diagText: { fontFamily: font.regular, fontSize: 15, lineHeight: 23, color: colors.tintInk },
   diagMore: { fontFamily: font.bold, fontSize: 13, color: colors.tintInk, marginTop: 8, opacity: 0.8 },
   diagDetail: { fontFamily: font.regular, fontSize: 14.5, lineHeight: 23, color: colors.tintInk, marginTop: 8, opacity: 0.92 },

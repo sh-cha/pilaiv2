@@ -6,6 +6,7 @@ import { colors } from '../theme/tokens'
 export type IconName =
   | 'home' | 'people' | 'spark' | 'list' | 'gear' | 'back' | 'chev'
   | 'x' | 'plus' | 'check' | 'bell' | 'msg' | 'up' | 'down'
+  | 'kebab' | 'swap' | 'reps' | 'trash'
 
 type Props = { name: IconName; size?: number; color?: string }
 
@@ -98,6 +99,32 @@ export function Icon({ name, size = 22, color = colors.ink }: Props) {
       return (
         <Svg width={size} height={size} viewBox="0 0 24 24" {...box}>
           <Path d="M5 9l7 7 7-7" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+        </Svg>
+      )
+    case 'kebab':
+      return (
+        <Svg width={size} height={size} viewBox="0 0 24 24" {...box}>
+          <Circle cx={12} cy={5} r={1.7} fill={color} />
+          <Circle cx={12} cy={12} r={1.7} fill={color} />
+          <Circle cx={12} cy={19} r={1.7} fill={color} />
+        </Svg>
+      )
+    case 'swap':
+      return (
+        <Svg width={size} height={size} viewBox="0 0 24 24" {...box}>
+          <Path d="M7 10l-3 3 3 3M4 13h12M17 14l3-3-3-3M20 11H8" stroke={color} strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round" />
+        </Svg>
+      )
+    case 'reps':
+      return (
+        <Svg width={size} height={size} viewBox="0 0 24 24" {...box}>
+          <Path d="M4 7h16M4 12h16M4 17h10" stroke={color} strokeWidth={1.8} strokeLinecap="round" />
+        </Svg>
+      )
+    case 'trash':
+      return (
+        <Svg width={size} height={size} viewBox="0 0 24 24" {...box}>
+          <Path d="M5 7h14M10 7V5h4v2M7 7l1 12h8l1-12" stroke={color} strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" />
         </Svg>
       )
   }

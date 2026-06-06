@@ -188,4 +188,13 @@ describe('이력 (Phase 2 변주)', () => {
     expect(out).toContain('Monkey') // 3번째까지 포함
     expect(out).not.toContain('Tower Prep') // 4번째는 제외(max=3)
   })
+
+  it('summarizeHistory: 강사 노트를 이력에 포함 [#7]', () => {
+    const all = [
+      { ...sess('1', 'm1', ['Pelvic Curl'], '2026-06-01T00:00:00Z'), note: '어깨 가동범위 좋아짐, 다음엔 후면체인 강화' },
+      sess('2', 'm1', ['Parallel Toes'], '2026-05-28T00:00:00Z'),
+    ]
+    const out = summarizeHistory(all, 3)
+    expect(out).toContain('강사 노트: 어깨 가동범위 좋아짐, 다음엔 후면체인 강화')
+  })
 })

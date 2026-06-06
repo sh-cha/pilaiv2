@@ -52,7 +52,12 @@ export function SessionDetailScreen() {
           <Card style={{ marginTop: 10 }}>
             <Text style={st.cardTitle}>완료된 수업</Text>
             <Text style={st.cardMeta}>{session.input.apparatus.join(', ')} · {session.input.minutes}분 · {count}개 동작</Text>
-            {!session.finalValidation.ok ? <Text style={st.warn}>⚠ 룰 위반 항목이 있어요: {session.finalValidation.errors.join(', ')}</Text> : null}
+            {!session.finalValidation.ok ? (
+              <View style={st.warnRow}>
+                <View style={st.warnDot} />
+                <Text style={st.warn}>룰 위반 항목이 있어요: {session.finalValidation.errors.join(', ')}</Text>
+              </View>
+            ) : null}
           </Card>
 
           {session.note ? (
@@ -71,7 +76,7 @@ export function SessionDetailScreen() {
               <Divider style={{ marginTop: 4, marginBottom: 8 }} />
               {b.exercises.map((it, ei) => (
                 <Pressable key={ei} style={st.exRow} onPress={() => setSheet({ name: it.name, reps: it.reps })}>
-                  <Text style={st.exName}>{it.name}<Text style={{ color: colors.faint }}> ›</Text></Text>
+                  <Text style={st.exName} numberOfLines={1}>{it.name}</Text>
                   {it.reps ? <Text style={st.exReps}>{it.reps}</Text> : null}
                 </Pressable>
               ))}
@@ -87,7 +92,9 @@ export function SessionDetailScreen() {
 const st = StyleSheet.create({
   cardTitle: { fontFamily: font.extrabold, fontSize: 17, color: colors.ink },
   cardMeta: { fontFamily: font.regular, fontSize: 13, color: colors.muted, marginTop: 3 },
-  warn: { fontFamily: font.semibold, fontSize: 12.5, color: colors.warnInk, marginTop: 8 },
+  warnRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 7, marginTop: 8 },
+  warnDot: { width: 7, height: 7, borderRadius: 4, backgroundColor: colors.warnInk, marginTop: 4 },
+  warn: { flex: 1, fontFamily: font.semibold, fontSize: 12.5, color: colors.warnInk },
   noteText: { fontFamily: font.regular, fontSize: 15, lineHeight: 24, color: colors.ink },
   diff: { fontFamily: font.semibold, fontSize: 14, marginTop: 3 },
   phaseHead: { flexDirection: 'row', alignItems: 'baseline', justifyContent: 'space-between' },
@@ -95,7 +102,7 @@ const st = StyleSheet.create({
   appTag: { fontFamily: font.bold, fontSize: 11.5, color: colors.primary, letterSpacing: 0.8 },
   exRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', paddingVertical: 7, gap: 8 },
   exName: { flex: 1, fontFamily: font.semibold, fontSize: 14.5, color: colors.ink },
-  exReps: { fontFamily: font.mono, fontSize: 13, color: colors.faint },
+  exReps: { fontFamily: font.mono, fontSize: 13, color: colors.faint, flexShrink: 0 },
   doneOnly: { alignItems: 'center', paddingVertical: 4 },
   doneOnlyText: { fontFamily: font.semibold, fontSize: 14, color: colors.muted },
 })

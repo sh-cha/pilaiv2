@@ -20,17 +20,12 @@ export function ClassPlayScreen() {
   const [sec, setSec] = useState(0)
   const [paused, setPaused] = useState(false)
 
-  // 동작이 바뀌면 타이머 리셋 + 재개
-  useEffect(() => {
-    setSec(0)
-    setPaused(false)
-  }, [i])
-  // 1초 틱 (일시정지 중엔 멈춤)
+  // 수업 시작부터 누적되는 '총 경과' 타이머 (일시정지 중엔 멈춤)
   useEffect(() => {
     if (paused) return
     const t = setInterval(() => setSec((s) => s + 1), 1000)
     return () => clearInterval(t)
-  }, [paused, i])
+  }, [paused])
 
   if (!list.length) {
     return (
@@ -61,7 +56,8 @@ export function ClassPlayScreen() {
         <Text style={st.name}>{cur.name}</Text>
         {cur.reps ? <Text style={st.reps}>{cur.reps}</Text> : null}
         <View style={st.illus}><Text style={st.illusText}>동작 시연</Text></View>
-        <Pressable onPress={() => setPaused((p) => !p)} hitSlop={12}>
+        <Pressable onPress={() => setPaused((p) => !p)} hitSlop={12} style={{ alignItems: 'center' }}>
+          <Text style={st.tlabel}>총 경과</Text>
           <Text style={st.timer}>{mm}:{ss}</Text>
           <Text style={st.timerHint}>{paused ? '▶  탭하여 재개' : '⏸  탭하여 일시정지'}</Text>
         </Pressable>
@@ -77,7 +73,7 @@ export function ClassPlayScreen() {
             {nxt.reps ? <View style={st.nextRep}><Text style={st.nextRepText}>{nxt.reps}</Text></View> : null}
           </View>
         ) : (
-          <View style={st.nextcard}><Text style={st.lastText}>마지막 동작이에요 🎉</Text></View>
+          <View style={st.nextcard}><Text style={st.lastText}>마지막 동작이에요</Text></View>
         )}
         <View style={st.pctrl}>
           <Pressable style={[st.pbtn, i === 0 && { opacity: 0.4 }]} disabled={i === 0} onPress={() => setI(Math.max(0, i - 1))}>
@@ -112,7 +108,8 @@ const st = StyleSheet.create({
   reps: { fontFamily: font.regular, fontSize: 17, color: 'rgba(255,255,255,0.85)', marginTop: 4 },
   illus: { width: 200, height: 130, borderRadius: 14, marginTop: 6, backgroundColor: 'rgba(255,255,255,0.07)', alignItems: 'center', justifyContent: 'center' },
   illusText: { fontFamily: font.mono, fontSize: 11, color: 'rgba(255,255,255,0.5)' },
-  timer: { fontFamily: font.mono, fontSize: 46, color: '#fff', letterSpacing: 1, marginTop: 18, textAlign: 'center' },
+  tlabel: { fontFamily: font.bold, fontSize: 11.5, letterSpacing: 1, color: 'rgba(255,255,255,0.5)', marginTop: 18, textTransform: 'uppercase' },
+  timer: { fontFamily: font.mono, fontSize: 46, color: '#fff', letterSpacing: 1, marginTop: 4, textAlign: 'center' },
   timerHint: { fontFamily: font.regular, fontSize: 12, color: 'rgba(255,255,255,0.5)', textAlign: 'center', marginTop: 4 },
   pnext: { paddingHorizontal: 20, paddingTop: 16 },
   nextcard: { backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 14, padding: 14, flexDirection: 'row', alignItems: 'center', gap: 10, marginBottom: 12 },

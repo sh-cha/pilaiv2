@@ -19,6 +19,7 @@ export type Ctx = {
   finalSeq?: Sequence
   classSeq?: Sequence
   savedSessionId?: string // 저장된 세션 id — 수업 완료 시 노트·태그 덧붙이기용
+  checkinCond?: string // 회원 체크인에서 보낸 오늘 컨디션 → 생성 화면 프리필
 }
 
 export type Nav = {

@@ -52,14 +52,19 @@ export function MemberDetailScreen() {
     <AppShell
       title={member.name}
       footer={
-        <Button
-          title={`${member.name}님 시퀀스 생성`}
-          icon={<Icon name="spark" size={18} color="#fff" />}
-          onPress={() => {
-            nav.setCtx({ memberId: member.id, member })
-            nav.go('generate')
-          }}
-        />
+        <>
+          <Button
+            title={`${member.name}님 시퀀스 생성`}
+            icon={<Icon name="spark" size={18} color="#fff" />}
+            onPress={() => {
+              nav.setCtx({ memberId: member.id, member })
+              nav.go('generate')
+            }}
+          />
+          <Pressable onPress={() => { nav.setCtx({ memberId: member.id, member }); nav.go('checkin') }} style={st.checkinLink} hitSlop={6}>
+            <Text style={st.checkinLinkText}>오늘 컨디션 체크인</Text>
+          </Pressable>
+        </>
       }
     >
       <Card style={{ marginTop: 10 }}>
@@ -73,7 +78,7 @@ export function MemberDetailScreen() {
         {warns.length > 0 && (
           <ChipRow style={{ marginTop: 12 }}>
             {warns.map((w) => (
-              <WarnTag key={w}>⚠ {w}</WarnTag>
+              <WarnTag key={w}>{w}</WarnTag>
             ))}
           </ChipRow>
         )}
@@ -127,7 +132,7 @@ export function MemberDetailScreen() {
                       <Chip key={f} label={f} variant="tint" style={st.miniChip} textStyle={{ fontSize: 12 }} />
                     ))}
                   </ChipRow>
-                  <Text style={st.hmeta}>{s.input.minutes}분 · {s.edited ? `편집 ${s.diff.length}` : '편집 없음'}</Text>
+                  <Text style={st.hmeta}>{s.input.minutes}분</Text>
                 </View>
                 <Icon name="chev" size={13} color={colors.faint} />
               </Pressable>
@@ -140,6 +145,8 @@ export function MemberDetailScreen() {
 }
 
 const st = StyleSheet.create({
+  checkinLink: { alignItems: 'center', paddingVertical: 4 },
+  checkinLinkText: { fontFamily: font.semibold, fontSize: 14, color: colors.muted },
   top: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   name: { fontFamily: font.extrabold, fontSize: 20, color: colors.ink },
   sub: { fontFamily: font.regular, fontSize: 13, color: colors.muted, marginTop: 3 },
