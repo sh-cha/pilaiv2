@@ -1,6 +1,7 @@
 // 인증 — Supabase 설정 시 실제 세션, 아니면 로컬 데모(no-op).
-// 현재 로그인 진입은 익명 세션(signInAnonymously)으로 RLS용 실제 uid를 확보한다.
-// 카카오/구글/애플 OAuth 배선은 expo-web-browser + 딥링크 리다이렉트가 필요 — docs/SUPABASE.md 참고.
+// 실 로그인 = 카카오/구글/애플 OAuth(signInWithProvider). 익명(signIn)은 임시/게스트용으로 남겨둠.
+import * as WebBrowser from 'expo-web-browser'
+import * as Linking from 'expo-linking'
 import { supabase } from './supabase'
 
 let currentUserId: string | null = null
@@ -39,7 +40,30 @@ export async function signOut(): Promise<void> {
   if (supabase) await supabase.auth.signOut()
 }
 
-// OAuth(카카오/구글/애플) — 미배선. 활성화 절차는 docs/SUPABASE.md.
+// OAuth(카카오/구글/애플) — Supabase signInWithOAuth + expo-web-browser(PKCE).
+// 흐름: 제공자 로그인 브라우저 → pilai://auth-callback?code=... 복귀 → code 교환 → 세션.
+// 제공자별 활성화(대시보드+콘솔) 절차는 docs/SUPABASE.md "OAuth 연결".
 export async function signInWithProvider(provider: 'google' | 'apple' | 'kakao'): Promise<void> {
-  throw new Error(`OAuth(${provider}) 미배선 — docs/SUPABASE.md의 'OAuth 연결' 절 참고`)
+  if (!supabase) throw new Error('Supabase가 설정되지 않았어요 (.env)')
+  const redirectTo = Linking.createURL('auth-callback') // Expo Go: exp://…, 빌드: pilai://auth-callback
+  const { data, error } = await supabase.auth.signInWithOAuth({
+    provider,
+    options: { redirectTo, skipBrowserRedirect: true },
+  })
+  if (error) throw error
+  if (!data?.url) throw new Error('OAuth URL을 받지 못했어요')
+
+  const result = await WebBrowser.openAuthSessionAsync(data.url, redirectTo)
+  if (result.type !== 'success') throw new Error('로그인이 취소됐어요')
+
+  const { queryParams } = Linking.parse(result.url)
+  const desc = queryParams?.error_description
+  if (desc) throw new Error(String(desc))
+  const code = queryParams?.code
+  if (!code || typeof code !== 'string') throw new Error('인증 코드를 받지 못했어요')
+
+  const { error: exErr } = await supabase.auth.exchangeCodeForSession(code)
+  if (exErr) throw exErr
+  const { data: after } = await supabase.auth.getSession()
+  currentUserId = after.session?.user.id ?? null
 }

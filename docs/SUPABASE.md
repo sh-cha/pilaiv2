@@ -33,7 +33,7 @@
 - `supabase/migrations/0001_init.sql` — `profiles`(강사 1:1), `kv_store`(blob) + RLS + 신규유저 트리거.
 
 ## 다음 단계 (백엔드 로드맵)
-1. **실제 OAuth (카카오/구글/애플)** — 셋 다 Supabase 기본 지원 제공자(Kakao 포함). 필요한 것: ① 대시보드 Auth→Providers에서 각 제공자 키/redirect 등록 ② RN에서 `expo-web-browser` + 딥링크(`scheme`)로 `supabase.auth.signInWithOAuth({ provider, options:{ redirectTo } })` 흐름 배선(`auth.ts`의 `signInWithProvider`가 자리만 잡혀 있음). 그러면 기기 간 동기화가 된다(익명은 기기별).
+1. **실제 OAuth (카카오/구글/애플)** — ✅ **코드 배선 완료**(`auth.ts signInWithProvider` + 로그인 버튼 + `expo-web-browser`/`expo-linking` PKCE, `scheme: pilai`). 제공자만 설정하면 켜짐 → 아래 **"OAuth 연결"** 절차. 그러면 기기 간 동기화가 된다(익명은 기기별).
 2. **관계형 정규화** — 집계/검색/리포팅이 필요해지면 `members`·`sessions` 테이블로 이행하고 `kv.ts` 대신 `repo` 레이어로 교체. blob → 행 마이그레이션 스크립트 필요.
 3. **Anthropic 키 서버로** — 현재 생성은 앱에서 직접 호출(키 번들 노출). Supabase **Edge Function**으로 옮겨 키를 숨기고 사용량/비용 게이팅. (`generateSequence.ts`의 fetch 대상만 교체.)
 4. **예약·알림 / 회원 피드백** — 보류였던 백엔드 기능. 일정 테이블 + (선택)푸시, 회원앱(Phase 3) 연동.
@@ -42,3 +42,26 @@
 - 익명 인증 = **기기별 사용자**. 같은 강사가 다른 기기로 로그인하면 다른 데이터(실 OAuth 붙이면 해결).
 - blob 저장 = 동시 편집/대용량엔 부적합(강사 1인 규모엔 무해).
 - 로컬→클라우드 자동 마이그레이션 없음. 켜기 전 로컬 데이터는 수동 이전 필요(또는 클라우드에서 새로 시작).
+
+## OAuth 연결 (카카오/구글/애플)
+코드는 완료(`auth.ts signInWithProvider` + 로그인 버튼). 제공자별로 ① 콘솔 앱 등록 ② Supabase 대시보드 Enable ③ 리다이렉트 URL만 맞추면 켜진다. **첫 OAuth 로그인이 곧 회원가입**(트리거가 `profiles` 자동 생성 — 별도 가입 화면 없음).
+
+### 공통 — 리다이렉트 URL
+- Supabase → **Authentication → URL Configuration → Redirect URLs** 에 `pilai://auth-callback` 추가 (Expo Go 테스트는 `expo start` 로그에 뜨는 `exp://…/--/auth-callback`도).
+- 제공자 콘솔에 넣는 콜백은 **항상** `https://olmwynehfhndnbwkfoal.supabase.co/auth/v1/callback` (Supabase가 받아서 앱으로 되돌림).
+
+### 카카오 (주력)
+1. [developers.kakao.com](https://developers.kakao.com) → 애플리케이션 추가 → **REST API 키** 복사.
+2. 카카오 로그인 **활성화 ON** → Redirect URI에 위 Supabase 콜백 추가. 동의항목(닉네임/이메일 등) ON.
+3. Supabase → Authentication → Providers → **Kakao** → REST API 키 = Client ID(필요시 Client Secret) 입력 → **Enable**.
+
+### 구글 (테스트 제일 쉬움)
+1. [console.cloud.google.com](https://console.cloud.google.com) → OAuth 동의 화면 → 사용자 인증 정보 → **OAuth 클라이언트 ID(웹)**.
+2. 승인된 리디렉션 URI에 위 Supabase 콜백 추가.
+3. Client ID/Secret → Supabase → Providers → **Google** → 입력 → Enable.
+
+### 애플 (iOS 배포 시 / 유료 계정)
+Apple Developer($99/yr) → Service ID + Key → Supabase → Apple. iOS 앱스토어에 다른 소셜 로그인 넣으면 Apple도 의무 — 나중에.
+
+### 테스트
+`expo start -c` → 시뮬레이터/기기 → 버튼 탭 → 브라우저 로그인 → 앱 복귀(세션 생성). ⚠️ 커스텀 scheme(`pilai://`)은 **dev build(`expo run:ios`)**가 Expo Go보다 안정적. 안 되면: ① Redirect URLs allowlist ② 제공자 Enable ③ scheme 확인.

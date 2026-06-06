@@ -1,23 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { View, Text, Pressable, StyleSheet } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { colors, font } from '../theme/tokens'
 import { useNav } from '../nav/router'
-import { signIn } from '../lib/auth'
+import { signInWithProvider } from '../lib/auth'
+import { isSupabaseConfigured } from '../lib/supabase'
 
-// Supabase 설정 시: 버튼 탭 → 익명 세션 확보(RLS용 uid) → 홈. 미설정/실패 시 로컬 데모로 진입.
-// 카카오/구글/애플 OAuth 실연결은 docs/SUPABASE.md 참고(미배선).
+type Provider = 'kakao' | 'google' | 'apple'
+
+// 실 OAuth(카카오/구글/애플) — Supabase 설정 시 제공자 로그인, 미설정이면 로컬 데모로 진입.
+// 제공자 활성화(대시보드+콘솔) 절차는 docs/SUPABASE.md "OAuth 연결".
 export function LoginScreen() {
   const nav = useNav()
   const insets = useSafeAreaInsets()
-  const enter = async () => {
-    try {
-      await signIn()
-    } catch {
-      // 익명 로그인 실패(예: 비활성) → 로컬 모드로 진입
+  const [busy, setBusy] = useState<Provider | null>(null)
+
+  const login = async (provider: Provider) => {
+    if (!isSupabaseConfigured) {
+      nav.reset('home') // 로컬 데모 모드(키 없음)
+      return
     }
-    nav.reset('home')
+    if (busy) return
+    setBusy(provider)
+    try {
+      await signInWithProvider(provider)
+      nav.reset('home')
+    } catch (e) {
+      nav.toast(e instanceof Error ? e.message : '로그인에 실패했어요')
+    } finally {
+      setBusy(null)
+    }
   }
+
+  const label = (p: Provider, base: string) => (busy === p ? '로그인 중…' : base)
+
   return (
     <View style={[st.login, { paddingTop: insets.top, paddingBottom: insets.bottom + 24 }]}>
       <View style={st.top}>
@@ -25,9 +41,15 @@ export function LoginScreen() {
         <Text style={st.sub}>강사 로그인</Text>
       </View>
       <View style={st.btns}>
-        <Pressable style={[st.sbtn, st.kakao]} onPress={enter}><Text style={[st.sbtnText, { color: '#191600' }]}>카카오로 시작하기</Text></Pressable>
-        <Pressable style={[st.sbtn, st.google]} onPress={enter}><Text style={[st.sbtnText, { color: '#1f1f1f' }]}>Google로 계속하기</Text></Pressable>
-        <Pressable style={[st.sbtn, st.apple]} onPress={enter}><Text style={[st.sbtnText, { color: '#fff' }]}>Apple로 계속하기</Text></Pressable>
+        <Pressable style={[st.sbtn, st.kakao, !!busy && { opacity: 0.6 }]} disabled={!!busy} onPress={() => login('kakao')}>
+          <Text style={[st.sbtnText, { color: '#191600' }]}>{label('kakao', '카카오로 시작하기')}</Text>
+        </Pressable>
+        <Pressable style={[st.sbtn, st.google, !!busy && { opacity: 0.6 }]} disabled={!!busy} onPress={() => login('google')}>
+          <Text style={[st.sbtnText, { color: '#1f1f1f' }]}>{label('google', 'Google로 계속하기')}</Text>
+        </Pressable>
+        <Pressable style={[st.sbtn, st.apple, !!busy && { opacity: 0.6 }]} disabled={!!busy} onPress={() => login('apple')}>
+          <Text style={[st.sbtnText, { color: '#fff' }]}>{label('apple', 'Apple로 계속하기')}</Text>
+        </Pressable>
         <Text style={st.legal}>로그인 시 서비스 이용약관과{'\n'}개인정보 처리방침에 동의하게 됩니다.</Text>
       </View>
     </View>
