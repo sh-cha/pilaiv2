@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { computeDiff, buildCapturedSession, loadSessions, appendSession, updateSession, updateSessionFinal, sessionStatus, sessionsForMember, summarizeHistory, SESSIONS_KEY, type KV } from './flywheel'
+import { computeDiff, buildCapturedSession, loadSessions, appendSession, updateSession, updateSessionFinal, deleteSession, sessionStatus, sessionsForMember, summarizeHistory, SESSIONS_KEY, type KV } from './flywheel'
 import type { MemberInput, Sequence } from './types'
 import type { Usage } from './generateSequence'
 
@@ -154,6 +154,19 @@ describe('영속 (appendSession/loadSessions)', () => {
     const { kv, store } = fakeKV()
     store[SESSIONS_KEY] = '{깨진 json'
     expect(await loadSessions(kv)).toEqual([])
+  })
+
+  it('deleteSession: 해당 id만 삭제, 나머지 보존', async () => {
+    const { kv } = fakeKV()
+    const mk = (id: string) =>
+      buildCapturedSession({ id, createdAt: 't', input, generated: seq(['Pelvic Curl']), final: seq(['Pelvic Curl']), attempts: 1, usage })
+    await appendSession(kv, mk('a'))
+    await appendSession(kv, mk('b'))
+    const after = await deleteSession(kv, 'a')
+    expect(after.map((s) => s.id)).toEqual(['b'])
+    expect((await loadSessions(kv)).map((s) => s.id)).toEqual(['b'])
+    // 없는 id 삭제는 no-op
+    expect((await deleteSession(kv, 'zzz')).map((s) => s.id)).toEqual(['b'])
   })
 
   it('updateSessionFinal: final 교체 + diff·검증 재계산 (수업 시작 전 재편집)', async () => {

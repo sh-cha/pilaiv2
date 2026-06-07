@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text, Pressable, StyleSheet } from 'react-native'
+import { View, Text, Pressable, StyleSheet, Alert } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
 import { Card, SectionLabel, Divider, Button } from '../components/ui'
 import { Icon } from '../components/Icon'
 import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
-import { loadSessions, sessionStatus, type CapturedSession } from '../lib/flywheel'
+import { loadSessions, deleteSession, sessionStatus, type CapturedSession } from '../lib/flywheel'
 import { loadMembers, type Member } from '../lib/members'
 import { ExerciseSheet } from '../components/ExerciseSheet'
 
@@ -30,9 +30,33 @@ export function SessionDetailScreen() {
   const count = session ? session.final.blocks.reduce((n, b) => n + b.exercises.length, 0) : 0
   const done = !!session && sessionStatus(session) === 'done'
 
+  // 시퀀스(수업 기록) 삭제 — 되돌릴 수 없어 확인 후 진행
+  const confirmDelete = () => {
+    if (!session) return
+    Alert.alert('시퀀스 삭제', '이 시퀀스와 수업 기록이 삭제돼요. 되돌릴 수 없어요.', [
+      { text: '취소', style: 'cancel' },
+      {
+        text: '삭제',
+        style: 'destructive',
+        onPress: async () => {
+          await deleteSession(kv, session.id)
+          nav.toast('시퀀스를 삭제했어요')
+          nav.back()
+        },
+      },
+    ])
+  }
+
   return (
     <AppShell
       title={`${name ?? '수업'}${date ? ` · ${date}` : ''}`}
+      headerRight={
+        session ? (
+          <Pressable hitSlop={10} onPress={confirmDelete}>
+            <Icon name="trash" size={19} color={colors.accent} />
+          </Pressable>
+        ) : undefined
+      }
       footer={
         session && !done ? ( // 완료된 수업은 열람 전용 — 진행/완료 버튼 숨김
           <>

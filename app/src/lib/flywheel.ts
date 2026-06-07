@@ -149,6 +149,14 @@ export async function updateSession(kv: KV, id: string, patch: Partial<Pick<Capt
   return next
 }
 
+// 세션 삭제 — 잘못 만들었거나 불필요한 시퀀스 정리. 명시적 삭제만 지원(일괄 정리 없음).
+export async function deleteSession(kv: KV, id: string): Promise<CapturedSession[]> {
+  const all = await loadSessions(kv)
+  const next = all.filter((s) => s.id !== id)
+  await kv.setItem(SESSIONS_KEY, JSON.stringify(next))
+  return next
+}
+
 // 저장된 세션의 최종본 교체(수업 시작 전 재편집) — diff·검증을 재계산해 편집 신호를 잃지 않는다.
 export async function updateSessionFinal(kv: KV, id: string, final: Sequence): Promise<CapturedSession[]> {
   const all = await loadSessions(kv)
