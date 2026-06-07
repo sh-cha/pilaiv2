@@ -29,11 +29,12 @@ type Props = {
   tab?: string // 있으면 하단 탭바 표시 (현재 탭 id)
   footer?: React.ReactNode
   scroll?: boolean
+  scrollEnabled?: boolean // 드래그 등 제스처 충돌 시 일시 잠금
   headerBorder?: boolean
   bodyStyle?: StyleProp<ViewStyle>
 }
 
-export function AppShell({ children, title, onBack, headerRight, gear, tab, footer, scroll = true, headerBorder, bodyStyle }: Props) {
+export function AppShell({ children, title, onBack, headerRight, gear, tab, footer, scroll = true, scrollEnabled = true, headerBorder, bodyStyle }: Props) {
   const insets = useSafeAreaInsets()
   const nav = useNav()
   return (
@@ -53,7 +54,7 @@ export function AppShell({ children, title, onBack, headerRight, gear, tab, foot
       )}
 
       {scroll ? (
-        <ScrollView style={{ flex: 1 }} contentContainerStyle={[st.body, bodyStyle]} keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false}>
+        <ScrollView style={{ flex: 1 }} scrollEnabled={scrollEnabled} contentContainerStyle={[st.body, bodyStyle]} keyboardShouldPersistTaps="handled" showsVerticalScrollIndicator={false}>
           {children}
         </ScrollView>
       ) : (

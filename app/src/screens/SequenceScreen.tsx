@@ -99,6 +99,7 @@ export function SequenceScreen() {
   const [repsAt, setRepsAt] = useState<{ bi: number; ei: number } | null>(null) // 횟수 시트
   const [regenOpen, setRegenOpen] = useState(false)
   const [editMode, setEditMode] = useState(false)
+  const [dragLock, setDragLock] = useState(false) // 드래그 중 배경 ScrollView 잠금
 
   // 뒤로가기: 편집 중엔 편집만 종료(보기 모드로), 아니면 스택 pop — 생성 직후(reset된 스택)엔 홈으로.
   const goBack = () => {
@@ -211,6 +212,7 @@ export function SequenceScreen() {
     <AppShell
       title="생성된 시퀀스"
       onBack={goBack}
+      scrollEnabled={!dragLock}
       headerRight={
         <Pressable hitSlop={8} onPress={() => setEditMode((e) => !e)} style={st.editBtn}>
           <Text style={st.editBtnText}>{editMode ? '완료' : '편집'}</Text>
@@ -298,6 +300,7 @@ export function SequenceScreen() {
               count={b.exercises.length}
               rowHeight={EDIT_ROW}
               onReorder={(from, to) => reorder(bi, from, to)}
+              onDragActive={setDragLock}
               renderRow={(ei, handle, dragging) => {
                 const it = b.exercises[ei]
                 if (!it) return null

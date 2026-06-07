@@ -7,11 +7,13 @@ export function DraggableExercises({
   count,
   rowHeight = 70,
   onReorder,
+  onDragActive,
   renderRow,
 }: {
   count: number
   rowHeight?: number
   onReorder: (from: number, to: number) => void
+  onDragActive?: (active: boolean) => void // 드래그 시작/끝 — 부모가 ScrollView를 잠그는 용도
   renderRow: (index: number, handle: object, dragging: boolean) => React.ReactNode
 }) {
   const dragY = useRef(new Animated.Value(0)).current
@@ -27,6 +29,7 @@ export function DraggableExercises({
       onPanResponderGrant: () => {
         start.current = i
         setActive(i)
+        onDragActive?.(true)
         dragY.setValue(0)
       },
       onPanResponderMove: (_, g) => dragY.setValue(g.dy),
@@ -34,10 +37,12 @@ export function DraggableExercises({
         const to = Math.max(0, Math.min(count - 1, start.current + Math.round(g.dy / rowHeight)))
         if (to !== start.current) onReorder(start.current, to)
         setActive(null)
+        onDragActive?.(false)
         dragY.setValue(0)
       },
       onPanResponderTerminate: () => {
         setActive(null)
+        onDragActive?.(false)
         dragY.setValue(0)
       },
     }).panHandlers
