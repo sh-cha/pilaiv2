@@ -103,6 +103,15 @@ describe('generateSequence orchestrator', () => {
     expect(content[1].cache_control).toBeUndefined()
   })
 
+  it('카탈로그 블록에 시작 자세(pos)가 들어간다 — 자세 흐름 규칙의 근거', async () => {
+    const { fn, calls } = fakeModel([valid])
+    await generateSequence(input, deps(fn))
+    const text = (calls[0][0] as { content: { text: string }[] }).content[0].text
+    expect(text).toContain('"name":"Pelvic Curl"')
+    expect(text).toContain('"pos":"누움"')
+    expect(text).toContain('"pos":"서기"') // reformer 카탈로그에 서기 동작도 존재
+  })
+
   it('history는 후행(비캐시) 회원 블록에 들어가고 카탈로그 캐시는 유지', async () => {
     const { fn, calls } = fakeModel([valid])
     await generateSequence({ ...input, history: '최근 수업 이력: ZZZ마커' }, deps(fn))

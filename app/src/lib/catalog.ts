@@ -6,6 +6,7 @@ export type Ex = {
   name: string
   apparatus: string[]
   block: string | null
+  series?: string | null
   level: string | null
   setup: string | null
   resistance: string | null
