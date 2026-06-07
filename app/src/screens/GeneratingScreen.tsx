@@ -47,7 +47,9 @@ export function GeneratingScreen() {
         const result = await generateSequence(fullInput)
         if (!alive) return
         setStep(4)
-        nav.setCtx({ genResult: result, genInput: fullInput, finalSeq: result.sequence })
+        // savedSessionId 클리어 — 생성(재생성 포함) 결과는 항상 새 미저장 시퀀스.
+        // 이전 화면에서 저장본을 열었던 ctx가 남아 있으면 그 세션을 덮어쓰게 되므로 반드시 끊는다.
+        nav.setCtx({ genResult: result, genInput: fullInput, finalSeq: result.sequence, savedSessionId: undefined })
         setTimeout(() => alive && nav.reset('sequence'), 450)
       } catch (e) {
         if (alive) setErr(classifyError(e))

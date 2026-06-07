@@ -175,38 +175,49 @@ export function SequenceScreen() {
       return next
     })
 
-  // 편집 진입(스냅샷) / 완료(적용 — 스냅샷 폐기)
+  // 저장 여부로 푸터 분기: 생성 직후(미저장)=저장, 저장본 재오픈=수업 시작.
+  const saved = !!nav.ctx.savedSessionId
+
+  // 편집 진입(스냅샷) / 완료(적용 — 스냅샷 폐기, 저장본이면 즉시 영속)
   const enterEdit = () => {
     editBackup.current = clone(seq)
     setEditMode(true)
   }
-  const finishEdit = () => {
+  const finishEdit = async () => {
     editBackup.current = null
     setEditMode(false)
+    const sid = nav.ctx.savedSessionId
+    if (sid) {
+      await updateSessionFinal(kv, sid, seq) // 저장본 편집은 완료 즉시 반영 (diff·검증 재계산)
+      nav.toast('편집을 반영했어요')
+    }
   }
 
   const dirty = computeDiff(gen.sequence, seq).length > 0
   const coverage = sequenceCoverage(seq) // 근육군 커버리지 (검증 미리보기)
 
-  // 수업 시작 — 별도 저장 버튼 없이 여기서 캡처. 첫 시작이면 세션 생성, 저장본이면 재편집분을 반영.
+  // 저장 (생성 직후) — 플라이휠 캡처 후 홈으로. 수업 시작은 저장본에서.
+  const save = async () => {
+    const session = buildCapturedSession({
+      id: `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+      memberId: member?.id,
+      createdAt: new Date().toISOString(),
+      input: input!,
+      generated: gen.sequence,
+      final: seq,
+      attempts: gen.attempts,
+      usage: gen.usage,
+    })
+    await appendSession(kv, session)
+    nav.toast('시퀀스를 저장했어요')
+    nav.tab('home')
+  }
+
+  // 수업 시작 (저장본) — 마지막 편집분 반영 후 진행 (멱등 — diff·검증 재계산)
   const startClass = async () => {
-    let sid = nav.ctx.savedSessionId
-    if (!sid) {
-      sid = `${Date.now()}-${Math.random().toString(36).slice(2, 7)}`
-      const session = buildCapturedSession({
-        id: sid,
-        memberId: member?.id,
-        createdAt: new Date().toISOString(),
-        input: input!,
-        generated: gen.sequence,
-        final: seq,
-        attempts: gen.attempts,
-        usage: gen.usage,
-      })
-      await appendSession(kv, session)
-    } else {
-      await updateSessionFinal(kv, sid, seq) // 편집 없이도 멱등 — diff·검증 재계산
-    }
+    const sid = nav.ctx.savedSessionId
+    if (!sid) return
+    await updateSessionFinal(kv, sid, seq)
     nav.setCtx({ classSeq: seq, member, savedSessionId: sid })
     nav.go('classPlay')
   }
@@ -240,8 +251,10 @@ export function SequenceScreen() {
       footer={
         editMode ? (
           <Button title="편집 완료" onPress={finishEdit} />
-        ) : (
+        ) : saved ? (
           <Button title="수업 시작" onPress={startClass} />
+        ) : (
+          <Button title="저장" onPress={save} />
         )
       }
     >
