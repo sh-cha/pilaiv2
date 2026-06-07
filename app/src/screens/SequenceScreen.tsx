@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { View, Text, Pressable, StyleSheet, Modal, BackHandler } from 'react-native'
 import { colors, font } from '../theme/tokens'
 import { AppShell } from '../components/AppShell'
@@ -101,17 +101,26 @@ export function SequenceScreen() {
   const [editMode, setEditMode] = useState(false)
   const [dragLock, setDragLock] = useState(false) // 드래그 중 배경 ScrollView 잠금
 
-  // 뒤로가기: 편집 중엔 편집만 종료(보기 모드로), 아니면 스택 pop — 생성 직후(reset된 스택)엔 홈으로.
+  // 편집은 스냅샷 기반: 진입 시 백업 → "완료"=적용(백업 폐기), 뒤로가기=백업 복원(취소).
+  // (편집 조작이 화면 상태를 즉시 바꾸므로, 취소 경로가 없으면 뒤로가기로 나가도 변경이 남는다.)
+  const editBackup = useRef<Sequence | null>(null)
+  const cancelEdit = () => {
+    if (editBackup.current) setSeq(editBackup.current)
+    editBackup.current = null
+    setEditMode(false)
+    nav.toast('편집 전으로 되돌렸어요')
+  }
+  // 뒤로가기: 편집 중엔 편집 취소(보기 모드로), 아니면 스택 pop — 생성 직후(reset된 스택)엔 홈으로.
   const goBack = () => {
-    if (editMode) setEditMode(false)
+    if (editMode) cancelEdit()
     else if (nav.depth > 1) nav.back()
     else nav.tab('home')
   }
-  // 안드로이드 하드웨어 백도 동일하게 — 편집 중이면 라우터 pop보다 먼저 가로채 편집 종료
+  // 안드로이드 하드웨어 백도 동일하게 — 편집 중이면 라우터 pop보다 먼저 가로채 편집 취소
   useEffect(() => {
     if (!editMode) return
     const sub = BackHandler.addEventListener('hardwareBackPress', () => {
-      setEditMode(false)
+      cancelEdit()
       return true
     })
     return () => sub.remove()
@@ -166,6 +175,16 @@ export function SequenceScreen() {
       return next
     })
 
+  // 편집 진입(스냅샷) / 완료(적용 — 스냅샷 폐기)
+  const enterEdit = () => {
+    editBackup.current = clone(seq)
+    setEditMode(true)
+  }
+  const finishEdit = () => {
+    editBackup.current = null
+    setEditMode(false)
+  }
+
   const dirty = computeDiff(gen.sequence, seq).length > 0
   const coverage = sequenceCoverage(seq) // 근육군 커버리지 (검증 미리보기)
 
@@ -214,13 +233,13 @@ export function SequenceScreen() {
       onBack={goBack}
       scrollEnabled={!dragLock}
       headerRight={
-        <Pressable hitSlop={8} onPress={() => setEditMode((e) => !e)} style={st.editBtn}>
+        <Pressable hitSlop={8} onPress={editMode ? finishEdit : enterEdit} style={st.editBtn}>
           <Text style={st.editBtnText}>{editMode ? '완료' : '편집'}</Text>
         </Pressable>
       }
       footer={
         editMode ? (
-          <Button title="편집 완료" onPress={() => setEditMode(false)} />
+          <Button title="편집 완료" onPress={finishEdit} />
         ) : (
           <Button title="수업 시작" onPress={startClass} />
         )
@@ -254,7 +273,7 @@ export function SequenceScreen() {
           <Button variant="ghost" title="다시 생성" icon={<Icon name="spark" size={16} color={colors.primary} />} onPress={() => setRegenOpen(true)} style={st.regenBtn} />
         </>
       ) : (
-        <Text style={st.editHint}>⋮ 손잡이를 끌어 순서를 바꾸고, 동작을 탭해 교체·횟수·삭제할 수 있어요.</Text>
+        <Text style={st.editHint}>⋮ 손잡이를 끌어 순서를 바꾸고, 동작을 탭해 교체·횟수·삭제할 수 있어요. 완료를 누르면 적용되고, 뒤로가면 취소돼요.</Text>
       )}
 
       {seq.blocks.map((b, bi) => (
