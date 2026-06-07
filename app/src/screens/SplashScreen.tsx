@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { View, Text, Image, Pressable, StyleSheet, Animated } from 'react-native'
 import { font } from '../theme/tokens'
 import { useNav } from '../nav/router'
+import { waitForSession } from '../lib/auth'
 
 // 앱 아이콘 톤과 통일 (딥 포레스트 + 크림)
 const FOREST = '#2F4636'
@@ -33,12 +34,19 @@ function DotLine() {
 
 export function SplashScreen() {
   const nav = useNav()
+  // 세션이 복원되면 로그인 건너뛰고 홈으로 (로그아웃 전까지 유지). 최소 1.4초는 스플래시 노출.
+  const decide = () => waitForSession().then((uid) => nav.reset(uid ? 'home' : 'login'))
   useEffect(() => {
-    const t = setTimeout(() => nav.reset('login'), 1700)
-    return () => clearTimeout(t)
+    let alive = true
+    Promise.all([waitForSession(), new Promise((r) => setTimeout(r, 1400))]).then(([uid]) => {
+      if (alive) nav.reset(uid ? 'home' : 'login')
+    })
+    return () => {
+      alive = false
+    }
   }, [])
   return (
-    <Pressable style={st.splash} onPress={() => nav.reset('login')}>
+    <Pressable style={st.splash} onPress={decide}>
       <Image source={require('../../assets/icon.png')} style={st.icon} />
       <Text style={st.logo}>Pil<Text style={{ opacity: 0.7 }}>ai</Text></Text>
       <Text style={st.tag}>맞춤 필라테스 시퀀스</Text>

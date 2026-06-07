@@ -32,18 +32,33 @@ export function getProfile(): Profile | null {
   return { name, loginLabel }
 }
 
+// 세션 복원 (1회, lazy) — 먼저 부르는 쪽이 시작한다.
+// React effect는 자식(스플래시)이 부모(App의 initAuth)보다 먼저 돌므로 호출 순서에 기대지 않는다.
+let restored: Promise<string | null> | null = null
+
+function restoreSession(): Promise<string | null> {
+  if (restored) return restored
+  if (!supabase) {
+    restored = Promise.resolve(null)
+    return restored
+  }
+  restored = supabase.auth.getSession().then(({ data }) => {
+    currentUser = data.session?.user ?? null
+    return getUserId()
+  })
+  return restored
+}
+
+// 세션 복원 완료를 기다린다 — 스플래시가 로그인/홈 분기에 사용 (로그아웃 전까지 세션 유지).
+export const waitForSession = (): Promise<string | null> => restoreSession()
+
 // 앱 시작 시 1회 호출 — 기존 세션 복원 + 변경 구독. onChange로 라우터가 초기 화면을 정할 수 있다.
 export function initAuth(onChange?: (userId: string | null) => void): void {
-  if (!supabase) {
-    onChange?.(null)
-    return
-  }
-  supabase.auth.getSession().then(({ data }) => {
-    currentUser = data.session?.user ?? null
-    onChange?.(getUserId())
-  })
+  restoreSession().then((uid) => onChange?.(uid))
+  if (!supabase) return
   supabase.auth.onAuthStateChange((_event, session) => {
     currentUser = session?.user ?? null
+    restored = Promise.resolve(getUserId()) // 로그인/로그아웃 반영 — 이후 waitForSession이 stale 값을 주지 않게
     onChange?.(getUserId())
   })
 }
