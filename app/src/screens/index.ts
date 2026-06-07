@@ -15,6 +15,7 @@ import { HistoryScreen } from './HistoryScreen'
 import { SessionDetailScreen } from './SessionDetailScreen'
 import { CheckinScreen } from './CheckinScreen'
 import { SettingsScreen } from './SettingsScreen'
+import { ReportScreen } from './ReportScreen'
 import { EmptyScreen } from './EmptyScreen'
 
 export const screens: Record<string, React.ComponentType> = {
@@ -33,5 +34,6 @@ export const screens: Record<string, React.ComponentType> = {
   sessionDetail: SessionDetailScreen,
   checkin: CheckinScreen,
   settings: SettingsScreen,
+  report: ReportScreen,
   empty: EmptyScreen,
 }

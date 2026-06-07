@@ -19,7 +19,7 @@
    EXPO_PUBLIC_SUPABASE_URL=https://xxxx.supabase.co
    EXPO_PUBLIC_SUPABASE_ANON_KEY=eyJ...
    ```
-4. **스키마 적용** — Supabase 대시보드 → SQL Editor → `supabase/migrations/0001_init.sql` 내용 붙여넣고 Run. (또는 supabase CLI: `supabase db push`.)
+4. **스키마 적용** — Supabase 대시보드 → SQL Editor → `supabase/migrations/` 의 SQL을 번호 순서대로(0001 → 0002 …) 붙여넣고 Run. (또는 supabase CLI: `supabase db push`.)
 5. **익명 로그인 켜기** — Authentication → Providers → **Anonymous** 활성화. (현재 로그인 버튼은 익명 세션으로 RLS용 uid를 확보한다. 실제 카카오/구글/애플은 아래 "OAuth 연결".)
 6. **앱 재시작** — `npx expo start -c`(env 캐시 초기화). 로그인 → 회원 추가 → 대시보드 `kv_store`에 `pilaiv2.members.v1` 행이 생기면 연결 성공.
 
@@ -31,6 +31,7 @@
 - `src/lib/kv.ts` — `supabase && getUserId()` 면 `kv_store` 읽기/upsert, 아니면 AsyncStorage. **여기만 백엔드를 안다.**
 - `App.tsx` → `initAuth()`, `LoginScreen` → `signIn()`, `SettingsScreen` → `signOut()`.
 - `supabase/migrations/0001_init.sql` — `profiles`(강사 1:1), `kv_store`(blob) + RLS + 신규유저 트리거.
+- `supabase/migrations/0002_bug_reports.sql` — `bug_reports`(설정 → "버그 신고 · 의견 보내기"가 insert, RLS insert-only). 조회는 대시보드 Table Editor에서. 미설정/미로그인 기기는 로컬 kv(`pilaiv2.reports.v1`)에 쌓인다(`src/lib/report.ts`).
 
 ## 다음 단계 (백엔드 로드맵)
 1. **실제 OAuth (카카오/구글/애플)** — ✅ **코드 배선 완료**(`auth.ts signInWithProvider` + 로그인 버튼 + `expo-web-browser`/`expo-linking` PKCE, `scheme: pilai`). 제공자만 설정하면 켜짐 → 아래 **"OAuth 연결"** 절차. 그러면 기기 간 동기화가 된다(익명은 기기별).

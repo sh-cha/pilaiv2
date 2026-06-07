@@ -8,6 +8,7 @@ import { useNav } from '../nav/router'
 import { kv } from '../lib/kv'
 import { getProfile, signOut } from '../lib/auth'
 import { loadSettings, saveSettings } from '../lib/settings'
+import { APP_VERSION } from '../data/constants'
 
 export function SettingsScreen() {
   const nav = useNav()
@@ -46,6 +47,10 @@ export function SettingsScreen() {
             thumbColor="#fff"
           />
         </View>
+        <Pressable style={[st.row, st.rowBorder]} onPress={() => nav.go('report', { from: 'settings' })}>
+          <Text style={st.k}>버그 신고 · 의견 보내기</Text>
+          <Icon name="chev" size={13} color={colors.faint} />
+        </Pressable>
         <Pressable style={[st.row, st.rowBorder]} onPress={() => nav.go('empty')}>
           <Text style={st.k}>화면 미리보기 · 빈 상태</Text>
           <Icon name="chev" size={13} color={colors.faint} />
@@ -55,7 +60,7 @@ export function SettingsScreen() {
         </Pressable>
       </Card>
 
-      <Text style={st.version}>Pilai · v0.1 베타</Text>
+      <Text style={st.version}>Pilai · {APP_VERSION}</Text>
     </AppShell>
   )
 }
